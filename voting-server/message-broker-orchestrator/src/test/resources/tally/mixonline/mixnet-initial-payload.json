@@ -1,0 +1,30 @@
+{
+	"electionEventId": "e3e3c2fd8a16489291c5c24e7b74b26e",
+	"ballotBoxId": "e3e3c2fd8a16489291c5c2222222222e",
+	"encryptionGroup": {
+		"p": "0x3B",
+		"q": "0x1D",
+		"g": "0x3"
+	},
+	"ciphertexts": [
+		{
+			"gamma": "0x3",
+			"phis": [
+				"0x1D"
+			]
+		}
+	],
+	"electionPublicKey": [
+		"0xF",
+		"0x2D",
+		"0x2D",
+		"0x23",
+		"0xF"
+	],
+	"signature": {
+		"signatureContents": "BaWZPzvnlaxcKRX25x4Q4t6D1z96ltSUYeJoLA5T0ic=",
+		"certificateChain": [
+			"-----BEGIN CERTIFICATE-----\r\nMIIDNDCCAhygAwIBAgICAgUwDQYJKoZIhvcNAQELBQAwXTERMA8GA1UEAwwIdGVz\r\ndC5jb20xDTALBgNVBAsMBHRlc3QxDjAMBgNVBAoMBXRlc3QuMQ0wCwYDVQQHDAR0\r\nZXN0MQ0wCwYDVQQIDAR0ZXN0MQswCQYDVQQGEwJDQTAeFw0yMjAyMjIxNDU3NDNa\r\nFw0yMzAyMjIwMDAwMDBaMF0xETAPBgNVBAMMCHRlc3QuY29tMQ0wCwYDVQQLDAR0\r\nZXN0MQ4wDAYDVQQKDAV0ZXN0LjENMAsGA1UEBwwEdGVzdDENMAsGA1UECAwEdGVz\r\ndDELMAkGA1UEBhMCQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCM\r\nWokqmhIFOCHOEtI3TCN5ydil0HXq1Rb8cKJOe5VQ9B+xGeoFuhiiueRgHRZhBKpC\r\ncEJekJDAlELROXOTpjjkg4s0XdYCdz6xlRYcGYVoBegnHZIprXaD8QB5ZSbIjwb8\r\nDhwR/Ofp9W3jzPD8Ut0srl42N46Kk8Vh+hPtUxc5Uag4XN7l7i3bHV34yEJtrZ9s\r\n8fXun98/X/o7McHSJhjmZgHCWFdNmOWAlg5uG2DYteh+tPLxm1PfVR6z0T9B33GU\r\npWeTtU/f74ElhXsBGoDtMo0p4vHg0rGsgNqyyDDwVBKGjFJqwY3hndosA8SHwGJC\r\nkHefrPuLsLwiX3pW22WHAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAFRMTUGiMjiw\r\nI+rxS8/x8qjlEHwovjVxYguVJaOv4+Snf2rJjyrzDMrvEljSY88uPclgxIlbYYzx\r\nGHE/PIbYfM0Pjt3S3ve4nCwnLBw6v3W7PPHdJEezsNqYwDtuHdqY5gdfPKA1o3M4\r\nzK9epBufcsal8tFtlQtGfBw+Bz2zm+AT7r5ROJLtin2NkbTJig8Fy8HKNhFodMxo\r\n0QGC/4O/OdqdN79U9+5N/+wPTCpqAzwJND8+iqMA7rxPstb1UdqrNArdsYZWRTTv\r\nEyhW8g33fUJcsz+p3aHmn+qJerfWPFywdiRuJnjyhDuasP7bWgqmsKL7IVrCUnKM\r\nzSwNhLtUVuY=\r\n-----END CERTIFICATE-----\r\n"
+		]
+	}
+}

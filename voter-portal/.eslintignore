@@ -1,0 +1,11 @@
+doc/**
+build/**
+node_modules/**
+dist/**
+release/**
+.vscode/**
+reports/**
+tasks/doc/**
+docs/**
+src/vendors/**
+src/common/lib-datatable/**

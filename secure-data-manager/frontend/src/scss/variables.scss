@@ -1,0 +1,177 @@
+// variables
+// ----------------------------------------
+
+// $layout ----------------------------------------
+$layout-gutter-width: 1em !default;
+
+// $color -----------------------------------------
+$color-body-bg: #f5f5f5 !default;
+$color-body-text: rgba(0, 0, 0, .87) !default;
+$color-body-text-light: rgba(0, 0, 0, .54) !default;
+$color-interactive: #7e3269 !default;
+$color-border: rgba(0, 0, 0, .12) !default;
+
+// $alert -----------------------------------------
+$alert-error-bg: #c32126 !default;
+$alert-error-text: #ffffff !default;
+$alert-success-bg: #4c732f !default;
+$alert-success-text: #ffffff !default;
+$alert-info-bg: #eeeeee !default;
+$alert-info-text: #6d6d6d !default;
+
+// $autocomplete ----------------------------------
+$autocomplete-bg: #fafafa !default;
+$autocomplete-text: #212121 !default;
+$autocomplete-active: #eeeeee !default;
+
+// $button ----------------------------------------
+$button-primary: #7e3269 !default;
+$button-primary-contrast: #fff !default;
+$button-primary-hover: #a24087 !default;
+$button-secondary: #a2588c !default;
+$button-secondary-contrast: #fff !default;
+$button-secondary-hover: #88667e !default;
+$button-focused-bg: rgba(158, 158, 158, .2) !default;
+$button-disabled-bg: rgba(0, 0, 0, .12) !default;
+$button-disabled-text: rgba(0, 0, 0, .38) !default;
+
+// $card ------------------------------------------
+$card-bg: #ffffff !default;
+
+// $checkbox --------------------------------------
+$checkbox-primary: #7e3269 !default;
+$checkbox-primary-contrast: #fff !default;
+$checkbox-border-color: rgba(0, 0, 0, .54) !default;
+$checkbox-disabled-bg: rgba(0, 0, 0, .26) !default;
+$checkbox-disabled-text: #eeeeee !default;
+$checkbox-disabled-label: rgba(0, 0, 0, .26) !default;
+$checkbox-disabled-border: rgba(0, 0, 0, .38) !default;
+
+// $chip ------------------------------------------
+$chip-bg: #777777 !default;
+$chip-text: #ffffff !default;
+
+// $collapse --------------------------------------
+$collpase-duration: .35s !default;
+
+// $dialog ----------------------------------------
+$dialog-backdrop: rgba(33, 33, 33, 1.0) !default;
+$dialog-bg: #ffffff !default;
+$dialog-actions-border: rgba(0, 0, 0, .12) !default;
+$dialog-constitute-bg-active: #eceff1 !default;
+$dialog-constitute-idle: rgba(0, 0, 0, .54) !default;
+$dialog-constitute-current: #7e3269 !default;
+$dialog-constitute-current-contrast: #ffffff !default;
+$dialog-constitute-done: #2e7d32 !default;
+$dialog-constitute-done-contrast: #ffffff !default;
+
+// $empty -----------------------------------------
+$empty-icon-size: 15em !default;
+$empty-icon-bg: #e0c7d9 !default;
+$empty-icon-color: rgba(0, 0, 0, .87) !default;
+
+// $font ------------------------------------------
+$font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+"Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+"Helvetica Neue", sans-serif !default;
+$font-family-monospace: Monaco, Consolas, 'Courier New', monospace !default;
+$font-family-serif: Georgia, 'Times New Roman', Times, serif !default;
+
+// $input -----------------------------------------
+$input-primary: #7e3269 !default;
+$input-placeholder: rgba(0, 0, 0, .54) !default;
+$input-text: rgba(0, 0, 0, .87) !default;
+$input-border: rgba(0, 0, 0, .24) !default;
+$input-disabled-border: rgba(0, 0, 0, .06) !default;
+$input-error: rgb(244, 67, 54) !default;
+
+// $menu ------------------------------------------
+$menu-bg: #ffffff !default;
+
+// $nav-bar ---------------------------------------
+$nav-bar-bg: #fff !default;
+$nav-bar-text: #000 !default;
+$nav-bar-bg-hover: rgba(0, 0, 0, .06) !default;
+$nav-bar-text-active: #7e3269 !default;
+$nav-bar-ink-bar: #7e3269 !default;
+$nav-bar-disabled-bg: rgba(0, 0, 0, .12) !default;
+$nav-bar-disabled-text: rgba(0, 0, 0, .06) !default;
+
+// $progress-bar ----------------------------------
+$progress-bar-bg: #d0d0d0 !default;
+$progress-bar-complete: #7e3269 !default;
+
+// $select --------------------------------------
+$select-primary: #7e3269 !default;
+$select-border: rgba(0, 0, 0, .24) !default;
+$select-content-bg: #ffffff !default;
+$select-content-text: rgba(33, 33, 33, .87) !default;
+$select-content-text-selected: #7e3269 !default;
+$select-content-bg-hover: #eeeeee !default;
+$select-disabled-cared: rgba(0, 0, 0, .12) !default;
+$select-disabled-border: rgba(0, 0, 0, .06) !default;
+
+// $slider --------------------------------------
+$slider-bg: rgba(0, 0, 0, .38) !default;
+$slider-ticks: rgba(0, 0, 0, .38) !default;
+$slider-disabled: rgb(250, 250, 250) !default;
+$slider-primary: #7e3269 !default;
+$slider-focus-ring-primary: rgba(126, 50, 105, .26) !default;
+
+// $sidebar ------------------------------------
+$sidebar-bg: #333 !default;
+$sidebar-text: rgba(255, 255, 255, .87) !default;
+$sidebar-border-color: rgba(255, 255, 255, .12) !default;
+$sidebar-bg-hover: rgba(255, 255, 255, .12) !default;
+$sidebar-current-bg: rgba(255, 255, 255, 0.87) !default;
+$sidebar-current-text: #000 !default;
+$sidebar-icon: #fff !default;
+$sidebar-icon-current: #7e3269 !default;
+$sidebar-animation-duration: .35s !default;
+$sidebar-bg-closed: #7e3269 !default;
+
+// $status-box ------------------------------------
+$status-box-bg: #efecee !default;
+$status-box-text: inherit !default;
+
+// $tabs ------------------------------------------
+$tabs-bg: #607d8b !default;
+$tabs-bg-focus: #546e7a !default;
+$tabs-text: #bbdefb !default;
+$tabs-text-active: #ffffff !default;
+$tabs-ink-bar: #ffff00 !default;
+
+// $table -----------------------------------------
+$table-thead-bg: #efecee !default;
+$table-thead-text: #000000 !default;
+$table-row-hover: #f8f4f9 !default;
+$table-border-color: #e0e0e0 !default;
+
+// $toast -----------------------------------------
+$toast-bg: #323232 !default;
+$toast-text: #ffffff !default;
+$toast-btn-ok-text: #00e676 !default;
+$toast-btn-info-text: #42a5f5 !default;
+$toast-btn-error-text: #ff6565 !default;
+$toast-btn-raised-bg: #fafafa !default;
+$toast-btn-raised-text: #323232 !default;
+
+// $toolbar ------------------------------------
+$toolbar-bg: #fff !default;
+$toolbar-text: #000 !default;
+$toolbar-text-hover: #eeeeee !default;
+$toolbar-primary-bg: #7e3269 !default;
+$toolbar-primary-bg-hover: #a24087 !default;
+$toolbar-primary-text: #fff !default;
+$toolbar-secondary-bg: #a2588c !default;
+$toolbar-secondary-bg-hover: #88667e !default;
+$toolbar-secondary-text: #fff !default;
+$toolbar-bg-light: #fff !default;
+$toolbar-bg-light-text: #000000 !default;
+
+// $tooltip ------------------------------------
+$tooltip-bg: rgb(97, 97, 97) !default;
+$tooltip-text: rgba(255, 255, 255, 0.87) !default;
+
+// z-index ----------------------------------------
+$z-index-table-thead: 50 !default;

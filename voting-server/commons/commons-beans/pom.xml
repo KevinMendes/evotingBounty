@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+		<artifactId>commons</artifactId>
+		<version>0.14.1.0</version>
+	</parent>
+
+	<artifactId>commons-beans</artifactId>
+	<packaging>jar</packaging>
+
+	<name>Commons - Beans</name>
+
+	<dependencies>
+		<!-- CryptoLib dependencies -->
+		<dependency>
+			<groupId>ch.post.it.evoting.cryptolib</groupId>
+			<artifactId>cryptolib</artifactId>
+			<version>${cryptolib.version}</version>
+		</dependency>
+
+		<!-- libs config -->
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15on</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<!-- other dependencies -->
+		<dependency>
+			<groupId>commons-codec</groupId>
+			<artifactId>commons-codec</artifactId>
+		</dependency>
+	</dependencies>
+
+</project>

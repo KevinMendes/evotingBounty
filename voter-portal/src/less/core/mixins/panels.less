@@ -1,0 +1,30 @@
+// Panels
+
+.panel-variant(@the-panel-text; @the-panel-bg; @the-panel-border; @the-heading-text; @the-heading-bg; @the-footer-text; @the-footer-bg ) {
+  color: @the-panel-text;
+  background-color: @the-panel-bg;
+  border-color: @the-panel-border;
+
+  & > .panel-heading {
+    color: @the-heading-text;
+    background-color: @the-heading-bg;
+    border-color: @the-panel-border;
+
+    + .panel-collapse .panel-body {
+      border-top-color: @the-panel-border;
+    }
+
+    .badge {
+      color: @the-heading-bg;
+      background-color: @the-heading-text;
+    }
+  }
+  & > .panel-footer {
+    color: @the-footer-text;
+    background-color: @the-footer-bg;
+
+    + .panel-collapse .panel-body {
+      border-bottom-color: @the-panel-border;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "eslint:recommended",
+    "google",
+    "./.eslintrc-drastic.json",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaVersion": 8,
+    "sourceType": "module"
+  },
+  "env": {
+    "es6": true,
+    "browser": true,
+    "node": true,
+    "jasmine": true,
+    "commonjs": true
+  },
+  "globals": {
+    "angular": true,
+    "inject": true,
+    "OvApi": true,
+    "ovApi": true,
+    "OvWorker": true,
+    "ovWorker": true
+  }
+}

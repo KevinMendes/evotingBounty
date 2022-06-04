@@ -1,0 +1,40 @@
+[
+  {
+    "id": "1d9bf23fecd24f899c30b11fe1a6cb5f",
+    "electionEvent": {
+      "id": "101549c5a4a04c7b88a0cb9be8ab3df6"
+    },
+    "status": "SIGNED",
+    "synchronized": "true",
+    "defaultTitle": "vcs_133",
+    "defaultDescription": "vcs_133",
+    "alias": "vcs_133",
+    "numberOfVotingCardsToGenerate": 3,
+    "ballotBox": {
+      "id": "268872255b9b44f39c5404f3ebd85c07"
+    },
+    "details": "Synchronized",
+    "ballotAlias": "343",
+    "ballotBoxAlias": "133",
+    "verificationCardSetId": "504d6292395b4aba8bde7e25496a0c14"
+  },
+  {
+    "id": "478079602b3d4ea8a07129146a8f15f2",
+    "electionEvent": {
+      "id": "101549c5a4a04c7b88a0cb9be8ab3df7"
+    },
+    "status": "SIGNED",
+    "synchronized": "true",
+    "defaultTitle": "vcs_139",
+    "defaultDescription": "vcs_139",
+    "alias": "vcs_139",
+    "numberOfVotingCardsToGenerate": 13,
+    "ballotBox": {
+      "id": "fd3517d051ad469eab7920fcc4a68ec3"
+    },
+    "details": "Synchronized",
+    "ballotAlias": "343",
+    "ballotBoxAlias": "139",
+    "verificationCardSetId": "12003043bd0a4d12bf8e5fe85ec37c1b"
+  }
+]

@@ -1,0 +1,382 @@
+{
+  "resourceType": "configuration",
+  "tenant": {
+    "tenantId": "dcbab3f729c45719db8aba15dabcd",
+    "tenantDefaultName": "Canton A"
+  },
+  "electionEvents": [
+    {
+      "id": "db033b3f729c45719db8aba15d24043c",
+      "defaultTitle": "Election Event Title",
+      "defaultDescription": "Election Event Description",
+      "alias": "Election Event Alias",
+      "dateFrom": "01/06/2015 10:15",
+      "dateTo": "10/06/2015 10:15",
+      "status": "LOCKED"
+    }
+  ],
+  "settings": [
+    {
+      "electionEvent": {
+        "id": "db033b3f729c45719db8aba15d24043c"
+      },
+      "encryptionParameters": {
+        "p": "110191545355374667646914100463249050189486549480107986477310195921555812369947",
+        "q": "55095772677687333823457050231624525094743274740053993238655097960777906184973",
+        "g": "3"
+      },
+      "certificatesValidityPeriod": 1,
+      "challengeLength": 16,
+      "challengeResponseExpirationTime": 2000,
+      "authTokenExpirationTime": 16000,
+      "numberVotesPerVotingCard": 1,
+      "numberVotesPerAuthToken": 1,
+      "maximumNumberOfAttempts": 5
+    }
+  ],
+  "ballots": [
+    {
+      "id": "8365b61d3f194c11bbd03e421462b6ad",
+      "defaultTitle": "Ballot 1",
+      "defaultDescription": "Ballot 1 Description",
+      "alias": "B1",
+      "electionEvent": {
+        "id": "db033b3f729c45719db8aba15d24043c"
+      },
+      "status": "LOCKED",
+      "contests": [
+        {
+          "id": "712f334631034761a73314513e21f7cb",
+          "defaultTitle": "Contest 1 ",
+          "defaultDescription": "Contest 1 Description",
+          "alias": "Contest Alias",
+          "type": "switzerland_votation",
+          "options": [
+            {
+              "id": "114bd34dcf6e4de4b771a92fa384gggg",
+              "defaultText": "Question Text",
+              "representation": "2",
+              "attributes": [
+                "a14bd34dcf6e4de4b771a92fa3849aaa"
+              ]
+            },
+            {
+              "id": "214bd34dcf6e4de4b771a92fa384oooo",
+              "defaultText": "Question Text",
+              "representation": "3",
+              "attributes": [
+                "a14bd34dcf6e4de4b771a92fa3849aaa"
+              ]
+            },
+            {
+              "id": "314bd34dcf6e4de4b771a92fa384hhhh",
+              "defaultText": "Question Text",
+              "representation": "7",
+              "attributes": [
+                "b14bd34dcf6e4de4b771a92fa3849bbb"
+              ]
+            },
+            {
+              "id": "414bd34dcf6e4de4b771a92fa384iiii",
+              "defaultText": "Question Text",
+              "representation": "13",
+              "attributes": [
+                "b14bd34dcf6e4de4b771a92fa3849bbb"
+              ]
+            },
+            {
+              "id": "514bd34dcf6e4de4b771a92fa384ffff",
+              "defaultText": "Question Text",
+              "representation": "23",
+              "attributes": [
+                "b14bd34dcf6e4de4b771a92fa3849bbb",
+                "c14bd34dcf6e4de4b771a92fa3849ccc"
+              ]
+            }
+          ],
+          "optionsAttributes": [
+            {
+              "id": "a14bd34dcf6e4de4b771a92fa3849aaa",
+              "type": "group",
+              "correctness": true
+            },
+            {
+              "id": "b14bd34dcf6e4de4b771a92fa3849bbb",
+              "type": "group",
+              "correctness": true
+            },
+            {
+              "id": "c14bd34dcf6e4de4b771a92fa3849ccc",
+              "type": "implicitblank",
+              "correctness": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "5666fc342c5d4ce59a9990d5b7ad2d6f",
+      "defaultTitle": "Ballot 2 ",
+      "defaultDescription": "Ballot 2 Description",
+      "alias": "B2",
+      "electionEvent": {
+        "id": "db033b3f729c45719db8aba15d24043c"
+      },
+      "status": "LOCKED",
+      "contests": [
+        {
+          "id": "5f246d5a0baf461390052e41da956415",
+          "defaultTitle": "Contest 2",
+          "defaultDescription": "Contest 2 Description",
+          "alias": "Contest Alias",
+          "type": "switzerland_votation",
+          "options": [
+            {
+              "id": "e607e7ec59204614bd822ca560336d25",
+              "defaultText": "Question Text",
+              "representation": "2",
+              "attributes": [
+                "8e201308fdd34f9fbff522d0b7309d4e"
+              ]
+            },
+            {
+              "id": "3066485140304c58a32b15da6e57f284",
+              "defaultText": "Question Text",
+              "representation": "3",
+              "attributes": [
+                "8e201308fdd34f9fbff522d0b7309d4e"
+              ]
+            },
+            {
+              "id": "1b3fb17897454ebb81fb798308749a99",
+              "defaultText": "Question Text",
+              "representation": "7",
+              "attributes": [
+                "6b033b24928e4df29a7b5c21ed58d702"
+              ]
+            },
+            {
+              "id": "cad154e00523462c8b593852e83b3a76",
+              "defaultText": "Question Text",
+              "representation": "13",
+              "attributes": [
+                "6b033b24928e4df29a7b5c21ed58d702"
+              ]
+            },
+            {
+              "id": "02717c72b6ba485ca57021211311cac2",
+              "defaultText": "Question Text",
+              "representation": "23",
+              "attributes": [
+                "6b033b24928e4df29a7b5c21ed58d702",
+                "111df7817dbb44c98d0bba649129da08"
+              ]
+            }
+          ],
+          "optionsAttributes": [
+            {
+              "id": "8e201308fdd34f9fbff522d0b7309d4e",
+              "type": "group",
+              "correctness": true
+            },
+            {
+              "id": "6b033b24928e4df29a7b5c21ed58d702",
+              "type": "group",
+              "correctness": true
+            },
+            {
+              "id": "111df7817dbb44c98d0bba649129da08",
+              "type": "implicitblank",
+              "correctness": false
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "ballotBoxes": [
+    {
+      "id": "1234aa1d3f194c11aac03e421472b6bb",
+      "defaultTitle": "Ballot Box Title",
+      "defaultDescription": "Ballot Box Description",
+      "alias": "BB1",
+      "dateFrom": "12/12/2012 10:30",
+      "dateTo": "14/12/2012 10:30",
+      "electionEvent": {
+        "id": "db033b3f729c45719db8aba15d24043c"
+      },
+      "ballot": {
+        "id": "8365b61d3f194c11bbd03e421462b6ad"
+      },
+      "electoralAuthority": {
+        "id": "hhhbd34dcf6e4de4b771a92fa38abhhh"
+      },
+      "status": "LOCKED"
+    },
+    {
+      "id": "c3d07628087e49b6b1818372310b49ac",
+      "defaultTitle": "Ballot Box Title",
+      "defaultDescription": "Ballot Box Description",
+      "alias": "BB2",
+      "dateFrom": "12/12/2012 10:30",
+      "dateTo": "14/12/2012 10:30",
+      "electionEvent": {
+        "id": "db033b3f729c45719db8aba15d24043c"
+      },
+      "ballot": {
+        "id": "5666fc342c5d4ce59a9990d5b7ad2d6f"
+      },
+      "electoralAuthority": {
+        "id": "hhhbd34dcf6e4de4b771a92fa38abhhh"
+      },
+      "status": "LOCKED"
+    }
+  ],
+  "votingCardSets": [
+    {
+      "id": "fff4aa1d3f194c11aac03e421472bfff",
+      "defaultTitle": "Votting Card 1 ",
+      "defaultDescription": "Votting Card Set Description",
+      "alias": "VC1",
+      "numberOfVotingCardsToGenerate": 10,
+      "electionEvent": {
+        "id": "db033b3f729c45719db8aba15d24043c"
+      },
+      "ballotBox": {
+        "id": "1234aa1d3f194c11aac03e421472b6bb"
+      },
+      "status": "LOCKED"
+    },
+    {
+      "id": "8cc4f2e981b74084930c3d48f222da3d",
+      "defaultTitle": "Votting Card 2",
+      "defaultDescription": "Votting Card Set Description",
+      "alias": "VC2",
+      "numberOfVotingCardsToGenerate": 10,
+      "electionEvent": {
+        "id": "db033b3f729c45719db8aba15d24043c"
+      },
+      "ballotBox": {
+        "id": "c3d07628087e49b6b1818372310b49ac"
+      },
+      "status": "LOCKED"
+    }
+  ],
+  "electoralAuthorities": [
+    {
+      "id": "hhhbd34dcf6e4de4b771a92fa38abhhh",
+      "defaultTitle": "Electoral Authority Title",
+      "alias": "Electoral Authority Alias",
+      "electionEvent": {
+        "id": "db033b3f729c45719db8aba15d24043c"
+      },
+      "electoralBoard": [
+        "John Travolta",
+        "Edward Norton",
+        "Alexis Tsipras",
+        "Pretty Woman"
+      ],
+      "status": "LOCKED"
+    }
+  ],
+  "administrationAuthorities": [
+    {
+      "id": "56e7344c34854561a775d45149b93832",
+      "defaultTitle": "Administration Authority 1",
+      "defaultDescription": "Administration Authority 1 Description",
+      "alias": "AB1",
+      "minimumThreshold": 1,
+      "administrationBoard": [
+        "Administrator 1",
+        "Administrator 2"
+      ],
+      "status": "LOCKED"
+    }
+  ],
+  "translations": [
+    {
+      "id": "8365b61d3f194c11bbd03e421462b6aden_US",
+      "ballot": {
+        "id": "8365b61d3f194c11bbd03e421462b6ad"
+      },
+      "locale": "en_US",
+      "texts": {
+        "8365b61d3f194c11bbd03e421462b6ad": {
+          "title": "Ballot Title in English",
+          "description": "Ballot 1 Description in English"
+        },
+        "314bd34dcf6e4de4b771a92fa3849d3d": {
+          "title": "Election Event Title in English",
+          "description": "Option Description in English"
+        },
+        "114bd34dcf6e4de4b771a92fa384gggg": {
+          "title": "Option Title in English",
+          "description": "Option Description in English"
+        }
+      }
+    },
+    {
+      "id": "8365b61d3f194c11bbd03e421462b6ad_ES",
+      "ballot": {
+        "id": "8365b61d3f194c11bbd03e421462b6ad"
+      },
+      "locale": "es_ES",
+      "texts": {
+        "8365b61d3f194c11bbd03e421462b6ad": {
+          "title": "Ballot Title in Spanish",
+          "description": "Ballot Description in Spanish"
+        },
+        "314bd34dcf6e4de4b771a92fa3849d3d": {
+          "title": "Election Event Title in Spanish",
+          "description": "Option Description in Spanish"
+        },
+        "114bd34dcf6e4de4b771a92fa384gggg": {
+          "title": "Option Title in Spanish",
+          "description": "Option Description in Spanish"
+        }
+      }
+    },
+    {
+      "id": "5666fc342c5d4ce59a9990d5b7ad2d6fen_US",
+      "ballot": {
+        "id": "5666fc342c5d4ce59a9990d5b7ad2d6f"
+      },
+      "locale": "en_US",
+      "texts": {
+        "8365b61d3f194c11bbd03e421462b6ad": {
+          "title": "Ballot Title in English",
+          "description": "Ballot 1 Description in English"
+        },
+        "314bd34dcf6e4de4b771a92fa3849d3d": {
+          "title": "Election Event Title in English",
+          "description": "Option Description in English"
+        },
+        "114bd34dcf6e4de4b771a92fa384gggg": {
+          "title": "Option Title in English",
+          "description": "Option Description in English"
+        }
+      }
+    },
+    {
+      "id": "5666fc342c5d4ce59a9990d5b7ad2d6f_ES",
+      "ballot": {
+        "id": "5666fc342c5d4ce59a9990d5b7ad2d6f"
+      },
+      "locale": "es_ES",
+      "texts": {
+        "5666fc342c5d4ce59a9990d5b7ad2d6f": {
+          "title": "Ballot Title in Spanish",
+          "description": "Ballot Description in Spanish"
+        },
+        "314bd34dcf6e4de4b771a92fa3849d3d": {
+          "title": "Election Event Title in Spanish",
+          "description": "Option Description in Spanish"
+        },
+        "e607e7ec59204614bd822ca560336d25": {
+          "title": "Option Title in Spanish",
+          "description": "Option Description in Spanish"
+        }
+      }
+    }
+  ]
+}

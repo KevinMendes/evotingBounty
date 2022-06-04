@@ -1,0 +1,41 @@
+# Generated directories
+node_modules/
+bower_components/
+
+dist/
+target/
+
+# compiled language files
+src/i18n/*.mo
+src/i18n/*.mot
+
+# Mac OS X hidden files
+.DS_Store
+
+# Vim swap files
+.*.sw?
+
+# Gedit swap files
+*~
+
+
+# Logs
+*.log
+
+# tern temporal files
+.tern-port
+
+# jsbeautify config
+.jsbeautifyrc
+
+.project
+.idea
+doc/
+.vscode/
+coverage/
+.settings/
+ov-api-lib/
+
+# Intellij
+*.idea
+*.iml

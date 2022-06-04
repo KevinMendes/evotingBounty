@@ -1,0 +1,4 @@
+Version: <%= pkg.version %>
+Timestamp: <%= env.BUILD_ID %>
+SCM Revision: <%= env.GIT_COMMIT && env.GIT_COMMIT.substr(0,7) %>
+CI Build: <%= env.BUILD_NUMBER %>

@@ -1,0 +1,30 @@
+// progress-bar
+// ----------------------------------------
+
+.progress-bar, {
+  position: relative;
+  width: 100%;
+  height: 0.286em;
+  background-color: $progress-bar-bg;
+  margin: 0.5em 0 0;
+
+  .bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: $progress-bar-complete;
+  }
+}
+
+md-progress-linear {
+  height: 0.286em;
+
+  .md-container {
+    background-color: $progress-bar-bg;
+  }
+
+  .md-bar {
+    background-color: $progress-bar-complete;
+  }
+}

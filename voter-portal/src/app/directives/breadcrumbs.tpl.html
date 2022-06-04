@@ -1,0 +1,18 @@
+<div class="page-breadcrumb">
+	<h2 class="sr-only" translate>List of steps needed for voting</h2>
+	<ol class="wizard">
+		<li data-ng-class="{'current': currentStepNum == step.num, 'done': currentStepNum > step.num}" ng-repeat="step in steps">
+      <span class="sr-only">
+        <span translate>Step</span>
+        {{step.num}} 
+        <span data-ng-if="currentStepNum > step.num">{{'Step completed:' | translate}} {{step.srText | translate}}</span>
+        <span data-ng-if="currentStepNum < step.num">{{'Pending step:' | translate}} {{step.srText | translate}}</span>
+        <span data-ng-if="currentStepNum == step.num && !currentStepCompleted">{{'Current step:' | translate}} {{step.srText | translate}}</span>
+        <span data-ng-if="currentStepNum == step.num && currentStepCompleted">{{'Step completed:' | translate}} {{step.srText | translate}}</span>
+      </span>
+			<div aria-hidden="true" class="wizard-step">
+				<span aria-hidden="true" class="hidden-xs">{{step.text | translate}}</span>
+			</div>
+		</li>
+	</ol>
+</div>

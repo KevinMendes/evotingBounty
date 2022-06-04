@@ -1,0 +1,43 @@
+// tabs
+// ----------------------------------------
+
+.md-main-tabs {
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  z-index: 1;
+
+  md-tabs-wrapper {
+    background-color: $tabs-bg;
+    color: $tabs-text;
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+  }
+
+  .md-tab,
+  .md-tab md-icon, {
+    color: $tabs-text;
+  }
+
+  .md-tab {
+    &.md-active,
+    &.md-active md-icon {
+      color: $tabs-text-active;
+    }
+
+    &:focus,
+    &:hover,
+    &.md-focused,
+    &.md-focused md-icon {
+      background-color: $tabs-bg-focus;
+      color: $tabs-text-active;
+    }
+  }
+
+  md-ink-bar {
+    height: 4px;
+    color: $tabs-ink-bar;
+    background: $tabs-ink-bar;
+  }
+
+  md-icon {
+    color: $tabs-text-active;
+  }
+}

@@ -1,0 +1,53 @@
+.btn {
+  &.has-icon {
+    svg {
+      fill: @btn-default-color;
+      height: 1.313em;
+      vertical-align: text-bottom;
+    }
+
+    &.btn-primary {
+      svg {
+        fill: @btn-primary-color;
+      }
+
+      &[disabled],
+      &.disabled {
+        svg {
+          fill: @btn-primary-color-disabled;
+        }
+      }
+    }
+
+    &.btn-secondary {
+      svg {
+        fill: @btn-secondary-color;
+      }
+    }
+
+    &.btn-link,
+    &.btn-icon {
+      svg {
+        fill: @link-color;
+      }
+    }
+  }
+}
+
+.btn-link {
+  white-space: normal;
+  text-align: left;
+
+  [dir="rtl"] & {
+    text-align: right;
+  }
+}
+
+.btn-clear {
+  margin-left: auto;
+
+  [dir="rtl"] & {
+    margin-right: auto;
+    margin-left: 0;
+  }
+}

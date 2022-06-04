@@ -1,0 +1,32 @@
+.input-has-action {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  border: 1px solid @input-border;
+  background-color: @input-bg;
+  padding: 1px;
+
+  .form-control {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    border: none;
+  }
+
+  .btn {
+    height: 2.250em;
+    border: none;
+    padding: 0.313em .75em;
+    transition: opacity .2s;
+
+    &[disabled] {
+      opacity: 0;
+    }
+  }
+}

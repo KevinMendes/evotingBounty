@@ -1,0 +1,50 @@
+{
+  "name": "Test message broker",
+  "modelVersion": "7.0",
+  "authenticationproviders": [
+	{
+	  "name": "default",
+	  "type": "Plain",
+	  "secureOnlyMechanisms": "",
+	  "users": [
+		{
+		  "name": "admin",
+		  "password": "admin",
+		  "type": "managed"
+		}
+	  ]
+	}
+  ],
+  "ports": [
+	{
+	  "name": "AMQP",
+	  "port": "${qpid.amqp_port}",
+	  "protocols": [
+		"AMQP_0_9_1"
+	  ],
+	  "authenticationProvider": "default",
+	  "virtualhostaliases": [
+		{
+		  "name": "nameAlias",
+		  "type": "nameAlias"
+		},
+		{
+		  "name": "defaultAlias",
+		  "type": "defaultAlias"
+		},
+		{
+		  "name": "hostnameAlias",
+		  "type": "hostnameAlias"
+		}
+	  ]
+	}
+  ],
+  "virtualhostnodes": [
+	{
+	  "name": "cco",
+	  "type": "Memory",
+	  "defaultVirtualHostNode": "true",
+	  "virtualHostInitialConfiguration": "{\"type\": \"Memory\", \"nodeAutoCreationPolicies\": [{\"pattern\":\".*\",\"createdOnPublish\":\"true\",\"createdOnConsume\":\"true\",\"nodeType\":\"queue\",\"attributes\":{}}] }"
+	}
+  ]
+}

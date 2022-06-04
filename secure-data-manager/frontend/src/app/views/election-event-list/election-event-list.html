@@ -1,0 +1,96 @@
+<div class="datatable-controls">
+	<h2 class="sr-only" translate>Election Events</h2>
+	<div class="datatable-actions">
+		<div class="datatable-actions-main">
+			<span ng-if="isRequestCCKeysEnabled()">
+				<md-button aria-label="{{'Request CC keys' || translate}}"
+						   class="md-primary md-raised"
+						   id="request-cc-keys"
+						   ng-click="requestCCKeys()"
+						   ng-disabled="checkSelected()"
+						   title="{{'Request Control Components keys' || translate}}">
+					<md-icon aria-label="{{'Request CC keys' | translate}}" md-svg-src="assets/icons/ic_vpn_key_24px.svg"></md-icon>
+					<span class="hide-xs" translate>Request CC keys</span>
+				</md-button>
+			</span>
+			<md-button aria-label="{{'Secure' || translate}}"
+					   class="md-primary md-raised"
+					   id="Secure"
+					   ng-attr-title="{{getTextIsEESelected()}}"
+					   ng-click="secureElectionEvent()"
+					   ng-disabled="checkSelected()">
+				<md-icon aria-label="{{'Secure' | translate}}" md-svg-src="assets/icons/ic_security_24px.svg"></md-icon>
+				<span class="hide-xs" translate>Secure</span>
+			</md-button>
+			<span ng-if="importExportEnabled()">
+                <md-button
+						aria-label="{{'Export' || translate}}"
+						class="md-primary md-raised"
+						id="export"
+						ng-disabled="checkOneSelected()"
+						ov-folder-input="input-folder-export">
+                    <md-icon aria-label="{{'Export' | translate}}" md-svg-src="assets/icons/ic_file_export_24px.svg"></md-icon>
+                    <span class="hide-xs" translate>Export</span>
+                </md-button>
+                <input
+						callback="export(path, false)"
+						class="ng-hide"
+						id="input-folder-export"
+						nwdirectory
+						ov-folder-input-model
+						type="file"
+				/>
+			</span>
+		</div>
+	</div>
+</div>
+
+<div class="datatable-data">
+	<table aria-describedby="" class="table">
+		<thead>
+		<tr>
+			<th class="table-batchselector" scope="col"></th>
+			<th class="grow-2" scope="col">
+				<span class="no-wrap" title="{{'Title'|translate}}" translate>Title</span>
+			</th>
+			<th scope="col">
+				<span class="no-wrap" title="{{'Alias'|translate}}" translate>Alias</span>
+			</th>
+			<th class="grow-2" scope="col">
+				<span class="no-wrap" title="{{'Administration Board'|translate}}" translate>Administration Board</span>
+			</th>
+			<th scope="col">
+				<span class="no-wrap" title="{{'Status'|translate}}" translate>Status</span>
+			</th>
+		</tr>
+		</thead>
+		<tbody>
+		<tr data-ng-repeat="electionEvent in electionEvents.result">
+			<td class="table-batchselector">
+				<md-checkbox aria-label="{{'checkbox' | translate}}"
+							 class="md-datatable-theme md-primary"
+							 id="check_{{electionEvent.id}}"
+							 ng-change="uniqueChoice(electionEvents.result,electionEvent)"
+							 ng-model="electionEvent.chosen">
+				</md-checkbox>
+			</td>
+			<td class="grow-2">
+				<md-button class="link" ng-click="goToElectionEvent(electionEvent)" ng-hide="isNotReadyToNavigate(electionEvent)">
+					{{electionEvent.defaultTitle}}
+				</md-button>
+				<span ng-show="isNotReadyToNavigate(electionEvent)">
+                        {{electionEvent.defaultTitle}}
+                    </span>
+			</td>
+			<td>{{electionEvent.alias}}</td>
+			<td class="grow-2">{{getAdminBoardTitle(electionEvent.administrationAuthority.id)}}</td>
+			<td>
+				<progress-bar>
+					<span class="no-wrap"
+						  title="{{capitalizeFirstLetter(electionEvent.status) | translate}}">{{capitalizeFirstLetter(electionEvent.status) | translate}}</span>
+				</progress-bar>
+			</td>
+		</tr>
+		</tbody>
+	</table>
+</div>

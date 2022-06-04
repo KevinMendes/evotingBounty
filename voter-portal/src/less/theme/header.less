@@ -1,0 +1,57 @@
+// header
+// ----------------------------------------
+
+.header {
+  position: relative;
+  z-index: @zindex-header;
+  line-height: @header-height;
+  box-shadow: 0 0.188rem 0.063rem -0.125rem rgba(0, 0, 0, 0.14), 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.098), 0 0.063rem 0.313rem 0 rgba(0, 0, 0, 0.084);
+  @media (max-width: @screen-xs-max) {
+    z-index: (@zindex-header + 3);
+  }
+
+  .btn {
+    padding: 0 @padding-base-horizontal;
+    line-height: 2.750em;
+    color: @header-color;
+    background-color: transparent;
+    text-decoration: none;
+    border: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  svg {
+    fill: @header-color;
+    float: left;
+    height: 2.750em;
+    margin-right: 0.313em;
+
+  }
+
+  .btn.has-icon svg {
+    float: none;
+    margin: 0;
+    fill: @header-color;
+  }
+
+  .lang-selector {
+    display: inline-block;
+    vertical-align: middle;
+
+    option {
+      background-color: #fff;
+      color: #000;
+    }
+  }
+
+  select,
+  .btn {
+    &:focus {
+      .tab-focus(@outline-color);
+    }
+  }
+}
+

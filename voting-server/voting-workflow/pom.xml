@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>ch.post.it.evoting.votingserver</groupId>
+		<artifactId>voting-server</artifactId>
+		<version>0.14.1.0</version>
+	</parent>
+
+	<groupId>ch.post.it.evoting.votingserver.votingworkflow</groupId>
+	<artifactId>voting-workflow</artifactId>
+	<packaging>war</packaging>
+	<name>Voting Server - Voting Workflow</name>
+
+	<properties>
+		<war.filename>vw-ws-rest</war.filename>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>votingserver-logging</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+				<artifactId>commons-lib</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+				<artifactId>commons-lib-persistence</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>commons-beans</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>commons-infrastructure</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+
+	</dependencyManagement>
+
+	<dependencies>
+		<!-- VOTING SERVER COMMONS -->
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+			<artifactId>commons-infrastructure</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+			<artifactId>votingserver-logging</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+			<artifactId>commons-lib</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+			<artifactId>commons-lib-persistence</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+			<artifactId>commons-beans</artifactId>
+		</dependency>
+
+		<!-- com.fasterxml.jackson -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.commons</groupId>
+			<artifactId>commons-lang3</artifactId>
+		</dependency>
+
+		<!-- JPA Service provider -->
+		<dependency>
+			<groupId>org.hibernate</groupId>
+			<artifactId>hibernate-entitymanager</artifactId>
+		</dependency>
+
+		<!-- CSV PARSER -->
+		<dependency>
+			<groupId>com.opencsv</groupId>
+			<artifactId>opencsv</artifactId>
+		</dependency>
+
+		<!-- used for local caching of values-->
+		<dependency>
+			<groupId>com.google.guava</groupId>
+			<artifactId>guava</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+			<artifactId>commons-lib-persistence</artifactId>
+			<version>${project.version}</version>
+			<type>test-jar</type>
+			<scope>test</scope>
+		</dependency>
+		<!-- JavaEE -->
+		<dependency>
+			<groupId>org.apache.openejb</groupId>
+			<artifactId>javaee-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${war.filename}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.codehaus.cargo</groupId>
+				<artifactId>cargo-maven2-plugin</artifactId>
+				<version>1.4.6</version>
+				<configuration>
+					<container>
+						<containerId>glassfish4x</containerId>
+						<type>remote</type>
+					</container>
+					<configuration>
+						<type>runtime</type>
+						<properties>
+							<cargo.runtime.args>force=true</cargo.runtime.args>
+							<cargo.hostname>${cargo.hostname}</cargo.hostname>
+							<cargo.remote.username>${cargo.username}</cargo.remote.username>
+							<cargo.remote.password>${cargo.password}</cargo.remote.password>
+							<cargo.remote.port>${cargo.port}</cargo.remote.port>
+							<cargo.glassfish.domain.name>domain1</cargo.glassfish.domain.name>
+						</properties>
+					</configuration>
+					<deployables>
+						<deployable>
+							<groupId>${project.groupId}</groupId>
+							<artifactId>${project.artifactId}</artifactId>
+							<type>war</type>
+							<pingTimeout>120000</pingTimeout>
+						</deployable>
+					</deployables>
+				</configuration>
+				<dependencies>
+					<dependency>
+						<groupId>org.glassfish.deployment</groupId>
+						<artifactId>deployment-client</artifactId>
+						<version>3.2-b06</version>
+					</dependency>
+				</dependencies>
+			</plugin>
+		</plugins>
+	</build>
+</project>

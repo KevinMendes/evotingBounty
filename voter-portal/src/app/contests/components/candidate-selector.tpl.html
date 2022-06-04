@@ -1,0 +1,128 @@
+<!-- candidate selector -->
+
+<!--
+    The following code tries to cover all cases with the possible combinations
+    between alliance and cumuls. It needs some JS refactor and uses new values:
+
+      cumulAllowed()               -> to check if cumul is allowed for the current candidate
+      getCandidateCumul(candidate) -> the current candidate cumul value
+      candidateMaxAllowedCumul     -> the maximum cumul value for the given candidate (depends
+                                      on the max allowed cumul of the contest and the initial
+                                      cumul of the candidate)
+-->
+
+<div aria-labelledby="list_{{candidateId}}" class="candidate-selector selector-box" ng-init="candidateId = candidate.getQualifiedId()" role="group">
+
+	<div class="selector-box-info overflow-x-auto">
+
+		<div>
+			<h4 class="h3 ballot-modal-list-name" id="list_{{candidateId}}">
+				<span ng-show="!candidate.isWriteIn">{{candidate.name}}</span>
+				<span ng-show="candidate.isWriteIn" translate>Write-in Position</span>
+
+				<span class="pull-right mlm mrxl-sm fwb" ng-show="candidate.attribute3">
+          {{candidate.attribute3}}
+        </span>
+			</h4>
+			<div ng-if="candidate.bio.length">
+				<p class="fwl fsm text-muted mbn" ng-repeat="info in candidate.bio track by $index">
+					{{info}}
+				</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="selector-box-actions">
+
+		<!-- cases for the button below:
+			  1- No cumul allowed AND candidate not selected yet
+			  2- Cumul allowed AND candidate cumul has not reach the max
+			  3- Alliance allowed AND candidate has not been selected in another list
+		-->
+		<button class="btn btn-secondary btn-select has-icon"
+				data-ng-click="selectCandidate()"
+				data-ng-disabled="isSelectedOnCurrentPosition(candidate)"
+				data-ng-if="!isSelectedOnCurrentPosition(candidate) && ((!isCandidateSelected(candidate) && !isAliasSelected(candidate)) || (cumulAllowed() && getCandidateCumul(candidate) < candidateMaxAllowedCumul()))"
+				id="choose_candidate_btn_choose_candidate_{{candidateId}}"
+				type="button">
+
+			<!-- subcases:
+				  1- No cumul allowed AND candidate not selected yet
+				  2- Cumul allowed AND candidate cumul has not reach the max
+					2.1- Candidate has no cumul yet
+				  3- Alliance allowed AND candidate has not been selected in another list
+			-->
+			<span ng-if="!cumulAllowed() || (getCandidateCumul(candidate) == 0) || isSelectedOnCurrentPosition(candidate)">
+        <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+        </svg>
+        <span aria-hidden="true" translate>Select</span>
+        <span class="sr-only">
+          <span translate>Select candidate:</span>
+          {{candidate.name}}
+        </span>
+      </span>
+
+			<!-- subcases:
+				  2- Cumul allowed AND candidate cumul has not reach the max
+					2.2- Candidate has some cumul
+			-->
+			<span ng-if="!candidate.isWriteIn && getCandidateCumul(candidate) > 0 && getCandidateCumul(candidate) < candidateMaxAllowedCumul() && !isSelectedOnCurrentPosition(candidate)">
+        <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/>
+        </svg>
+        <span aria-hidden="true" translate>Cumulate</span>
+        <span class="sr-only">
+          <span translate>Cumulate candidate:</span>
+          {{candidate.name}}
+        </span>
+      </span>
+
+		</button>
+
+		<!-- cases for the div below:
+			  1- No cumul allowed AND candidate already selected
+			  2- Cumul allowed AND candidate cumul has reach the max
+		-->
+		<div class="btn btn-secondary btn-select has-no-icon btn-disabled"
+			 data-ng-if="isSelectedOnCurrentPosition(candidate) || (!cumulAllowed() && isCandidateSelected(candidate)) || (getCandidateCumul(candidate) == candidateMaxAllowedCumul())">
+			<em translate>Selected</em>
+		</div>
+
+		<!-- cases for the div below:
+			  1- Alliance allowed AND candidate already selected in another list
+		-->
+		<div class="btn btn-secondary btn-select has-no-icon btn-disabled" data-ng-if="isAliasSelected(candidate)"><span translate>Selected in another list</span>
+		</div>
+
+		<!-- show only if the candidate has some cumul -->
+		<div class="selector-box-message" ng-if="!candidate.isBlank && (cumulAllowed() && getCandidateCumul(candidate) > 0)">
+
+			<!-- subcase: The candidate cumul has not reach the max -->
+			<p class="text-muted" ng-if="(getCandidateCumul(candidate) < candidateMaxAllowedCumul()) && !isSelectedOnCurrentPosition(candidate)"><em
+					translate>You already selected this candidate</em></p>
+
+			<!-- subcase: The candidate has been already selected on the current position -->
+			<p class="text-muted" ng-if="(getCandidateCumul(candidate) < candidateMaxAllowedCumul()) && isSelectedOnCurrentPosition(candidate)"><em
+					translate>You already selected this candidate on the current position</em></p>
+
+			<!-- subcase: The candidate cumul has reach the max -->
+			<p class="text-muted" ng-if="(getCandidateCumul(candidate) == candidateMaxAllowedCumul())"><em><span translate>You reached the maximum cumulate allowed</span>
+				({{candidateMaxAllowedCumul()}})</em></p>
+
+		</div>
+
+	</div>
+
+	<!-- show only if the candidate has details -->
+	<div aria-hidden="true" class="selector-box-details" id="choose_candidate_card_candidate_{{candidateId}}" ng-if="candidate.bio.length">
+		<div class="more-info-card">
+			<div>
+				<p class="more-info-card-block" ng-repeat="info in candidate.bio track by $index">
+					{{info}}
+				</p>
+			</div>
+		</div>
+	</div>
+
+</div>

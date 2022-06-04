@@ -1,0 +1,67 @@
+{
+  "configProperties": {
+    "electioneventca": {
+      "name": "electioneventca",
+      "alias": {
+        "privateKey": "privatekey"
+      },
+      "propertiesFile": "certificateProperties/electionCAX509Certificate.properties",
+      "parentName": null,
+      "credentialType": "ROOT"
+    },
+    "servicesca": {
+      "name": "servicesca",
+      "alias": {
+        "privateKey": "privatekey"
+      },
+      "propertiesFile": "certificateProperties/servicesCAX509Certificate.properties",
+      "parentName": "electioneventca",
+      "credentialType": "INTERMEDIATE"
+    },
+    "credentialsca": {
+      "name": "credentialsca",
+      "alias": {
+        "privateKey": "privatekey"
+      },
+      "propertiesFile": "certificateProperties/credentialsCAX509Certificate.properties",
+      "parentName": "electioneventca",
+      "credentialType": "INTERMEDIATE"
+    }
+  },
+  "verificationCard": {
+    "name": "verificationCard",
+    "alias": {
+      "privateKey": "elgamalprivatekey"
+    },
+    "propertiesFile": null,
+    "parentName": null,
+    "credentialType": null
+  },
+  "verificationCardSet": {
+    "name": "verificationCardSet",
+    "alias": {
+      "privateKey": "elgamalprivatekey"
+    },
+    "propertiesFile": "certificateProperties/verificationCardSetX509Certificate.properties",
+    "parentName": "servicesca",
+    "credentialType": "SIGN"
+  },
+  "credentialAuth": {
+    "name": "credentialAuth",
+    "alias": {
+      "privateKey": "auth_sign"
+    },
+    "propertiesFile": "certificateProperties/credentialAuthX509Certificate.properties",
+    "parentName": "credentialsca",
+    "credentialType": "SIGN"
+  },
+  "votingCardSet": {
+    "name": "votingCardSet",
+    "alias": {
+      "secretKey": "codessk"
+    },
+    "propertiesFile": "certificateProperties/votingCardSetX509Certificate.properties",
+    "parentName": "servicesca",
+    "credentialType": "SIGN"
+  }
+}

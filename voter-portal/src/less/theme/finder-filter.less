@@ -1,0 +1,47 @@
+.finder-filter {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: auto;
+  margin: 0 -0.5em;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  @media (min-width: @screen-sm) {
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+  }
+
+  > * {
+    max-width: 100%;
+  }
+
+  .finder-filter-list {
+    width: 100%;
+    padding: 0 .5em;
+    @media (min-width: @screen-sm) {
+      max-width: 60%;
+    }
+  }
+
+  .finder-filter-selected {
+    padding: 0 .5em;
+    position: relative;
+    width: 100%;
+
+    .checkbox {
+      label {
+        position: absolute;
+        left: 0px;
+        padding-left: 30px;
+      }
+    }
+  }
+}

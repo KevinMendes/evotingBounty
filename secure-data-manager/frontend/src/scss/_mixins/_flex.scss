@@ -1,0 +1,81 @@
+// mixins flex
+// ----------------------------------------
+
+@mixin display-flex() {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+@mixin display-inline-flex() {
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+}
+
+@mixin flex-direction($direction) {
+  -webkit-flex-direction: $direction;
+  -ms-flex-direction: $direction;
+  flex-direction: $direction;
+}
+
+@mixin flex-wrap($wrap) {
+  -webkit-flex-wrap: $wrap;
+  -ms-flex-wrap: $wrap;
+  flex-wrap: $wrap;
+}
+
+@mixin justify-content($justify) {
+  -webkit-justify-content: $justify;
+  @if $justify == flex-start {
+    -ms-flex-pack: start;
+  } @else if $justify == flex-end {
+    -ms-flex-pack: end;
+  } @else if $justify == space-around {
+    -ms-flex-pack: distribute;
+  } @else if $justify == space-between {
+    -ms-flex-pack: justify;
+  } @else {
+    -ms-flex-pack: $justify;
+  }
+  justify-content: $justify;
+}
+
+@mixin align-items($align) {
+  -webkit-align-items: $align;
+  @if $align == flex-start {
+    -ms-flex-align: start;
+  } @else if $align == flex-end {
+    -ms-flex-align: end;
+  } @else {
+    -ms-flex-align: $align;
+  }
+  align-items: $align;
+}
+
+@mixin align-content($align) {
+  -webkit-align-content: $align;
+  align-content: $align;
+}
+
+@mixin order($order) {
+  -webkit-order: $order;
+  -ms-flex-order: $order;
+  order: $order;
+}
+
+@mixin flex($flex) {
+  -webkit-flex: $flex;
+  -ms-flex: $flex;
+  flex: $flex;
+}
+
+@mixin flex-grow($number) {
+  -webkit-flex-grow: $number;
+  flex-grow: $number;
+}
+
+@mixin flex-basis($number) {
+  -webkit-flex-basis: $number;
+  flex-basis: $number;
+}

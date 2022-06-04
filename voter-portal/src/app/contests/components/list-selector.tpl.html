@@ -1,0 +1,73 @@
+<!-- list selector -->
+
+<div aria-labelledby="list_{{listId}}" class="list-selector selector-box" data-ng-if="!list.isBlank" ng-init="listId = list.getQualifiedId()"
+	 role="group">
+
+	<div class="selector-box-info overflow-x-auto">
+
+		<div>
+			<h4 class="h3 ballot-modal-list-name" id="list_{{listId}}">
+				{{list.name}}
+			</h4>
+			<p class="mbn text-muted" ng-repeat="description in list.description">{{description}}</p>
+		</div>
+
+		<div class="selector-box-details-btn">
+			<button aria-controls="modal_card_party_{{listId}}"
+					aria-expanded="false"
+					class="btn btn-link has-icon phn"
+					data-animate-icon="ci-rotate-180"
+					data-toggle-icon="modal_collapse1Icon_{{listId}}"
+					data-togglerone-class="open"
+					data-togglerone-extended="modal_card_party_{{listId}}"
+					id="modal_btn_party_more_info_{{listId}}"
+					type="button">
+				<svg aria-hidden="true" focusable="false" height="24" id="modal_collapse1Icon_{{listId}}" viewBox="0 0 24 24"
+					 width="24" xmlns="http://www.w3.org/2000/svg">
+					<path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+				</svg>
+				<span aria-hidden="true" translate>Details</span>
+				<span class="sr-only">
+          <span translate>Details of the list:</span>
+          {{list.name}}
+        </span>
+			</button>
+		</div>
+
+	</div>
+
+	<div class="selector-box-actions">
+		<button class="btn btn-secondary btn-select has-icon"
+				data-ng-click="selectParty();"
+				id="modal_btn_choose_party_{{listId}}"
+				type="button">
+			<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+				<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+			</svg>
+			<span aria-hidden="true" translate>Select</span>
+			<span class="sr-only">
+        <span translate>Select list:</span>
+        {{list.name}}
+      </span>
+		</button>
+	</div>
+
+	<div aria-hidden="true" class="selector-box-details" id="modal_card_party_{{listId}}">
+		<div class="more-info-card">
+			<div>
+				<ul class="list-unstyled mbn">
+					<li class="more-info-card-block" data-ng-repeat="candidate in list.candidatesSummary track by $index">
+						{{candidate}}
+					</li>
+					<li class="more-info-card-block" data-ng-if="list.details.listType_apparentment">
+						{{list.details.listType_apparentment}}
+					</li>
+					<li class="more-info-card-block mbn" data-ng-if="list.details.listType_sousApparentment">
+						{{list.details.listType_sousApparentment}}
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+</div>

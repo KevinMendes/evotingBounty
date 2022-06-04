@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>ch.post.it.evoting.votingserver</groupId>
+		<artifactId>voting-server</artifactId>
+		<version>0.14.1.0</version>
+	</parent>
+
+	<groupId>ch.post.it.evoting.votingserver.extendedauthentication</groupId>
+	<artifactId>extended-authentication</artifactId>
+	<packaging>pom</packaging>
+	<name>Extended Authentication</name>
+
+	<modules>
+		<module>extended-authentication-services</module>
+		<module>extended-authentication-main</module>
+	</modules>
+
+	<properties>
+		<org.apache.geronimo.specs.version>1.1</org.apache.geronimo.specs.version>
+		<geronimo-osgi-locator.version>1.1</geronimo-osgi-locator.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+				<artifactId>commons-lib</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>votingserver-logging</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+				<artifactId>commons-lib-persistence</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+				<artifactId>commons-lib-persistence</artifactId>
+				<version>${project.version}</version>
+				<type>test-jar</type>
+				<scope>test</scope>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>commons-sign</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>commons-infrastructure</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>commons-beans</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>org.apache.geronimo.specs</groupId>
+				<artifactId>geronimo-osgi-locator</artifactId>
+				<version>${org.apache.geronimo.specs.version}</version>
+				<scope>test</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	<dependencies>
+		<!-- JavaEE -->
+		<dependency>
+			<groupId>org.apache.openejb</groupId>
+			<artifactId>javaee-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Logging -->
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+
+		<!-- jackson for json processing (this is used for annotations in DTOs) -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+	</dependencies>
+</project>

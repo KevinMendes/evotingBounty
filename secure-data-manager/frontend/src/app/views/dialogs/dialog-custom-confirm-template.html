@@ -1,0 +1,19 @@
+<md-dialog>
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2 class="flex">{{title}}</h2>
+            <md-button aria-label="{{'Close dialog' | translate}}" class="md-icon-button" ng-click="cancel()">
+                <md-icon md-svg-src="assets/icons/ic_close_24px.svg"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-dialog-content class="md-dialog-content" role="document" tabindex="-1">
+        <div class="md-dialog-content-body">
+            {{content}}
+        </div>
+    </md-dialog-content>
+    <md-dialog-actions>
+        <md-button class="md-primary" ng-click="cancel()" type="button"><span translate>Close</span></md-button>
+        <md-button class="md-primary md-raised" ng-click="hide()" type="button">{{ok}}</md-button>
+    </md-dialog-actions>
+</md-dialog>

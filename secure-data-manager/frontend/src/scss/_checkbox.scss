@@ -1,0 +1,30 @@
+// checkbox
+// ----------------------------------------
+
+md-checkbox {
+  &:not([disabled]) {
+    &.md-primary {
+      &:not(.md-checked) {
+        .md-icon {
+          border-color: $checkbox-border-color;
+        }
+      }
+
+      &.md-checked {
+        .md-icon {
+          background-color: $checkbox-primary;
+
+          &:after {
+            border-color: $checkbox-primary-contrast;
+          }
+        }
+      }
+    }
+  }
+
+  &[disabled] {
+    .md-icon {
+      border-color: $checkbox-disabled-border;
+    }
+  }
+}

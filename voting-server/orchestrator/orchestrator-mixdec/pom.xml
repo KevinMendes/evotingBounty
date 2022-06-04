@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>ch.post.it.evoting.votingserver.orchestrator</groupId>
+		<artifactId>orchestrator</artifactId>
+		<version>0.14.1.0</version>
+	</parent>
+
+	<artifactId>orchestrator-mixdec</artifactId>
+	<packaging>jar</packaging>
+	<name>Orchestrator - Mixing and Decrypting Services</name>
+
+	<dependencies>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.orchestrator</groupId>
+			<artifactId>orchestrator-commons</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+			<artifactId>commons-lib-persistence</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+			<artifactId>commons-beans</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+			<artifactId>commons-infrastructure</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+			<artifactId>commons-messaging</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.squareup.retrofit2</groupId>
+			<artifactId>retrofit</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.slf4j</groupId>
+			<artifactId>slf4j-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.openejb</groupId>
+			<artifactId>javaee-api</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+			<artifactId>commons-lib</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.cryptolib</groupId>
+			<artifactId>cryptolib</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.squareup.okhttp3</groupId>
+			<artifactId>okhttp</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.github.stefanbirkner</groupId>
+			<artifactId>system-rules</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.cryptoprimitives.domain</groupId>
+			<artifactId>crypto-primitives-domain</artifactId>
+		</dependency>
+	</dependencies>
+</project>

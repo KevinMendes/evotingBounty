@@ -1,0 +1,5 @@
+<div class="options" data-ng-form="electionForm_{{contest.id}}">
+	<div class="ballot-options" data-ng-class="{'has-error': question.error}" data-ng-repeat="question in contest.questions">
+		<div option="question" option-selector></div>
+	</div>
+</div>

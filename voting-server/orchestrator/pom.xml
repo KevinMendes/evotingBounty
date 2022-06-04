@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>ch.post.it.evoting.votingserver</groupId>
+		<artifactId>voting-server</artifactId>
+		<version>0.14.1.0</version>
+	</parent>
+
+	<groupId>ch.post.it.evoting.votingserver.orchestrator</groupId>
+	<artifactId>orchestrator</artifactId>
+	<packaging>pom</packaging>
+	<name>Orchestrator</name>
+
+	<modules>
+		<module>orchestrator-commons</module>
+		<module>orchestrator-choice-codes</module>
+		<module>orchestrator-mixdec</module>
+		<module>orchestrator-main</module>
+	</modules>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>votingserver-logging</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+				<artifactId>commons-lib-persistence</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>commons-infrastructure</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>commons-beans</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>commons-messaging</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+				<artifactId>commons-lib</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+
+			<dependency>
+				<groupId>ch.post.it.evoting.cryptolib</groupId>
+				<artifactId>cryptolib</artifactId>
+				<version>${cryptolib.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+</project>

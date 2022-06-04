@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+		<artifactId>commons</artifactId>
+		<version>0.14.1.0</version>
+	</parent>
+
+	<artifactId>arquillian-dependencies</artifactId>
+	<name>Arquillian dependencies</name>
+
+	<properties>
+		<arquillian-tomee.version>1.7.5</arquillian-tomee.version>
+		<arquillian.version>1.5.0.Final</arquillian.version>
+		<arquillian-suite.version>1.1.4</arquillian-suite.version>
+		<arquillian-extension.version>1.0.0.Alpha1</arquillian-extension.version>
+		<arquillian-resteasy-jackson2-provider.version>3.0.19.Final</arquillian-resteasy-jackson2-provider.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>org.jboss.arquillian</groupId>
+				<artifactId>arquillian-bom</artifactId>
+				<version>${arquillian.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.jboss.arquillian.junit</groupId>
+			<artifactId>arquillian-junit-container</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.test-framework.providers</groupId>
+			<artifactId>jersey-test-framework-provider-grizzly2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.openejb</groupId>
+			<artifactId>arquillian-tomee-embedded</artifactId>
+			<version>${arquillian-tomee.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.openejb</groupId>
+			<artifactId>arquillian-tomee-common</artifactId>
+			<version>${arquillian-tomee.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.apache.openejb</groupId>
+			<artifactId>tomee-jaxrs</artifactId>
+			<version>${arquillian-tomee.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.shrinkwrap.resolver</groupId>
+			<artifactId>shrinkwrap-resolver-impl-maven</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>com.google.guava</groupId>
+					<artifactId>guava</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>org.eu.ingwar.tools</groupId>
+			<artifactId>arquillian-suite-extension</artifactId>
+			<version>${arquillian-suite.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.arquillian.extension</groupId>
+			<artifactId>arquillian-rest-client-api</artifactId>
+			<version>${arquillian-extension.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.arquillian.extension</groupId>
+			<artifactId>arquillian-rest-client-impl-3x</artifactId>
+			<version>${arquillian-extension.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.resteasy</groupId>
+			<artifactId>resteasy-jackson2-provider</artifactId>
+			<version>${arquillian-resteasy-jackson2-provider.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.jboss.arquillian.protocol</groupId>
+			<artifactId>arquillian-protocol-servlet</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+</project>

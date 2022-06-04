@@ -1,0 +1,60 @@
+{
+  "global": {
+	"node_modules": "./node_modules",
+	"src": "./src",
+	"dist": "./dist",
+	"test": "./test",
+	"vendors": "./src/vendors",
+	"common": "./src/common",
+	  "ovApi": "./ov-api-lib"
+  },
+  "js": {
+	"src": "./src/app",
+	"entryFile": "./src/app/app.js",
+	"vendorsEntryFile": "./src/app/vendors.js",
+	"dist": "./dist",
+	"bundleFile": "voter-portal.js",
+	"vendorsBundleFile": "voter-portal-vendors.js"
+  },
+  "less": {
+	"src": "./src/less",
+	"entryFile": "soocss.less",
+	"dist": "./dist/css",
+	"bundleFile": "voter-portal.css"
+  },
+  "css": {
+	"src": "./src/css",
+	"dist": "./dist/css"
+  },
+  "assets": {
+	"src": "./src/assets",
+	"dist": "./dist/assets"
+  },
+  "views": {
+	"baseDir": "src/app",
+	"src": "./src/app",
+	"dist": "./dist/",
+	"bundleFile": "voter-portal-templates.js",
+	"moduleName": "app.template",
+	"prefix": ""
+  },
+  "index": {
+	"src": "./src/index.html",
+	"dist": "./dist/index.html"
+  },
+  "i18n": {
+	"src": "./src/i18n",
+	"dist": "./dist/assets/lang"
+  },
+  "unitTests": {
+	"baseDir": "./tests/unit",
+	"angularMocks": "./node_modules/angular-mocks/angular-mocks.js"
+  },
+  "e2eTests": {
+	"baseDir": "./tests/e2e"
+  },
+  "reports": {
+	"unit": "./reports/unit",
+	"e2e": "./reports/e2e"
+  }
+}

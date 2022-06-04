@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>ch.post.it.evoting.votingserver</groupId>
+		<artifactId>voting-server</artifactId>
+		<version>0.14.1.0</version>
+	</parent>
+
+	<groupId>ch.post.it.evoting.votingserver.apigateway</groupId>
+	<artifactId>api-gateway</artifactId>
+	<packaging>war</packaging>
+	<name>Voting Server API Gateway</name>
+
+	<properties>
+		<maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
+		<org.apache.xmlgraphics.version>1.14</org.apache.xmlgraphics.version>
+		<owasp-json-sanitizer.version>1.2.3</owasp-json-sanitizer.version>
+		<war.filename>ag-ws-rest</war.filename>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+				<artifactId>commons-lib</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>commons-beans</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>commons-infrastructure</artifactId>
+				<version>${project.version}</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+			<artifactId>commons-infrastructure</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+			<artifactId>commons-lib</artifactId>
+			<exclusions>
+				<exclusion>
+					<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+					<artifactId>commons-lib-persistence</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+			<artifactId>commons-beans</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+		</dependency>
+
+		<!-- com.fasterxml.jackson -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.hamcrest</groupId>
+			<artifactId>hamcrest</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.test-framework</groupId>
+			<artifactId>jersey-test-framework-core</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.test-framework.providers</groupId>
+			<artifactId>jersey-test-framework-provider-grizzly2</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-jackson</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.inject</groupId>
+			<artifactId>jersey-hk2</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>javax.ws.rs-api</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.stefanbirkner</groupId>
+			<artifactId>system-rules</artifactId>
+			<scope>test</scope>
+		</dependency>
+
+		<!-- JavaEE  -->
+		<dependency>
+			<groupId>org.apache.openejb</groupId>
+			<artifactId>javaee-api</artifactId>
+			<scope>provided</scope>
+		</dependency>
+
+		<!-- Bouncy Castle -->
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15on</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcpkix-jdk15on</artifactId>
+		</dependency>
+
+		<!-- jackson for json processing (this is used for annotations in DTOs) -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-annotations</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-databind</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.xmlgraphics</groupId>
+			<artifactId>batik-css</artifactId>
+			<version>${org.apache.xmlgraphics.version}</version>
+		</dependency>
+
+		<!-- Validation -->
+		<dependency>
+			<groupId>org.owasp.esapi</groupId>
+			<artifactId>esapi</artifactId>
+		</dependency>
+
+		<dependency>
+			<groupId>org.jsoup</groupId>
+			<artifactId>jsoup</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.mikesamuel</groupId>
+			<artifactId>json-sanitizer</artifactId>
+			<version>${owasp-json-sanitizer.version}</version>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${war.filename}</finalName>
+	</build>
+
+</project>

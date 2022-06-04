@@ -1,0 +1,64 @@
+<md-dialog>
+    <form>
+        <md-toolbar>
+            <div class="md-toolbar-tools">
+                <h2 class="flex"><span translate>Export Election Event</span></h2>
+                <md-button aria-label="{{'Close dialog'|translate}}" class="md-icon-button" ng-click="exportCancel()">
+                    <md-icon md-svg-src="assets/icons/ic_close_24px.svg"></md-icon>
+                </md-button>
+            </div>
+        </md-toolbar>
+        <md-dialog-content class="md-dialog-content" role="document" tabindex="-1">
+            <div class="md-dialog-content-body">
+
+                <p class="alert alert-error" ng-if="errorInKeystore">
+                    <md-icon md-svg-src="assets/icons/ic_error_24px.svg"></md-icon>
+                    <span translate>The password for the keystore is not correct. Try again.</span>
+                </p>
+                <ul>
+                    <li>
+                        <div class="alert alert-error" ng-if="exportError">
+                            <p translate>Please select at least one item to export.</p>
+                        </div>
+                        <p translate>Select items to export</p>
+                        <div>
+                            <md-checkbox aria-label="{{'Electoral Event' | translate}}"
+                                         class="md-datatable-theme md-primary"
+                                         id="include_electoral_event"
+                                         ng-model="includeElectoralEvent">
+                                <span translate>Electoral Event data (and its related Administration Board)</span>
+                            </md-checkbox>
+                        </div>
+                        <div>
+                            <md-checkbox aria-label="{{'Voting Cards' | translate}}"
+                                         class="md-datatable-theme md-primary"
+                                         id="include_voting_cards"
+                                         ng-model="includeVotingCards">
+                                <span translate>Voting Cards</span>
+                            </md-checkbox>
+                        </div>
+                        <div>
+                            <md-checkbox aria-label="{{'Customer specific data' | translate}}"
+                                         class="md-datatable-theme md-primary"
+                                         id="include_customer_specific"
+                                         ng-model="includeCustomerSpecific">
+                                <span translate>Customer specific data</span>
+                            </md-checkbox>
+                        </div>
+                    </li>
+                    <li>
+                        <p translate>Please enter your password</p>
+                        <md-input-container class="mbn">
+                            <label translate>Password</label>
+                            <input ng-model="password" type="password">
+                        </md-input-container>
+                    </li>
+                </ul>
+            </div>
+        </md-dialog-content>
+        <md-dialog-actions>
+            <md-button class="md-primary" ng-click="exportCancel()" type="button"><span translate>Cancel</span></md-button>
+            <md-button class="md-primary md-raised" ng-click="exportDoExport()" type="button"><span translate>Export</span></md-button>
+        </md-dialog-actions>
+    </form>
+</md-dialog>

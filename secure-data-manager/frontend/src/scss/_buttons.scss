@@ -1,0 +1,67 @@
+// buttons
+// ----------------------------------------
+
+.md-button {
+  padding: 0 1em;
+
+  &:not([disabled]) {
+    &.md-focused {
+      background-color: $button-focused-bg;
+    }
+  }
+
+  &[disabled],
+  &.md-raised[disabled],
+  &.md-fab[disabled],
+  &.md-accent[disabled],
+  &.md-warn[disabled] {
+    background-color: $button-disabled-bg;
+    color: $button-disabled-text;
+    cursor: default;
+
+    md-icon {
+      color: $button-disabled-text;
+    }
+  }
+}
+
+main {
+  .md-button:not([disabled]) {
+    &.md-primary {
+      &.md-raised,
+      &.md-fab {
+        color: $button-primary-contrast;
+        background-color: $button-primary;
+
+        &:hover,
+        &:focus {
+          background-color: $button-primary-hover;
+
+          md-icon {
+            color: $button-primary-contrast;
+          }
+        }
+
+        md-icon {
+          color: $button-primary-contrast;
+        }
+      }
+    }
+
+    &.link {
+      min-width: 0;
+      min-height: 0;
+      line-height: inherit;
+      margin: 0;
+      padding-right: 0;
+      padding-left: 0;
+      text-transform: none;
+      text-decoration: underline;
+      color: $color-interactive;
+
+      md-icon {
+        color: $color-interactive;
+      }
+    }
+  }
+}

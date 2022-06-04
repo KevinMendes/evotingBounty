@@ -1,0 +1,180 @@
+<tab-bar class="filter-status" filter-active="filterActive" filter-counter="statusCount" filter-tabs="filterTabs"
+         on-tab-selected="onTabSelected"></tab-bar>
+
+<div class="datatable-controls">
+    <h2 class="sr-only" translate>Ballot Boxes</h2>
+    <div class="pbm" ng-if="batchesTotals(['decryption']).length > 0">
+        <div class="status-box">
+            <h3 class="md-title" translate>Ongoing processes</h3>
+            <div class="status-row" ng-repeat="batchesTotal in batchesTotals(['decryption'])">
+                <div class="status-batch-title">
+                    <em class="truncate" ng-if="batchesTotal.type == 'decryption'" title="{{'Decrypting' | translate}}" translate>Decrypting</em>
+                    <span ng-if="batches(batchesTotal.type).length > 1">&nbsp;({{batchesTotal.processed}}/{{batchesTotal.total}})</span>
+                    <span>:</span>
+                </div>
+                <div class="status-batches">
+                    <div class="status-batch-item" ng-repeat="batch in batches(batchesTotal.type)">
+                        <div>({{batch.processedItems}}/{{batch.totalItems}})</div>
+                        <md-progress-linear md-mode="determinate" value="{{batch.completedPct}}"></md-progress-linear>
+                        <em class="status-ongoing-progress-time truncate" md-caption title="{{batch.remainingMS | elapsed}}">{{batch.remainingMS |
+                            elapsed}}</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="datatable-actions">
+        <div class="datatable-actions-main">
+            <md-button aria-label="{{'Sign' | translate}}"
+                       class="md-primary md-raised"
+                       id="sign"
+                       ng-attr-title="{{getTextByBallotBoxSelected()}}"
+                       ng-click="sign()"
+                       ng-disabled="isThereNoBallotBoxSelected()"
+                       ng-if="tableFilter === 'READY'">
+                <md-icon aria-label="{{'Sign' | translate}}" md-svg-src="assets/icons/ic_vpn_key_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Sign</span>
+            </md-button>
+            <md-button aria-label="{{'Mix' | translate}}"
+                       class="md-primary md-raised"
+                       id="Mix"
+                       ng-attr-title="{{getTextByBallotBoxSelected()}}"
+                       ng-click="confirmMixing($event)"
+                       ng-disabled="isThereNoBallotBoxSelected() || mixingOnGoing"
+                       ng-if="tableFilter === 'SIGNED'">
+                <md-icon aria-label="{{'Mix' | translate}}" md-svg-src="assets/icons/ic_shuffle_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Mix</span>
+            </md-button>
+            <md-button aria-label="{{'Download' | translate}}"
+                       class="md-primary md-raised"
+                       id="Download"
+                       ng-attr-title="{{getTextByBallotBoxSelected()}}"
+                       ng-click="downloadBallotBox()"
+                       ng-disabled="isThereNoBallotBoxSelected()"
+                       ng-if="tableFilter === 'MIXED'">
+                <md-icon aria-label="{{'Download' | translate}}" md-svg-src="assets/icons/ic_file_download_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Download</span>
+            </md-button>
+            <md-button aria-label="{{'Decrypt' || translate}}"
+                       class="md-primary md-raised"
+                       id="Decrypt"
+                       ng-attr-title="{{getTextByBallotBoxSelected()}}"
+                       ng-click="decrypt()"
+                       ng-disabled="isThereNoBallotBoxSelected()"
+                       ng-if="tableFilter === 'BB_DOWNLOADED'">
+                <md-icon aria-label="{{'Decrypt' | translate}}" md-svg-src="assets/icons/ic_lock_open_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Decrypt</span>
+            </md-button>
+            <md-button aria-label="{{'Custom files' || translate}}"
+                       class="md-primary md-raised"
+                       id="generate_post-voting_outputs"
+                       ng-attr-title="{{getTextByBallotBoxSelected()}}"
+                       ng-click="generatePostVotingOutputs()"
+                       ng-disabled="isThereNoBBSelectedWithAppropiateStatus()"
+                       ng-if="generatePostVotingOutputsEnabled() && tableFilter === 'DECRYPTED'">
+                <md-icon aria-label="{{'Custom files' | translate}}" md-svg-src="assets/icons/ic_file_download_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Custom files</span>
+            </md-button>
+        </div>
+        <div class="datatable-actions-auxiliary mbs">
+            <div class="layout-row layout-align-start-center">
+                <span class="md-caption hide-xs" translate>Ballot Boxes type:</span>
+                <tab-bar class="filter-test" filter-active="filterActiveTest" filter-counter="typeCount" filter-tabs="filterTestTabs"
+                         on-tab-selected="onTestSelected"></tab-bar>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="datatable-data">
+    <table class="table" aria-describedby="">
+        <thead>
+        <tr>
+            <td class="table-batchselector">
+                <md-checkbox aria-label="{{'Checkbox'|translate}}" class="md-datatable-theme md-primary" data-ng-model="selectAll"
+                             ng-change="onSelectAll(selectAll)" ng-disabled="filteredRows.length === 0"></md-checkbox>
+            </td>
+            <th class="grow-2" scope="col">
+                <span class="no-wrap" title="{{'Title'|translate}}" translate>Title</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Alias'|translate}}" translate>Alias</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Ballot'|translate}}" translate>Ballot</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Next step'|translate}}" translate>Next step</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Details'|translate}}" translate>Details</span>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-ng-repeat="ballotBox in ballotBoxes.result | filter: { status: tableFilter, test: tableFilterTest } as filteredRows">
+            <td class="table-batchselector">
+                <md-checkbox aria-label="{{'Select' | translate}}" class="md-datatable-theme md-primary" ng-change="updateSelectAll(ballotBox.selected)"
+                             ng-model="ballotBox.selected"></md-checkbox>
+            </td>
+            <td class="grow-2">{{ballotBox.defaultTitle}}</td>
+            <td>{{ballotBox.alias}}</td>
+            <td>{{ballotBox.ballotAlias}}</td>
+            <td>
+                <span ng-if="ballotBox.status=='LOCKED'" translate>Pending to generate voting card sets</span>
+                <span ng-if="ballotBox.status=='READY'" translate>To sign</span>
+                <span ng-if="ballotBox.status=='SIGNED' && getMixingStatus(ballotBox.id) !== 'PROCESSING'" translate>To mix</span>
+                <span ng-if="ballotBox.status=='SIGNED' && getMixingStatus(ballotBox.id) === 'PROCESSING'" translate>To sync</span>
+                <span ng-if="ballotBox.status=='MIXED'" translate>To download</span>
+                <span ng-if="ballotBox.status=='BB_DOWNLOADED'" translate>To decrypt</span>
+                <span ng-if="ballotBox.status=='DECRYPTED'">Done</span>
+            </td>
+            <td>
+                <div class="no-wrap" title="{{ballotBox.details | translate}}">{{ballotBox.details | translate}}</div>
+                <div data-ng-if="ballotBox.status=='SIGNED' && getMixingStatus(ballotBox.id) !== ''">
+                    <span>{{'Mixing ' + getMixingStatus(ballotBox.id) | translate}}{{getMixingErrorMessage(ballotBox.id)}}</span>
+                </div>
+                <!-- if no ongoing process -->
+                <div data-ng-if="!progress(ballotBox.id).processing">
+                    <div data-ng-if="ballotBox.status=='BB_DOWNLOADED'">
+                        <div data-ng-if="progress(ballotBox.id).itemCount">
+                            <span class="text-muted no-wrap" title="{{'Succesful votes:'|translate}}" translate>Succesful votes:</span>
+                            <span>{{progress(ballotBox.id).itemCount}}</span>
+                        </div>
+                        <div data-ng-if="progress(ballotBox.id).itemCount2">
+                            <span class="text-muted no-wrap" title="{{'Failed votes:'|translate}}" translate>Failed votes:</span>
+                            <span>{{progress(ballotBox.id).itemCount2}}</span>
+                        </div>
+                        <div data-ng-if="progress(ballotBox.id).errorCount">
+                            <span class="text-muted no-wrap text-danger" title="{{'Errors:'|translate}}" translate>Errors:</span>
+                            <span>{{progress(ballotBox.id).errorCount}}</span>
+                        </div>
+                    </div>
+                    <div data-ng-if="ballotBox.status=='DECRYPTED'">
+                        <div data-ng-if="progress(ballotBox.id).itemCount">
+                            <span class="text-muted no-wrap" title="{{'Auditable votes:'|translate}}" translate>Auditable votes:</span>
+                            <span>{{progress(ballotBox.id).itemCount}}</span>
+                        </div>
+                        <div data-ng-if="progress(ballotBox.id).itemCount2">
+                            <span class="text-muted no-wrap" title="{{'Ballots decrypted:'|translate}}" translate>Ballots decrypted:</span>
+                            <span>{{progress(ballotBox.id).itemCount2}}</span>
+                        </div>
+                        <div data-ng-if="progress(ballotBox.id).errorCount">
+                            <span class="text-muted no-wrap text-danger" title="{{'Errors:'|translate}}" translate>Errors:</span>
+                            <span>{{progress(ballotBox.id).errorCount}}</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- if ongoing process -->
+                <div data-ng-if="progress(ballotBox.id).processing && progress(ballotBox.id).eta>0">
+                    <span class="no-wrap" title="{{'Estimated time:'|translate}}" translate>Estimated time:</span>
+                    <span class="no-wrap" title="{{ progress(ballotBox.id).eta | elapsed }}">{{ progress(ballotBox.id).eta | elapsed }}</span>
+                </div>
+                <div data-ng-if="progress(ballotBox.id).processing && progress(ballotBox.id).eta<0">
+                    <span class="no-wrap" title="{{'Estimating time'|translate}}" translate>Estimating time</span>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

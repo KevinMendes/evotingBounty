@@ -1,0 +1,35 @@
+// Page title
+// -----------------------------------
+
+.page-header {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.page-breadcrumb {
+  -webkit-order: 1;
+  -ms-flex-order: 1;
+
+  .inverse & {
+    order: 1;
+  }
+}
+
+.page-title {
+  -webkit-order: 2;
+  -ms-flex-order: 2;
+  display: inline-block;
+  margin: 1em 0;
+
+  .inverse & {
+    order: 2;
+  }
+
+  h1 {
+    margin: 0;
+  }
+}

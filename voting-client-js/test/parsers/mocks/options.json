@@ -1,0 +1,67 @@
+{
+  "id": "87dd8641a7c746a68768e58b62d31c71",
+  "defaultTitle": "dd-nb",
+  "defaultDescription": "dd-nb",
+  "alias": "dd-nb",
+  "electionEvent": {
+	"id": "6fb1403ab44d4fedb86a6f73adcf17fc"
+  },
+  "template": "options",
+  "fullBlank": false,
+  "options": [
+	{
+	  "id": "d6c1e4e93ad8446f9a1e2e597b00ffdd",
+	  "representation": "100003",
+	  "attribute": "9b9434cd5d5e43bab2b9e064aa0d12e0"
+	},
+	{
+	  "id": "8bb64eaef5d34da7b142e94eaf93b31f",
+	  "representation": "100019",
+	  "attribute": "cf2a9da6b424478fa5e535b0174c5e26"
+	}
+  ],
+  "attributes": [
+	{
+	  "id": "26d0d77f147c4620b9264977feb868f7",
+	  "alias": "dd-nb",
+	  "correctness": true,
+	  "related": []
+	},
+	{
+	  "id": "9b9434cd5d5e43bab2b9e064aa0d12e0",
+	  "alias": "dd-nb1",
+	  "correctness": false,
+	  "related": [
+		"26d0d77f147c4620b9264977feb868f7"
+	  ]
+	},
+	{
+	  "id": "cf2a9da6b424478fa5e535b0174c5e26",
+	  "alias": "dd-nb2",
+	  "correctness": false,
+	  "related": [
+		"26d0d77f147c4620b9264977feb868f7"
+	  ]
+	},
+	{
+	  "id": "000",
+	  "alias": "Question is blank",
+	  "correctness": false,
+	  "related": [
+		"26d0d77f147c4620b9264977feb868f7"
+	  ]
+	}
+  ],
+  "questions": [
+	{
+	  "id": "05c48fc43fe04da79486ba76b5c1663f",
+	  "max": 1,
+	  "min": 1,
+	  "cumul": 1,
+	  "writeIn": "false",
+	  "fusions": [],
+	  "blankAttribute": "000",
+	  "attribute": "26d0d77f147c4620b9264977feb868f7"
+	}
+  ]
+}

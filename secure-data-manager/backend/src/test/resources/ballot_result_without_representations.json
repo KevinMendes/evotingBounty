@@ -1,0 +1,14 @@
+{
+  "result": [
+    {
+      "id": "8365b61d3f194c11bbd03e421462b6ad",
+      "defaultTitle": "Ballot Title",
+      "defaultDescription": "Ballot Description",
+      "alias": "Ballot Alias",
+      "electionEvent": {
+        "id": "db033b3f729c45719db8aba15d24043c"
+      },
+      "status": "LOCKED"
+    }
+  ]
+}

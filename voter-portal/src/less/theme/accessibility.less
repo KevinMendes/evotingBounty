@@ -1,0 +1,31 @@
+@media screen and (-ms-high-contrast: active) {
+  svg {
+    fill: white !important;
+
+    * {
+      fill: white !important;
+    }
+  }
+
+  .form-custom select {
+    background: none;
+    -webkit-appearance: normal;
+    -moz-appearance: normal;
+    appearance: normal;
+    border-width: 1px !important;
+    border-style: solid !important;
+    padding: 0;
+
+    &::-ms-expand { /* Hide the arrow for IE10 */
+      display: block;
+    }
+  }
+}
+
+[tabindex="0"]:focus {
+  .tab-focus(@outline-color);
+}
+
+[tabindex="-1"]:focus {
+  .tab-focus(transparent);
+}

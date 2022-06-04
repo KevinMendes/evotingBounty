@@ -1,0 +1,162 @@
+{
+  "id": "fecde2c46d98468cb6b064eb5187b5cf",
+  "defaultTitle": "OL_AB",
+  "defaultDescription": "OL_AB",
+  "alias": "OL_AB",
+  "electionEvent": {
+	"id": "6eb1403ab44d4fedb86a6f73adcf17fc"
+  },
+  "template": "listsAndCandidates",
+  "fullBlank": "true",
+  "options": [
+	{
+	  "id": "3959786fd9744c2ca95d5b4a3fef4baa",
+	  "representation": "100109",
+	  "attribute": "571186adf4b844a4b8947bd3e9689945"
+	},
+	{
+	  "id": "43907d4a08c8450bb772aa4caa161aff",
+	  "representation": "100183",
+	  "attribute": "b2b84721677249478ae06bde6418dd92"
+	},
+	{
+	  "id": "c818d629c0254809b4b0449304b803e7",
+	  "representation": "100193",
+	  "attribute": "b2b84721677249478ae06bde6418dd92"
+	},
+	{
+	  "id": "393258e8b74e4092adc6636b2f0dc1a1",
+	  "representation": "100169",
+	  "attribute": "3d11a8dbf02844a792ab906c8b031164"
+	},
+	{
+	  "id": "466f6f6466854fa7b31eda994e6f2f47",
+	  "representation": "100129",
+	  "attribute": "941756f7ddd4411dbc5913454a0628c4"
+	},
+	{
+	  "id": "601c88b5da4b475ab09cab03a569abfc",
+	  "representation": "100237",
+	  "attribute": "08d405cdac744cd183a527313d3d7888"
+	},
+	{
+	  "id": "e7f525d885584361a6e6592b57e042e1",
+	  "representation": "100153",
+	  "attribute": "0f23cb764042407e9e8c8b419bb78629"
+	},
+	{
+	  "id": "130e65934b614602aa6655e112b892d4",
+	  "representation": "100207",
+	  "attribute": "afce9b49bfed4bba9f740f9b9f423e47"
+	},
+	{
+	  "id": "98f7ad66aea04903afa21ee0b715498c",
+	  "representation": "100267",
+	  "attribute": "cb0c6193f68048b2b376aca12f8c5a88"
+	}
+  ],
+  "attributes": [
+	{
+	  "id": "b8e3ce7d16604b0792de03d32a0b2777",
+	  "alias": "lists",
+	  "correctness": true,
+	  "related": []
+	},
+	{
+	  "id": "a5c990e77f7947f6b0a3306d77ad290a",
+	  "alias": "candidates",
+	  "correctness": true,
+	  "related": []
+	},
+	{
+	  "id": "571186adf4b844a4b8947bd3e9689945",
+	  "alias": "BlankList",
+	  "correctness": false,
+	  "related": [
+		"b8e3ce7d16604b0792de03d32a0b2777"
+	  ]
+	},
+	{
+	  "id": "b2b84721677249478ae06bde6418dd92",
+	  "alias": "Blank Candidate",
+	  "related": [
+		"a5c990e77f7947f6b0a3306d77ad290a"
+	  ],
+	  "correctness": false
+	},
+	{
+	  "id": "3d11a8dbf02844a792ab906c8b031164",
+	  "alias": "list1id",
+	  "correctness": false,
+	  "related": [
+		"b8e3ce7d16604b0792de03d32a0b2777"
+	  ]
+	},
+	{
+	  "id": "941756f7ddd4411dbc5913454a0628c4",
+	  "alias": "list11id",
+	  "correctness": false,
+	  "related": [
+		"3d11a8dbf02844a792ab906c8b031164",
+		"a5c990e77f7947f6b0a3306d77ad290a"
+	  ]
+	},
+	{
+	  "id": "08d405cdac744cd183a527313d3d7888",
+	  "alias": "list12id",
+	  "correctness": false,
+	  "related": [
+		"3d11a8dbf02844a792ab906c8b031164",
+		"a5c990e77f7947f6b0a3306d77ad290a"
+	  ]
+	},
+	{
+	  "id": "0f23cb764042407e9e8c8b419bb78629",
+	  "alias": "list2id",
+	  "correctness": false,
+	  "related": [
+		"b8e3ce7d16604b0792de03d32a0b2777"
+	  ]
+	},
+	{
+	  "id": "afce9b49bfed4bba9f740f9b9f423e47",
+	  "alias": "list21id",
+	  "correctness": false,
+	  "related": [
+		"0f23cb764042407e9e8c8b419bb78629",
+		"a5c990e77f7947f6b0a3306d77ad290a"
+	  ]
+	},
+	{
+	  "id": "cb0c6193f68048b2b376aca12f8c5a88",
+	  "alias": "list22id",
+	  "correctness": false,
+	  "related": [
+		"0f23cb764042407e9e8c8b419bb78629",
+		"a5c990e77f7947f6b0a3306d77ad290a"
+	  ]
+	}
+  ],
+  "questions": [
+	{
+	  "id": "83f53d33093b424bbc6b8e2383265090",
+	  "max": "1",
+	  "min": "0",
+	  "cumul": "1",
+	  "writeIn": "false",
+	  "fusions": [],
+	  "blankAttribute": "571186adf4b844a4b8947bd3e9689945",
+	  "attribute": "b8e3ce7d16604b0792de03d32a0b2777"
+	},
+	{
+	  "id": "ff91c9a82cc140a09efa435951571f77",
+	  "max": "2",
+	  "min": "0",
+	  "cumul": "1",
+	  "writeIn": "true",
+	  "fusions": [],
+	  "blankAttribute": "b2b84721677249478ae06bde6418dd92",
+	  "attribute": "a5c990e77f7947f6b0a3306d77ad290a"
+	}
+  ]
+}

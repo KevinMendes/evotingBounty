@@ -1,0 +1,186 @@
+// layout
+// ----------------------------------------
+
+.viewport-wrapper {
+  @include display-flex();
+  @include flex-direction(column);
+  height: 100%;
+
+  > ov-toolbar {
+    @include display-flex();
+    @include flex-direction(row);
+    @include align-items(flex-start);
+    max-width: 100%;
+    padding: ($layout-gutter-width / 2) $layout-gutter-width 0;
+
+    > .ov-toolbar-title {
+      @include display-flex();
+      @include align-items(center);
+      width: 50%;
+      min-height: 36px;
+      margin: 0;
+
+      .md-headline {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        word-break: normal;
+        display: inline-block;
+      }
+
+      md-icon {
+        margin: 0 0.156em;
+      }
+
+      .ov-toolbar-title-last {
+        @include flex(1);
+      }
+    }
+
+    > .ov-toolbar-actions {
+      @include display-flex();
+      @include flex-direction(row);
+      @include align-items(center);
+      @include justify-content(flex-end);
+      width: 50%;
+
+      .ov-toolbar-action {
+        padding: 0 .5em .375em .5em;
+        overflow: hidden;
+
+        .md-button {
+          max-width: 100%;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          margin: 0;
+          @media (max-width: 599px) {
+            min-width: 0;
+            padding: 0 1em;
+          }
+        }
+      }
+    }
+  }
+
+  > main {
+    @include flex(1);
+    @include display-flex();
+    @include flex-direction(column);
+
+    > md-tabs {
+      @include flex(1);
+      @include display-flex();
+      @include flex-direction(column);
+      height: 100%;
+
+      > md-tabs-content-wrapper {
+        @include flex(1);
+
+        md-tab-content,
+        [md-tabs-template] {
+          height: 100%;
+        }
+
+        .tab-content-wrapper {
+          @include display-flex();
+          @include flex-direction(column);
+          height: 100%;
+        }
+      }
+    }
+  }
+}
+
+// splash
+.splash-view {
+  @include flex(1);
+  @include display-flex();
+  @include flex-direction(column);
+  @include justify-content(center);
+  @include align-items(center);
+  height: 100%;
+
+  md-icon {
+    width: 4em;
+    height: 4em;
+    color: $color-body-text;
+  }
+}
+
+
+// datatable layout
+.datatable-controls {
+  margin: ($layout-gutter-width * 2) $layout-gutter-width 0;
+}
+
+.datatable-title {
+  @include display-flex();
+  @include align-items(flex-end);
+  @include justify-content(space-between);
+  margin-bottom: $layout-gutter-width;
+
+  h1,
+  h2,
+  h3,
+  p {
+    margin: 0;
+  }
+}
+
+.datatable-actions {
+  @include display-flex();
+
+  .datatable-actions-main {
+    @include flex(1);
+
+    .md-button {
+      margin: 0 ($layout-gutter-width / 2) ($layout-gutter-width / 2) 0;
+
+      [dir="rtl"] {
+        margin: 0 0 ($layout-gutter-width / 2) ($layout-gutter-width / 2);
+      }
+    }
+  }
+
+  .datatable-actions-auxiliary {
+    .md-button {
+      margin: 0 0 ($layout-gutter-width / 2) ($layout-gutter-width / 2);
+
+      [dir="rtl"] {
+        margin: 0 ($layout-gutter-width / 2) ($layout-gutter-width / 2) 0;
+      }
+    }
+  }
+}
+
+.datatable-data {
+  @include flex(1);
+  overflow-y: auto;
+  margin: 0 $layout-gutter-width $layout-gutter-width;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+}
+
+.manage-view {
+  .animate-fade,
+  md-tab-item {
+    opacity: 1;
+    -webkit-transition: opacity .5s; /* Safari */
+    transition: opacity .5s;
+  }
+}
+
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  &.manage-view {
+    display: -webkit-flex !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+
+    .animate-fade,
+    md-tab-item {
+      opacity: 0;
+    }
+  }
+}

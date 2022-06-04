@@ -1,0 +1,47 @@
+{
+  "platformRootCA": {
+    "name": "platformRootCA",
+    "alias": {
+      "privateKey": "privatekey"
+    },
+    "propertiesFile": "platformRootCAX509Certificate.properties",
+    "parentName": null,
+    "credentialType": "ROOT"
+  },
+  "tenantCA": {
+    "name": "tenantCA",
+    "alias": {
+      "privateKey": "privatekey"
+    },
+    "propertiesFile": "tenantCAX509Certificate.properties",
+    "parentName": null,
+    "credentialType": "INTERMEDIATE"
+  },
+  "loggingServicesSignerCert": {
+    "name": "loggingServicesSignerCert",
+    "alias": {
+      "privateKey": "signerkey"
+    },
+    "propertiesFile": "servicesLoggingSignerX509Certificate.properties",
+    "parentName": null,
+    "credentialType": "SIGN"
+  },
+  "loggingServicesEncryptionCert": {
+    "name": "loggingServicesEncryptionCert",
+    "alias": {
+      "privateKey": "encryptionkey"
+    },
+    "propertiesFile": "servicesLoggingEncryptionX509Certificate.properties",
+    "parentName": null,
+    "credentialType": "ENCRYPTION"
+  },
+  "systemServicesEncryptionCert": {
+    "name": "systemServicesEncryptionCert",
+    "alias": {
+      "privateKey": "encryptionkey"
+    },
+    "propertiesFile": "systemEncryptionX509Certificate.properties",
+    "parentName": null,
+    "credentialType": "ENCRYPTION"
+  }
+}

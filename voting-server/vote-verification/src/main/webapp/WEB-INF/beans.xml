@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+			 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+													 http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+			 bean-discovery-mode="all">
+	<decorators>
+		<class>ch.post.it.evoting.votingserver.voteverification.infrastructure.persistence.CodesMappingRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.voteverification.infrastructure.persistence.VerificationRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.voteverification.infrastructure.persistence.VerificationContentRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.voteverification.infrastructure.persistence.ElectionEventContextRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.voteverification.infrastructure.persistence.ReturnCodesMappingTableRepositoryDecorator</class>
+	</decorators>
+</beans>

@@ -1,0 +1,62 @@
+<div class="datatable-controls">
+    <h2 class="sr-only" translate>Administration Boards</h2>
+    <div class="datatable-actions">
+        <div class="datatable-actions-main">
+            <md-button aria-label="{{'Constitute' | translate}}"
+                       class="md-primary md-raised"
+                       id="constitute"
+                       ng-attr-title="{{checkSelectedText()}}"
+                       ng-click="constituteAdminboard()"
+                       ng-disabled="checkSelected()">
+                <md-icon aria-label="{{'Constitute' | translate}}" md-svg-src="assets/icons/ic_person_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Constitute</span>
+            </md-button>
+        </div>
+    </div>
+</div>
+
+<div class="datatable-data">
+    <table aria-describedby="" class="table">
+        <thead>
+        <tr>
+            <th class="table-batchselector" scope="col">
+            </th>
+            <th class="grow-2" scope="col">
+                <span class="no-wrap" title="{{'Title'|translate}}" translate>Title</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Alias'|translate}}" translate>Alias</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Status'|translate}}" translate>Status</span>
+            </th>
+            <th class="grow-2" scope="col">
+                <span class="no-wrap" title="{{'Details'|translate}}" translate>Details</span>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-ng-repeat="administrationBoard in administrationBoards">
+            <td class="table-batchselector">
+                <md-checkbox aria-label="Checkbox_{{administrationBoard.id}}"
+                             class="md-datatable-theme md-primary"
+                             id="check_{{administrationBoard.id}}"
+                             ng-change="uniqueChoice(administrationBoards,administrationBoard)"
+                             ng-model="administrationBoard.selected">
+                </md-checkbox>
+            </td>
+            <td class="grow-2">
+                <md-button class="link" data-ng-click="showMembers(administrationBoard.id, $event)">
+                    {{administrationBoard.defaultTitle}}
+                </md-button>
+            </td>
+            <td>{{administrationBoard.alias}}</td>
+            <td><span class="no-wrap"
+                      title="{{capitalizeFirstLetter(administrationBoard.status) | translate}}">{{capitalizeFirstLetter(administrationBoard.status) | translate}}</span>
+            </td>
+            <td class="grow-2"><span class="no-wrap"
+                                     title="{{administrationBoard.details | translate}}">{{administrationBoard.details | translate}}</span></td>
+        </tr>
+        </tbody>
+    </table>
+</div>

@@ -1,0 +1,1297 @@
+msgid ""
+msgstr ""
+"Language: it_CH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: PhraseApp (phraseapp.com)\n"
+
+#: src/app/views/election-event-manage/election-event-manage.html:8
+#: src/app/views/members-reconstruct/members-reconstruct.html:32
+#: src/app/views/members-reconstruct/members-reconstruct.html:33
+msgid "Activate"
+msgstr "Attivare"
+
+#: src/app/views/election-event-manage/election-event-manage.html:4
+#: src/app/views/election-event-manage/election-event-manage.html:9
+msgid "Activate Admin Board"
+msgstr "Attivare il Consiglio di amministrazione"
+
+#: src/app/views/members-reconstruct/members-reconstruct.html:4
+msgid "Activate board"
+msgstr "Attivare il Consiglio"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1081
+#: src/app/views/ballot-boxes/ballot-boxes.js:248
+#: src/app/views/ballot-boxes/ballot-boxes.js:378
+#: src/app/views/ballot-boxes/ballot-boxes.js:547
+#: src/app/views/ballot-boxes/ballot-boxes.js:667
+#: src/app/views/ballot-boxes/ballot-boxes.js:907
+#: src/app/views/ballots/ballots.js:172
+#: src/app/views/electoral-authorities/electoral-authorities.js:237
+#: src/app/views/voting-cards/voting-cards.js:328
+msgid "Activate now"
+msgstr "Attivare ora"
+
+#: src/app/views/dialogs/dialog-show-members.html:14
+msgid "Admin Board member"
+msgstr "Membro del Consiglio di amministrazione"
+
+#: src/app/views/administration-board-list/administration-board-list.js:154
+#: src/app/views/election-event-list/election-event-list.html:62
+msgid "Administration Board"
+msgstr "Consiglio di amministrazione"
+
+#: src/app/views/administration-board-list/administration-board-list.js:83
+msgid "Administration Board Members"
+msgstr "Membri del Consiglio di amministrazione"
+
+#: src/app/views/administration-board-list/administration-board-list.js:183
+msgid "Administration board successfully constituted"
+msgstr "Consiglio di amministrazione costituito con successo"
+
+#: src/app/views/administration-board-list/administration-board-list.html:2
+#: src/app/views/home-manage/home-manage.html:42
+msgid "Administration Boards"
+msgstr "Consigli di amministrazione"
+
+#: src/app/views/administration-board-list/administration-board-list.html:31
+#: src/app/views/ballot-boxes/ballot-boxes.html:129
+#: src/app/views/ballots/ballots.html:32
+#: src/app/views/election-event-list/election-event-list.html:59
+#: src/app/views/electoral-authorities/electoral-authorities.html:39
+#: src/app/views/voting-cards/voting-cards.html:92
+msgid "Alias"
+msgstr "Alias"
+
+#: src/app/views/voting-cards/voting-cards.js:197
+msgid "All selected voting card sets are in progress."
+msgstr "Tutti i set di certificati elettorali selezionati sono in corso di elaborazione."
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1119
+msgid "All the ballot boxes to be processed must have the same status"
+msgstr "Tutte le urne da elaborare devono avere lo stesso stato"
+
+#: src/app/views/voting-cards/voting-cards.js:513
+msgid "All VCS will be processed"
+msgstr "Tutti i certificati elettorali saranno elaborati"
+
+#: src/app/views/members-reconstruct/members-reconstruct.js:393
+msgid "An error occured during key activation"
+msgstr "Si è verificato un errore durante l’attivazione della chiave"
+
+#: src/app/views/members-reconstruct/members-reconstruct.js:207
+msgid "An error occurred during share recovering"
+msgstr "Si è verificato un errore durante il ripristino dello share"
+
+#: src/app/views/members-constitute/members-constitute.js:233
+msgid "An error occurred during share writing"
+msgstr "Si è verificato un errore durante la scrittura dello share"
+
+#: src/app/services/i18n.js:13
+msgid "Approved"
+msgstr "Approvato"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:194
+msgid "Auditable votes:"
+msgstr "Voti verificabili:"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:132
+#: src/app/views/ballots/ballots.html:44 src/app/views/ballots/ballots.js:161
+#: src/app/views/voting-cards/voting-cards.html:98
+msgid "Ballot"
+msgstr "Scheda di voto"
+
+#: src/app/views/voting-cards/voting-cards.html:95
+msgid "Ballot Box"
+msgstr "Urna"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:496
+#: src/app/views/ballot-boxes/ballot-boxes.js:506
+#: src/app/views/ballot-boxes/ballot-boxes.js:525
+#: src/app/views/ballot-boxes/ballot-boxes.js:545
+#: src/app/views/ballot-boxes/ballot-boxes.js:633
+msgid "Ballot Box decrypting"
+msgstr "Decodificare l’urna"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:119
+#: src/app/views/ballot-boxes/ballot-boxes.js:129
+#: src/app/views/ballot-boxes/ballot-boxes.js:88
+msgid "Ballot box download"
+msgstr "Download dell’urna"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:860
+#: src/app/views/ballot-boxes/ballot-boxes.js:885
+#: src/app/views/ballot-boxes/ballot-boxes.js:895
+#: src/app/views/ballot-boxes/ballot-boxes.js:905
+msgid "Ballot Box signing"
+msgstr "Firma dell’urna"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:130
+#: src/app/views/ballot-boxes/ballot-boxes.js:223
+#: src/app/views/ballot-boxes/ballot-boxes.js:360
+#: src/app/views/ballot-boxes/ballot-boxes.js:507
+#: src/app/views/ballot-boxes/ballot-boxes.js:729
+#: src/app/views/ballot-boxes/ballot-boxes.js:896
+msgid "Ballot Box(es)"
+msgstr "Urna/e"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:156
+msgid "Ballot box(es) downloaded!"
+msgstr "Urna/e scaricata/e!"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:960
+msgid "Ballot box(es) signed!"
+msgstr "Urna/e firmata/e!"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:2
+#: src/app/views/ballots/ballots.html:35
+#: src/app/views/election-event-manage/election-event-manage.html:41
+#: src/app/views/electoral-authorities/electoral-authorities.html:42
+msgid "Ballot Boxes"
+msgstr "Urne"
+
+#: src/app/app.js:181
+msgid "Ballot boxes decrypted!"
+msgstr "Urne decodificate!"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:79
+msgid "Ballot Boxes type:"
+msgstr "Tipo di urna:"
+
+#: src/app/views/ballots/ballots.html:51
+msgid "Ballot Checkbox"
+msgstr "Casella di controllo della scheda di voto"
+
+#: src/app/views/dialogs/dialog-view-ballot.html:13
+msgid "Ballot ID"
+msgstr "ID della scheda di voto"
+
+#: src/app/views/ballots/ballots.js:124 src/app/views/ballots/ballots.js:150
+#: src/app/views/ballots/ballots.js:160 src/app/views/ballots/ballots.js:170
+msgid "Ballot signing"
+msgstr "Firma delle schede di voto"
+
+#: src/app/views/ballots/ballots.js:238
+msgid "Ballot(s) signed!"
+msgstr "Scheda/e di voto firmata/e!"
+
+#: src/app/views/ballots/ballots.html:2
+#: src/app/views/election-event-manage/election-event-manage.html:32
+msgid "Ballots"
+msgstr "Schede di voto"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:198
+msgid "Ballots decrypted:"
+msgstr "Schede di voto decodificate:"
+
+#: src/app/views/dialogs/dialog-export-election-event.html:43
+msgid "Cancel"
+msgstr "Annullare"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:123
+#: src/app/views/ballots/ballots.html:26
+#: src/app/views/voting-cards/voting-cards.html:111
+#: src/app/views/voting-cards/voting-cards.html:86
+msgid "Checkbox"
+msgstr "Casella di controllo"
+
+#: src/app/views/election-event-list/election-event-list.html:73
+msgid "checkbox"
+msgstr "casella di controllo"
+
+#: src/app/views/members-constitute/members-constitute.html:103
+msgid "Choose a password"
+msgstr "Scegliere una password"
+
+#: src/app/views/members-constitute/members-constitute.html:37
+msgid "Choose File"
+msgstr "Scegliere file"
+
+#: src/app/services/toast-custom.js:28
+#: src/app/views/dialogs/dialog-custom-alert-template.html:16
+#: src/app/views/dialogs/dialog-custom-confirm-template.html:16
+#: src/app/views/dialogs/dialog-show-members.html:21
+#: src/app/views/dialogs/dialog-view-ballot.html:24
+msgid "Close"
+msgstr "Chiudere"
+
+#: src/app/views/dialogs/dialog-custom-alert-template.html:5
+#: src/app/views/dialogs/dialog-custom-confirm-template.html:5
+#: src/app/views/dialogs/dialog-export-election-event.html:6
+#: src/app/views/dialogs/dialog-show-members.html:5
+#: src/app/views/dialogs/dialog-view-ballot.html:5
+#: src/app/views/members-constitute/members-constitute.html:11
+#: src/app/views/members-constitute/members-constitute.html:14
+#: src/app/views/members-constitute/members-constitute.html:6
+#: src/app/views/members-reconstruct/members-reconstruct.html:11
+#: src/app/views/members-reconstruct/members-reconstruct.html:14
+#: src/app/views/members-reconstruct/members-reconstruct.html:6
+msgid "Close dialog"
+msgstr "Chiudere finestra di dialogo"
+
+#: src/app/services/i18n.js:16 src/app/views/ballot-boxes/ballot-boxes.html:36
+msgid "Closed"
+msgstr "Chiuso"
+
+#: src/app/views/voting-cards/voting-cards.html:47
+#: src/app/views/voting-cards/voting-cards.html:52
+#: src/app/views/voting-cards/voting-cards.html:53
+msgid "Compute"
+msgstr "Calcolare"
+
+#: src/app/config-election-constants.js:47
+msgid "Computed"
+msgstr "Calcolato"
+
+#: src/app/views/voting-cards/voting-cards.html:138
+msgid "Computing"
+msgstr "Calcolo in corso"
+
+#: src/app/views/voting-cards/voting-cards.html:165
+msgid "Computing..."
+msgstr "Calcolo in corso..."
+
+#: src/app/views/members-constitute/members-constitute.html:10
+#: src/app/views/members-reconstruct/members-reconstruct.html:10
+msgid "Confirm close?"
+msgstr "Si conferma la chiusura?"
+
+#: src/app/views/members-constitute/members-constitute.html:109
+msgid "Confirm password"
+msgstr "Confermare la password"
+
+#: src/app/views/administration-board-list/administration-board-list.html:14
+#: src/app/views/administration-board-list/administration-board-list.html:15
+#: src/app/views/electoral-authorities/electoral-authorities.html:11
+#: src/app/views/electoral-authorities/electoral-authorities.html:14
+#: src/app/views/electoral-authorities/electoral-authorities.html:15
+msgid "Constitute"
+msgstr "Costituire"
+
+#: src/app/views/administration-board-list/administration-board-list.js:153
+msgid "Constitute administration board"
+msgstr "Costituire il Consiglio di amministrazione"
+
+#: src/app/views/members-constitute/members-constitute.html:4
+msgid "Constitute board"
+msgstr "Costituire il Consiglio"
+
+#: src/app/views/electoral-authorities/electoral-authorities.js:107
+#: src/app/views/electoral-authorities/electoral-authorities.js:123
+msgid "Constitute electoral authority"
+msgstr "Costituire l’autorità elettorale"
+
+#: src/app/services/i18n.js:11
+msgid "Constituted"
+msgstr "Costituito"
+
+#: src/app/services/errors.js:26
+msgid "Content not valid, please check the Integration tools logs"
+msgstr "Contenuto non valido, verificare i log degli strumenti di integrazione"
+
+#: src/app/views/voting-cards/voting-cards.js:131
+msgid "Continue"
+msgstr "Avanti"
+
+#: src/app/views/members-constitute/members-constitute.html:67
+#: src/app/views/members-reconstruct/members-reconstruct.html:43
+msgid "Current"
+msgstr "Attuale"
+
+#: src/app/views/voting-cards/voting-cards.js:186
+msgid "Current operation failed for some Voting Card Set(s), please review your list"
+msgstr "L’operazione corrente non è riuscita per alcuni set di certificati elettorali, consultare l’elenco"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:111
+#: src/app/views/ballot-boxes/ballot-boxes.html:112
+#: src/app/views/ballot-boxes/ballot-boxes.js:1051
+#: src/app/views/ballot-boxes/ballot-boxes.js:1059
+#: src/app/views/ballot-boxes/ballot-boxes.js:1079
+#: src/app/views/ballot-boxes/ballot-boxes.js:1132
+#: src/app/views/voting-cards/voting-cards.html:74
+#: src/app/views/voting-cards/voting-cards.html:75
+#: src/app/views/voting-cards/voting-cards.js:474
+#: src/app/views/voting-cards/voting-cards.js:482
+#: src/app/views/voting-cards/voting-cards.js:501
+#: src/app/views/voting-cards/voting-cards.js:512
+msgid "Custom files"
+msgstr "File personalizzati"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1043
+#: src/app/views/voting-cards/voting-cards.js:464
+msgid "Custom files generated successfully"
+msgstr "File personalizzati generati con successo"
+
+#: src/app/views/dialogs/dialog-export-election-event.html:34
+#: src/app/views/dialogs/dialog-export-election-event.html:37
+msgid "Customer specific data"
+msgstr "Dati specifici del cliente"
+
+#: src/app/views/election-event-list/election-event-list.js:364
+msgid "Data exported successfully"
+msgstr "Dati esportati con successo"
+
+#: src/app/views/election-event-list/election-event-list.js:373
+msgid "Data has not been exported"
+msgstr "I dati non sono stati esportati"
+
+#: src/app/views/home-manage/home-manage.js:79
+msgid "Data has not been imported"
+msgstr "I dati non sono stati importati"
+
+#: src/app/views/home-manage/home-manage.js:70
+msgid "Data imported successfully"
+msgstr "Dati importati con successo"
+
+#: src/app/views/voting-cards/voting-cards.js:563
+msgid "days"
+msgstr "giorni"
+
+#: src/app/views/election-event-manage/election-event-manage.html:16
+msgid "Deactivate"
+msgstr "Disattivare"
+
+#: src/app/views/election-event-manage/election-event-manage.html:12
+#: src/app/views/election-event-manage/election-event-manage.html:17
+msgid "Deactivate Admin Board"
+msgstr "Disattivare il Consiglio di amministrazione"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:101
+#: src/app/views/ballot-boxes/ballot-boxes.html:102
+msgid "Decrypt"
+msgstr "Decodificare"
+
+#: src/app/services/i18n.js:20 src/app/views/ballot-boxes/ballot-boxes.html:52
+msgid "Decrypted"
+msgstr "Decodificato"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:66
+msgid "Decrypting"
+msgstr "Decodifica in corso"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:426
+msgid "Decrypting complete!"
+msgstr "Decodifica completata!"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:642
+msgid "Decrypting started"
+msgstr "Decodifica avviata"
+
+#: src/app/views/administration-board-list/administration-board-list.html:37
+#: src/app/views/ballot-boxes/ballot-boxes.html:141
+#: src/app/views/ballots/ballots.html:41
+#: src/app/views/electoral-authorities/electoral-authorities.html:48
+#: src/app/views/voting-cards/voting-cards.html:104
+msgid "Details"
+msgstr "Dettagli"
+
+#: src/app/views/members-constitute/members-constitute.html:68
+#: src/app/views/members-reconstruct/members-reconstruct.html:44
+msgid "Done"
+msgstr "Terminato"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:88
+#: src/app/views/ballot-boxes/ballot-boxes.html:89
+#: src/app/views/ballot-boxes/ballot-boxes.html:90
+msgid "Download"
+msgstr "Scaricare"
+
+#: src/app/services/i18n.js:17 src/app/views/ballot-boxes/ballot-boxes.html:40
+msgid "Downloaded"
+msgstr "Scaricato"
+
+#: src/app/views/voting-cards/voting-cards.html:166
+msgid "Downloading..."
+msgstr "Download..."
+
+#: src/app/views/election-event-list/election-event-list.js:77
+msgid "Election Event"
+msgstr "Evento elettorale"
+
+#: src/app/services/errors.js:31
+msgid "Election Event already in the usb, please check the Integration tools logs"
+msgstr "Evento elettorale già presente nell’USB, verificare i log degli strumenti di integrazione"
+
+#: src/app/views/election-event-list/election-event-list.js:112
+msgid "Election Event secured"
+msgstr "Evento elettorale assicurato"
+
+#: src/app/views/election-event-list/election-event-list.js:104
+msgid "Election Event securization started..."
+msgstr "Assicurazione evento elettorale avviata..."
+
+msgid "Control Components keys do not exist. Please request them first"
+msgstr "Control Components keys do not exist. Please request them first"
+
+#: src/app/views/election-event-list/election-event-list.js:284
+msgid "Election Event(s)"
+msgstr "Evento/i elettorale/i"
+
+#: src/app/views/election-event-list/election-event-list.html:2
+#: src/app/views/home-manage/home-manage.html:39
+msgid "Election Events"
+msgstr "Eventi elettorali"
+
+#: src/app/views/election-event-manage/election-event-manage.html:38
+#: src/app/views/electoral-authorities/electoral-authorities.html:2
+msgid "Electoral Authorities"
+msgstr "Autorità elettorali"
+
+#: src/app/views/electoral-authorities/electoral-authorities.js:108
+#: src/app/views/electoral-authorities/electoral-authorities.js:226
+msgid "Electoral Authority"
+msgstr "Autorità elettorale"
+
+#: src/app/views/electoral-authorities/electoral-authorities.js:182
+msgid "Electoral Authority Members"
+msgstr "Membri dell’autorità elettorale"
+
+#: src/app/views/electoral-authorities/electoral-authorities.js:293
+msgid "Electoral authority signed!"
+msgstr "Autorità elettorale sottoscritta!"
+
+#: src/app/views/electoral-authorities/electoral-authorities.js:225
+#: src/app/views/electoral-authorities/electoral-authorities.js:235
+msgid "Electoral authority signing"
+msgstr "Autorità elettorale in corso di sottoscrizione"
+
+#: src/app/views/electoral-authorities/electoral-authorities.js:159
+msgid "Electoral Authority successfully constituted"
+msgstr "Autorità elettorale costituita con successo"
+
+#: src/app/views/dialogs/dialog-export-election-event.html:18
+msgid "Electoral Event"
+msgstr "Evento elettorale"
+
+#: src/app/views/dialogs/dialog-export-election-event.html:21
+msgid "Electoral Event data (and its related Administration Board)"
+msgstr "Dati dell’evento elettorale (e del relativo Consiglio di amministrazione)"
+
+#: src/app/views/members-constitute/members-constitute.html:41
+msgid "Enter now your password"
+msgstr "Inserire la password"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1061
+#: src/app/views/election-event-list/election-event-list.js:383
+#: src/app/views/home-manage/home-manage.js:89
+#: src/app/views/voting-cards/voting-cards.js:128
+#: src/app/views/voting-cards/voting-cards.js:484
+msgid "Error code"
+msgstr "Codice di errore"
+
+#: src/app/services/errors.js:28
+msgid "Error copying files, please check the Integration tools logs"
+msgstr "Errore durante la copia dei file, verificare i log degli strumenti di integrazione"
+
+#: src/app/services/errors.js:23
+msgid "Error parsing file, please check the Integration tools logs"
+msgstr "Errore durante il parsing del file, verificare i log degli strumenti di integrazione"
+
+#: src/app/services/errors.js:39
+msgid "Error parsing plugin.xml"
+msgstr "Errore durante l’analisi del plugin.xml"
+
+#: src/app/services/i18n.js:23
+msgid "Error synchronizing"
+msgstr "Errore di sincronizzazione"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:188
+#: src/app/views/ballot-boxes/ballot-boxes.html:202
+#: src/app/views/ballot-boxes/ballot-boxes.html:212
+#: src/app/views/voting-cards/voting-cards.html:147
+msgid "Errors:"
+msgstr "Errori:"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:219
+#: src/app/views/voting-cards/voting-cards.html:153
+msgid "Estimated time:"
+msgstr "Tempo stimato:"
+
+#: src/app/views/voting-cards/voting-cards.js:539
+msgid "Estimating"
+msgstr "In corso di valutazione"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:223
+#: src/app/views/voting-cards/voting-cards.html:157
+msgid "Estimating time"
+msgstr "Valutazione del tempo in corso"
+
+#: src/app/views/dialogs/dialog-export-election-event.html:44
+#: src/app/views/election-event-list/election-event-list.html:34
+#: src/app/views/election-event-list/election-event-list.html:35
+#: src/app/views/election-event-list/election-event-list.js:381
+msgid "Export"
+msgstr "Esportazione"
+
+#: src/app/views/dialogs/dialog-export-election-event.html:5
+msgid "Export Election Event"
+msgstr "Esportazione evento elettorale"
+
+#: src/app/views/election-event-list/election-event-list.js:350
+msgid "Exporting..."
+msgstr "Esportazione in corso..."
+
+#: src/app/views/members-constitute/members-constitute.html:130
+#: src/app/views/members-constitute/members-constitute.html:131
+#: src/app/views/members-reconstruct/members-reconstruct.html:100
+#: src/app/views/members-reconstruct/members-reconstruct.html:101
+msgid "Extract your card"
+msgstr "Estrarre la carta"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:184
+msgid "Failed votes:"
+msgstr "Voti non riusciti:"
+
+#: src/app/services/errors.js:22
+msgid "File not found, please check the Integration tools logs"
+msgstr "File non trovato, verificare i log degli strumenti di integrazione"
+
+#: src/app/services/progress-bar.html:10
+msgid "Finished..."
+msgstr "Terminato..."
+
+#: src/app/services/errors.js:16
+msgid "General error, please check the Integration tools logs"
+msgstr "Errore generale, verificare i log degli strumenti di integrazione"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1134
+#: src/app/views/voting-cards/voting-cards.html:63
+#: src/app/views/voting-cards/voting-cards.html:64
+#: src/app/views/voting-cards/voting-cards.html:65
+#: src/app/views/voting-cards/voting-cards.js:514
+msgid "Generate"
+msgstr "Generare"
+
+#: src/app/services/i18n.js:15 src/app/views/voting-cards/voting-cards.html:121
+#: src/app/views/voting-cards/voting-cards.html:28
+msgid "Generated"
+msgstr "Generato"
+
+#: src/app/views/voting-cards/voting-cards.html:143
+msgid "Generated voting cards:"
+msgstr "Certificati elettorali generati:"
+
+#: src/app/views/voting-cards/voting-cards.html:41
+msgid "Generating"
+msgstr "Generazione in corso"
+
+#: src/app/views/voting-cards/voting-cards.html:129
+msgid "Generating..."
+msgstr "Generazione in corso..."
+
+#: src/app/views/voting-cards/voting-cards.js:567
+msgid "hour"
+msgstr "ora"
+
+#: src/app/views/voting-cards/voting-cards.js:565
+msgid "hours"
+msgstr "ore"
+
+#: src/app/views/home-manage/home-manage.html:24
+#: src/app/views/home-manage/home-manage.html:25
+#: src/app/views/home-manage/home-manage.js:87
+msgid "Import"
+msgstr "Importare"
+
+#: src/app/services/errors.js:36
+msgid "Import/Export problems reading files or some files are missing"
+msgstr "Problemi di importazione / esportazione durante la lettura dei file o alcuni file mancanti"
+
+#: src/app/views/home-manage/home-manage.js:56
+msgid "Importing..."
+msgstr "Importazione in corso..."
+
+#: src/app/views/members-constitute/members-constitute.html:35
+msgid "In order to start the constitution, upload the certificate, a file .SKS provided for this Admin Board"
+msgstr "Per avviare la costituzione caricare il certificato, un file .SKS, fornito per questo Consiglio di amministrazione"
+
+#: src/app/services/errors.js:35
+#: src/app/services/errors.js:40
+msgid "Integration issue between components"
+msgstr "Problema di integrazione tra i componenti"
+
+#: src/app/views/members-constitute/members-constitute.html:92
+#: src/app/views/members-reconstruct/members-reconstruct.html:68
+msgid "Introduce your card"
+msgstr "Presentare la carta"
+
+#: src/app/views/members-constitute/members-constitute.html:91
+#: src/app/views/members-reconstruct/members-reconstruct.html:67
+msgid "Introduce your card into the smartcard reader"
+msgstr "Introdurre la carta nel lettore"
+
+#: src/app/services/errors.js:17
+msgid "Invalid action, please check the Integration tools logs"
+msgstr "Azione non valida, verificare i log degli strumenti di integrazione"
+
+#: src/app/views/dialogs/dialog-view-ballot.html:17
+msgid "Locale"
+msgstr "Locale"
+
+#: src/app/services/i18n.js:10 src/app/views/ballot-boxes/ballot-boxes.html:24
+#: src/app/views/voting-cards/voting-cards.html:120
+#: src/app/views/voting-cards/voting-cards.html:24
+msgid "Locked"
+msgstr "Bloccato"
+
+#: src/app/views/members-constitute/members-constitute.html:66
+#: src/app/views/members-reconstruct/members-reconstruct.html:42
+msgid "Member"
+msgstr "Membri"
+
+#: src/app/directives/toolbar/toolbar.html:2
+#: src/app/directives/toolbar/toolbar.html:3
+msgid "Menu"
+msgstr "Menu"
+
+#: src/app/views/voting-cards/voting-cards.js:571
+msgid "minute"
+msgstr "minuto"
+
+#: src/app/views/voting-cards/voting-cards.js:569
+msgid "minutes"
+msgstr "minuti"
+
+#: src/app/services/errors.js:18
+msgid "Missing parameter, please check the Integration tools logs"
+msgstr "Parametro mancante, verificare i log degli strumenti di integrazione"
+
+#: src/app/services/i18n.js:19 src/app/views/ballot-boxes/ballot-boxes.html:48
+msgid "Mixed"
+msgstr "Mescolato"
+
+#: src/app/services/i18n.js:9
+msgid "New"
+msgstr "Nuovo"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:103
+#: src/app/views/voting-cards/voting-cards.html:119
+msgid "Next step"
+msgstr "Fase successiva"
+
+#: src/app/views/members-constitute/members-constitute.html:15
+#: src/app/views/members-reconstruct/members-reconstruct.html:15
+msgid "No"
+msgstr "No"
+
+#: src/app/services/errors.js:41
+msgid "No action has been performed. Please review the plugin.xml configuration."
+msgstr "Non è stata eseguita alcuna azione. Controllare la configurazione del plugin.xml."
+
+#: src/app/views/voting-cards/voting-cards.js:108
+msgid "No selected voting card sets"
+msgstr "Nessun set di certificati elettorali selezionato"
+
+#: src/app/views/members-constitute/members-constitute.html:48
+msgid "OK"
+msgstr "OK"
+
+#: src/app/views/members-constitute/members-constitute.html:115
+#: src/app/views/members-reconstruct/members-reconstruct.html:85
+msgid "Ok"
+msgstr "OK"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:62
+#: src/app/views/voting-cards/voting-cards.html:38
+msgid "Ongoing processes"
+msgstr "Processi in corso"
+
+#: src/app/views/election-event-list/election-event-list.js:87
+msgid "Only election events with a constituted administration board can be secured"
+msgstr "Solo gli eventi elettorali con un Consiglio di amministrazione costituito possono essere assicurati"
+
+#: src/app/services/errors.js:19
+msgid "Parameter not valid, please check the Integration tools logs"
+msgstr "Parametro non valido, verificare i log degli strumenti di integrazione"
+
+#: src/app/views/members-constitute/members-constitute.html:43
+msgid "Password"
+msgstr "Password"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:122
+msgid "Pending to generate voting card sets"
+msgstr "In attesa di creazione dei set di certificati elettorali"
+
+#: src/app/services/i18n.js:24
+msgid "Pending to synchronize"
+msgstr "In attesa di sincronizzazione"
+
+#: src/app/views/dialogs/dialog-export-election-event.html:50
+msgid "Please enter your password"
+msgstr "per favore inserisci la tua password\n\n"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1133
+msgid "Please note that all ballot boxes with the same status as the selected ones will be processed"
+msgstr "Si ricorda che saranno elaborate tutte le schede di voto con lo stesso stato di quelle selezionate"
+
+#: src/app/views/members-reconstruct/members-reconstruct.html:19
+msgid "Please note that if you cancel the Activation process at this stage you will need to start it again from scratch."
+msgstr "Se si annulla il processo di attivazione a questo stato sarà necessario riavviarlo da zero."
+
+#: src/app/views/members-constitute/members-constitute.html:19
+msgid "Please note that if you cancel the Constitution process at this stage you will need to start it again from scratch. You may not be able to reuse any of the cards that you used so far."
+msgstr "Se si annulla il processo di costituzione a questo stato sarà necessario riavviarlo da zero. Potrebbe non essere possibile riutilizzare le carte usate finora."
+
+#: src/app/views/dialogs/dialog-export-election-event.html:14
+msgid "Please select at least one item to export."
+msgstr "Selezionare almeno un articolo da esportare."
+
+#: src/app/views/ballots/ballots.js:22
+msgid "Please select first a Ballot"
+msgstr "Selezionare prima una scheda di voto"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:990
+msgid "Please select first a Ballot box"
+msgstr "Selezionare prima un’urna"
+
+#: src/app/views/electoral-authorities/electoral-authorities.js:17
+msgid "Please select first a constituted Electoral authority"
+msgstr "Selezionare prima un’autorità elettorale costituita"
+
+#: src/app/views/voting-cards/voting-cards.js:424
+msgid "Please select first a Voting card set"
+msgstr "Selezionare prima un set di certificati elettorali"
+
+#: src/app/views/administration-board-list/administration-board-list.js:115
+msgid "Please select first an Administration board"
+msgstr "Selezionare prima un Consiglio di amministrazione"
+
+#: src/app/views/election-event-list/election-event-list.js:30
+msgid "Please select first an Election event with a constituted Administration board"
+msgstr "Selezionare prima un evento elettorale con un Consiglio di amministrazione costituito"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:755
+#: src/app/views/ballots/ballots.js:171
+#: src/app/views/voting-cards/voting-cards.js:502
+msgid "Please, activate the administration board"
+msgstr "Attivare il Consiglio di amministrazione"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1080
+#: src/app/views/ballot-boxes/ballot-boxes.js:247
+#: src/app/views/ballot-boxes/ballot-boxes.js:377
+#: src/app/views/ballot-boxes/ballot-boxes.js:546
+#: src/app/views/ballot-boxes/ballot-boxes.js:666
+#: src/app/views/ballot-boxes/ballot-boxes.js:906
+#: src/app/views/electoral-authorities/electoral-authorities.js:236
+#: src/app/views/voting-cards/voting-cards.js:327
+msgid "Please, activate the administration board."
+msgstr "Attivare il Consiglio di amministrazione."
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:886
+msgid "Please, select a ballot box to sign from the list"
+msgstr "Selezionare dalla lista un’urna da firmare"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:526
+msgid "Please, select ballot boxes for a single electoral authority"
+msgstr "Selezionare le urne per una singola autorità elettorale"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:120
+msgid "Please, select some ballot box(es) to be download from the list"
+msgstr "Selezionare dalla lista qualche urna da scaricare"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:497
+msgid "Please, select some ballot boxes to decrypt from the list"
+msgstr "Selezionare dalla lista qualche urna da decodificare"
+
+#: src/app/views/ballots/ballots.js:151
+msgid "Please, select some ballots to sign from the list"
+msgstr "Selezionare dalla lista qualche urna da firmare"
+
+#: src/app/views/ballots/ballots.js:75
+msgid "Please, select some ballots to view from the list."
+msgstr "Selezionare dalla lista qualche urna da visualizzare"
+
+#: src/app/views/voting-cards/voting-cards.js:307
+msgid "Please, select some voting card sets to sign from the list."
+msgstr "Selezionare dalla lista qualche set di certificati elettorali da firmare."
+
+#: src/app/views/voting-cards/voting-cards.js:101
+msgid "Please, select some {{status}} voting cards sets"
+msgstr "Selezionare alcuni set di certificati elettorali {{status}}"
+
+#: src/app/config-election-constants.js:43
+msgid "Pre-computed"
+msgstr "Precalcolato"
+
+#: src/app/views/voting-cards/voting-cards.html:164
+msgid "Pre-computing..."
+msgstr "Precalcolo in corso..."
+
+#: src/app/views/voting-cards/voting-cards.js:212
+msgid "Precomputation"
+msgstr "Precalcolo"
+
+#: src/app/views/voting-cards/voting-cards.html:37
+#: src/app/views/voting-cards/voting-cards.html:43
+#: src/app/views/voting-cards/voting-cards.html:44
+msgid "Precompute"
+msgstr "Precalcolare"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:162
+#: src/app/views/voting-cards/voting-cards.html:126
+msgid "Queued..."
+msgstr "In coda..."
+
+#: src/app/views/members-constitute/members-constitute.html:121
+#: src/app/views/members-constitute/members-constitute.html:82
+#: src/app/views/members-constitute/members-constitute.html:96
+#: src/app/views/members-constitute/members-constitute.html:97
+#: src/app/views/members-reconstruct/members-reconstruct.html:58
+#: src/app/views/members-reconstruct/members-reconstruct.html:72
+#: src/app/views/members-reconstruct/members-reconstruct.html:73
+#: src/app/views/members-reconstruct/members-reconstruct.html:91
+msgid "Reading..."
+msgstr "Lettura in corso..."
+
+#: src/app/services/i18n.js:12 src/app/views/ballot-boxes/ballot-boxes.html:28
+msgid "Ready"
+msgstr "Pronto"
+
+#: src/app/services/i18n.js:18
+msgid "Ready To Mix"
+msgstr "Pronto per la mescolatura"
+
+#: src/app/views/members-constitute/members-constitute.html:122
+msgid "Recording..."
+msgstr "Registrazione in corso..."
+
+#: src/app/views/members-reconstruct/members-reconstruct.html:92
+msgid "Recovering..."
+msgstr "Recupero in corso..."
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1018
+msgid "Regular"
+msgstr "Regolare"
+
+#: src/app/services/progress-bar.html:7
+msgid "Remaining Time {{InProgress.get(id).remainingTime|elapsed}}"
+msgstr "Tempo rimanente {{InProgress.get(id).remainingTime|elapsed}}"
+
+#: src/app/views/dialogs/dialogs.js:22
+msgid "Review your selections"
+msgstr "Rivedere le selezioni"
+
+#: src/app/views/voting-cards/voting-cards.js:573
+msgid "seconds"
+msgstr "secondi"
+
+msgid "Request CC keys"
+msgstr "Request CC keys"
+
+msgid "Request Control Components keys"
+msgstr "Request Control Components keys"
+
+msgid "Control Components keys"
+msgstr "Control Components keys"
+
+msgid "Control Components keys requested..."
+msgstr "Control Components keys requested..."
+
+msgid "Control Components keys already exist. Please secure the election event"
+msgstr "Control Components keys already exist. Please secure the election event"
+
+msgid "Control Components keys request for this election event in progress"
+msgstr "Control Components keys request for this election event in progress"
+
+msgid "Control Components keys successfully requested"
+msgstr "Control Components keys successfully requested"
+
+#: src/app/views/election-event-list/election-event-list.html:14
+#: src/app/views/election-event-list/election-event-list.html:15
+msgid "Secure"
+msgstr "Assicurare"
+
+#: src/app/services/errors.js:34
+msgid "Secure Data Manager error, please check the logs"
+msgstr "Errore del Secure Data Manager, verificare i log"
+
+#: src/app/views/election-event-list/election-event-list.js:121
+#: src/app/views/election-event-list/election-event-list.js:129
+#: src/app/views/election-event-list/election-event-list.js:137
+#: src/app/views/election-event-list/election-event-list.js:76
+#: src/app/views/election-event-list/election-event-list.js:86
+msgid "Secure election event"
+msgstr "Assicurare evento elettorale"
+
+#: src/app/views/election-event-list/election-event-list.js:138
+msgid "Securization of this election event is in progress"
+msgstr "È in corso l’assicurazione di questo evento elettorale"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:151
+msgid "Select"
+msgstr "Selezionare"
+
+#: src/app/views/electoral-authorities/electoral-authorities.html:56
+msgid "select"
+msgstr "selezionare"
+
+#: src/app/views/dialogs/dialog-export-election-event.html:23
+msgid "Select items to export"
+msgstr "Seleziona gli elementi da esportare"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:84
+#: src/app/views/ballot-boxes/ballot-boxes.html:85
+#: src/app/views/ballot-boxes/ballot-boxes.html:86
+#: src/app/views/ballots/ballots.html:11 src/app/views/ballots/ballots.html:14
+#: src/app/views/ballots/ballots.html:15
+#: src/app/views/electoral-authorities/electoral-authorities.html:20
+#: src/app/views/electoral-authorities/electoral-authorities.html:23
+#: src/app/views/electoral-authorities/electoral-authorities.html:24
+#: src/app/views/voting-cards/voting-cards.html:67
+#: src/app/views/voting-cards/voting-cards.html:68
+#: src/app/views/voting-cards/voting-cards.html:69
+msgid "Sign"
+msgstr "Firmare"
+
+#: src/app/services/i18n.js:14 src/app/views/ballot-boxes/ballot-boxes.html:32
+#: src/app/views/voting-cards/voting-cards.html:122
+#: src/app/views/voting-cards/voting-cards.html:32
+msgid "Signed"
+msgstr "Firmato"
+
+#: src/app/views/members-reconstruct/members-reconstruct.html:98
+msgid "Smartcard read"
+msgstr "Smart card letta"
+
+#: src/app/views/members-constitute/members-constitute.html:128
+msgid "Smartcard recorded"
+msgstr "Smart card registrata"
+
+#: src/app/app.js:155
+msgid "Some Ballot Boxes have not been decrypted successfully. Please contact support."
+msgstr "Alcune urne non sono state decodificate con successo. Rivolgersi all’assistenza."
+
+#: src/app/views/ballots/ballots.js:125
+msgid "Some ballot(s) could not be signed. Please review the list"
+msgstr "Non è stato possibile firmare alcune schede di voto. Controllare la lista"
+
+#: src/app/app.js:158
+msgid "Some errors were encountered during the process. Please contact support."
+msgstr "Durante il processo si sono verificati degli errori. Rivolgersi all’assistenza."
+
+#: src/app/views/voting-cards/voting-cards.js:207
+msgid "Some of the selected voting card sets are in progress."
+msgstr "Alcuni dei certificati elettorali selezionati sono in corso di esecuzione."
+
+#: src/app/views/voting-cards/voting-cards.js:282
+msgid "Some voting card set(s) could not be signed. Please review the list."
+msgstr "Non è stato possibile firmare alcuni certificati elettorali. Controllare la lista."
+
+#: src/app/app.js:149
+msgid "Some Voting Cards have not been generated successfully. Please contact support."
+msgstr "Alcuni certificati elettorali non sono state generati con successo. Rivolgersi all’assistenza."
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1060
+#: src/app/views/dialogs/dialogs.js:29
+#: src/app/views/election-event-list/election-event-list.js:382
+#: src/app/views/home-manage/home-manage.js:88
+#: src/app/views/voting-cards/voting-cards.js:127
+#: src/app/views/voting-cards/voting-cards.js:483
+msgid "Something went wrong. Contact with Support"
+msgstr "Si sono verificati dei problemi. Contattare l’assistenza"
+
+#: src/app/views/members-reconstruct/members-reconstruct.html:59
+msgid "Starting the activation..."
+msgstr "Avvio dell’attivazione in corso..."
+
+#: src/app/views/members-constitute/members-constitute.html:83
+msgid "Starting the constitution..."
+msgstr "Avvio della costituzione in corso..."
+
+#: src/app/views/splash/splash.html:5
+msgid "Starting..."
+msgstr "Avvio in corso"
+
+#: src/app/views/administration-board-list/administration-board-list.html:34
+#: src/app/views/ballot-boxes/ballot-boxes.html:138
+#: src/app/views/ballot-boxes/ballot-boxes.html:21
+#: src/app/views/ballots/ballots.html:38
+#: src/app/views/election-event-list/election-event-list.html:65
+#: src/app/views/electoral-authorities/electoral-authorities.html:45
+#: src/app/views/voting-cards/voting-cards.html:101
+#: src/app/views/voting-cards/voting-cards.html:21
+msgid "Status"
+msgstr "Stato"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:180
+msgid "Succesful votes:"
+msgstr "Voti andati a buon fine:"
+
+#: src/app/views/home-manage/home-manage.html:4
+msgid "Switch language"
+msgstr "Cambiare lingua"
+
+#: src/app/views/election-event-manage/election-event-manage.html:22
+#: src/app/views/election-event-manage/election-event-manage.html:25
+#: src/app/views/election-event-manage/election-event-manage.html:26
+#: src/app/views/home-manage/home-manage.html:31
+#: src/app/views/home-manage/home-manage.html:32
+#: src/app/views/home-manage/home-manage.html:33
+msgid "Sync"
+msgstr "Sincronizzare"
+
+#: src/app/views/election-event-manage/election-event-manage.js:50
+#: src/app/views/home-manage/home-manage.js:35
+msgid "Synchronization failed due to connectivity errors"
+msgstr "Sincronizzazione non riuscita a causa di errori di connettività"
+
+#: src/app/views/election-event-manage/election-event-manage.js:49
+#: src/app/views/home-manage/home-manage.js:34
+msgid "Synchronize"
+msgstr "Sincronizzare"
+
+#: src/app/services/i18n.js:22
+msgid "Synchronized"
+msgstr "Sincronizzato"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1017
+msgid "Test"
+msgstr "Test"
+
+#: src/app/views/dialogs/dialog-view-ballot.html:15
+msgid "Texts"
+msgstr "Testi"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1157
+#: src/app/views/ballots/ballots.js:207
+#: src/app/views/electoral-authorities/electoral-authorities.js:272
+#: src/app/views/voting-cards/voting-cards.js:363
+msgid "The active Administration Board does not belong to the Election Event that you are trying to operate. Please deactivate it and activate the corresponding Administration Board for the Election Event"
+msgstr "Il Consiglio di amministrazione attivo non fa parte dell’evento elettorale che sta cercando di gestire. Lo disattivi e attivi il Consiglio di amministrazione corrispondente all’evento elettorale in questione."
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1092
+#: src/app/views/ballot-boxes/ballot-boxes.js:259
+#: src/app/views/ballot-boxes/ballot-boxes.js:389
+#: src/app/views/ballot-boxes/ballot-boxes.js:558
+#: src/app/views/ballot-boxes/ballot-boxes.js:678
+#: src/app/views/ballot-boxes/ballot-boxes.js:918
+#: src/app/views/ballots/ballots.js:183
+#: src/app/views/election-event-manage/election-event-manage.js:85
+#: src/app/views/electoral-authorities/electoral-authorities.js:248
+msgid "The Administration Board could not be activated"
+msgstr "Non è stato possibile attivare il Consiglio di amministrazione"
+
+#: src/app/views/members-constitute/members-constitute.js:310
+msgid "The confirmation password should contain only numeric characters"
+msgstr "La password di conferma deve contenere solo caratteri numerici"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:456
+msgid "The Electoral Authority could not be activated"
+msgstr "Non è stato possibile attivare l’autorità elettorale"
+
+#: src/app/views/members-constitute/members-constitute.html:31
+msgid "The file or password is not correct. Try again."
+msgstr "Il file o la password specificata non sono corretti. Riprovare."
+
+#: src/app/views/members-reconstruct/members-reconstruct.html:30
+msgid "The minimum number of required members is {{selectedAuthority.minimumThreshold}}"
+msgstr "Il numero minimo di membri richiesto è {{selectedAuthority.minimumThreshold}}"
+
+#: src/app/views/dialogs/dialog-export-election-event.html:16
+msgid "The password for the keystore is not correct. Try again."
+msgstr "La password per il keystore non è corretta. Riprova."
+
+#: src/app/views/members-constitute/members-constitute.js:322
+#: src/app/views/members-reconstruct/members-reconstruct.js:310
+msgid "The password should contain 6 numeric characters"
+msgstr "La password deve contenere sei caratteri numerici"
+
+#: src/app/views/members-constitute/members-constitute.js:316
+#: src/app/views/members-reconstruct/members-reconstruct.js:304
+msgid "The password should contain only numeric characters"
+msgstr "La password deve contenere solo caratteri numerici"
+
+#: src/app/views/members-constitute/members-constitute.js:304
+msgid "The passwords do not match"
+msgstr "Le password non coincidono"
+
+#: src/app/views/voting-cards/voting-cards.js:127
+msgid "This action will only be performed on {{status}} voting cards sets"
+msgstr "Questa azione sarà eseguita solo su set di certificati elettorali {{status}}"
+
+#: src/app/views/administration-board-list/administration-board-list.html:28
+#: src/app/views/ballot-boxes/ballot-boxes.html:126
+#: src/app/views/ballots/ballots.html:29
+#: src/app/views/election-event-list/election-event-list.html:56
+#: src/app/views/electoral-authorities/electoral-authorities.html:36
+#: src/app/views/voting-cards/voting-cards.html:89
+msgid "Title"
+msgstr "Titolo"
+
+#: src/app/views/members-reconstruct/members-reconstruct.js:50
+msgid "To activate the Board please insert the smart card for each member of the"
+msgstr "Per attivare il Consiglio prega di inserire la smart card per ogni membro del"
+
+#: src/app/views/voting-cards/voting-cards.html:137
+msgid "To compute"
+msgstr "Calcolare"
+
+#: src/app/views/members-constitute/members-constitute.js:331
+msgid "To constitute the Board please record the smartcard for each member of the"
+msgstr "Per costituire il Consiglio si prega di registrare la smart card per ogni membro del"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:126
+msgid "To decrypt"
+msgstr "Decodificare"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:125
+#: src/app/views/voting-cards/voting-cards.html:139
+msgid "To download"
+msgstr "Scaricare"
+
+#: src/app/views/voting-cards/voting-cards.html:140
+msgid "To generate"
+msgstr "Creare"
+
+#: src/app/views/election-event-list/election-event-list.js:157
+msgid "To manage election events you have to secure them first. To do this, select election events from the list and click on the \"SECURE\" action button above."
+msgstr "Per gestire gli eventi elettorali è necessario prima assicurarli. A tal fine selezionare gli eventi elettorali dalla lista e cliccare sul pulsante \"SECURE\" in alto."
+
+#: src/app/views/voting-cards/voting-cards.html:136
+msgid "To pre-compute"
+msgstr "Precalcolare"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:123
+#: src/app/views/voting-cards/voting-cards.html:141
+msgid "To sign"
+msgstr "Firmare"
+
+#: src/app/views/ballot-boxes/ballot-boxes.html:124
+msgid "To sync"
+msgstr "Sincronizzare"
+
+msgid "To mix"
+msgstr "A mescolare"
+
+msgid "Mix"
+msgstr "Mescolare"
+
+msgid "Mixing PROCESSING"
+msgstr "Miscelazione in corso"
+
+msgid "Mixing ERROR"
+msgstr "Errore durante la miscelazione"
+
+msgid "Failed to start mixing of ballot boxes"
+msgstr "Impossibile di avviare la miscelazione delle urne"
+
+msgid "Mixing started!"
+msgstr "La miscelazione è iniziata!"
+
+msgid "Confirm mixing of ballot boxes"
+msgstr "Confermare il mescolamento delle urne"
+
+msgid "Please input the following code to confirm the operation"
+msgstr "Inserisci il seguente codice per confermare l'operazione"
+
+msgid "Confirmation code"
+msgstr "Codice di conferma"
+
+msgid "Confirm"
+msgstr "Confermare"
+
+#: src/app/services/errors.js:15
+msgid "Unexpected error, please check the Integration tools logs"
+msgstr "Errore inaspettato, verificare i log degli strumenti di integrazione"
+
+#: src/app/services/errors.js:27
+msgid "Usb not found"
+msgstr "USB non trovata"
+
+#: src/app/views/ballots/ballots.html:61
+msgid "View"
+msgstr "Visualizzare"
+
+#: src/app/views/dialogs/dialog-view-ballot.html:4
+msgid "View ballot"
+msgstr "Visualizzare scheda di voto"
+
+#: src/app/views/ballots/ballots.js:74
+msgid "View ballot(s)"
+msgstr "Visualizzare scheda/e di voto"
+
+#: src/app/views/election-event-list/election-event-list.js:156
+msgid "View Election Event(s)"
+msgstr "Visualizzare evento o eventi elettorali"
+
+#: src/app/views/voting-cards/voting-cards.js:185
+msgid "Voting Card Set Error"
+msgstr "Errore set di certificati elettorali"
+
+#: src/app/views/voting-cards/voting-cards.js:172
+#: src/app/views/voting-cards/voting-cards.js:317
+msgid "Voting Card Set(s)"
+msgstr "Set di certificati elettorali"
+
+#: src/app/views/voting-cards/voting-cards.js:393
+msgid "Voting card set(s) signed!"
+msgstr "Set di certificati elettorali firmato/i!"
+
+#: src/app/views/election-event-manage/election-event-manage.html:35
+#: src/app/views/voting-cards/voting-cards.html:2
+msgid "Voting Card Sets"
+msgstr "Set di certificati elettorali"
+
+#: src/app/views/voting-cards/voting-cards.js:281
+#: src/app/views/voting-cards/voting-cards.js:306
+#: src/app/views/voting-cards/voting-cards.js:316
+#: src/app/views/voting-cards/voting-cards.js:326
+msgid "Voting card sets signing"
+msgstr "Firma in corso dei set di certificati elettorali"
+
+#: src/app/views/dialogs/dialog-export-election-event.html:26
+#: src/app/views/dialogs/dialog-export-election-event.html:29
+msgid "Voting Cards"
+msgstr "Certificati elettorali"
+
+#: src/app/app.js:175
+msgid "Voting Cards generated!"
+msgstr "Certificati elettorali generati!"
+
+#: src/app/views/voting-cards/voting-cards.js:161
+#: src/app/views/voting-cards/voting-cards.js:171
+#: src/app/views/voting-cards/voting-cards.js:196
+#: src/app/views/voting-cards/voting-cards.js:96
+msgid "Voting cards generation"
+msgstr "Generazione dei certificati elettorali"
+
+#: src/app/views/voting-cards/voting-cards.js:100
+#: src/app/views/voting-cards/voting-cards.js:113
+#: src/app/views/voting-cards/voting-cards.js:126
+msgid "Voting cards selection"
+msgstr "Selezione certificati elettorali"
+
+#: src/app/views/voting-cards/voting-cards.js:214
+msgid "Voting cards submitted for generation..."
+msgstr "Certificati elettorali inoltrati per la generazione..."
+
+#: src/app/services/progress-bar.html:13
+msgid "Waiting for Remaining Time"
+msgstr "In attesa per il tempo rimanente"
+
+#: src/app/views/members-reconstruct/members-reconstruct.html:79
+msgid "Write your password"
+msgstr "Inserire la password"
+
+#: src/app/views/ballot-boxes/ballot-boxes.js:1156
+#: src/app/views/ballots/ballots.js:206
+#: src/app/views/electoral-authorities/electoral-authorities.js:271
+#: src/app/views/voting-cards/voting-cards.js:362
+msgid "Wrong Administration Board activated"
+msgstr "È stato attivato Consiglio di amministrazione sbagliato."
+
+#: src/app/views/members-constitute/members-constitute.html:12
+#: src/app/views/members-reconstruct/members-reconstruct.html:12
+msgid "Yes"
+msgstr "Sì"
+
+#: src/app/views/dialogs/dialogs.js:19
+msgid "You cannot perform the action for one or more"
+msgstr "Impossibile eseguire l’operazione per uno/una o più"
+
+#: src/app/views/members-constitute/members-constitute.js:286
+#: src/app/views/members-reconstruct/members-reconstruct.js:260
+msgid "You need to extract the smartcard after clicking a new member"
+msgstr "È necessario estrarre la smart card dopo avere cliccato su un nuovo membro"

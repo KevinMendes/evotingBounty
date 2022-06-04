@@ -1,0 +1,114 @@
+{
+  "id": "dfb0059f3e45411d973951e122ddf1be",
+  "defaultTitle": "PR_AB",
+  "defaultDescription": "PR_AB",
+  "alias": "PR_AB",
+  "electionEvent": {
+	"id": "6eb1403ab44d4fedb86a6f73adcf17fc"
+  },
+  "template": "listsAndCandidates",
+  "fullBlank": "true",
+  "options": [
+	{
+	  "id": "84106a8b84104ef8a5bea3a9f748fd2c",
+	  "representation": "100673",
+	  "attribute": "7defa20679bc4582a1efcc7b33aed45a"
+	},
+	{
+	  "id": "670db19029274b99a8a6795fab43c476",
+	  "representation": "10069",
+	  "attribute": "e009fda34d674273bfd187b43c409a44"
+	},
+	{
+	  "id": "e10518b168214f779736bef5d5a7ab9d",
+	  "representation": "100613",
+	  "attribute": "b09d8da03cbb49b785207080e66e338b"
+	},
+	{
+	  "id": "3449e8e4a0ca4904bf9e05b248c73301",
+	  "representation": "100559",
+	  "attribute": "85bb39c30ba14d29999bd272da0412dd"
+	},
+	{
+	  "id": "8ffd9fc3c1544e4cbb80b2bb265eaf11",
+	  "representation": "100549",
+	  "attribute": "6d735c50a81e4b24b9fc721c6b18f82c"
+	}
+  ],
+  "attributes": [
+	{
+	  "id": "3e4cd5337e204f5591808887fa2cea02",
+	  "alias": "candidates",
+	  "correctness": true,
+	  "related": []
+	},
+	{
+	  "id": "7defa20679bc4582a1efcc7b33aed45a",
+	  "alias": "Blank Candidate",
+	  "correctness": false,
+	  "related": [
+		"3e4cd5337e204f5591808887fa2cea02"
+	  ]
+	},
+	{
+	  "id": "9053f1203ecf4281b220b9c385c3c18e",
+	  "alias": "PR_AB1",
+	  "correctness": false,
+	  "related": []
+	},
+	{
+	  "id": "e009fda34d674273bfd187b43c409a44",
+	  "alias": "PR_AB11id",
+	  "correctness": false,
+	  "related": [
+		"9053f1203ecf4281b220b9c385c3c18e",
+		"3e4cd5337e204f5591808887fa2cea02"
+	  ]
+	},
+	{
+	  "id": "b09d8da03cbb49b785207080e66e338b",
+	  "alias": "PR_AB12id",
+	  "correctness": false,
+	  "related": [
+		"9053f1203ecf4281b220b9c385c3c18e",
+		"3e4cd5337e204f5591808887fa2cea02"
+	  ]
+	},
+	{
+	  "id": "980cd86438a048e78737405f34687c05",
+	  "alias": "PR_AB2",
+	  "correctness": false,
+	  "related": []
+	},
+	{
+	  "id": "85bb39c30ba14d29999bd272da0412dd",
+	  "alias": "PR_AB21id",
+	  "correctness": false,
+	  "related": [
+		"980cd86438a048e78737405f34687c05",
+		"3e4cd5337e204f5591808887fa2cea02"
+	  ]
+	},
+	{
+	  "id": "6d735c50a81e4b24b9fc721c6b18f82c",
+	  "alias": "PR_AB22id",
+	  "correctness": false,
+	  "related": [
+		"980cd86438a048e78737405f34687c05",
+		"3e4cd5337e204f5591808887fa2cea02"
+	  ]
+	}
+  ],
+  "questions": [
+	{
+	  "id": "5178a35e29cc4874ab817d2653f5a732",
+	  "max": "1",
+	  "min": "0",
+	  "cumul": "1",
+	  "writeIn": "false",
+	  "fusions": [],
+	  "blankAttribute": "7defa20679bc4582a1efcc7b33aed45a",
+	  "attribute": "3e4cd5337e204f5591808887fa2cea02"
+	}
+  ]
+}

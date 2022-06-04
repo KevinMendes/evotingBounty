@@ -1,0 +1,26 @@
+<md-dialog>
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2 class="flex"><span translate>View ballot</span></h2>
+            <md-button aria-label="{{'Close dialog'|translate}}" class="md-icon-button" ng-click="cancel()">
+                <md-icon md-svg-src="assets/icons/ic_close_24px.svg"></md-icon>
+            </md-button>
+        </div>
+    </md-toolbar>
+    <md-dialog-content class="md-dialog-content" role="document" tabindex="-1">
+        <div class="md-dialog-content-body">
+            <div ng-repeat="ballot in ballotsToView">
+                <h3 class="md-title"><span translate>Ballot ID</span>: {{ballot.id}}</h3>
+                <pre>{{ballot | json}}</pre>
+                <h3 class="md-title" translate>Texts</h3>
+                <div ng-repeat="text in getBallotTexts(ballot.id)">
+                    <p><strong><span translate>Locale</span>: {{text.locale}}</strong></p>
+                    <pre>{{text | json}}</pre>
+                </div>
+            </div>
+        </div>
+    </md-dialog-content>
+    <md-dialog-actions>
+        <md-button class="md-primary md-raised" ng-click="cancel()" type="button"><span translate>Close</span></md-button>
+    </md-dialog-actions>
+</md-dialog>

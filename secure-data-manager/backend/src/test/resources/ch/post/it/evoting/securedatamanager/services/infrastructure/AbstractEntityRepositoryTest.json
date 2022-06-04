@@ -1,0 +1,24 @@
+[
+  {
+    "id": "1",
+    "name": "name1",
+    "age": 1,
+    "alias": "alias1",
+    "electionEvent": {
+      "id": "2",
+      "name": "name2",
+      "alias": null
+    }
+  },
+  {
+    "id": "3",
+    "name": "name3",
+    "age": 3,
+    "alias": "alias3",
+    "electionEvent": {
+      "id": "4",
+      "name": "name4",
+      "alias": "alias4"
+    }
+  }
+]

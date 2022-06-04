@@ -1,0 +1,67 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema"
+					 attributeFormDefault="unqualified" elementFormDefault="qualified">
+
+	<xs:element name="Plugins">
+		<xs:complexType>
+			<xs:annotation>
+				<xs:documentation>Limit number of phases to 12, one for each phase "name".</xs:documentation>
+			</xs:annotation>
+			<xs:sequence>
+				<xs:element type="Phase" name="Phase" maxOccurs="12"
+										minOccurs="0">
+				</xs:element>
+			</xs:sequence>
+		</xs:complexType>
+	</xs:element>
+
+	<xs:complexType name="Plugin">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute type="PluginType" name="type" use="optional"/>
+				<xs:attribute type="PluginOrder" name="order" use="optional"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+
+	<xs:complexType name="Phase">
+		<xs:sequence>
+			<xs:annotation>
+				<xs:documentation>Limit number of plugins for each phase to 20</xs:documentation>
+			</xs:annotation>
+			<xs:element type="Plugin" name="Plugin" maxOccurs="20"
+									minOccurs="0">
+			</xs:element>
+		</xs:sequence>
+		<xs:attribute type="PhaseName" name="name" use="optional"/>
+	</xs:complexType>
+
+	<xs:simpleType name="PluginType">
+		<xs:restriction base="xs:string">
+			<xs:enumeration value="cmd"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="PluginOrder">
+		<xs:restriction base="xs:integer">
+			<xs:minInclusive value="0"/>
+			<xs:maxInclusive value="100"/>
+		</xs:restriction>
+	</xs:simpleType>
+
+	<xs:simpleType name="PhaseName">
+		<xs:restriction base="xs:string">
+			<!-- Custom files action in the Voting Card Sets tab -->
+			<xs:enumeration value="generate_pre_voting_outputs"/>
+			<!-- Download ballot box -->
+			<xs:enumeration value="download"/>
+			<!-- Decrypt ballot box -->
+			<xs:enumeration value="decryption"/>
+			<!-- Tally decrypted ballot box -->
+			<xs:enumeration value="tally"/>
+			<!-- Import election configuration and status from disk or device -->
+			<xs:enumeration value="import"/>
+			<!-- Export election configuration and status to disk or device -->
+			<xs:enumeration value="export"/>
+		</xs:restriction>
+	</xs:simpleType>
+</xs:schema>

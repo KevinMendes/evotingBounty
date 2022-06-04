@@ -1,0 +1,80 @@
+<div class="sv-toolbar">
+  <span class="sv-toolbar-hd">
+    <span class="hide-xs hide-sm">{{titleLong | translate}}</span>
+    <span class="hide-gt-sm">{{titleShort | translate}}</span>
+  </span>
+</div>
+
+<nav class="sv-nav">
+
+    <section class="sv-nav-main">
+        <md-button ng-class="{'current':state=='election-event-list'}" ng-click="setState('election-event-list')">
+            <md-icon aria-label="{{'Election Events' | translate}}" md-svg-src="assets/icons/ic_election_event_24px.svg"></md-icon>
+            <span class="sv-button-label hide-xs hide-sm">
+        <span translate>Election Events</span>
+      </span>
+            <span>({{entitiesCounterService.electionEvents}})</span>
+        </md-button>
+        <md-button ng-class="{'current':state=='administration-board-list'}" ng-click="setState('administration-board-list')">
+            <md-icon aria-label="{{'Administration Boards' | translate}}" md-svg-src="assets/icons/ic_bookmark_24px.svg"></md-icon>
+            <span class="sv-button-label hide-xs hide-sm">
+        <span translate>Administration Boards</span>
+      </span>
+            <span>({{entitiesCounterService.adminBoards}})</span>
+        </md-button>
+    </section>
+
+    <section ng-if="entitiesCounterService.allowElectionEventNav">
+
+        <hr>
+
+        <div class="election-event-title hide-xs hide-sm">
+            <strong>{{entitiesCounterService.selectedElectionEvent}}</strong>
+        </div>
+
+        <md-button ng-class="{'current':state=='ballots'}" ng-click="setState('ballots')">
+            <md-icon aria-label="{{'Ballots' | translate}}" md-svg-src="assets/icons/ic_mail_24px.svg"></md-icon>
+            <span class="sv-button-label hide-xs hide-sm">
+        <span translate>Ballots</span>
+      </span>
+            <span>({{entitiesCounterService.ballots}})</span>
+        </md-button>
+        <md-button ng-class="{'current':state=='voting-cards'}" ng-click="setState('voting-cards')">
+            <md-icon aria-label="{{'Voting Card Sets' | translate}}" md-svg-src="assets/icons/ic_files_24px.svg"></md-icon>
+            <span class="sv-button-label hide-xs hide-sm">
+        <span translate>Voting Card Sets</span>
+      </span>
+            <span>({{entitiesCounterService.votingCards}})</span>
+        </md-button>
+        <md-button ng-class="{'current':state=='electoral-authorities'}" ng-click="setState('electoral-authorities')">
+            <md-icon aria-label="{{'Electoral Authorities' | translate}}" md-svg-src="assets/icons/ic_supervisor_account_24px.svg"></md-icon>
+            <span class="sv-button-label hide-xs hide-sm">
+        <span translate>Electoral Authorities</span>
+      </span>
+            <span>({{entitiesCounterService.electoralAuthorities}})</span>
+        </md-button>
+        <md-button ng-class="{'current':state=='ballot-boxes'}" ng-click="setState('ballot-boxes')">
+            <md-icon aria-label="{{'Ballot Boxes' | translate}}" md-svg-src="assets/icons/ic_move_to_inbox_24px.svg"></md-icon>
+            <span class="sv-button-label hide-xs hide-sm">
+        <span translate>Ballot Boxes</span>
+      </span>
+            <span>({{entitiesCounterService.ballotBoxes}})</span>
+        </md-button>
+
+    </section>
+
+    <section data-ng-if="$root.i18n.languages.length > 1">
+
+        <hr>
+        <md-input-container class="lang-selector">
+            <md-icon aria-label="{{'Switch language' | translate}}" md-svg-src="assets/icons/ic_web_24px.svg"></md-icon>
+            <md-select aria-label="{{'Switch language'|translate}}" class="lang-selector" data-ng-change="$root.switchLanguage($root.i18n.lang)"
+                       data-ng-model="$root.i18n.lang.code" id="selectLang">
+                <md-option class="lang-option" data-ng-repeat="language in $root.i18n.languages" data-ng-value="language.code">{{language.name}}
+                </md-option>
+            </md-select>
+        </md-input-container>
+
+    </section>
+
+</nav>

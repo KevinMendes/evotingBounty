@@ -1,0 +1,56 @@
+// helpers
+// ----------------------------------------
+
+.mbn {
+  margin-bottom: 0;
+}
+
+.mbs {
+  margin-bottom: ($layout-gutter-width / 2);
+}
+
+.mvs {
+  margin-top: ($layout-gutter-width / 2);
+  margin-bottom: ($layout-gutter-width / 2);
+}
+
+.mhm {
+  margin-right: $layout-gutter-width;
+  margin-left: $layout-gutter-width;
+}
+
+.pbm {
+  padding-bottom: $layout-gutter-width;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// screen readers
+.sr-only {
+  position: fixed;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.truncate {
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.no-wrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+  display: inline-block;
+  word-break: normal;
+  white-space: nowrap;
+}

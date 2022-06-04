@@ -1,0 +1,52 @@
+.alert {
+  svg {
+    vertical-align: text-bottom;
+  }
+
+  &.is-closed {
+    display: none;
+  }
+}
+
+.alert-success {
+  svg {
+    fill: @alert-success-text;
+  }
+}
+
+.alert-info {
+  svg {
+    fill: @alert-info-text;
+  }
+}
+
+.alert-warning {
+  svg {
+    fill: @alert-warning-text;
+  }
+
+  .btn-link,
+  .btn-icon {
+    svg {
+      fill: @link-color;
+    }
+  }
+}
+
+.alert-danger {
+  svg {
+    fill: @alert-danger-text;
+  }
+}
+
+.error-msg {
+  padding: 2em;
+  background-color: #f0f0f0;
+  font-size: 1.714em;
+  font-family: 'Roboto Light', 'Roboto Regular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin: 4em auto 8em;
+  max-width: 21em;
+  box-shadow: 0 0.188rem 0.063rem -0.125rem rgba(0, 0, 0, 0.14), 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.098), 0 0.063rem 0.313rem 0 rgba(0, 0, 0, 0.084);
+  // word-break: break-all;
+  text-align: justify;
+}

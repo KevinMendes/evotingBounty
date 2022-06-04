@@ -1,0 +1,1265 @@
+msgid ""
+msgstr ""
+"Language: fr_CH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n > 1);\n"
+
+#: contests/components/option-selector.tpl.html:28
+msgid "(no option chosen)"
+msgstr "(aucune option sélectionnée)"
+
+#: views/legal/legalTerms.tpl.html:55
+msgid "A desktop computer with a recent version of Ubuntu and one of the latest version of Chrome or Firefox"
+msgstr "Un ordinateur de bureau avec une version récente d’Ubuntu et l’une des dernières versions de Chrome ou de Firefox"
+
+#: views/legal/legalTerms.tpl.html:54
+msgid "A desktop computer with a recent version of Windows and one of the latest version of MS Edge, Internet Explorer, Chrome or Firefox"
+msgstr "Un ordinateur de bureau avec une version récente de Windows et l’une des dernières versions de MS Edge, d’Internet Explorer, de Chrome ou de Firefox"
+
+#: views/legal/legalTerms.tpl.html:56
+msgid "A device with Android and Chrome mobile"
+msgstr "Un appareil avec Android et Chrome mobile"
+
+#: views/legal/legalTerms.tpl.html:57
+msgid "A device with iOS and Safari mobile"
+msgstr "Un appareil avec iOS et Safari mobile"
+
+#: views/legal/legalTerms.tpl.html:58
+msgid "A Mac with a recent version of macOS and Safari"
+msgstr "Un Mac avec une version récente de macOS et de Safari"
+
+#: views/validate/validate.tpl.html:455
+msgid "After confirming your vote, your vote is cast and you can no longer vote by mail or at the ballot box."
+msgstr "Une fois que vous l’avez confirmé, votre vote est enregistré et vous ne pouvez plus voter par correspondance ou à l’urne."
+
+#: views/review/review.tpl.html:313
+msgid "After sealing the ballot you will not be able to change your choices"
+msgstr "Une fois le vote scellé, vous ne pourrez plus le modifier.<br><br>Cependant, tant que vous n’avez pas saisi le code de confirmation à l’étape 3 suivante, vous pouvez en tout temps interrompre la procédure de vote électronique et voter par correspondance ou à l’urne."
+
+#: views/legal/legalTerms.tpl.html:16
+msgid "alienates, misappropriates or adds ballot papers;"
+msgstr "détourne, soustrait ou ajoute des bulletins;"
+
+#: contests/components/candidate-pre-selector.js:94
+msgid "All Lists"
+msgstr "Toutes les listes"
+
+#: views/legal/legalTerms.tpl.html:10
+msgid "Anyone in particular may be punished with imprisonment or a fine under Articles 279 to 283 of the Criminal Code:"
+msgstr "Est notamment passible d’emprisonnement ou d’amende en application des articles 279 à 283 <a href=\"https://www.admin.ch/opc/fr/classified-compilation/19370083/index.html#id-2-14\" target=\"_blank\">du Code pénal</a> quiconque:"
+
+#: views/modals/abandon.tpl.html:14
+msgid "Are you sure you want to cancel the voting process?"
+msgstr "Etes-vous sûr(e) de vouloir annuler la procédure de vote?"
+
+#: views/modals/abandonValidate.tpl.html:14
+msgid "Are you sure you want to leave the voting process?"
+msgstr "Etes-vous sûr(e) de vouloir quitter la procédure de vote?"
+
+#: app.js:68
+msgid "Are you sure you want to navigate away?"
+msgstr "Etes-vous sûr(e) de vouloir quitter la procédure de vote?"
+
+#: views/legal/legalTerms.tpl.html:17
+msgid "attempts to destroy, destroy, modify or alter ballot papers, registers or other materials used to determine the results of votes, in whole or in part."
+msgstr "détruit ou tente de détruire, altère ou tente d’altérer tout ou partie des bulletins, registres ou pièces destinés à établir le résultat du vote."
+
+#: views/identification/identification-svk.ctrl.js:22
+msgid "Authentication and retrieving Ballot Information done"
+msgstr "Authentification et récupération des informations du scrutin effectuées"
+
+#: views/identification/identification-svk.ctrl.js:21
+msgid "Authentication and retrieving Ballot Information in progress"
+msgstr "Authentification et récupération des informations du scrutin en cours"
+
+#: views/identification/identification-dob.ctrl.js:24
+msgid "Authentication done"
+msgstr "Authentification effectuée"
+
+#: views/identification/identification-dob.ctrl.js:23
+msgid "Authentication in progress"
+msgstr "Authentification en cours"
+
+#: views/validate/validate.tpl.html:355
+#: views/validate/validate.tpl.html:369
+msgid "Ballot Casting Key"
+msgstr "Code de confirmation"
+
+#: views/modals/help.tpl.html:65
+msgid "Ballot Casting Key: you will have to introduce this key to validate your options and cast the vote."
+msgstr "Code de confirmation (signalé par un PENTAGONE): vous devrez saisir ce code pour confirmer que les codes de vérification affichés sont corrects. En saisissant votre code de confirmation vous votez."
+
+#: views/review/review.js:50
+msgid "Ballot sealed"
+msgstr "Vote scellé et transmis"
+
+#: contests/services/candidates-only.service.js:59
+msgid "Blank vote is not allowed. Please make your choice from the options provided below."
+msgstr "Un vote blanc n’est pas autorisé. Veuillez faire votre choix parmi les options proposées ci-dessous."
+
+#: views/identification/ident-dob.tpl.html:157
+#: views/identification/ident-svk.tpl.html:126
+msgid "Breadcrumb"
+msgstr "Fil d'Ariane"
+
+#: views/legal/legalTerms.tpl.html:50
+msgid "Browser compatibility"
+msgstr "Compatibilité du navigateur"
+
+#: views/modals/help.tpl.html:116
+msgid "Can I change my selection?"
+msgstr "Puis-je modifier mon choix?"
+
+#: views/modals/help.tpl.html:239
+msgid "Can I leave or cancel my voting anytime?"
+msgstr "Puis-je quitter ou annuler la procédure de vote à tout moment?"
+
+#: contests/lists-and-candidates.js:39
+#: contests/lists-and-candidates.js:68
+msgid "Cancel"
+msgstr "Annuler"
+
+#: layout/header.html:40
+#: layout/header.html:41
+#: views/choose/choose.tpl.html:57
+#: views/review/review.tpl.html:334
+msgid "Cancel the process"
+msgstr "Annuler la procédure"
+
+#: contests/components/candidate-finder.tpl.html:87
+msgid "Candidates"
+msgstr "Candidats"
+
+#: views/validate/validate.tpl.html:466
+msgid "Cast vote"
+msgstr "Voter"
+
+#: views/validate/validate.tpl.html:465
+msgid "Casting vote"
+msgstr "Voter"
+
+#: contests/components/candidate-pre-selector.tpl.html:108
+#: contests/components/list-pre-selector.tpl.html:56
+msgid "Change"
+msgstr "Modifier"
+
+#: views/review/review.tpl.html:153
+#: views/review/review.tpl.html:190
+#: views/review/review.tpl.html:242
+msgid "Change choices"
+msgstr "Changer votre sélection"
+
+#: contests/lists-and-candidates.js:38
+msgid "CHANGE LIST"
+msgstr "CHANGER DE LISTE"
+
+#: views/validate/validate.tpl.html:124
+msgid "Choice Codes"
+msgstr "Codes de vérification"
+
+#: views/review/review.js:60
+msgid "Choice codes generated"
+msgstr "Codes de vérification générés"
+
+#: views/modals/help.tpl.html:64
+msgid "Choice Codes: you will have to verify that the displayed codes match the ones you have in your Voting Card."
+msgstr "Codes de vérification (signalés par un DIAMANT): vous devrez vérifier que les codes affichés correspondent bien à ceux figurant sur @@voting_card_1.fr@@. Dans le cas où les codes correspondent vous savez que votre choix a bien été scellé et transmis."
+
+#: contests/components/candidate-pre-selector.tpl.html:104
+#: contests/components/list-pre-selector.tpl.html:52
+#: directives/breadcrumbs.js:15
+#: views/choose/choose.tpl.html:26
+msgid "Choose"
+msgstr "Choisir"
+
+#: views/validate/validate.tpl.html:428
+msgid "Clean in one go the ballot casting key"
+msgstr "Effacer complètement le code de confirmation"
+
+#: views/identification/ident-dob.tpl.html:230
+msgid "Clean in one go the start voting key provided"
+msgstr "Effacer complètement le code d’initialisation fourni"
+
+#: contests/components/candidate-pre-selector.tpl.html:135
+#: contests/components/list-pre-selector.tpl.html:72
+#: contests/components/option-selector.tpl.html:26
+msgid "Clear"
+msgstr "Effacer"
+
+#: contests/components/candidate-finder.tpl.html:14
+msgid "Clear candidate"
+msgstr "Supprimer le candidat"
+
+#: contests/components/candidate-pre-selector.tpl.html:136
+msgid "Clear current candidate"
+msgstr "Supprimer le candidat actuel"
+
+#: contests/components/list-pre-selector.tpl.html:73
+msgid "Clear current list"
+msgstr "Supprimer la liste actuelle"
+
+#: contests/components/option-selector.tpl.html:27
+msgid "Clear current option"
+msgstr "Supprimer l’option actuelle"
+
+#: contests/components/list-finder.tpl.html:14
+msgid "Clear list"
+msgstr "Supprimer la liste"
+
+#: contests/lists-and-candidates.js:67
+msgid "CLEAR LIST"
+msgstr "SUPPRIMER LA LISTE"
+
+#: views/modals/help.tpl.html:271
+msgid "Click on \"Choose\" or \"Change\". At the bottom, you will find the possibility to select a write-in option. By selecting this option, you can enter your choice in a write-in field."
+msgstr "Cliquez sur «Choisir» ou «Modifier». Vous pourrez ensuite sélectionner l’option «Vote manuscrit» en bas de page. Si vous sélectionnez cette option, vous pouvez saisir votre choix dans le champ de vote manuscrit."
+
+#: views/choose/choose.tpl.html:30
+msgid "Click on the contest to collapse or expand the contest."
+msgstr "Cliquer sur le scrutin pour le développer ou le masquer."
+
+#: directives/alert-message.tpl.html:15
+#: views/choose/choose.tpl.html:19
+#: views/identification/ident-dob.tpl.html:113
+#: views/identification/ident-dob.tpl.html:127
+#: views/identification/ident-dob.tpl.html:142
+#: views/identification/ident-dob.tpl.html:22
+#: views/identification/ident-dob.tpl.html:37
+#: views/identification/ident-dob.tpl.html:52
+#: views/identification/ident-dob.tpl.html:68
+#: views/identification/ident-dob.tpl.html:83
+#: views/identification/ident-dob.tpl.html:98
+#: views/identification/ident-svk.tpl.html:111
+#: views/identification/ident-svk.tpl.html:22
+#: views/identification/ident-svk.tpl.html:37
+#: views/identification/ident-svk.tpl.html:52
+#: views/identification/ident-svk.tpl.html:67
+#: views/identification/ident-svk.tpl.html:82
+#: views/identification/ident-svk.tpl.html:96
+#: views/modals/abandon.tpl.html:10
+#: views/modals/abandonValidate.tpl.html:10
+#: views/modals/choose-candidate.tpl.html:10
+#: views/modals/choose-party.tpl.html:10
+#: views/modals/confirmModal.tpl.html:10
+#: views/modals/help.tpl.html:10
+#: views/modals/sendVoteConfirm.tpl.html:10
+#: views/review/review.tpl.html:105
+#: views/review/review.tpl.html:120
+#: views/review/review.tpl.html:21
+#: views/review/review.tpl.html:35
+#: views/review/review.tpl.html:49
+#: views/review/review.tpl.html:63
+#: views/review/review.tpl.html:77
+#: views/review/review.tpl.html:91
+#: views/validate/validate.tpl.html:21
+#: views/validate/validate.tpl.html:35
+#: views/validate/validate.tpl.html:49
+#: views/validate/validate.tpl.html:63
+#: views/validate/validate.tpl.html:77
+#: views/validate/validate.tpl.html:92
+msgid "Close"
+msgstr "Fermer"
+
+#: views/choose/choose.tpl.html:15
+#: views/identification/ident-dob.tpl.html:109
+#: views/identification/ident-dob.tpl.html:123
+#: views/identification/ident-dob.tpl.html:138
+#: views/identification/ident-dob.tpl.html:18
+#: views/identification/ident-dob.tpl.html:33
+#: views/identification/ident-dob.tpl.html:48
+#: views/identification/ident-dob.tpl.html:64
+#: views/identification/ident-dob.tpl.html:79
+#: views/identification/ident-dob.tpl.html:94
+#: views/identification/ident-svk.tpl.html:107
+#: views/identification/ident-svk.tpl.html:18
+#: views/identification/ident-svk.tpl.html:33
+#: views/identification/ident-svk.tpl.html:48
+#: views/identification/ident-svk.tpl.html:63
+#: views/identification/ident-svk.tpl.html:78
+#: views/identification/ident-svk.tpl.html:92
+#: views/review/review.tpl.html:101
+#: views/review/review.tpl.html:116
+#: views/review/review.tpl.html:17
+#: views/review/review.tpl.html:31
+#: views/review/review.tpl.html:45
+#: views/review/review.tpl.html:59
+#: views/review/review.tpl.html:73
+#: views/review/review.tpl.html:87
+#: views/validate/validate.tpl.html:17
+#: views/validate/validate.tpl.html:31
+#: views/validate/validate.tpl.html:45
+#: views/validate/validate.tpl.html:59
+#: views/validate/validate.tpl.html:73
+#: views/validate/validate.tpl.html:88
+msgid "Close message"
+msgstr "Fermer le message"
+
+#: contests/lists-and-candidates.js:36
+#: contests/lists-and-candidates.js:65
+msgid "Confirm action"
+msgstr "Confirmer l’action"
+
+#: views/choose/choose.tpl.html:47
+#: views/identification/ident-dob.tpl.html:254
+#: views/identification/ident-svk.tpl.html:214
+#: views/legal/legalTerms.tpl.html:30
+#: views/review/review.tpl.html:316
+#: views/validate/validate.tpl.html:458
+msgid "Continue process"
+msgstr "Poursuivre le processus"
+
+#: views/choose/choose.tpl.html:50
+msgid "Continue to review"
+msgstr "Suivant"
+
+#: contests/components/candidate-pre-selector.tpl.html:125
+#: contests/components/candidate-selector.tpl.html:99
+msgid "Cumulate"
+msgstr "Cumuler"
+
+#: contests/components/candidate-selector.tpl.html:101
+msgid "Cumulate candidate:"
+msgstr "Cumuler le candidat:"
+
+#: contests/components/candidate-pre-selector.tpl.html:126
+msgid "Cumulate current candidate"
+msgstr "Cumuler le candidat actuel"
+
+#: directives/breadcrumbs.tpl.html:10
+msgid "Current step:"
+msgstr "Étape en cours:"
+
+#: views/identification/auth-challenge-dob.tpl.html:2
+msgid "Date of birth"
+msgstr "Date de naissance"
+
+#: views/identification/auth-challenge-dob.tpl.html:18
+msgid "Day"
+msgstr "Jour"
+
+#: contests/components/list-selector.tpl.html:27
+msgid "Details"
+msgstr "Détails"
+
+#: contests/components/list-selector.tpl.html:29
+msgid "Details of the list:"
+msgstr "Détails de la liste:"
+
+#: views/validate/validate.tpl.html:356
+msgid "Do the generated Choice Codes above match the ones on your Voting Card? Then, enter your Ballot Casting Key below."
+msgstr "Les codes de vérification générés ci-dessus correspondent-ils à ceux figurant sur @@voting_card_1.fr@@? Si tel est le cas, saisissez votre code de confirmation ci-dessous."
+
+#: views/confirm/confirmation.tpl.html:47
+msgid "Do the generated codes above match the ones on your Voting Card? If so, your vote has been correctly cast."
+msgstr "Le code de finalisation généré ci-dessus correspond-il à celui qui figure sur @@voting_card_1.fr@@? Si tel est le cas, vous venez de voter avec succès."
+
+#: views/modals/sendVoteConfirm.tpl.html:19
+msgid "Do you want to seal your vote? After sealing your vote, you cannot change your selections anymore."
+msgstr "Souhaitez-vous sceller et transmettre votre vote? Une fois votre vote scellé et transmis, vous ne pourrez plus modifier vos choix."
+
+#: views/identification/ident-dob.tpl.html:188
+msgid "During the voting process, please do not use the navigation buttons of your web browser or manually refresh the website, since you might lose your session."
+msgstr "Pendant le processus de vote, veuillez ne pas utiliser les boutons de navigation de votre navigateur ou actualiser manuellement la page Internet car vous risquez de perdre votre session."
+
+#: views/identification/ident-dob.tpl.html:187
+msgid "Enter the Start Voting Key provided in the Voting Card you received and your date of birth. Then press START."
+msgstr "Saisissez votre code d’initialisation et votre date de naissance. Appuyez ensuite sur DÉMARRER."
+
+#: views/identification/ident-dob.tpl.html:186
+msgid "Enter the Start Voting Key provided in the Voting Card you received and your year of birth. Then press START."
+msgstr "Saisissez votre code d’initialisation et votre année de naissance. Appuyez ensuite sur DÉMARRER."
+
+#: views/identification/ident-svk.tpl.html:153
+msgid "Enter the Start Voting Key provided in the Voting Card you received. Then press START."
+msgstr "Saisissez votre code d’initialisation. Appuyez ensuite sur DÉMARRER."
+
+#: views/confirm/confirm.js:22
+msgid "For additional security, we recommend you to clear your browser cache to remove any data related to your vote. You can find an instruction <a href=\"https://www.evoting.ch#rules\">here</a>"
+msgstr "Pour plus de sécurité, nous vous recommandons de vider le cache de votre navigateur afin de supprimer toute donnée relative à votre vote. Vous trouverez des instructions à ce sujet <a href=\"https://www.evoting.ch/fr#rules\">ici</a>"
+
+#: views/modals/help.tpl.html:107
+msgid "For any question provided, you can either choose YES, NO or leave it blank if you wish to cast a blank vote."
+msgstr "Vous pouvez sélectionner vos choix à l’étape 1 « Choisir » en cliquant sur les cases correspondantes dans la liste ( «Oui» ou «Non»). Ne cochez aucune case si vous souhaitez voter blanc."
+
+#: views/modals/help.tpl.html:150
+msgid "For each question, you should check that the displayed code is the one that identifies your selection. This code confirmation is compulsory for security purposes."
+msgstr "Pour chaque question, vous devrez vérifier que le code de vérification affiché est celui correspondant à votre choix."
+
+#: views/review/review.js:59
+msgid "Generating choice codes"
+msgstr "Génération de codes de vérification"
+
+#: views/legal/legalTerms.tpl.html:20
+msgid "Have you taken note of the above-mentioned penal provisions?"
+msgstr "Avez-vous pris connaissance des sanctions pénales énumérées ci-dessus?"
+
+#: layout/header.html:10
+#: layout/header.html:11
+#: views/modals/help.tpl.html:14
+msgid "Help"
+msgstr "Aide"
+
+#: contests/components/contest-chooser.tpl.html:18
+msgid "Hide"
+msgstr "Cacher"
+
+#: contests/components/contest-chooser.tpl.html:19
+msgid "Hide options for:"
+msgstr "Masquer les options pour:"
+
+#: contests/components/candidate-pre-selector.tpl.html:60
+#: contests/components/candidate-pre-selector.tpl.html:61
+#: contests/components/contest-chooser.tpl.html:30
+#: contests/components/contest-chooser.tpl.html:31
+#: views/modals/help.tpl.html:259
+msgid "How can I use write-ins?"
+msgstr "Comment utiliser les votes manuscrits?"
+
+#: views/modals/help.tpl.html:26
+msgid "How do I start?"
+msgstr "Comment commencer?"
+
+#: views/modals/help.tpl.html:95
+msgid "How to make a choice?"
+msgstr "Comment répondre à une question concernant une votation ou sélectionner un(e) candidat(e)?"
+
+#: views/modals/help.tpl.html:274
+msgid "If possible, please provide additional information (year of birth or address) to clearly identify the candidate."
+msgstr "Dans la mesure du possible, veuillez fournir des informations complémentaires (année de naissance ou adresse) afin que le candidat soit clairement identifié."
+
+#: views/modals/abandon.tpl.html:19
+msgid "If you cancel your voting process you will lose your choices."
+msgstr "Si vous annulez la procédure de vote, vos choix seront perdus."
+
+#: contests/lists-and-candidates.js:37
+msgid "If you change the list, all selected candidates will be cleared"
+msgstr "Si vous changez de liste, la sélection de candidats actuelle sera supprimée."
+
+#: contests/lists-and-candidates.js:66
+msgid "If you clear the list, all selected candidates will be cleared"
+msgstr "Si vous supprimez la liste, la sélection de candidats actuelle sera supprimée."
+
+#: views/modals/help.tpl.html:61
+msgid "In the Voting Card you will find:"
+msgstr "Vous trouverez sur @@voting_card_4.fr@@ les éléments suivants:"
+
+#: views/identification/ident-dob.tpl.html:212
+#: views/identification/ident-svk.tpl.html:176
+msgid "Incorrect key. Check the key provided in the Voting card and try again."
+msgstr "Code d’initialisation incorrect. Veuillez introduire le code fourni sur @@voting_card_1.fr@@ et réessayer."
+
+#: views/validate/validate.tpl.html:409
+msgid "Incorrect. You have {{errors.validationErrorArgs[0]}} attempts left. Review the Key provided in your Voting Card and try again"
+msgstr "Code incorrect. Il vous reste {{errors.validationErrorArgs[0]}} tentative(s). Vérifiez le code inscrit sur @@voting_card_1.fr@@ et réessayez."
+
+#: views/identification/ident-dob.tpl.html:63
+msgid "Incorrect. You have {{retries}} attempts left. Review the key provided in your Voting Card and the date of birth and try again."
+msgstr "Saisie incorrecte. Il vous reste {{retries}} tentatives. Veuillez contrôler la clé inscrite sur @@voting_card_1.fr@@ ainsi que la date de naissance et réessayer."
+
+#: views/identification/ident-dob.tpl.html:62
+msgid "Incorrect. You have {{retries}} attempts left. Review the key provided in your Voting Card and the year of birth and try again."
+msgstr "Saisie incorrecte. Il vous reste {{retries}} tentative(s). Vérifiez le code inscrit sur @@voting_card_1.fr@@ et l’année de naissance et réessayez."
+
+#: views/review/review.tpl.html:307
+msgid "Information on sealing"
+msgstr "Information sur la transmission sécurisée du vote"
+
+#: views/validate/validate.tpl.html:449
+msgid "Information on vote confirmation"
+msgstr "Informations sur la confirmation du vote"
+
+#: contests/candidates-only.tpl.html:4
+#: contests/lists-and-candidates.tpl.html:4
+msgid "It is mandatory to choose at least one of the given options"
+msgstr "Vous devez au moins choisir l’une des options proposées."
+
+#: layout/header.html:13
+msgid "Language navigation"
+msgstr "Guidage vocal"
+
+#: layout/header.html:47
+#: views/validate/validate.tpl.html:476
+msgid "Leave the Process"
+msgstr "Quitter la procédure"
+
+#: layout/header.html:48
+msgid "Leave the process"
+msgstr "Quitter la procédure"
+
+#: contests/candidates-only.tpl.html:3
+#: contests/lists-and-candidates.tpl.html:3
+msgid "List of parties and candidates"
+msgstr "Liste des partis et des candidats"
+
+#: directives/breadcrumbs.tpl.html:2
+msgid "List of steps needed for voting"
+msgstr "Liste des étapes à suivre pour voter"
+
+#: contests/components/list-finder.tpl.html:38
+msgid "Lists"
+msgstr "Listes"
+
+#: views/identification/ident-dob.tpl.html:280
+#: views/identification/ident-svk.tpl.html:240
+msgid "Logging you in. Please wait."
+msgstr "Connexion en cours. Veuillez patienter."
+
+#: views/identification/ident-dob.tpl.html:281
+#: views/identification/ident-svk.tpl.html:241
+msgid "Logging you in...looks like this is taking some time. Please be patient."
+msgstr "Connexion en cours... Cette opération peut durer quelques minutes. Merci de patienter."
+
+#: views/modals/help.tpl.html:280
+msgid "Lowercase characters from a to z"
+msgstr "Caractères en minuscule de a à z"
+
+#: views/identification/auth-challenge-dob.tpl.html:25
+msgid "Month"
+msgstr "Mois"
+
+#: contests/components/candidate-pre-selector.tpl.html:54
+msgid "More information about valid and invalid characters."
+msgstr "Informations complémentaires sur les caractères valides et non valides"
+
+#: contests/components/candidate-pre-selector.tpl.html:14
+msgid "No candidate chosen"
+msgstr "Aucun candidat sélectionné"
+
+#: contests/components/list-pre-selector.js:21
+msgid "No list chosen"
+msgstr "Aucune liste sélectionnée"
+
+#: contests/components/candidate-finder.tpl.html:58
+#: contests/components/list-finder.tpl.html:29
+msgid "No Results Found. Try again using another search"
+msgstr "Aucun résultat trouvé. Veuillez réessayer avec une nouvelle recherche."
+
+#: views/modals/sendVoteConfirm.tpl.html:24
+msgid "No, change selection"
+msgstr "Non, changer la sélection"
+
+#: views/modals/abandon.tpl.html:24
+#: views/modals/abandonValidate.tpl.html:23
+msgid "No, continue voting"
+msgstr "Non, poursuivre le vote"
+
+#: views/modals/help.tpl.html:278
+msgid "Numeric characters from 0 to 9"
+msgstr "Caractères numériques de 0 à 9"
+
+#: views/modals/help.tpl.html:171
+msgid "Once the displayed codes match the ‘Choice Codes’ you should type the ‘Ballot Casting Key’ (provided in the Voting card by traditional mail) to confirm your vote. This action will effectively cast your vote."
+msgstr "Si les codes affichés à l’étape 3 («Vérifier et voter») correspondent aux codes de vérification, vous devez saisir le code de confirmation pour voter. Si vous ne saisissez pas votre code de confirmation, votre vote ne sera pas pris en compte dans l’urne électronique. Vous pouvez cependant voter par voie postale ou à l’urne."
+
+#: views/modals/help.tpl.html:128
+msgid "Once you are in the review and seal screen, you can change your options by clicking on the link “change” If your selection is final, click on the “Seal” button to seal the ballot. You will not be able to change it electronically after this point. This process may take a few seconds."
+msgstr "Une fois arrivé à l’écran «Vérifier et sceller», vous pouvez changer les options en sélectionnant le lien «Changer» et choisir de nouvelles options. <br/><br/>S’agissant de votations, cliquez sur le lien «Changer» en regard de la réponse concernée pour modifier votre choix.<br/>S’agissant d’élections, cliquez sur le lien «Changer» pour modifier votre choix.<br/><br/>Si vos choix sont définitifs, sélectionnez «Sceller» pour soumettre votre vote. Vous ne pourrez plus changer vos choix par le vote électronique après cette étape. Cette action peut prendre quelques secondes."
+
+#: views/validate/validate.tpl.html:224
+#: views/validate/validate.tpl.html:331
+msgid "Option"
+msgstr "Option"
+
+#: views/legal/legalTerms.tpl.html:42
+msgid "Page not found"
+msgstr "Page non trouvée"
+
+#: views/legal/legalTerms.tpl.html:7
+msgid "Penal provisions concerning the use of the voting portal"
+msgstr "Dispositions pénales relatives à l’utilisation du portail de vote"
+
+#: directives/breadcrumbs.tpl.html:9
+msgid "Pending step:"
+msgstr "Étape en attente:"
+
+#: contests/components/contest-chooser.tpl.html:35
+msgid "Please click on \"Choose\" or \"Change\" to display the list of candidates."
+msgstr "Veuillez cliquer sur «Choisir» pour afficher la liste des candidats."
+
+#: contests/components/contest-chooser.tpl.html:28
+msgid "Please click on \"Choose\" or \"Change\" to display the list of candidates. You also have the possibility to choose a write-in candidate. For more information see:"
+msgstr "Veuillez cliquer sur «Choisir» pour afficher la liste des candidats."
+
+#: contests/components/contest-chooser.tpl.html:36
+msgid "Please click on \"Choose\" to display the list of candidates. You can accumulate candidates only if there are empty positions."
+msgstr "Veuillez cliquer sur «Choisir» pour afficher la liste des candidats. Vous pouvez cumuler uniquement si des postes sont libres."
+
+#: views/identification/auth-challenge-dob.tpl.html:12
+msgid "Please fill all the fields"
+msgstr "Veuillez renseigner tous les champs."
+
+#: views/identification/auth-challenge-dob.tpl.html:13
+msgid "Please introduce a valid date"
+msgstr "Veuillez saisir une date valide."
+
+#: views/identification/auth-challenge-yob.tpl.html:12
+msgid "Please introduce a valid year of birth"
+msgstr "Veuillez saisir une année de naissance valide."
+
+#: views/validate/validate.tpl.html:384
+msgid "Please introduce the Ballot Casting Key provided in your Voting Card"
+msgstr "Veuillez saisir le code de confirmation inscrit sur @@voting_card_1.fr@@."
+
+#: views/identification/ident-dob.tpl.html:221
+#: views/identification/ident-svk.tpl.html:185
+msgid "Please introduce the Start Voting Key provided in your Voting Card"
+msgstr "Veuillez saisir le code d’initialisation inscrit sur @@voting_card_1.fr@@."
+
+#: views/identification/auth-challenge-yob.tpl.html:11
+msgid "Please introduce your year of birth"
+msgstr "Veuillez saisir votre année de naissance."
+
+#: views/confirm/confirmation.tpl.html:26
+msgid "Please match the code carefully with the one you can find in your Voting Card."
+msgstr "Veuillez comparer le code de finalisation avec celui qui figure sur @@voting_card_1.fr@@."
+
+#: views/modals/sendVoteConfirm.tpl.html:20
+msgid "Please note that you still need to confirm your choices in the next step, before your vote will be definitely stored in the ballot box."
+msgstr "Veuillez noter que vous devez encore confirmer votre sélection à la prochaine étape pour que votre vote soit définitivement enregistré dans l’urne."
+
+#: views/modals/abandonValidate.tpl.html:19
+msgid "Please note the voting process has not been completed."
+msgstr "Veuillez noter que la procédure de vote de vote n’est pas terminée. Lorsque vous vous reconnectez, vous ne verrez que les codes de vérification."
+
+#: views/validate/validate.tpl.html:392
+#: views/validate/validate.tpl.html:401
+msgid "Please use only numbers (0-9)"
+msgstr "Utilisez uniquement des chiffres (0 à 9)"
+
+#: views/validate/validate.tpl.html:223
+#: views/validate/validate.tpl.html:330
+msgid "Position {{$index + 1}} of {{choicesCodeForGroup.length}}:"
+msgstr "Position {{$index + 1}} de {{choicesCodeForGroup.length}}:"
+
+#: views/review/review.tpl.html:204
+#: views/review/review.tpl.html:211
+#: views/review/review.tpl.html:275
+#: views/review/review.tpl.html:282
+msgid "Position {{$index + 1}} of {{contest.selectedCandidates.length}}:"
+msgstr "Position {{$index + 1}} de {{contest.selectedCandidates.length}}:"
+
+#: views/validate/validate.tpl.html:191
+#: views/validate/validate.tpl.html:199
+#: views/validate/validate.tpl.html:294
+#: views/validate/validate.tpl.html:302
+msgid "Position {{$index + 1}} of {{group.selectedCandidates.length}}:"
+msgstr "Position {{$index + 1}} de {{group.selectedCandidates.length}}:"
+
+#: contests/components/candidate-pre-selector.tpl.html:11
+#: contests/components/candidate-pre-selector.tpl.html:23
+msgid "Position {{position + 1}} of {{contest.candidatesQuestion.maxChoices}}:"
+msgstr "Position {{position + 1}} de {{contest.candidatesQuestion.maxChoices}}:"
+
+#: layout/header.html:54
+#: layout/header.html:55
+msgid "Quit"
+msgstr "Quitter"
+
+#: views/identification/identification-dob.ctrl.js:28
+msgid "Retrieving Ballot Information done"
+msgstr "Récupération des informations du scrutin effectuée"
+
+#: views/identification/identification-dob.ctrl.js:27
+msgid "Retrieving Ballot Information in progress"
+msgstr "Récupération des informations du scrutin en cours"
+
+#: directives/breadcrumbs.js:16
+#: views/review/review.tpl.html:128
+msgid "Review and Seal"
+msgstr "Sceller et transmettre"
+
+#: views/review/review.tpl.html:132
+msgid "Review your choices and seal your ballot."
+msgstr "Contrôlez vos choix, puis scellez et transmettez votre bulletin de vote."
+
+#: views/review/review.tpl.html:325
+msgid "Seal ballot"
+msgstr "Sceller et transmettre le bulletin de vote"
+
+#: views/review/review.tpl.html:324
+msgid "Sealing ballot"
+msgstr "Transmission sécurisée du bulletin de vote"
+
+#: views/review/review.js:41
+msgid "Sealing Ballot ... looks this is taking some time. Please be patient."
+msgstr "Transmission sécurisée du bulletin de vote en cours... Cette opération peut durer quelques minutes. Veuillez patienter."
+
+#: views/review/review.js:40
+msgid "Sealing Ballot ... please wait"
+msgstr "Transmission sécurisée du bulletin de vote en cours... Veuillez patienter."
+
+#: views/review/review.tpl.html:347
+msgid "Sealing ballot. Please wait."
+msgstr "Transmission sécurisée du bulletin de vote. Veuillez patienter."
+
+#: views/review/review.js:49
+msgid "Sealing your Ballot"
+msgstr "Transmission sécurisée du bulletin de vote"
+
+#: contests/components/candidate-finder.tpl.html:4
+msgid "Search a candidate by name"
+msgstr "Rechercher le nom d'un candidat ou d'une candidate"
+
+#: contests/components/list-finder.tpl.html:4
+msgid "Search a list by name"
+msgstr "Rechercher le nom d'une liste"
+
+#: views/modals/choose-candidate.tpl.html:14
+msgid "Search and Select a candidate"
+msgstr "Rechercher et sélectionner un candidat ou une candidate"
+
+#: views/modals/choose-party.tpl.html:14
+msgid "Search and select a list"
+msgstr "Rechercher et sélectionner une liste"
+
+#: contests/components/candidate-finder.tpl.html:24
+msgid "Search candidate"
+msgstr "Rechercher un candidat ou une candidate"
+
+#: contests/components/list-finder.tpl.html:24
+msgid "Search list"
+msgstr "Rechercher une liste"
+
+#: contests/components/candidate-finder.tpl.html:86
+#: contests/components/list-finder.tpl.html:37
+msgid "Search results"
+msgstr "Résultats de la recherche"
+
+#: views/validate/validate.tpl.html:114
+msgid "See the generated Choice Codes below. To cast your ballot please check they match with those provided in your Voting Card."
+msgstr "Examinez les codes de vérification générés ci-dessous. Pour enregistrer votre bulletin, veuillez vérifier qu’ils correspondent à ceux inscrits sur @@voting_card_1.fr@@."
+
+#: contests/components/candidate-pre-selector.tpl.html:53
+msgid "See the valid ones"
+msgstr "Voir les éléments valides"
+
+#: contests/components/candidate-selector.tpl.html:84
+#: contests/components/list-selector.tpl.html:45
+msgid "Select"
+msgstr "Sélectionner"
+
+#: directives/breadcrumbs.js:15
+msgid "Select answers"
+msgstr "Sélectionner des réponses"
+
+#: contests/components/candidate-selector.tpl.html:86
+msgid "Select candidate:"
+msgstr "Sélectionner un candidat:"
+
+#: contests/components/list-selector.tpl.html:47
+msgid "Select list:"
+msgstr "Sélectionner une liste:"
+
+#: contests/components/candidate-selector.tpl.html:113
+msgid "Selected"
+msgstr "Sélectionné(e)"
+
+#: contests/components/candidate-selector.tpl.html:119
+msgid "Selected in another list"
+msgstr "Sélectionné(e) dans une autre liste"
+
+#: contests/components/list-pre-selector.tpl.html:13
+#: views/review/review.tpl.html:255
+#: views/validate/validate.tpl.html:267
+msgid "Selected list:"
+msgstr "Liste sélectionnée:"
+
+#: contests/components/contest-chooser.tpl.html:14
+msgid "Show"
+msgstr "Afficher"
+
+#: contests/components/candidate-finder.tpl.html:32
+msgid "Show candidates from"
+msgstr "Afficher les candidats et candidates de"
+
+#: contests/components/candidate-finder.tpl.html:80
+msgid "Show only already selected candidates"
+msgstr "Afficher uniquement les candidats déjà sélectionnés."
+
+#: contests/components/contest-chooser.tpl.html:15
+msgid "Show options for:"
+msgstr "Afficher les options pour:"
+
+#: views/choose/choose.js:40
+msgid "Some texts contain an invalid set of characters or an invalid format. Please review the highlighted options below and use valid characters and a valid format. See the errors displayed above each input for more details"
+msgstr "Certains textes contiennent une série de caractères ou un format non valide. Veuillez vérifier les options en surbrillance ci-dessous et utiliser des caractères et un format valides. Veuillez contrôler les erreurs affichées au-dessus de chaque entrée pour plus de détails."
+
+#: views/choose/choose.tpl.html:14
+msgid "Something is wrong in the highlighted areas below. Please review and change them when needed."
+msgstr "Les zones en surbrillance ci-dessous présentent une erreur. Veuillez les vérifier et les modifier au besoin."
+
+#: views/identification/ident-dob.tpl.html:47
+#: views/identification/ident-svk.tpl.html:47
+#: views/review/review.tpl.html:30
+#: views/validate/validate.tpl.html:30
+msgid "Sorry, the Election has not started yet"
+msgstr "L’urne électronique n’est pas encore ouverte.<br/><br/>Veuillez contacter @@support.fr@@ pour plus de détails."
+
+#: views/identification/ident-dob.tpl.html:17
+#: views/identification/ident-svk.tpl.html:17
+#: views/review/review.tpl.html:16
+#: views/validate/validate.tpl.html:16
+msgid "Sorry, the Election is over"
+msgstr "L’urne électronique est fermée.<br/><br/>Veuillez contacter @@support.fr@@ pour plus de détails."
+
+#: views/identification/ident-dob.tpl.html:262
+#: views/identification/ident-dob.tpl.html:270
+#: views/identification/ident-svk.tpl.html:222
+#: views/identification/ident-svk.tpl.html:230
+msgid "Start"
+msgstr "Démarrer"
+
+#: views/identification/ident-dob.tpl.html:166
+#: views/identification/ident-svk.tpl.html:135
+msgid "Start Voting"
+msgstr "Démarrer le vote"
+
+#: views/identification/ident-dob.tpl.html:153
+#: views/identification/ident-svk.tpl.html:122
+msgid "Start voting"
+msgstr "Démarrer le vote"
+
+#: views/identification/ident-dob.tpl.html:167
+#: views/identification/ident-svk.tpl.html:136
+msgid "Start Voting (current step)"
+msgstr "Démarrer le vote (étape en cours)"
+
+#: views/identification/ident-dob.tpl.html:197
+#: views/identification/ident-svk.tpl.html:161
+msgid "Start Voting Key"
+msgstr "Code d’initialisation"
+
+#: views/modals/help.tpl.html:63
+msgid "Start Voting Key: you will have to introduce this key to get into the voting platform."
+msgstr "Code d’initialisation (signalé par un TRIANGLE): vous devez saisir ce code pour accéder à la plateforme de vote électronique."
+
+#: views/identification/ident-dob.tpl.html:269
+#: views/identification/ident-svk.tpl.html:229
+msgid "Starting"
+msgstr "Démarrer"
+
+#: views/identification/ident-dob.tpl.html:269
+#: views/identification/ident-svk.tpl.html:229
+msgid "Starting. Please wait."
+msgstr "Démarrage en cours. Veuillez patienter."
+
+#: directives/breadcrumbs.tpl.html:6
+msgid "Step"
+msgstr "Étape"
+
+#: directives/breadcrumbs.tpl.html:11
+#: directives/breadcrumbs.tpl.html:8
+msgid "Step completed:"
+msgstr "Étape terminée:"
+
+#: views/identification/ident-dob.tpl.html:161
+#: views/identification/ident-svk.tpl.html:130
+msgid "Terms and Conditions"
+msgstr "Conditions générales"
+
+#: views/identification/ident-dob.tpl.html:162
+#: views/identification/ident-svk.tpl.html:131
+msgid "Terms and Conditions (previous step)"
+msgstr "Conditions générales (étape précédente)"
+
+#: views/confirm/confirmation.tpl.html:15
+msgid "Thanks for voting"
+msgstr "Merci d’avoir voté."
+
+#: views/modals/help.tpl.html:170
+msgid "The Ballot Casting Key (identified with a PENTAGON) is a key to validate your options and cast the vote."
+msgstr "Le code de confirmation (signalé par un PENTAGONE) se trouve sur @@voting_card_1.fr@@."
+
+#: views/modals/help.tpl.html:148
+msgid "The Choice Codes are also provided in your Voting Card via postal mail and are identified with a DIAMOND."
+msgstr "Les codes de vérification sont également inscrits sur @@voting_card_2.fr@@ par voie postale ou peuvent se trouver sur une feuille séparée qui fait partie de votre matériel de vote. Ils sont signalés par un DIAMANT."
+
+#: views/modals/help.tpl.html:149
+msgid "The Choice Codes are an array of numbers that will be displayed onscreen together with the list of questions."
+msgstr "Les codes de vérification se composent d’une série de chiffres qui sera affichée à l’écran à l’étape 3 « Vérifier et voter ».<br><br>Comparez les codes de vérification affichés sur l’écran avec ceux inscrits sur @@voting_card_1.fr@@. Dans le cas où les codes correspondent vous savez que votre choix a bien été scellé et transmis."
+
+#: views/modals/help.tpl.html:283
+msgid "The following special characters:"
+msgstr "Les caractères spéciaux suivants:"
+
+#: views/identification/ident-dob.tpl.html:108
+#: views/identification/ident-svk.tpl.html:77
+#: views/review/review.tpl.html:44
+#: views/validate/validate.tpl.html:44
+msgid "The Internet connection is lost. Please try again later."
+msgstr "La connexion à Internet a été perdue. Veuillez réessayer ultérieurement."
+
+#: contests/services/options.service.js:50
+msgid "The selection is not completed. Make sure you choose an answer for the highlighted questions."
+msgstr "La sélection n’est pas terminée. Assurez-vous de sélectionner une réponse pour les questions en surbrillance."
+
+#: contests/services/candidates-only.service.js:100
+#: contests/services/lists-and-candidates.service.js:114
+msgid "The selection is not completed. Make sure you choose at least {{min}} candidate/s."
+msgstr "La sélection n’est pas terminée. Assurez-vous de sélectionner au moins {{min}} candidate ou candidat."
+
+#: contests/services/lists-and-candidates.service.js:107
+msgid "The selection is not completed. Make sure you choose at least {{min}} list/s."
+msgstr "La sélection n’est pas terminée. Assurez-vous de sélectionner au moins {{min}} liste(s)."
+
+#: views/modals/help.tpl.html:87
+msgid "The Start Voting Key (identified with a TRIANGLE), is a set of numbers or a combination of letters and numbers provided in your Voting Card via postal mail. You will have to type them in the first screen of the portal to identify yourself and to start the voting process. Note: If you enter a wrong key or leave spaces in blank the system will inform you with an error message."
+msgstr "Le code d’initialisation (signalé par un TRIANGLE) est une série de chiffres ou une combinaison de chiffres et de lettres inscrite sur @@voting_card_2.fr@@ par courrier. Vous devrez saisir le code d’initialisation sur le premier écran du portail pour vous identifier et démarrer la procédure de vote. Remarque: si vous saisissez un code erroné ou laissez des espaces, le système vous en informera à l’aide d’un message d’erreur."
+
+#: contests/components/candidate-pre-selector.tpl.html:51
+msgid "The text contains invalid characters."
+msgstr "Le texte contient des caractères invalides."
+
+#: views/modals/help.tpl.html:276
+msgid "The typed text is validated, consists at least of a last name and first name, and can contain any of these valid values:"
+msgstr "Le texte saisi est validé, doit comprendre au moins un nom et prénom et peut contenir n'importe quelle valeur parmi les valeurs valides suivantes:"
+
+#: views/legal/legalTerms.tpl.html:43
+msgid "The URL you are using is not correct. For security reasons, you are not allowed to manually refresh the website or use the navigation buttons of your browser. Please restart the voting process using the URL shown on your voting card."
+msgstr "L’URL utilisée est erronée. Pour des raisons de sécurité, vous n’êtes pas autorisé(e) à actualiser manuellement la page Internet ou à utiliser les boutons de navigation de votre navigateur. Veuillez redémarrer le processus de vote en utilisant l’URL figurant sur @@voting_card_1.fr@@."
+
+#: views/review/review.tpl.html:86
+msgid "The vote you're trying to send is invalid. Please restart the voting process."
+msgstr "Le vote que vous essayez d’envoyer est invalide. Veuillez recommencer la procédure de vote."
+
+#: views/confirm/confirmation.tpl.html:53
+msgid "The voting process has been completed."
+msgstr "La procédure de vote est terminée."
+
+#: contests/components/candidate-pre-selector.tpl.html:58
+msgid "The write-in has an incorrect format."
+msgstr "Le format du vote manuscrit est incorrect."
+
+#: contests/components/contest-chooser.tpl.html:46
+msgid "There are some write-ins using a wrong set of characters. Please review the highlighted texts below."
+msgstr "Certains votes manuscrits utilisent une série de caractères incorrecte. Veuillez vérifier les textes en surbrillance ci-dessous."
+
+#: views/identification/ident-dob.tpl.html:93
+#: views/identification/ident-svk.tpl.html:62
+#: views/review/review.tpl.html:72
+msgid "This Voting Card is inactive. Please contact the Support team for further details."
+msgstr "@@voting_card_3.fr@@. Veuillez contacter @@support.fr@@ pour plus de détails."
+
+#: views/modals/help.tpl.html:40
+msgid "To start the voting process, please enter the Start Voting Key as well as your date of birth. The Start Voting Key is on the printed Voting Card that you have received by mail."
+msgstr "Pour démarrer la procédure de vote, veuillez saisir le code d’initialisation ainsi que votre date de naissance. Le code d’initialisation est inscrit sur @@voting_card_2.fr@@ par voie postale."
+
+#: views/modals/help.tpl.html:39
+msgid "To start the voting process, please enter the Start Voting Key as well as your year of birth. The Start Voting Key is on the printed Voting Card that you have received by mail."
+msgstr "Pour démarrer la procédure de vote, veuillez saisir le code d’initialisation ainsi que votre année de naissance. Le code d’initialisation est inscrit sur @@voting_card_2.fr@@ par voie postale."
+
+#: views/modals/help.tpl.html:38
+msgid "To start the voting process, please enter the Start Voting Key. The Start Voting Key is on the printed Voting Card that you have received by mail."
+msgstr "Pour démarrer la procédure de vote, veuillez saisir le code d’initialisation. Le code d’initialisation est inscrit sur @@voting_card_2.fr@@ par voie postale."
+
+#: contests/components/candidate-pre-selector.tpl.html:69
+msgid "Type the name, first name and additional information"
+msgstr "Veuillez saisir le nom, prénom et des informations complémentaires"
+
+#: views/modals/help.tpl.html:279
+msgid "Uppercase characters from A to Z"
+msgstr "Caractères en majuscule de A à Z"
+
+#: views/legal/legalTerms.tpl.html:14
+msgid "uses a false identity or the identity of another voter;"
+msgstr "se présente sous une fausse identité ou atteste faussement de l’identité d’un autre électeur;"
+
+#: views/validate/validate.tpl.html:100
+msgid "Verify and cast"
+msgstr "Vérifier et voter"
+
+#: directives/breadcrumbs.js:17
+msgid "Verify and Cast"
+msgstr "Vérifier et voter"
+
+#: directives/breadcrumbs.js:18
+#: views/confirm/confirmation.tpl.html:5
+#: views/confirm/confirmation.tpl.html:9
+msgid "Vote Cast"
+msgstr "Voté"
+
+#: views/confirm/confirmation.tpl.html:36
+msgid "Vote Cast Return Code"
+msgstr "Code de finalisation"
+
+#: views/modals/help.tpl.html:66
+msgid "Vote Cast Return Code: you will have to verify this code is the same as the one you have on your Voting Card."
+msgstr "Code de finalisation (signalé par une ETOILE): vous devrez vérifier que ce code est le même que celui qui figure sur @@voting_card_1.fr@@. Dans le cas où les codes correspondent vous savez que votre vote a été pris en compte dans l’urne électronique."
+
+#: layout/header.html:6
+msgid "Voter Portal"
+msgstr "Portail de vote"
+
+#: views/legal/legalTerms.tpl.html:15
+msgid "votes more than once in a voting template;"
+msgstr "vote plus d’une fois dans une même opération électorale;"
+
+#: views/identification/ident-svk.tpl.html:106
+#: views/identification/ident-svk.tpl.html:91
+#: views/review/review.tpl.html:100
+#: views/review/review.tpl.html:115
+#: views/validate/validate.tpl.html:72
+#: views/validate/validate.tpl.html:87
+msgid "We are experiencing an internal server error. Please try again later or contact the Support team"
+msgstr "Une erreur de serveur interne s’est produite.<br><br>Veuillez réessayer plus tard ou contacter @@support.fr@@."
+
+#: views/identification/ident-dob.tpl.html:122
+#: views/identification/ident-dob.tpl.html:137
+msgid "We are experiencing an internal server error. Please try again later or contact the support team."
+msgstr "Une erreur de serveur interne s’est produite.<br><br>Veuillez réessayer plus tard ou contacter @@support.fr@@."
+
+#: views/modals/help.tpl.html:136
+msgid "What are the Choice Codes?"
+msgstr "Que sont les codes de vérification?"
+
+#: views/confirm/confirmation.tpl.html:50
+#: views/modals/help.tpl.html:199
+#: views/validate/validate.tpl.html:359
+msgid "What if codes do not match?"
+msgstr "Que se passe-t-il si les codes ne correspondent pas?"
+
+#: views/modals/help.tpl.html:158
+msgid "What is the Ballot Casting Key?"
+msgstr "Qu’est-ce que le code de confirmation?"
+
+#: views/modals/help.tpl.html:219
+msgid "What is the difference between seal and cast?"
+msgstr "Quelle est la différence entre sceller et enregistrer?"
+
+#: views/modals/help.tpl.html:75
+msgid "What is the Start Voting Key?"
+msgstr "Qu’est-ce que le code d’initialisation?"
+
+#: views/modals/help.tpl.html:179
+msgid "What is the Vote Cast Return Code?"
+msgstr "Qu’est-ce que le code de finalisation?"
+
+#: views/modals/help.tpl.html:48
+msgid "What is the Voting Card?"
+msgstr "Qu’est-ce que @@voting_card_4.fr@@?"
+
+#: views/confirm/confirmation.tpl.html:38
+#: views/identification/ident-dob.tpl.html:199
+#: views/identification/ident-svk.tpl.html:163
+#: views/validate/validate.tpl.html:126
+#: views/validate/validate.tpl.html:371
+msgid "What is this"
+msgstr "De quoi s’agit-il?"
+
+#: views/modals/help.tpl.html:281
+msgid "White space character"
+msgstr "Caractère espace blanc"
+
+#: contests/components/candidate-pre-selector.tpl.html:70
+msgid "Write-in field for position:"
+msgstr "Champ de vote manuscrit pour la position:"
+
+#: contests/components/candidate-selector.tpl.html:21
+msgid "Write-in Position"
+msgstr "Vote manuscrit"
+
+#: views/identification/auth-challenge-dob.tpl.html:32
+msgid "Year"
+msgstr "Année"
+
+#: views/identification/auth-challenge-yob.tpl.html:2
+msgid "Year of birth"
+msgstr "Année de naissance"
+
+#: views/modals/abandon.tpl.html:23
+msgid "Yes, cancel"
+msgstr "Oui, annuler la procédure de vote"
+
+#: views/legal/legalTerms.tpl.html:33
+msgid "Yes, I have taken note of them"
+msgstr "Oui, j’en ai pris connaissance"
+
+#: views/modals/abandonValidate.tpl.html:22
+msgid "Yes, leave"
+msgstr "Oui, quitter"
+
+#: views/modals/sendVoteConfirm.tpl.html:23
+msgid "Yes, seal vote"
+msgstr "Oui, sceller et transmettre le vote"
+
+#: views/validate/validate.tpl.html:110
+msgid "You abandoned the process in this step. Continue voting."
+msgstr "Vous avez quitté la procédure de vote à ce stade. Veuillez saisir le code de confirmation pour enregistrer votre vote de manière définitive."
+
+#: contests/components/candidate-selector.tpl.html:125
+msgid "You already selected this candidate"
+msgstr "Déjà sélectonné"
+
+#: contests/components/candidate-selector.tpl.html:128
+msgid "You already selected this candidate on the current position"
+msgstr "Déjà sélectionné(e) sur la position actuelle"
+
+#: views/modals/help.tpl.html:251
+msgid "You are able to leave the voting process at any time before casting your vote. Remember that in order to cast your vote and to complete the voting process you must enter the Ballot Casting Key, sealing your options is not enough. If you leave the process without sealing your vote your selection will be lost. If you leave the process after sealing your vote your selection will be saved. If you have sealed your options but you have not verified them by entering the Ballot Casting Key, your vote will not be cast. You will have to return to the platform to confirm your vote with the Ballot Casting Key to make it effective."
+msgstr "Vous pouvez quitter la procédure de vote à tout moment avant l’étape 3 (« Voter »). Veuillez noter que pour terminer la procédure de vote, vous devez saisir le code de confirmation. <br/><br/>Si vous quittez la procédure sans avoir scellé et transmis votre choix à l’étape 2, votre choix sera perdu et vous recommencez à l’étape 1 « Choisir ». Si vous quittez la procédure à l’étape 3, votre choix sera sauvegardé. Si vous vous identifiez de nouveau en indiquant votre code d’initialisation ainsi que de l’année de naissance, vous pourrez continuer la procédure à l’étape 3. Lorsque vous vous reconnectez, vous ne verrez que les codes de vérification.<br/><br/>Tant que vous n’avez pas saisi le code de confirmation, vous pouvez en tout temps interrompre la procédure de vote électronique et voter par correspondance ou à l’urne."
+
+#: views/modals/sendVoteConfirm.tpl.html:14
+msgid "You are about to send your vote"
+msgstr "Vous êtes sur le point de transmettre votre vote"
+
+#: views/modals/abandon.tpl.html:20
+msgid "You can return and start the online voting process again or vote in paper."
+msgstr "Vous pouvez retourner au début et redémarrer la procédure de vote en ligne ou voter sur papier."
+
+#: views/modals/help.tpl.html:108
+msgid "You can select your options by clicking the checkboxes in the list. If you wish to change your choices deselect the checkbox and click in the final option box."
+msgstr "Si vous souhaitez changer vos choix, vous pouvez désélectionner les cases et en choisir d’autres.<br/><br/>Pour élire un(e) candidat(e), cliquez sur « Choisir » pour sélectionner une liste ou un(e) candidat(e). Ne choisissez aucun(e) candidat(e) si vous souhaitez voter blanc.<br/>Si vous souhaitez changer vos choix, vous pouvez cliquer sur «modifier» ou «effacer»."
+
+#: views/identification/ident-dob.tpl.html:203
+#: views/identification/ident-svk.tpl.html:167
+msgid "You can use both upper and lowercase"
+msgstr "Vous pouvez écrire indifféremment en minuscules ou en majuscules."
+
+#: views/identification/ident-dob.tpl.html:178
+#: views/identification/ident-svk.tpl.html:147
+msgid "You cancelled the voting process."
+msgstr "Vous avez annulé la procédure de vote."
+
+#: views/review/review.tpl.html:254
+msgid "You did not select any list. It will be counted as:"
+msgstr "Vous n’avez sélectionné aucune liste. Cela sera comptabilisé comme:"
+
+#: views/review/review.tpl.html:167
+#: views/review/review.tpl.html:205
+#: views/review/review.tpl.html:276
+#: views/validate/validate.tpl.html:153
+#: views/validate/validate.tpl.html:200
+#: views/validate/validate.tpl.html:266
+#: views/validate/validate.tpl.html:303
+msgid "You did not select any option. It will be counted as:"
+msgstr "Vous n’avez sélectionné aucune option. Cela sera comptabilisé comme:"
+
+#: views/modals/help.tpl.html:273
+msgid "You just need to type the name and first name of the desired candidate into the field provided to this aim."
+msgstr "Vous devez simplement saisir le nom et le prénom du candidat souhaité dans le champ prévu à cet effet."
+
+#: views/identification/ident-dob.tpl.html:180
+msgid "You left the voting process. Please login again with your Start Voting Key and your date of birth to record your vote permanently."
+msgstr "Vous avez quitté la procédure de vote. Veuillez vous connecter à nouveau avec votre code d’initialisation et votre date de naissance pour enregistrer votre vote de manière définitive."
+
+#: views/identification/ident-dob.tpl.html:179
+msgid "You left the voting process. Please login again with your Start Voting Key and your year of birth to record your vote permanently."
+msgstr "Vous avez quitté la procédure de vote. Veuillez vous connecter à nouveau avec votre code d’initialisation et votre année de naissance pour enregistrer votre vote de manière définitive."
+
+#: views/identification/ident-svk.tpl.html:148
+msgid "You left the voting process. Please login again with your Start Voting Key to record your vote permanently."
+msgstr "Vous avez quitté la procédure de vote. Veuillez vous connecter à nouveau avec votre code d’initialisation pour enregistrer votre vote de manière définitive."
+
+#: views/identification/ident-dob.tpl.html:181
+#: views/identification/ident-svk.tpl.html:149
+msgid "You quit successfully."
+msgstr "Vous avez déjà terminé la procédure de vote avec succès. Si vous souhaitez vous assurer qu’aucune reconstitution de votre bulletin de vote ne puisse être faite sur votre appareil (ordinateur, tablette, smartphone), nous vous recommandons de vider le cache du navigateur après chaque vote. Vous trouverez des instructions à ce sujet <a href=\"https://www.evoting.ch/fr#rules\" target=\"_blank\">ici</a>."
+
+#: contests/components/candidate-selector.tpl.html:131
+msgid "You reached the maximum cumulate allowed"
+msgstr "Nombre maximal de cumuls atteint."
+
+#: views/validate/validate.tpl.html:417
+msgid "You reached the maximum number of attempts entering your key. Please contact the Support team"
+msgstr "Vous avez atteint le nombre maximal de tentatives autorisées pour saisir votre code. Veuillez contacter @@support.fr@@."
+
+#: views/identification/ident-dob.tpl.html:78
+msgid "You reached the maximum number of attempts for entering your keys. Please contact the support team."
+msgstr "Vous avez atteint le nombre maximal de tentatives autorisées pour saisir votre code. Veuillez contacter @@support.fr@@."
+
+#: views/modals/help.tpl.html:211
+msgid "You should contact the Election support team."
+msgstr "Si les codes de finalisation ou de vérification ne correspondent pas, cela indique que les votes n’ont pas été transmis ou reçus correctement. <br/><br/>Si les codes de vérification ne correspondent pas, vous devez arrêter la procédure de vote électronique. Le vote doit alors se faire par correspondance ou par dépôt à l’urne. Veuillez contacter @@support.fr@@.<br/><br/>Si le code de finalisation ne correspond pas, alors contactez immédiatement @@support.fr@@."
+
+#: views/modals/help.tpl.html:191
+msgid "You will have to verify that the displayed code matches the ‘Vote Cast Return Code’ identified with a STAR in your Voting Card. If they both match then the voting process has been completed successfully."
+msgstr "Le code de finalisation est signalé par une ETOILE sur @@voting_card_1.fr@@. A l’étape 4 « Voté », le code de finalisation vous permet de vérifier que la procédure de vote a été terminée avec succès. Si le code de finalisation correspond au code affiché, votre vote a bien été pris en compte dans l’urne électronique."
+
+#: views/legal/legalTerms.tpl.html:52
+msgid "Your Browser (or its version) is not compatible with the Voter Portal. Try one of the following:"
+msgstr "Votre navigateur (ou la version utilisée) n’est pas compatible avec le portail de vote. Essayez l’une des options suivantes:"
+
+#: views/validate/validate.tpl.html:159
+#: views/validate/validate.tpl.html:160
+#: views/validate/validate.tpl.html:206
+#: views/validate/validate.tpl.html:207
+#: views/validate/validate.tpl.html:228
+#: views/validate/validate.tpl.html:229
+#: views/validate/validate.tpl.html:280
+#: views/validate/validate.tpl.html:281
+#: views/validate/validate.tpl.html:309
+#: views/validate/validate.tpl.html:310
+#: views/validate/validate.tpl.html:335
+#: views/validate/validate.tpl.html:336
+msgid "Your choice code:"
+msgstr "Votre code de vérification:"
+
+#: views/validate/validate.tpl.html:145
+#: views/validate/validate.tpl.html:179
+#: views/validate/validate.tpl.html:253
+msgid "Your choice codes"
+msgstr "Vos codes de vérification"
+
+#: contests/components/candidate-pre-selector.tpl.html:110
+msgid "your current candidate is:"
+msgstr "Votre candidat actuel est:"
+
+#: contests/components/list-pre-selector.tpl.html:58
+msgid "your current list is:"
+msgstr "Votre liste actuelle est:"
+
+#: views/identification/ident-dob.tpl.html:32
+#: views/identification/ident-svk.tpl.html:32
+msgid "Your session has expired. Please enter your key to start again."
+msgstr "Votre session a expiré. Veuillez entrer votre code d’initialisation pour vous reconnecter."
+
+#: views/review/review.tpl.html:58
+#: views/validate/validate.tpl.html:58
+msgid "Your session has expired. Please log in again."
+msgstr "Votre session a expiré. Veuillez vous reconnecter."
+
+#: views/confirm/confirmation.tpl.html:23
+msgid "Your vote was cast."
+msgstr "Votre vote a été enregistré."
+
+#: views/modals/help.tpl.html:60
+msgid "Your Voting Card contains the needed keys and codes for the voting process. You will receive it via postal mail."
+msgstr "@@voting_card_5.fr@@ contient les codes requis pour la procédure de vote. Vous @@voting_card_6.fr@@ recevrez par voie postale."
+
+#: contests/components/candidate-finder.tpl.html:69
+msgid "{{$count}} candidate"
+msgid_plural "{{$count}} candidates"
+msgstr[0] "{{$count}} candidat"
+msgstr[1] "{{$count}} candidats"
+
+#: contests/components/candidate-finder.tpl.html:62
+msgid "{{$count}} candidate of {{data.allCandidates.length}} found for \"{{data.searchedText}}\""
+msgid_plural "{{$count}} candidates of {{data.allCandidates.length}} found for '{{data.searchedText}}'"
+msgstr[0] "{{$count}} candidat de {{data.allCandidates.length}} trouvé pour \"{{data.searchedText}}\""
+msgstr[1] "{{$count}} candidats de {{data.allCandidates.length}} trouvé pour '{{data.searchedText}}'"
+
+#: contests/components/list-finder.tpl.html:33
+msgid "{{data.lists.length}} list"
+msgstr "{{data.lists.length}} liste"
+
+#: contests/components/list-finder.tpl.html:30
+msgid "{{data.lists.length}} list of {{data.allLists.length}} found for \"{{data.searchedText}}\""
+msgstr "{{data.lists.length}} liste sur {{data.allLists.length}} trouvée pour \"{{data.searchedText}}\""
+
+#: contests/components/list-finder.tpl.html:32
+msgid "{{data.lists.length}} lists"
+msgstr "{{data.lists.length}} listes"
+
+#: contests/components/list-finder.tpl.html:31
+msgid "{{data.lists.length}} lists of {{data.allLists.length}} found for \"{{data.searchedText}}\""
+msgstr "{{data.lists.length}} listes sur {{data.allLists.length}} trouvées pour \"{{data.searchedText}}\""
+
+#: contests/components/contest-chooser.tpl.html:6
+msgid "{{getSelectedCandidatesCount()}} of {{contest.candidatesQuestion.maxChoices}} seats filled"
+msgstr "{{getSelectedCandidatesCount()}} de {{contest.candidatesQuestion.maxChoices}} position(s) remplie(s)"
+
+#: views/modals/help.tpl.html:231
+msgid "“Sealing” a vote means to include your choices into a virtual envelop. To complete the voting process you will need to cast it. If you leave the process at this stage you will be able to return later on but you will not be able to change your options. To do so you will need to vote in paper through the traditional way. “Casting” a vote means to include this envelope with your choices into a ballot, making your vote effective. However, whenever a vote is cast, it is considered a final submission and therefore the voter is not able to vote again in the same election."
+msgstr "«Sceller et transmettre» (à l’étape 2) un choix signifie placer vos choix dans une enveloppe virtuelle et la transmettre aux serveurs de votations et élections. Cela signifie que vous n’avez pas encore voté, ou plus précisément votre vote n’est pas encore enregistré dans l’urne électronique. Si vous quittez la procédure à ce stade, vous pourrez le reprendre ultérieurement, mais vous ne pourrez pas modifier votre choix. Si vous souhaitez modifier votre choix, le vote doit se faire par correspondance ou à l’urne. <br/><br/>«Voter» (à l’étape 3) signifie donner l’ordre aux serveurs de votations et élections de placer cette enveloppe virtuelle contenant vos choix dans une urne électronique, permettant ainsi de prendre en compte votre vote en l’urne électronique. Ceci se fait en saisissant le code de confirmation. Dès lors que ce vote est pris en compte, la procédure de vote est terminée et l’électeur ne peut plus voter une nouvelle fois."

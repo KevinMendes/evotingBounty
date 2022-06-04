@@ -1,0 +1,50 @@
+.candidate-finder,
+.list-finder {
+  .candidate-search,
+  .list-search {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: auto;
+    margin: 0 -15px;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    > * {
+      max-width: 100%;
+      padding: 4px 15px;
+    }
+
+    @media (max-width: @screen-xs-max) {
+      margin: 0;
+      > * {
+        padding: 0px;
+      }
+    }
+
+    .candidate-search-input,
+    .list-search-input {
+      -webkit-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      @media (min-width: @screen-sm-min) {
+        min-width: 60%;
+      }
+    }
+
+    .candidate-search-action,
+    .list-search-action {
+      overflow: hidden;
+
+      .btn {
+        max-width: 100%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+    }
+  }
+}

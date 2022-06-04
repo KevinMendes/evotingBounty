@@ -1,0 +1,154 @@
+{
+  "id": "1c18f7d21dce4ac1aa1f025599bf2cfd",
+  "defaultTitle": "ballot_Election-1",
+  "defaultDescription": "ballot_Election-1",
+  "alias": "ballot_1",
+  "electionEvent": {
+	"id": "a3d790fd1ac543f9b0a05ca79a20c9e2"
+  },
+  "contests": [
+	{
+	  "id": "31d17941cacb4ea7b0dd45cd5bbc1074",
+	  "defaultTitle": "Regierungsratswahl",
+	  "alias": "Election-1",
+	  "defaultDescription": "Regierungsratswahl",
+	  "electionEvent": {
+		"id": "a3d790fd1ac543f9b0a05ca79a20c9e2"
+	  },
+	  "template": "listsAndCandidates",
+	  "fullBlank": "true",
+	  "options": [
+		{
+		  "id": "f4206470b5194e0086e548b1cbf532b5",
+		  "representation": "2",
+		  "attributes": [
+			"47383e930b494529ae2cb96bc4e27307"
+		  ]
+		},
+		{
+		  "id": "5d97df0d0c554c6fb9cd0a06c6296939",
+		  "representation": "5",
+		  "attributes": [
+			"47383e930b494529ae2cb96bc4e27307"
+		  ]
+		},
+		{
+		  "id": "d67ebbcff9ce40b989a7592c5f1aea9d",
+		  "representation": "13",
+		  "attributes": [
+			"47383e930b494529ae2cb96bc4e27307"
+		  ]
+		}
+	  ],
+	  "attributes": [
+		{
+		  "id": "1a1c3be008be42ab920e740b5308cc24",
+		  "alias": "BLANK_0f2fd4984d2f4d88ae11ba6633efb57f",
+		  "correctness": "false",
+		  "related": [
+			"ba7ca9c0d9594b409c259ece6ed0a16b"
+		  ]
+		},
+		{
+		  "id": "ba7ca9c0d9594b409c259ece6ed0a16b",
+		  "alias": "lists",
+		  "correctness": "true",
+		  "related": []
+		},
+		{
+		  "id": "47383e930b494529ae2cb96bc4e27307",
+		  "alias": "BLANK_b471aa814ed34ad5b93d4bde9ba98813",
+		  "correctness": "false",
+		  "related": [
+			"7256d97c13cf4240ba7b647d78b150ee"
+		  ]
+		},
+		{
+		  "id": "7746bfbce4594cd0a68607d08a9cd0a3",
+		  "alias": "WRITE_IN_0f2fd4984d2f4d88ae11ba6633efb57f",
+		  "correctness": "false",
+		  "related": [
+			"ba7ca9c0d9594b409c259ece6ed0a16b"
+		  ]
+		},
+		{
+		  "id": "d75a1f67671e4806be90797a6ea51258",
+		  "alias": "WRITE_IN_b471aa814ed34ad5b93d4bde9ba98813",
+		  "correctness": "false",
+		  "related": [
+			"7256d97c13cf4240ba7b647d78b150ee"
+		  ]
+		},
+		{
+		  "id": "7256d97c13cf4240ba7b647d78b150ee",
+		  "alias": "candidates",
+		  "correctness": "true",
+		  "related": []
+		},
+		{
+		  "id": "862f4043e9cc492b88f7455987191406",
+		  "alias": "1-EVP",
+		  "correctness": "false",
+		  "related": [
+			"ba7ca9c0d9594b409c259ece6ed0a16b"
+		  ]
+		},
+		{
+		  "id": "d2c4025787cd497ea35d0e4d2605a959",
+		  "alias": "11-CSP",
+		  "correctness": "false",
+		  "related": [
+			"ba7ca9c0d9594b409c259ece6ed0a16b"
+		  ]
+		},
+		{
+		  "id": "87816135634e4e31ba42dcfcc50ee3df",
+		  "alias": "681ba77a-62ff-3449-9e3c-22777629faee",
+		  "correctness": "false",
+		  "related": [
+			"862f4043e9cc492b88f7455987191406",
+			"7256d97c13cf4240ba7b647d78b150ee"
+		  ]
+		},
+		{
+		  "id": "4618b676d7a04f5dad83b39331c7ef0a",
+		  "alias": "15179821-f0ab-3cc6-b8d6-1f51e69f6819",
+		  "correctness": "false",
+		  "related": [
+			"d2c4025787cd497ea35d0e4d2605a959",
+			"7256d97c13cf4240ba7b647d78b150ee"
+		  ]
+		}
+	  ],
+	  "questions": [
+		{
+		  "id": "b471aa814ed34ad5b93d4bde9ba98813",
+		  "max": "10",
+		  "min": "1",
+		  "accumulation": "1",
+		  "writeIn": "true",
+		  "blankAttribute": "47383e930b494529ae2cb96bc4e27307",
+		  "writeInAttribute": "d75a1f67671e4806be90797a6ea51258",
+		  "attribute": "7256d97c13cf4240ba7b647d78b150ee",
+		  "fusions": []
+		},
+		{
+		  "id": "0f2fd4984d2f4d88ae11ba6633efb57f",
+		  "max": "1",
+		  "min": "1",
+		  "accumulation": "1",
+		  "writeIn": "true",
+		  "blankAttribute": "1a1c3be008be42ab920e740b5308cc24",
+		  "writeInAttribute": "7746bfbce4594cd0a68607d08a9cd0a3",
+		  "attribute": "ba7ca9c0d9594b409c259ece6ed0a16b",
+		  "fusions": []
+		}
+	  ]
+	}
+  ],
+  "status": "SIGNED",
+  "details": "Ready to Mix",
+  "synchronized": "false",
+  "ballotBoxes": "FR-CH-1|FR-MU-9999",
+  "signedObject": "fakesignature"
+}

@@ -1,0 +1,298 @@
+<form autocomplete="off" class="form-block" name="authForm" novalidate>
+
+	<!-- content-main -->
+	<div class="content-main">
+
+		<!-- alert toast -->
+		<toast-alert class="toast header-height" data-ng-class="{'is-closed': errors.alertClosed}"
+					 data-ng-if="errors.validationHasError || (errors.hasError && !errors.badKey)">
+			<div aria-live="polite" data-ng-switch data-on="errors.validationHasError" id="alert_main" role="alert">
+				<div data-ng-switch data-ng-switch-when="true" data-on="errors.validationErrorMsg">
+
+					<div class="alert alert-warning" data-ng-switch-when="ELECTION_OVER_DATE">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+              </svg>
+            </span>
+						<span class="alert-text" translate>Sorry, the Election is over</span>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+
+					<div class="alert alert-warning" data-ng-switch-when="AUTH_TOKEN_EXPIRED">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </span>
+						<span class="alert-text" translate>Your session has expired. Please enter your key to start again.</span>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+
+					<div class="alert alert-warning" data-ng-switch-when="ELECTION_NOT_STARTED">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+              </svg>
+            </span>
+						<span class="alert-text" translate>Sorry, the Election has not started yet</span>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+
+					<div class="alert alert-danger" data-ng-switch-when="ERROR_RETRY">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </span>
+						<span class="alert-text" ng-show="config.identification === 'yob'" translate>Incorrect. You have {{retries}} attempts left. Review the key provided in your Voting Card and the year of birth and try again.</span>
+						<span class="alert-text" ng-show="config.identification === 'dob'" translate>Incorrect. You have {{retries}} attempts left. Review the key provided in your Voting Card and the date of birth and try again.</span>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+
+					<div class="alert alert-danger" data-ng-switch-when="ERROR_NORETRIES">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </span>
+						<span class="alert-text" translate>You reached the maximum number of attempts for entering your keys. Please contact the support team.</span>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+
+					<div class="alert alert-danger" data-ng-switch-when="INACTIVE_KEY">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </span>
+						<span class="alert-text" translate>This Voting Card is inactive. Please contact the Support team for further details.</span>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+
+					<div class="alert alert-danger" data-ng-switch-when="CONNECTION_ERROR">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </span>
+						<p class="alert-text" translate>The Internet connection is lost. Please try again later.</p>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+					<div class="alert alert-danger" data-ng-switch-default>
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </span>
+						<span class="alert-text" translate>We are experiencing an internal server error. Please try again later or contact the support team.</span>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+				</div>
+				<div class="alert alert-danger" data-ng-switch-default>
+          <span class="alert-icon">
+            <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+            </svg>
+          </span>
+					<span class="alert-text" translate>We are experiencing an internal server error. Please try again later or contact the support team.</span>
+					<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+						<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+						</svg>
+						<span class="sr-only" translate>Close</span>
+					</button>
+				</div>
+			</div>
+		</toast-alert>
+
+		<div class="container">
+
+			<div class="page-header inverse">
+				<!-- page-title -->
+				<div class="page-title">
+					<h1 data-auto-focus tabindex="-1" translate>Start voting</h1>
+				</div>
+				<div class="page-breadcrumb">
+					<!-- breadcrumb -->
+					<h2 class="sr-only"><span translate>Breadcrumb</span></h2>
+					<ol class="breadcrumb">
+						<li>
+							<a data-ui-sref="legal-terms({eeid:eeid})">
+								<span aria-hidden="true" aria-labelledby="breadcrumb_previous" translate>Terms and Conditions</span>
+								<span class="sr-only" id="breadcrumb_previous" translate> Terms and Conditions (previous step)</span>
+							</a>
+						</li>
+						<li class="active">
+							<span aria-hidden="true" aria-labelledby="breadcrumb_current" translate>Start Voting</span>
+							<span class="sr-only" id="breadcrumb_current" translate>Start Voting (current step)</span>
+						</li>
+					</ol>
+				</div>
+			</div>
+
+			<div class="alert alert-success mbn" data-ng-if="voteState=='cancel' || voteState=='leave' || voteState=='quit'" role="alert">
+				<div class="w-100" data-layout="row" data-layout-align="start center">
+					<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+					</svg>
+					<span class="phm" data-flex data-ng-if="voteState=='cancel'" translate>You cancelled the voting process.</span>
+					<span class="phm" data-flex data-ng-if="voteState=='leave' && config.identification === 'yob'" translate>You left the voting process. Please login again with your Start Voting Key and your year of birth to record your vote permanently.</span>
+					<span class="phm" data-flex data-ng-if="voteState=='leave' && config.identification === 'dob'" translate>You left the voting process. Please login again with your Start Voting Key and your date of birth to record your vote permanently.</span>
+					<span class="phm" data-flex data-ng-if="voteState=='quit'" translate>You quit successfully.</span>
+				</div>
+			</div>
+
+			<p class="mtl" id="start_voting_key_info">
+				<span ng-if="config.identification === 'yob'" translate>Enter the Start Voting Key provided in the Voting Card you received and your year of birth. Then press START.</span>
+				<span ng-if="config.identification === 'dob'" translate>Enter the Start Voting Key provided in the Voting Card you received and your date of birth. Then press START.</span>
+				<span translate>During the voting process, please do not use the navigation buttons of your web browser or manually refresh the website, since you might lose your session.</span>
+			</p>
+
+			<!-- code-notation -->
+			<div class="code-notation start-voting-key mbl">
+				<div class="code-notation-hd">
+					<svg aria-hidden="true" focusable="false" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg">
+						<path d="M0.46,22L12,2,23.54,22H0.46Z"/>
+					</svg>
+					<label class="control-label" for="fc_start_voting_code" translate>Start Voting Key</label>
+					<a help-button="start_voting_key">
+						<span translate>What is this</span>
+					</a>
+				</div>
+				<div class="code-notation-content">
+					<div class="code-notation-info"><em translate>You can use both upper and lowercase</em></div>
+					<!-- form-group -->
+					<div class="form-group"
+						 data-ng-class="{ 'has-error':errors.badKey, 'has-warning': authForm.$submitted && !authForm.$dirty && authForm.svk.$invalid }">
+						<p aria-atomic="true" aria-live="assertive" class="form-control-msg" data-ng-if="errors.badKey" role="alert">
+              <span class="icon">
+                                <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24"
+									 xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+                                </svg>
+                            </span>
+							<span translate>Incorrect key. Check the key provided in the Voting card and try again.</span>
+						</p>
+						<p aria-atomic="true" aria-live="assertive" class="form-control-msg"
+						   data-layout="row"
+						   data-layout-align="start center" data-ng-if="authForm.$submitted && !authForm.$dirty && authForm.svk.$invalid"
+						   role="alert">
+              <span class="icon" data-flex>
+                                <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24"
+									 xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+                                </svg>
+                            </span>
+							<span class="phs" data-flex="95" translate>Please introduce the Start Voting Key provided in your Voting Card</span>
+						</p>
+						<div data-layout="row" data-layout-align="space-between center">
+							<div class="input-guided" data-flex>
+								<input aria-describedby="start_voting_key_info" autocapitalize="off" autocomplete="off" autocorrect="off"
+									   class="form-control" data-auto-focus
+									   data-format="4"
+									   data-input-guided data-model-maxlength="24" data-model-minlength="24" data-ng-model="data.svk"
+									   id="fc_start_voting_code"
+									   name="svk"
+									   ng-trim="false" required spellcheck="false" type="text">
+							</div>
+							<div>
+								<button class="btn btn-icon" data-ng-click="clearSVK()" data-ng-disabled="!authForm.svk.$viewValue"
+										id="btn_clear_svk"
+										title="{{'Clean in one go the start voting key provided'|translate}}" type="button">
+									<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24"
+										 xmlns="http://www.w3.org/2000/svg">
+										<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+									</svg>
+									<span class="sr-only">Clear Start Voting Key</span>
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /code-notation -->
+
+			<!-- day of birth -->
+			<div auth-challenge data-layout="row" data-layout-align="start center" name="dob" ng-model="data.dob"></div>
+
+		</div>
+		<!-- /container -->
+	</div>
+	<!-- /content-main -->
+
+	<!-- navigation -->
+	<nav class="container navigation">
+		<h2 class="sr-only" id="title_navigation" translate>Continue process</h2>
+		<div data-layout="row" data-layout-wrap>
+			<div class="mbm" data-flex-xs="100">
+				<div class="btn btn-primary btn-block has-icon disabled" data-ng-if="!ovReady && !ovError" id="btn_login_preparing">
+					<svg aria-hidden="true" class="ci-spin" focusable="false" height="24" viewBox="0 0 24 24" width="24"
+						 xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.23,12.63A0.56,0.56,0,0,1,17.79,12h0a0.56,0.56,0,0,1,.44-0.63h4.32A0.56,0.56,0,0,1,23,12h0a0.56,0.56,0,0,1-.44.63H18.23Zm-16.79,0A0.56,0.56,0,0,1,1,12H1a0.56,0.56,0,0,1,.44-0.63H5.76a0.56,0.56,0,0,1,.44.63h0a0.56,0.56,0,0,1-.44.63H1.44Zm9.93,5.6A0.56,0.56,0,0,1,12,17.79h0a0.56,0.56,0,0,1,.63.44v4.32A0.56,0.56,0,0,1,12,23h0a0.56,0.56,0,0,1-.63-0.44V18.23Zm0-16.79A0.56,0.56,0,0,1,12,1h0a0.56,0.56,0,0,1,.63.44V5.76a0.56,0.56,0,0,1-.63.44h0a0.56,0.56,0,0,1-.63-0.44V1.44ZM17,15.76A0.56,0.56,0,0,1,17,15h0a0.56,0.56,0,0,1,.71-0.31l3.7,2.23a0.56,0.56,0,0,1,.06.77h0a0.56,0.56,0,0,1-.71.31ZM2.63,7.09a0.56,0.56,0,0,1-.05-0.77h0A0.56,0.56,0,0,1,3.28,6L7,8.24A0.56,0.56,0,0,1,7,9H7a0.56,0.56,0,0,1-.71.31L2.63,7.09h0ZM8.24,17A0.56,0.56,0,0,1,9,17H9a0.56,0.56,0,0,1,.31.71l-2.23,3.7a0.56,0.56,0,0,1-.77.05h0A0.56,0.56,0,0,1,6,20.72L8.24,17h0ZM16.9,2.63a0.56,0.56,0,0,1,.77-0.05h0a0.56,0.56,0,0,1,.31.71L15.76,7A0.56,0.56,0,0,1,15,7h0a0.56,0.56,0,0,1-.31-0.7l2.23-3.7h0ZM7,15.76A0.56,0.56,0,0,0,7,15H7a0.56,0.56,0,0,0-.71-0.31l-3.7,2.23a0.56,0.56,0,0,0-.05.77h0a0.56,0.56,0,0,0,.71.31ZM21.37,7.09a0.56,0.56,0,0,0,.05-0.77h0A0.56,0.56,0,0,0,20.71,6L17,8.24A0.56,0.56,0,0,0,17,9h0a0.57,0.57,0,0,0,.71.31l3.7-2.23h0ZM15.76,17A0.56,0.56,0,0,0,15,17h0a0.56,0.56,0,0,0-.31.71l2.23,3.7a0.57,0.57,0,0,0,.77.05h0A0.56,0.56,0,0,0,18,20.72L15.76,17h0ZM7.09,2.63a0.56,0.56,0,0,0-.77-0.05h0A0.56,0.56,0,0,0,6,3.28L8.24,7A0.57,0.57,0,0,0,9,7H9a0.56,0.56,0,0,0,.31-0.7L7.1,2.63h0Z"
+						/>
+					</svg>
+					<span translate>Start</span>
+				</div>
+				<button class="btn btn-primary btn-block has-icon" data-ng-click="startVoting()" data-ng-disabled="data.processing"
+						data-ng-if="ovReady && !ovError" id="btn_login"
+						type="submit">
+					<svg aria-hidden="true" class="ci-spin" data-ng-if="data.processing" focusable="false" height="24" viewBox="0 0 24 24"
+						 width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.23,12.63A0.56,0.56,0,0,1,17.79,12h0a0.56,0.56,0,0,1,.44-0.63h4.32A0.56,0.56,0,0,1,23,12h0a0.56,0.56,0,0,1-.44.63H18.23Zm-16.79,0A0.56,0.56,0,0,1,1,12H1a0.56,0.56,0,0,1,.44-0.63H5.76a0.56,0.56,0,0,1,.44.63h0a0.56,0.56,0,0,1-.44.63H1.44Zm9.93,5.6A0.56,0.56,0,0,1,12,17.79h0a0.56,0.56,0,0,1,.63.44v4.32A0.56,0.56,0,0,1,12,23h0a0.56,0.56,0,0,1-.63-0.44V18.23Zm0-16.79A0.56,0.56,0,0,1,12,1h0a0.56,0.56,0,0,1,.63.44V5.76a0.56,0.56,0,0,1-.63.44h0a0.56,0.56,0,0,1-.63-0.44V1.44ZM17,15.76A0.56,0.56,0,0,1,17,15h0a0.56,0.56,0,0,1,.71-0.31l3.7,2.23a0.56,0.56,0,0,1,.06.77h0a0.56,0.56,0,0,1-.71.31ZM2.63,7.09a0.56,0.56,0,0,1-.05-0.77h0A0.56,0.56,0,0,1,3.28,6L7,8.24A0.56,0.56,0,0,1,7,9H7a0.56,0.56,0,0,1-.71.31L2.63,7.09h0ZM8.24,17A0.56,0.56,0,0,1,9,17H9a0.56,0.56,0,0,1,.31.71l-2.23,3.7a0.56,0.56,0,0,1-.77.05h0A0.56,0.56,0,0,1,6,20.72L8.24,17h0ZM16.9,2.63a0.56,0.56,0,0,1,.77-0.05h0a0.56,0.56,0,0,1,.31.71L15.76,7A0.56,0.56,0,0,1,15,7h0a0.56,0.56,0,0,1-.31-0.7l2.23-3.7h0ZM7,15.76A0.56,0.56,0,0,0,7,15H7a0.56,0.56,0,0,0-.71-0.31l-3.7,2.23a0.56,0.56,0,0,0-.05.77h0a0.56,0.56,0,0,0,.71.31ZM21.37,7.09a0.56,0.56,0,0,0,.05-0.77h0A0.56,0.56,0,0,0,20.71,6L17,8.24A0.56,0.56,0,0,0,17,9h0a0.57,0.57,0,0,0,.71.31l3.7-2.23h0ZM15.76,17A0.56,0.56,0,0,0,15,17h0a0.56,0.56,0,0,0-.31.71l2.23,3.7a0.57,0.57,0,0,0,.77.05h0A0.56,0.56,0,0,0,18,20.72L15.76,17h0ZM7.09,2.63a0.56,0.56,0,0,0-.77-0.05h0A0.56,0.56,0,0,0,6,3.28L8.24,7A0.57,0.57,0,0,0,9,7H9a0.56,0.56,0,0,0,.31-0.7L7.1,2.63h0Z"/>
+					</svg>
+					<span data-ng-if="data.processing" data-set-page-info="{{'Starting. Please wait.'|translate}}" translate>Starting</span>
+					<span data-ng-if="!data.processing" translate>Start</span>
+				</button>
+			</div>
+		</div>
+	</nav>
+	<!-- /navigation -->
+
+</form>
+
+<div
+		detailed-progress-modal="{{ 'Logging you in. Please wait.' | translate }}"
+		slow-progress-title="{{ 'Logging you in...looks like this is taking some time. Please be patient.' | translate }}"
+>
+</div>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>ch.post.it.evoting.votingserver.extendedauthentication</groupId>
+		<artifactId>extended-authentication</artifactId>
+		<version>0.14.1.0</version>
+	</parent>
+
+	<artifactId>extended-authentication-main</artifactId>
+	<packaging>war</packaging>
+
+	<name>Extended Authentication - Main</name>
+
+	<properties>
+		<war.filename>ea-ws-rest</war.filename>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+				<artifactId>arquillian-dependencies</artifactId>
+				<version>${project.version}</version>
+				<type>pom</type>
+				<scope>import</scope>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+
+	<dependencies>
+		<!-- VOTING SERVER COMMONS -->
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+			<artifactId>commons-infrastructure</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+			<artifactId>votingserver-logging</artifactId>
+		</dependency>
+
+		<!-- com.fasterxml.jackson -->
+		<dependency>
+			<groupId>com.fasterxml.jackson.core</groupId>
+			<artifactId>jackson-core</artifactId>
+		</dependency>
+		<dependency>
+			<groupId>com.fasterxml.jackson.jaxrs</groupId>
+			<artifactId>jackson-jaxrs-json-provider</artifactId>
+		</dependency>
+
+		<!-- Local dependencies -->
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.extendedauthentication</groupId>
+			<artifactId>extended-authentication-services</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+
+		<!-- TEST dependencies -->
+		<dependency>
+			<groupId>org.apache.geronimo.specs</groupId>
+			<artifactId>geronimo-osgi-locator</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>javax.ws.rs</groupId>
+			<artifactId>javax.ws.rs-api</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.test-framework</groupId>
+			<artifactId>jersey-test-framework-core</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.test-framework.providers</groupId>
+			<artifactId>jersey-test-framework-provider-grizzly2</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.media</groupId>
+			<artifactId>jersey-media-json-jackson</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.glassfish.jersey.inject</groupId>
+			<artifactId>jersey-hk2</artifactId>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.bouncycastle</groupId>
+			<artifactId>bcprov-jdk15on</artifactId>
+		</dependency>
+		<!--Preserve the position of this dependency -->
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons</groupId>
+			<artifactId>arquillian-dependencies</artifactId>
+			<version>${project.version}</version>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.commons.lib</groupId>
+			<artifactId>commons-lib</artifactId>
+			<type>test-jar</type>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.votingserver.extendedauthentication</groupId>
+			<artifactId>extended-authentication-services</artifactId>
+			<version>${project.version}</version>
+			<type>test-jar</type>
+			<scope>test</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.github.cukespace</groupId>
+			<artifactId>cukespace-core</artifactId>
+			<version>${com.github.cukespace.version}</version>
+			<scope>test</scope>
+			<exclusions>
+				<exclusion>
+					<groupId>org.jboss.shrinkwrap</groupId>
+					<artifactId>shrinkwrap-api</artifactId>
+				</exclusion>
+			</exclusions>
+		</dependency>
+		<dependency>
+			<groupId>com.github.stefanbirkner</groupId>
+			<artifactId>system-rules</artifactId>
+			<scope>test</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${war.filename}</finalName>
+	</build>
+
+</project>

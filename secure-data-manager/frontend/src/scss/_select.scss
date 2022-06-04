@@ -1,0 +1,23 @@
+// select
+// ----------------------------------------
+
+md-select-menu {
+  md-content {
+    background: $select-content-bg;
+
+    md-option {
+      color: $select-content-text;
+
+      &[selected],
+      &:not([disabled]):focus,
+      &:not([disabled]):hover {
+        color: $select-content-text-selected;
+      }
+
+      &:not([disabled]):focus,
+      &:not([disabled]):hover {
+        background: $select-content-bg-hover;
+      }
+    }
+  }
+}

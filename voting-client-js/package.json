@@ -1,0 +1,70 @@
+{
+	"name": "voting-client-js",
+	"license": "(c) Original Developers indicated in attribution.txt, 2022. All Rights Reserved.",
+	"private": true,
+	"version": "0.14.1-0",
+	"scripts": {
+		"force-resolutions": "npx npm-force-resolutions",
+		"clean-package-lock": "shx sed -i '/\"resolved\":/d' package-lock.json",
+		"dev": "gulp dev --dev --skip-unit-tests --skip-linting",
+		"compile": "gulp compile",
+		"debug": "gulp build",
+		"prebuild": "shx sed -i \"s/elliptic.version = .*/elliptic.version = '6.5.4';/g\" node_modules/elliptic/lib/elliptic.js",
+		"build": "gulp build --prod",
+		"test": "gulp unit-tests",
+		"test:coverage": "karma start karma.conf.js",
+		"gulp": "gulp",
+		"format": "prettier-eslint --write \"src/**/*.js\" \"test/**/*.js\""
+	},
+	"files": [
+		"dist",
+		"sample",
+		"src"
+	],
+	"dependencies": {
+		"core-js": "3.16.4",
+		"cryptolib-js": "../cryptolib-js",
+		"crypto-primitives-ts": "file:vendor/crypto-primitives-ts",
+		"jsrsasign": "10.5.16",
+		"lodash": "4.17.21",
+		"q": "1.5.1",
+		"xhr2": "0.2.1"
+	},
+	"devDependencies": {
+		"@babel/core": "7.17.9",
+		"@babel/preset-env": "7.16.11",
+		"babelify": "10.0.0",
+		"browserify": "16.5.2",
+		"browserify-istanbul": "3.0.1",
+		"del": "6.0.0",
+		"gulp": "4.0.2",
+		"gulp-cached": "1.1.1",
+		"gulp-cli": "2.3.0",
+		"gulp-concat": "2.6.1",
+		"gulp-eslint": "6.0.0",
+		"gulp-if": "3.0.0",
+		"gulp-notify": "4.0.0",
+		"gulp-size": "4.0.1",
+		"gulp-sourcemaps": "3.0.0",
+		"gulp-uglify": "3.0.2",
+		"karma": "6.3.17",
+		"karma-browserify": "8.1.0",
+		"karma-chrome-launcher": "3.1.1",
+		"karma-coverage": "2.1.0",
+		"karma-es6-shim": "1.0.0",
+		"karma-jasmine": "4.0.2",
+		"karma-spec-reporter": "0.0.34",
+		"prettier-eslint-cli": "5.0.1",
+		"shx": "0.3.4",
+		"source-map-js": "0.6.2",
+		"uglify-es": "3.3.9",
+		"vinyl-buffer": "1.0.1",
+		"vinyl-source-stream": "2.0.0",
+		"yargs": "17.4.1"
+	},
+	"resolutions": {
+		"ansi-regex": "5.0.1",
+		"glob-parent": "6.0.2",
+		"yargs-parser": "20.2.7"
+	}
+}

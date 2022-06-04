@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<Plugins>
+	<Phase name="generate_pre_voting_outputs">
+
+		<!--SECUENTIAL EXECUTOR TEST-->
+		<!--ERROR 100-->
+		<Plugin type="cmd" order="0">
+			<![CDATA[#SDM_PATH#/error100.bat]]>
+		</Plugin>
+		<!--ERROR 101-->
+		<Plugin type="cmd" order="1">
+			<![CDATA[#SDM_PATH#/error101.bat]]>
+		</Plugin>
+		<!--ERROR 102 -->
+		<Plugin type="cmd" order="2">
+			<![CDATA[#SDM_PATH#/error102.bat]]>
+		</Plugin>
+		<!--ERROR 103 -->
+		<Plugin type="cmd" order="3">
+			<![CDATA[#SDM_PATH#/error103.bat]]>
+		</Plugin>
+		<!--ERROR 104 -->
+		<Plugin type="cmd" order="4">
+			<![CDATA[#SDM_PATH#/error104.bat]]>
+		</Plugin>
+		<!--ERROR 105 -->
+		<Plugin type="cmd" order="5">
+			<![CDATA[#SDM_PATH#/error105.bat]]>
+		</Plugin>
+		<!--ERROR 106 -->
+		<Plugin type="cmd" order="6">
+			<![CDATA[#SDM_PATH#/error106.bat]]>
+		</Plugin>
+
+	</Phase>
+</Plugins>

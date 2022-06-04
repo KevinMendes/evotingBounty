@@ -1,0 +1,73 @@
+input::-ms-clear {
+  display: none;
+}
+
+.radio.form-custom,
+.checkbox.form-custom {
+  input[type='radio'],
+  input[type='checkbox'] {
+    opacity: 0;
+    box-shadow: none;
+  }
+
+  label {
+    background-color: transparent;
+  }
+
+  // focus
+  input[type='radio']:focus + label,
+  input[type='checkbox']:focus + label {
+    &:before {
+      .tab-focus(@outline-color);
+    }
+  }
+}
+
+.ballot-election-candidate {
+
+  .alert-invalid-writein,
+  .invalid-alphabet-error,
+  .invalid-name-error {
+    display: none;
+  }
+
+  // display invalid alphabet alert right away
+  .ng-invalid-write-in {
+    &.ng-invalid-alphabet {
+
+      .alert-invalid-writein {
+
+        display: flex;
+
+        .invalid-alphabet-error {
+          display: block;
+        }
+
+      }
+
+    }
+  }
+
+  .ng-submitted & {
+
+    .ng-invalid-write-in {
+      .alert-invalid-writein {
+        display: flex;
+      }
+
+      &.ng-invalid-alphabet {
+        .invalid-alphabet-error {
+          display: block;
+        }
+      }
+
+      &.ng-invalid-name {
+        .invalid-name-error {
+          display: block;
+        }
+      }
+    }
+
+  }
+
+}

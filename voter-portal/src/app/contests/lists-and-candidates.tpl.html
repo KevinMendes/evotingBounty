@@ -1,0 +1,29 @@
+<fieldset class="lists-and-candidates" data-ng-form="electionForm_{{contest.id}}">
+	<legend class="sr-only">
+		<span translate>List of parties and candidates</span>
+		<span data-ng-if="!contest.allowFullBlank"
+			  id="mandatory_contest_{{selectedList.getQualifiedId()}}" translate>
+      It is mandatory to choose at least one of the given options
+    </span>
+	</legend>
+	<div class="ballot-election">
+		<!-- party -->
+		<div class="ballot-election-party">
+			<div contest="contest" id="list-pre-selector-{{contest.id}}" list-pre-selector
+				 ng-model="contest.selectedLists[0]"
+				 on-cleared="onListCleared" on-selected="onListSelected"></div>
+		</div>
+
+
+		<!-- candidate -->
+		<ul class="list-unstyled mbn">
+			<li class="ballot-election-candidate"
+				data-ng-repeat="ignored in candidateSlots track by $index">
+				<div candidate-pre-selector contest="contest"
+					 id="candidate_{{contest.id}}_{{$index}}" ng-model="contest.selectedCandidates[$index]"
+					 on-cleared="onCandidateCleared" on-selected="onCandidateSelected"
+					 position="$index"></div>
+			</li>
+		</ul>
+	</div>
+</fieldset>

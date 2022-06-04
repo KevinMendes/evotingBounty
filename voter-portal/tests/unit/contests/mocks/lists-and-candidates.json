@@ -1,0 +1,154 @@
+{
+  "template": "listsAndCandidates",
+  "id": "1363fb6db08f41bdaf4c75046c7b259d",
+  "title": "01 Lists And Candidates Event",
+  "description": "01 Lists And Candidates Event",
+  "allowFullBlank": true,
+  "listQuestion": {
+	"minChoices": 0,
+	"maxChoices": 1
+  },
+  "candidatesQuestion": {
+	"minChoices": 0,
+	"maxChoices": 3
+  },
+  "lists": [
+	{
+	  "candidates": [
+		{
+		  "prime": "53",
+		  "isBlank": true,
+		  "blankId": "62bde3e0043e46d6825b9f374e42715d",
+		  "chosen": 0,
+		  "ordinal": 1,
+		  "id": "14e357c37ee94515ac901fb41fbd961b",
+		  "parent": null,
+		  "details": {
+			"text": "Blank 1"
+		  }
+		},
+		{
+		  "prime": "13",
+		  "isBlank": true,
+		  "blankId": "62bde3e0043e46d6825b9f374e42715d",
+		  "chosen": 0,
+		  "ordinal": 2,
+		  "id": "053b60885a1a4b67a53ae0c2111a4620",
+		  "parent": null,
+		  "details": {
+			"text": "Blank 2"
+		  }
+		},
+		{
+		  "prime": "2",
+		  "isBlank": true,
+		  "blankId": "62bde3e0043e46d6825b9f374e42715d",
+		  "chosen": 0,
+		  "ordinal": 3,
+		  "id": "b4053deba1424376adf062fa72db6b05",
+		  "parent": null,
+		  "details": {
+			"text": "Blank 3"
+		  }
+		}
+	  ],
+	  "chosen": false,
+	  "isBlank": true,
+	  "blankId": "62bde3e0043e46d6825b9f374e42715d",
+	  "ordinal": 1,
+	  "prime": "23",
+	  "id": "8e681763d4124690a0213441f0d6049f",
+	  "details": {
+		"text": "Blank"
+	  }
+	},
+	{
+	  "candidates": [
+		{
+		  "prime": "3",
+		  "isBlank": false,
+		  "blankId": null,
+		  "chosen": 0,
+		  "ordinal": 1,
+		  "id": "460db98a708e474a88e853c30becfb90",
+		  "parent": null,
+		  "details": {
+			"candidateType_attribute1": "Blue 1"
+		  }
+		},
+		{
+		  "prime": "17",
+		  "isBlank": false,
+		  "blankId": null,
+		  "chosen": 0,
+		  "ordinal": 2,
+		  "id": "b03818ee5bbb4a23971415fc4013fb71",
+		  "parent": null,
+		  "details": {
+			"candidateType_attribute1": "Blue 2"
+		  }
+		},
+		{
+		  "prime": "37",
+		  "isBlank": false,
+		  "blankId": null,
+		  "chosen": 0,
+		  "ordinal": 3,
+		  "id": "3131b91477fa4e539bdc1fc02da24bf8",
+		  "parent": null,
+		  "details": {
+			"candidateType_attribute1": "Blue 3"
+		  }
+		}
+	  ],
+	  "chosen": false,
+	  "isBlank": false,
+	  "blankId": null,
+	  "ordinal": 2,
+	  "prime": "5",
+	  "id": "46896d5ac55f4eb7956858978d5f90fc",
+	  "details": {
+		"listType_attribute1": "Blue List"
+	  }
+	},
+	{
+	  "candidates": [
+		{
+		  "prime": "29",
+		  "isBlank": false,
+		  "blankId": null,
+		  "chosen": 0,
+		  "ordinal": 1,
+		  "id": "3352e877667142c0a8faa4b2ff9fa22a",
+		  "parent": null,
+		  "details": {
+			"candidateType_attribute1": "Green 1"
+		  }
+		},
+		{
+		  "prime": "11",
+		  "isBlank": false,
+		  "blankId": null,
+		  "chosen": 0,
+		  "ordinal": 2,
+		  "id": "421cb5abf9fb4d8780c56990ac210a56",
+		  "parent": null,
+		  "details": {
+			"candidateType_attribute1": "Green 2"
+		  }
+		}
+	  ],
+	  "chosen": false,
+	  "isBlank": false,
+	  "blankId": null,
+	  "ordinal": 3,
+	  "prime": "100003",
+	  "id": "4c157fae70eb4d9097f5c30673282679",
+	  "details": {
+		"listType_attribute1": "Green List",
+		"listType_apparentment": "apparentment",
+		"listType_sousApparentment": "sousApparenment"
+	  }
+	}
+  ]
+}

@@ -1,0 +1,62 @@
+[
+  {
+    "id": "331279febbb0423298d44ee58702d581",
+    "electionEvent": {
+      "id": "101549c5a4a04c7b88a0cb9be8ab3df6"
+    },
+    "status": "SIGNED",
+    "synchronized": "true",
+    "defaultTitle": "Election Authority legislative2017T2",
+    "defaultDescription": "Election Authority legislative2017T2",
+    "alias": "EA_legislative2017T2",
+    "minimumThreshold": "1",
+    "electoralBoard": [
+      "MEMBER 1",
+      "MEMBER 2"
+    ],
+    "details": "Synchronized",
+    "ballotBoxAlias": [
+      "1"
+    ]
+  },
+  {
+    "id": "331279febbb0423298d44ee58702d582",
+    "electionEvent": {
+      "id": "101549c5a4a04c7b88a0cb9be8ab3df6"
+    },
+    "status": "SIGNED",
+    "synchronized": "true",
+    "defaultTitle": "Election Authority legislative2017T2",
+    "defaultDescription": "Election Authority legislative2017T2",
+    "alias": "EA_legislative2017T2",
+    "minimumThreshold": "1",
+    "electoralBoard": [
+      "MEMBER 1",
+      "MEMBER 2"
+    ],
+    "details": "Synchronized",
+    "ballotBoxAlias": [
+      "2"
+    ]
+  },
+  {
+    "id": "331279febbb0423298d44ee58702d583",
+    "electionEvent": {
+      "id": "101549c5a4a04c7b88a0cb9be8ab3df7"
+    },
+    "status": "SIGNED",
+    "synchronized": "true",
+    "defaultTitle": "Election Authority legislative2017T2",
+    "defaultDescription": "Election Authority legislative2017T2",
+    "alias": "EA_legislative2017T2",
+    "minimumThreshold": "1",
+    "electoralBoard": [
+      "MEMBER 1",
+      "MEMBER 2"
+    ],
+    "details": "Synchronized",
+    "ballotBoxAlias": [
+      "3"
+    ]
+  }
+]

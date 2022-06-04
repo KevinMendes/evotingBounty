@@ -1,0 +1,1263 @@
+msgid ""
+msgstr ""
+"Language: rm_CH\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: contests/components/option-selector.tpl.html:28
+msgid "(no option chosen)"
+msgstr "(fatg nagina selecziun)"
+
+#: views/legal/legalTerms.tpl.html:55
+msgid "A desktop computer with a recent version of Ubuntu and one of the latest version of Chrome or Firefox"
+msgstr "In computer desktop cun ina versiun actuala dad Ubuntu ed ina versiun actuala da Chrome u Firefox"
+
+#: views/legal/legalTerms.tpl.html:54
+msgid "A desktop computer with a recent version of Windows and one of the latest version of MS Edge, Internet Explorer, Chrome or Firefox"
+msgstr "In computer desktop cun ina versiun actuala da Windows ed ina versiun acuala da MS Edge, Internet Explorer, Chrome u Firefox"
+
+#: views/legal/legalTerms.tpl.html:56
+msgid "A device with Android and Chrome mobile"
+msgstr "In apparat cun Android e cun Chrome Mobile"
+
+#: views/legal/legalTerms.tpl.html:57
+msgid "A device with iOS and Safari mobile"
+msgstr "In apparat cun iOS e Safari mobile"
+
+#: views/legal/legalTerms.tpl.html:58
+msgid "A Mac with a recent version of macOS and Safari"
+msgstr "In Mac cun ina versiun actuala dad macOS e Safari"
+
+#: views/validate/validate.tpl.html:455
+msgid "After confirming your vote, your vote is cast and you can no longer vote by mail or at the ballot box."
+msgstr "Suenter che Vus avais confermà Vossa vusch, avais Vus votà e na pudais betg pli votar per posta u a l'urna."
+
+#: views/review/review.tpl.html:313
+msgid "After sealing the ballot you will not be able to change your choices"
+msgstr "Suenter che Vus avais sigillà Vossa vusch, na pudais Vus betg pli midar quella"
+
+#: views/legal/legalTerms.tpl.html:16
+msgid "alienates, misappropriates or adds ballot papers;"
+msgstr "modifitgescha, defraudescha u agiunscha cedels da votar;"
+
+#: contests/components/candidate-pre-selector.js:94
+msgid "All Lists"
+msgstr "Tut las glistas"
+
+#: views/legal/legalTerms.tpl.html:10
+msgid "Anyone in particular may be punished with imprisonment or a fine under Articles 279 to 283 of the Criminal Code:"
+msgstr "Cun in chasti da detenziun u cun in chasti pecuniar tenor ils artitgels 279 fin 283 dal <a href=\"https://www.admin.ch/opc/rm/classified-compilation/19370083/index.html#id-ni17-ni34\" target=\"_blank\">Cudesch penal svizzer</a> po vegnir chastià en spezial, tgi che:"
+
+#: views/modals/abandon.tpl.html:14
+msgid "Are you sure you want to cancel the voting process?"
+msgstr "Vulais Vus propi interrumper il process da votaziun?"
+
+#: views/modals/abandonValidate.tpl.html:14
+msgid "Are you sure you want to leave the voting process?"
+msgstr "Vulais Vus propi bandunar il process da votaziun?"
+
+#: app.js:68
+msgid "Are you sure you want to navigate away?"
+msgstr "Vulais Vus propi bandunar il process da votaziun?"
+
+#: views/legal/legalTerms.tpl.html:17
+msgid "attempts to destroy, destroy, modify or alter ballot papers, registers or other materials used to determine the results of votes, in whole or in part."
+msgstr "destruescha dal tuttafatg u parzialmain, emprova da destruir, mida u emprova da midar cedels da votar, registers electorals u auter material che serva ad eruir ils resultats da la votaziun."
+
+#: views/identification/identification-svk.ctrl.js:22
+msgid "Authentication and retrieving Ballot Information done"
+msgstr "Process d'autentificaziun e da dumandar infurmaziuns davart la votaziun terminà"
+
+#: views/identification/identification-svk.ctrl.js:21
+msgid "Authentication and retrieving Ballot Information in progress"
+msgstr "Process d'autentificaziun e da dumandar infurmaziuns en elavuraziun"
+
+#: views/identification/identification-dob.ctrl.js:24
+msgid "Authentication done"
+msgstr "Autentificaziun terminada"
+
+#: views/identification/identification-dob.ctrl.js:23
+msgid "Authentication in progress"
+msgstr "Autentificaziun en elavuraziun"
+
+#: views/validate/validate.tpl.html:355
+#: views/validate/validate.tpl.html:369
+msgid "Ballot Casting Key"
+msgstr "Code da conferma"
+
+#: views/modals/help.tpl.html:65
+msgid "Ballot Casting Key: you will have to introduce this key to validate your options and cast the vote."
+msgstr "Code da conferma: Vus stuais endatar quest code per confermar Vossa selecziun e vuschar.Code da conferma (segnà cun in PENTAGON): Vus stuais endatar quest code per confermar ch'ils codes da controlla inditgads èn corrects. Cur che Vus avais endatà il code da conferma vegn Vossa vusch messa en l'urna electronica."
+
+#: views/review/review.js:50
+msgid "Ballot sealed"
+msgstr "Vusch sigillada e transmessa"
+
+#: contests/services/candidates-only.service.js:59
+msgid "Blank vote is not allowed. Please make your choice from the options provided below."
+msgstr "I n'è betg permess d'abstegnair la vusch. Tscherni p.pl. da las opziuns dadas qua sut."
+
+#: views/identification/ident-dob.tpl.html:157
+#: views/identification/ident-svk.tpl.html:126
+msgid "Breadcrumb"
+msgstr "Fil da l'Ariadne"
+
+#: views/legal/legalTerms.tpl.html:50
+msgid "Browser compatibility"
+msgstr "Cumpatibilitad cun il navigatur"
+
+#: views/modals/help.tpl.html:116
+msgid "Can I change my selection?"
+msgstr "Poss jau midar mia selecziun?"
+
+#: views/modals/help.tpl.html:239
+msgid "Can I leave or cancel my voting anytime?"
+msgstr "Poss jau interrumper u bandunar da tut temp mia votaziun?"
+
+#: contests/lists-and-candidates.js:39
+#: contests/lists-and-candidates.js:68
+msgid "Cancel"
+msgstr "Interrumper"
+
+#: layout/header.html:40
+#: layout/header.html:41
+#: views/choose/choose.tpl.html:57
+#: views/review/review.tpl.html:334
+msgid "Cancel the process"
+msgstr "Interrumper il process"
+
+#: contests/components/candidate-finder.tpl.html:87
+msgid "Candidates"
+msgstr "Candidats"
+
+#: views/validate/validate.tpl.html:466
+msgid "Cast vote"
+msgstr "Consegnar la vusch"
+
+#: views/validate/validate.tpl.html:465
+msgid "Casting vote"
+msgstr "Consegnar la vusch"
+
+#: contests/components/candidate-pre-selector.tpl.html:108
+#: contests/components/list-pre-selector.tpl.html:56
+msgid "Change"
+msgstr "Modifitgar"
+
+#: views/review/review.tpl.html:153
+#: views/review/review.tpl.html:190
+#: views/review/review.tpl.html:242
+msgid "Change choices"
+msgstr "Midar la selecziun"
+
+#: contests/lists-and-candidates.js:38
+msgid "CHANGE LIST"
+msgstr "MODIFITGAR GLISTA"
+
+#: views/validate/validate.tpl.html:124
+msgid "Choice Codes"
+msgstr "Codes da controlla"
+
+#: views/review/review.js:60
+msgid "Choice codes generated"
+msgstr "Generar ils codes da controlla"
+
+#: views/modals/help.tpl.html:64
+msgid "Choice Codes: you will have to verify that the displayed codes match the ones you have in your Voting Card."
+msgstr "Codes da controlla: Vus stuais controllar ch'ils codes inditgads correspundan als "
+
+#: contests/components/candidate-pre-selector.tpl.html:104
+#: contests/components/list-pre-selector.tpl.html:52
+#: directives/breadcrumbs.js:15
+#: views/choose/choose.tpl.html:26
+msgid "Choose"
+msgstr "Endatar la vusch"
+
+#: views/validate/validate.tpl.html:428
+msgid "Clean in one go the ballot casting key"
+msgstr "Stizzar en in pass il code da conferma"
+
+#: views/identification/ident-dob.tpl.html:230
+msgid "Clean in one go the start voting key provided"
+msgstr "Stizzar en in pass il code d'inizialisaziun retschavì"
+
+#: contests/components/candidate-pre-selector.tpl.html:135
+#: contests/components/list-pre-selector.tpl.html:72
+#: contests/components/option-selector.tpl.html:26
+msgid "Clear"
+msgstr "Stizzar"
+
+#: contests/components/candidate-finder.tpl.html:14
+msgid "Clear candidate"
+msgstr "Stizzar il candidat"
+
+#: contests/components/candidate-pre-selector.tpl.html:136
+msgid "Clear current candidate"
+msgstr "Stizzar il candidat actual"
+
+#: contests/components/list-pre-selector.tpl.html:73
+msgid "Clear current list"
+msgstr "Stizzar la glista actuala"
+
+#: contests/components/option-selector.tpl.html:27
+msgid "Clear current option"
+msgstr "Stizzar l'opziun actuala"
+
+#: contests/components/list-finder.tpl.html:14
+msgid "Clear list"
+msgstr "Stizzar la glista"
+
+#: contests/lists-and-candidates.js:67
+msgid "CLEAR LIST"
+msgstr "STIZZAR GLISTA"
+
+#: views/modals/help.tpl.html:271
+msgid "Click on \"Choose\" or \"Change\". At the bottom, you will find the possibility to select a write-in option. By selecting this option, you can enter your choice in a write-in field."
+msgstr "Cliccar sin \"Endatar la vusch\" u \"Modifitgar\". Giusut avais Vus l'opziun da nudar Vossa tscherna en in champ che Vus pudais emplenir sezza/sez."
+
+#: views/choose/choose.tpl.html:30
+msgid "Click on the contest to collapse or expand the contest."
+msgstr "Cliccar sin la votaziun a l'urna per l'engrondir u empitschnir"
+
+#: directives/alert-message.tpl.html:15
+#: views/choose/choose.tpl.html:19
+#: views/identification/ident-dob.tpl.html:113
+#: views/identification/ident-dob.tpl.html:127
+#: views/identification/ident-dob.tpl.html:142
+#: views/identification/ident-dob.tpl.html:22
+#: views/identification/ident-dob.tpl.html:37
+#: views/identification/ident-dob.tpl.html:52
+#: views/identification/ident-dob.tpl.html:68
+#: views/identification/ident-dob.tpl.html:83
+#: views/identification/ident-dob.tpl.html:98
+#: views/identification/ident-svk.tpl.html:111
+#: views/identification/ident-svk.tpl.html:22
+#: views/identification/ident-svk.tpl.html:37
+#: views/identification/ident-svk.tpl.html:52
+#: views/identification/ident-svk.tpl.html:67
+#: views/identification/ident-svk.tpl.html:82
+#: views/identification/ident-svk.tpl.html:96
+#: views/modals/abandon.tpl.html:10
+#: views/modals/abandonValidate.tpl.html:10
+#: views/modals/choose-candidate.tpl.html:10
+#: views/modals/choose-party.tpl.html:10
+#: views/modals/confirmModal.tpl.html:10
+#: views/modals/help.tpl.html:10
+#: views/modals/sendVoteConfirm.tpl.html:10
+#: views/review/review.tpl.html:105
+#: views/review/review.tpl.html:120
+#: views/review/review.tpl.html:21
+#: views/review/review.tpl.html:35
+#: views/review/review.tpl.html:49
+#: views/review/review.tpl.html:63
+#: views/review/review.tpl.html:77
+#: views/review/review.tpl.html:91
+#: views/validate/validate.tpl.html:21
+#: views/validate/validate.tpl.html:35
+#: views/validate/validate.tpl.html:49
+#: views/validate/validate.tpl.html:63
+#: views/validate/validate.tpl.html:77
+#: views/validate/validate.tpl.html:92
+msgid "Close"
+msgstr "Serrar"
+
+#: views/choose/choose.tpl.html:15
+#: views/identification/ident-dob.tpl.html:109
+#: views/identification/ident-dob.tpl.html:123
+#: views/identification/ident-dob.tpl.html:138
+#: views/identification/ident-dob.tpl.html:18
+#: views/identification/ident-dob.tpl.html:33
+#: views/identification/ident-dob.tpl.html:48
+#: views/identification/ident-dob.tpl.html:64
+#: views/identification/ident-dob.tpl.html:79
+#: views/identification/ident-dob.tpl.html:94
+#: views/identification/ident-svk.tpl.html:107
+#: views/identification/ident-svk.tpl.html:18
+#: views/identification/ident-svk.tpl.html:33
+#: views/identification/ident-svk.tpl.html:48
+#: views/identification/ident-svk.tpl.html:63
+#: views/identification/ident-svk.tpl.html:78
+#: views/identification/ident-svk.tpl.html:92
+#: views/review/review.tpl.html:101
+#: views/review/review.tpl.html:116
+#: views/review/review.tpl.html:17
+#: views/review/review.tpl.html:31
+#: views/review/review.tpl.html:45
+#: views/review/review.tpl.html:59
+#: views/review/review.tpl.html:73
+#: views/review/review.tpl.html:87
+#: views/validate/validate.tpl.html:17
+#: views/validate/validate.tpl.html:31
+#: views/validate/validate.tpl.html:45
+#: views/validate/validate.tpl.html:59
+#: views/validate/validate.tpl.html:73
+#: views/validate/validate.tpl.html:88
+msgid "Close message"
+msgstr "Serrar il messadi"
+
+#: contests/lists-and-candidates.js:36
+#: contests/lists-and-candidates.js:65
+msgid "Confirm action"
+msgstr "Confermar l'acziun"
+
+#: views/choose/choose.tpl.html:47
+#: views/identification/ident-dob.tpl.html:254
+#: views/identification/ident-svk.tpl.html:214
+#: views/legal/legalTerms.tpl.html:30
+#: views/review/review.tpl.html:316
+#: views/validate/validate.tpl.html:458
+msgid "Continue process"
+msgstr "Cuntinuar l'operaziun"
+
+#: views/choose/choose.tpl.html:50
+msgid "Continue to review"
+msgstr "Vinavant"
+
+#: contests/components/candidate-pre-selector.tpl.html:125
+#: contests/components/candidate-selector.tpl.html:99
+msgid "Cumulate"
+msgstr "Cumular"
+
+#: contests/components/candidate-selector.tpl.html:101
+msgid "Cumulate candidate:"
+msgstr "Cumular il candidat:"
+
+#: contests/components/candidate-pre-selector.tpl.html:126
+msgid "Cumulate current candidate"
+msgstr "Cumular il candidat actual"
+
+#: directives/breadcrumbs.tpl.html:10
+msgid "Current step:"
+msgstr "Pass actual:"
+
+#: views/identification/auth-challenge-dob.tpl.html:2
+msgid "Date of birth"
+msgstr "Data da naschientscha"
+
+#: views/identification/auth-challenge-dob.tpl.html:18
+msgid "Day"
+msgstr "Di"
+
+#: contests/components/list-selector.tpl.html:27
+msgid "Details"
+msgstr "indicaziuns pli detagliadas"
+
+#: contests/components/list-selector.tpl.html:29
+msgid "Details of the list:"
+msgstr "Detagls davart la glista:"
+
+#: views/validate/validate.tpl.html:356
+msgid "Do the generated Choice Codes above match the ones on your Voting Card? Then, enter your Ballot Casting Key below."
+msgstr "Correspundan ils codes da controlla generads als codes sin Voss attest da votar? Sche quai è il cas, endatai qua sutvart Voss code da conferma."
+
+#: views/confirm/confirmation.tpl.html:47
+msgid "Do the generated codes above match the ones on your Voting Card? If so, your vote has been correctly cast."
+msgstr "Correspunda il code generà qua sura al code sin Voss attest da votar? Sche quai è il cas, è Vossa vusch vegnida messa cun success en l'urna electronica."
+
+#: views/modals/sendVoteConfirm.tpl.html:19
+msgid "Do you want to seal your vote? After sealing your vote, you cannot change your selections anymore."
+msgstr "Vulais Vus sigillar Vossa vusch? Suenter che Vus avais sigillà Vossa vusch, na pudais Vus betg pli midar Vossas tschernas."
+
+#: views/identification/ident-dob.tpl.html:188
+msgid "During the voting process, please do not use the navigation buttons of your web browser or manually refresh the website, since you might lose your session."
+msgstr "Durant votar na duessas Vus betg utilisar las frizzas da navigaziun da Voss navigatur u actualisar manualmain la website, damai che quai pudess terminar Vossa sesida cun questa website."
+
+#: views/identification/ident-dob.tpl.html:187
+msgid "Enter the Start Voting Key provided in the Voting Card you received and your date of birth. Then press START."
+msgstr "Endatai Voss code da conferma e Vossa data da naschientscha. Lura smatgai CUMENZAR."
+
+#: views/identification/ident-dob.tpl.html:186
+msgid "Enter the Start Voting Key provided in the Voting Card you received and your year of birth. Then press START."
+msgstr "Endatai Voss code da conferma e Voss onn da naschientscha. Lura smatgai CUMENZAR."
+
+#: views/identification/ident-svk.tpl.html:153
+msgid "Enter the Start Voting Key provided in the Voting Card you received. Then press START."
+msgstr "Endatai il code da conferma. Lura smatgai CUMENZAR."
+
+#: views/confirm/confirm.js:22
+msgid "For additional security, we recommend you to clear your browser cache to remove any data related to your vote. You can find an instruction <a href=\"https://www.evoting.ch#rules\">here</a>"
+msgstr "Nus cussegliain a Vus da svidar il cache dal navigatur suenter mintga votaziun/elecziun. In'instrucziun co stizzar la cronologia dal navigatur chattais Vus <a href=\"https://www.evoting.ch/rm#rules\">qua</a>."
+
+#: views/modals/help.tpl.html:107
+msgid "For any question provided, you can either choose YES, NO or leave it blank if you wish to cast a blank vote."
+msgstr "Per mintga dumonda pudais Vus tscherner GEA, NA u nagut."
+
+#: views/modals/help.tpl.html:150
+msgid "For each question, you should check that the displayed code is the one that identifies your selection. This code confirmation is compulsory for security purposes."
+msgstr "Controllai tar mintga dumonda ch'il code inditgà saja quel che identifitgescha Vossa selecziun. Per motivs da segirezza èsi obligatoric da confermar quest code."
+
+#: views/review/review.js:59
+msgid "Generating choice codes"
+msgstr "Ils codes da controlla vegnan generads"
+
+#: views/legal/legalTerms.tpl.html:20
+msgid "Have you taken note of the above-mentioned penal provisions?"
+msgstr "Avais Vus prendì enconuschientscha da las disposiziuns penalas qua survart?"
+
+#: layout/header.html:10
+#: layout/header.html:11
+#: views/modals/help.tpl.html:14
+msgid "Help"
+msgstr "Agid"
+
+#: contests/components/contest-chooser.tpl.html:18
+msgid "Hide"
+msgstr "Zuppentar"
+
+#: contests/components/contest-chooser.tpl.html:19
+msgid "Hide options for:"
+msgstr "Zuppentar las opziuns per:"
+
+#: contests/components/candidate-pre-selector.tpl.html:60
+#: contests/components/candidate-pre-selector.tpl.html:61
+#: contests/components/contest-chooser.tpl.html:30
+#: contests/components/contest-chooser.tpl.html:31
+#: views/modals/help.tpl.html:259
+msgid "How can I use write-ins?"
+msgstr "Co poss jau eleger candidats che n'èn betg sin la glista?"
+
+#: views/modals/help.tpl.html:26
+msgid "How do I start?"
+msgstr "Co cumenzar?"
+
+#: views/modals/help.tpl.html:95
+msgid "How to make a choice?"
+msgstr "Co respund jau ad ina dumonda da votaziun u co tschern jau ina candidata u in candidat?"
+
+#: views/modals/help.tpl.html:274
+msgid "If possible, please provide additional information (year of birth or address) to clearly identify the candidate."
+msgstr "Sche pussaivel inditgai ulteriuras infurmaziuns (onn da naschientscha u adressa) per identifitgar claramain il candidat."
+
+#: views/modals/abandon.tpl.html:19
+msgid "If you cancel your voting process you will lose your choices."
+msgstr "Sche Vus interrumpais Voss process da votar, va a perder Vossa selecziun."
+
+#: contests/lists-and-candidates.js:37
+msgid "If you change the list, all selected candidates will be cleared"
+msgstr "Sche Vus midais la glista, vegn annullada la tscherna actuala da las candidatas e dals candidats elegids."
+
+#: contests/lists-and-candidates.js:66
+msgid "If you clear the list, all selected candidates will be cleared"
+msgstr "Sche Vus stizzais la glista, vegn annullada la tscherna actuala da las candidatas e dals candidats elegids."
+
+#: views/modals/help.tpl.html:61
+msgid "In the Voting Card you will find:"
+msgstr "Sin l'attest da votar chattais Vus:"
+
+#: views/identification/ident-dob.tpl.html:212
+#: views/identification/ident-svk.tpl.html:176
+msgid "Incorrect key. Check the key provided in the Voting card and try again."
+msgstr "Il code è fauss. Controllai il code sin l'attest da votar ed empruvai anc ina giada."
+
+#: views/validate/validate.tpl.html:409
+msgid "Incorrect. You have {{errors.validationErrorArgs[0]}} attempts left. Review the Key provided in your Voting Card and try again"
+msgstr "Incorrect. Vus avais anc {{errors.validationErrorArgs[0]}} emprovas. Controllai il code sin Voss attest da votar ed empruvai anc ina giada."
+
+#: views/identification/ident-dob.tpl.html:63
+msgid "Incorrect. You have {{retries}} attempts left. Review the key provided in your Voting Card and the date of birth and try again."
+msgstr "Betg correct. Vus avais {{retries}} ulteriuras emprovas. Verifitgai il code d'inizialisaziun che Vus chattais sin Voss attest da votar e la data da naschientscha ed empruvai anc ina giada."
+
+#: views/identification/ident-dob.tpl.html:62
+msgid "Incorrect. You have {{retries}} attempts left. Review the key provided in your Voting Card and the year of birth and try again."
+msgstr "Incorrect. Vus avais anc {{retries}} emprovas. Controllai il code sin Voss attest da votar e l'onn da naschientscha ed empruvai anc ina giada."
+
+#: views/review/review.tpl.html:307
+msgid "Information on sealing"
+msgstr "Infurmaziun davart sigillar e trametter la vusch"
+
+#: views/validate/validate.tpl.html:449
+msgid "Information on vote confirmation"
+msgstr "Infurmaziun davart la conferma da la votaziun"
+
+#: contests/candidates-only.tpl.html:4
+#: contests/lists-and-candidates.tpl.html:4
+msgid "It is mandatory to choose at least one of the given options"
+msgstr "Vus stuais selecziunar almain ina da las opziuns dadas"
+
+#: layout/header.html:13
+msgid "Language navigation"
+msgstr "Navigaziun cun la lingua"
+
+#: layout/header.html:47
+#: views/validate/validate.tpl.html:476
+msgid "Leave the Process"
+msgstr "Bandunar il process"
+
+#: layout/header.html:48
+msgid "Leave the process"
+msgstr "Bandunar il process"
+
+#: contests/candidates-only.tpl.html:3
+#: contests/lists-and-candidates.tpl.html:3
+msgid "List of parties and candidates"
+msgstr "Glista da las partidas, da las candidatas e dals candidats"
+
+#: directives/breadcrumbs.tpl.html:2
+msgid "List of steps needed for voting"
+msgstr "Glista dals pass ch'èn necessaris per la votaziun"
+
+#: contests/components/list-finder.tpl.html:38
+msgid "Lists"
+msgstr "Glistas"
+
+#: views/identification/ident-dob.tpl.html:280
+#: views/identification/ident-svk.tpl.html:240
+msgid "Logging you in. Please wait."
+msgstr "Vus vegnis connectà. Spetgai p.pl."
+
+#: views/identification/ident-dob.tpl.html:281
+#: views/identification/ident-svk.tpl.html:241
+msgid "Logging you in...looks like this is taking some time. Please be patient."
+msgstr "Vus vegnis connectà. I pudess durar in mument. Grazia per Vossa pazienza."
+
+#: views/modals/help.tpl.html:280
+msgid "Lowercase characters from a to z"
+msgstr "Minusclas dad a fin z"
+
+#: views/identification/auth-challenge-dob.tpl.html:25
+msgid "Month"
+msgstr "mais"
+
+#: contests/components/candidate-pre-selector.tpl.html:54
+msgid "More information about valid and invalid characters."
+msgstr "Dapli infurmaziuns davart segns valaivels e nunvalaivels."
+
+#: contests/components/candidate-pre-selector.tpl.html:14
+msgid "No candidate chosen"
+msgstr "Nagin candidat tschernì"
+
+#: contests/components/list-pre-selector.js:21
+msgid "No list chosen"
+msgstr "Nagina glista tschernida"
+
+#: contests/components/candidate-finder.tpl.html:58
+#: contests/components/list-finder.tpl.html:29
+msgid "No Results Found. Try again using another search"
+msgstr "Chattà nagut. Empruvai anc ina giada cun in'autra tschertga."
+
+#: views/modals/sendVoteConfirm.tpl.html:24
+msgid "No, change selection"
+msgstr "Na, modifitgar la selecziun"
+
+#: views/modals/abandon.tpl.html:24
+#: views/modals/abandonValidate.tpl.html:23
+msgid "No, continue voting"
+msgstr "Na, cuntinuar cun la votaziun"
+
+#: views/modals/help.tpl.html:278
+msgid "Numeric characters from 0 to 9"
+msgstr "Cifras da 0 fin 9"
+
+#: views/modals/help.tpl.html:171
+msgid "Once the displayed codes match the ‘Choice Codes’ you should type the ‘Ballot Casting Key’ (provided in the Voting card by traditional mail) to confirm your vote. This action will effectively cast your vote."
+msgstr "Sch'ils codes inditgads correspundan cun il ‘code da controlla’, stuais Vus endatar il ‘code da conferma’ (sin l'attestat da votar survegnì per posta) per confermar Vossa votaziun. Cun quest pass dais Vus definitivamain giu Vossa vusch."
+
+#: views/modals/help.tpl.html:128
+msgid "Once you are in the review and seal screen, you can change your options by clicking on the link “change” If your selection is final, click on the “Seal” button to seal the ballot. You will not be able to change it electronically after this point. This process may take a few seconds."
+msgstr "En il pass da controllar e sigillar pudais Vus midar Vossa selecziun cun cliccar sin “Midar”. <br/><br/>Votaziuns: cliccar sin \"Midar la selecziun\" tar la resposta correspundenta per modifitgar la selecziun.<br/>Elecziuns: cliccar sin \"Midar la selecziun\" per modifitgar la selecziun.<br/><br/>Sche Vossa selecziun è definitiva, cliccai sin “Sigillar” per sigillar Vossa votaziun. Suenter na pudais Vus far naginas midadas pli. Il process po durar in mument."
+
+#: views/validate/validate.tpl.html:224
+#: views/validate/validate.tpl.html:331
+msgid "Option"
+msgstr "Selecziun"
+
+#: views/legal/legalTerms.tpl.html:42
+msgid "Page not found"
+msgstr "Betg chattà la pagina."
+
+#: views/legal/legalTerms.tpl.html:7
+msgid "Penal provisions concerning the use of the voting portal"
+msgstr "Prescripziuns penalas concernent il portal da votaziun"
+
+#: directives/breadcrumbs.tpl.html:9
+msgid "Pending step:"
+msgstr " Pass pendent:"
+
+#: contests/components/contest-chooser.tpl.html:35
+msgid "Please click on \"Choose\" or \"Change\" to display the list of candidates."
+msgstr "P.pl. cliccar sin \"Endatar la vusch\" per mussar la glista dals candidats."
+
+#: contests/components/contest-chooser.tpl.html:28
+msgid "Please click on \"Choose\" or \"Change\" to display the list of candidates. You also have the possibility to choose a write-in candidate. For more information see:"
+msgstr "P.pl. cliccar sin \"Endatar la vusch\" per mussar la glista dals candidats."
+
+#: contests/components/contest-chooser.tpl.html:36
+msgid "Please click on \"Choose\" to display the list of candidates. You can accumulate candidates only if there are empty positions."
+msgstr "P.pl. cliccar sin \"Endatar la vusch\" per mussar la glista dals candidats. Vus pudais mo cumular, sch'igl ha posiziuns libras."
+
+#: views/identification/auth-challenge-dob.tpl.html:12
+msgid "Please fill all the fields"
+msgstr "Empleni p.pl. tut ils champs"
+
+#: views/identification/auth-challenge-dob.tpl.html:13
+msgid "Please introduce a valid date"
+msgstr "Inditgai p.pl. ina data valaivla"
+
+#: views/identification/auth-challenge-yob.tpl.html:12
+msgid "Please introduce a valid year of birth"
+msgstr "Inditgai p.pl. in onn da naschientscha valaivel"
+
+#: views/validate/validate.tpl.html:384
+msgid "Please introduce the Ballot Casting Key provided in your Voting Card"
+msgstr "Endatai p.pl. il code da conferma ch'è inditgà sin Voss attest da votar"
+
+#: views/identification/ident-dob.tpl.html:221
+#: views/identification/ident-svk.tpl.html:185
+msgid "Please introduce the Start Voting Key provided in your Voting Card"
+msgstr "Endatai p.pl. il code d'inizialisaziun ch'è inditgà sin Voss attest da votar"
+
+#: views/identification/auth-challenge-yob.tpl.html:11
+msgid "Please introduce your year of birth"
+msgstr "Endatai per plaschair Voss onn da naschientscha."
+
+#: views/confirm/confirmation.tpl.html:26
+msgid "Please match the code carefully with the one you can find in your Voting Card."
+msgstr "Cumparegliai p.pl. il code cun il code che Vus chattais sin Voss attest da votar."
+
+#: views/modals/sendVoteConfirm.tpl.html:20
+msgid "Please note that you still need to confirm your choices in the next step, before your vote will be definitely stored in the ballot box."
+msgstr "Prendai p.pl. enconuschientscha dal fatg che Vus stuais confermar Vossas tschernas en in proxim pass, avant che Vossa vusch vegnia messa definitivamain en l'urna."
+
+#: views/modals/abandonValidate.tpl.html:19
+msgid "Please note the voting process has not been completed."
+msgstr "Resguardai p.pl. ch'il process da votaziun n'è betg vegnì terminà. Sche Vus As annunziais anc ina giada, vesais Vus mo ils codes da controlla."
+
+#: views/validate/validate.tpl.html:392
+#: views/validate/validate.tpl.html:401
+msgid "Please use only numbers (0-9)"
+msgstr "P.pl. duvrar sulettamain dumbers (0-9)"
+
+#: views/validate/validate.tpl.html:223
+#: views/validate/validate.tpl.html:330
+msgid "Position {{$index + 1}} of {{choicesCodeForGroup.length}}:"
+msgstr "Posiziun {{$index + 1}} da {choicesCodeForGroup.length}}:"
+
+#: views/review/review.tpl.html:204
+#: views/review/review.tpl.html:211
+#: views/review/review.tpl.html:275
+#: views/review/review.tpl.html:282
+msgid "Position {{$index + 1}} of {{contest.selectedCandidates.length}}:"
+msgstr "Posiziun {{$index + 1}} da {{contest.selectedCandidates.length}}:"
+
+#: views/validate/validate.tpl.html:191
+#: views/validate/validate.tpl.html:199
+#: views/validate/validate.tpl.html:294
+#: views/validate/validate.tpl.html:302
+msgid "Position {{$index + 1}} of {{group.selectedCandidates.length}}:"
+msgstr "Posiziun {{$index + 1}} da {{group.selectedCandidates.length}}:"
+
+#: contests/components/candidate-pre-selector.tpl.html:11
+#: contests/components/candidate-pre-selector.tpl.html:23
+msgid "Position {{position + 1}} of {{contest.candidatesQuestion.maxChoices}}:"
+msgstr "Posiziun {{position + 1}} da {{contest.candidatesQuestion.maxChoices}}:"
+
+#: layout/header.html:54
+#: layout/header.html:55
+msgid "Quit"
+msgstr "Terminar"
+
+#: views/identification/identification-dob.ctrl.js:28
+msgid "Retrieving Ballot Information done"
+msgstr "Process da dumandar infurmaziuns davart la votaziun terminà"
+
+#: views/identification/identification-dob.ctrl.js:27
+msgid "Retrieving Ballot Information in progress"
+msgstr "Process da dumandar infurmaziuns davart la votaziun en elavuraziun"
+
+#: directives/breadcrumbs.js:16
+#: views/review/review.tpl.html:128
+msgid "Review and Seal"
+msgstr "Sigillar e transmetter"
+
+#: views/review/review.tpl.html:132
+msgid "Review your choices and seal your ballot."
+msgstr "Controllai Vossa vusch avant che Vus la sigillais e la transmettais."
+
+#: views/review/review.tpl.html:325
+msgid "Seal ballot"
+msgstr "Sigillar e transmetter"
+
+#: views/review/review.tpl.html:324
+msgid "Sealing ballot"
+msgstr "Vossa vusch vegn sigillada e transmessa"
+
+#: views/review/review.js:41
+msgid "Sealing Ballot ... looks this is taking some time. Please be patient."
+msgstr "Vossa vusch vegn sigillada ... Quai po durar in mument. Grazia per Vossa pazienza."
+
+#: views/review/review.js:40
+msgid "Sealing Ballot ... please wait"
+msgstr "La vusch vegn sigillada e transmessa ... Spetgar p.pl."
+
+#: views/review/review.tpl.html:347
+msgid "Sealing ballot. Please wait."
+msgstr "La vusch vegn sigillada. Spetgar p.pl."
+
+#: views/review/review.js:49
+msgid "Sealing your Ballot"
+msgstr "Vossa vusch vegn sigillada"
+
+#: contests/components/candidate-finder.tpl.html:4
+msgid "Search a candidate by name"
+msgstr "Tschertga d'ina candidata u d'in candidat tenor il num"
+
+#: contests/components/list-finder.tpl.html:4
+msgid "Search a list by name"
+msgstr "Tschertga d'ina glista cun nums"
+
+#: views/modals/choose-candidate.tpl.html:14
+msgid "Search and Select a candidate"
+msgstr "Tschertgar e selecziunar ina candidata u in candidat"
+
+#: views/modals/choose-party.tpl.html:14
+msgid "Search and select a list"
+msgstr "Tschertgar e selecziunar ina glista"
+
+#: contests/components/candidate-finder.tpl.html:24
+msgid "Search candidate"
+msgstr "Tschertgar ina candidata u in candidat"
+
+#: contests/components/list-finder.tpl.html:24
+msgid "Search list"
+msgstr "Tschertgar ina glista"
+
+#: contests/components/candidate-finder.tpl.html:86
+#: contests/components/list-finder.tpl.html:37
+msgid "Search results"
+msgstr "Tschertgar resultats"
+
+#: views/validate/validate.tpl.html:114
+msgid "See the generated Choice Codes below. To cast your ballot please check they match with those provided in your Voting Card."
+msgstr "Qua sutvart chattais Vus ils codes da controlla generads. Cumparegliai quels cun ils codes sin Voss attest da votar per dar giu Vossa vusch."
+
+#: contests/components/candidate-pre-selector.tpl.html:53
+msgid "See the valid ones"
+msgstr "Vesair ils valaivels"
+
+#: contests/components/candidate-selector.tpl.html:84
+#: contests/components/list-selector.tpl.html:45
+msgid "Select"
+msgstr "Selecziunar"
+
+#: directives/breadcrumbs.js:15
+msgid "Select answers"
+msgstr "Dar Vossa vusch"
+
+#: contests/components/candidate-selector.tpl.html:86
+msgid "Select candidate:"
+msgstr "Selecziunar candidat:"
+
+#: contests/components/list-selector.tpl.html:47
+msgid "Select list:"
+msgstr "Selecziunar glista:"
+
+#: contests/components/candidate-selector.tpl.html:113
+msgid "Selected"
+msgstr "Selecziunà"
+
+#: contests/components/candidate-selector.tpl.html:119
+msgid "Selected in another list"
+msgstr "Selecziunà en in'autra glista"
+
+#: contests/components/list-pre-selector.tpl.html:13
+#: views/review/review.tpl.html:255
+#: views/validate/validate.tpl.html:267
+msgid "Selected list:"
+msgstr "Glista selecziunada:"
+
+#: contests/components/contest-chooser.tpl.html:14
+msgid "Show"
+msgstr "Mussar"
+
+#: contests/components/candidate-finder.tpl.html:32
+msgid "Show candidates from"
+msgstr "Mussar las candidatas ed ils candidats da"
+
+#: contests/components/candidate-finder.tpl.html:80
+msgid "Show only already selected candidates"
+msgstr "Mussar mo ils candidats selecziunads"
+
+#: contests/components/contest-chooser.tpl.html:15
+msgid "Show options for:"
+msgstr "Mussar las opziuns per:"
+
+#: views/choose/choose.js:40
+msgid "Some texts contain an invalid set of characters or an invalid format. Please review the highlighted options below and use valid characters and a valid format. See the errors displayed above each input for more details"
+msgstr "Tscherts texts cuntegnan segns nunvalaivels u èn scrits en in format nunvalaivel. Guardai p.pl. las opziuns marcadas sutvart ed utilisai segns valaivels ed in format valaivel. Controllai il messadi d’errur per dapli infurmaziuns"
+
+#: views/choose/choose.tpl.html:14
+msgid "Something is wrong in the highlighted areas below. Please review and change them when needed."
+msgstr "Insatge n'è betg correct en ils champs marcads qua sutvart. Controllai e midai p.pl. quai che fa da basegn."
+
+#: views/identification/ident-dob.tpl.html:47
+#: views/identification/ident-svk.tpl.html:47
+#: views/review/review.tpl.html:30
+#: views/validate/validate.tpl.html:30
+msgid "Sorry, the Election has not started yet"
+msgstr "Perstgisai, la votaziun n'è betg anc averta"
+
+#: views/identification/ident-dob.tpl.html:17
+#: views/identification/ident-svk.tpl.html:17
+#: views/review/review.tpl.html:16
+#: views/validate/validate.tpl.html:16
+msgid "Sorry, the Election is over"
+msgstr "Perstgisai, la votaziun è terminada."
+
+#: views/identification/ident-dob.tpl.html:262
+#: views/identification/ident-dob.tpl.html:270
+#: views/identification/ident-svk.tpl.html:222
+#: views/identification/ident-svk.tpl.html:230
+msgid "Start"
+msgstr "Cumenzar"
+
+#: views/identification/ident-dob.tpl.html:166
+#: views/identification/ident-svk.tpl.html:135
+msgid "Start Voting"
+msgstr "Cumenzar cun la votaziun"
+
+#: views/identification/ident-dob.tpl.html:153
+#: views/identification/ident-svk.tpl.html:122
+msgid "Start voting"
+msgstr "Cumenzar cun la votaziun"
+
+#: views/identification/ident-dob.tpl.html:167
+#: views/identification/ident-svk.tpl.html:136
+msgid "Start Voting (current step)"
+msgstr "Code d'inizialisaziun (pass actual)"
+
+#: views/identification/ident-dob.tpl.html:197
+#: views/identification/ident-svk.tpl.html:161
+msgid "Start Voting Key"
+msgstr "Code d'inizialisaziun"
+
+#: views/modals/help.tpl.html:63
+msgid "Start Voting Key: you will have to introduce this key to get into the voting platform."
+msgstr "Code d'inizialisaziun: Vus stuais endatar quest code per arrivar a la plattafurma da votar."
+
+#: views/identification/ident-dob.tpl.html:269
+#: views/identification/ident-svk.tpl.html:229
+msgid "Starting"
+msgstr "Partenza"
+
+#: views/identification/ident-dob.tpl.html:269
+#: views/identification/ident-svk.tpl.html:229
+msgid "Starting. Please wait."
+msgstr "Vegn avert. P.pl. spetgar."
+
+#: directives/breadcrumbs.tpl.html:6
+msgid "Step"
+msgstr "Pass"
+
+#: directives/breadcrumbs.tpl.html:11
+#: directives/breadcrumbs.tpl.html:8
+msgid "Step completed:"
+msgstr "Cumplettà il pass:"
+
+#: views/identification/ident-dob.tpl.html:161
+#: views/identification/ident-svk.tpl.html:130
+msgid "Terms and Conditions"
+msgstr "Disposiziuns legalas"
+
+#: views/identification/ident-dob.tpl.html:162
+#: views/identification/ident-svk.tpl.html:131
+msgid "Terms and Conditions (previous step)"
+msgstr "Las cundiziuns generalas da fatschenta (pass precedent)"
+
+#: views/confirm/confirmation.tpl.html:15
+msgid "Thanks for voting"
+msgstr "Grazia fitg che Vus avais votà."
+
+#: views/modals/help.tpl.html:170
+msgid "The Ballot Casting Key (identified with a PENTAGON) is a key to validate your options and cast the vote."
+msgstr "Il code da conferma (segnà cun in PENTAGON) è in code per controllar Vossa selecziun e dar giu Vossa vusch."
+
+#: views/modals/help.tpl.html:148
+msgid "The Choice Codes are also provided in your Voting Card via postal mail and are identified with a DIAMOND."
+msgstr "Ils codes da controlla survegnis Vus era cun Voss attest da votar per posta. Els èn segnads cun in DIAMANT."
+
+#: views/modals/help.tpl.html:149
+msgid "The Choice Codes are an array of numbers that will be displayed onscreen together with the list of questions."
+msgstr "Ils codes da controlla èn ina retscha da cifras che vegn mussada sin il monitur ensemen cun la glista da dumondas."
+
+#: views/modals/help.tpl.html:283
+msgid "The following special characters:"
+msgstr "Ils suandants segns spezials:"
+
+#: views/identification/ident-dob.tpl.html:108
+#: views/identification/ident-svk.tpl.html:77
+#: views/review/review.tpl.html:44
+#: views/validate/validate.tpl.html:44
+msgid "The Internet connection is lost. Please try again later."
+msgstr "La connexiun d'internet è interruta. Empruvai p.pl. anc ina giada pli tard.La connexiun d'internet è interruta. P.pl. empruvar anc ina giada pli tard."
+
+#: contests/services/options.service.js:50
+msgid "The selection is not completed. Make sure you choose an answer for the highlighted questions."
+msgstr "La selecziun n'è betg cumpletta. Controllai che Vus hajas tschernì ina resposta per las dumondas marcadas."
+
+#: contests/services/candidates-only.service.js:100
+#: contests/services/lists-and-candidates.service.js:114
+msgid "The selection is not completed. Make sure you choose at least {{min}} candidate/s."
+msgstr "La selecziun n'è betg cumpletta. Controllai che Vus hajas tschernì almain {{min}} candidat/s."
+
+#: contests/services/lists-and-candidates.service.js:107
+msgid "The selection is not completed. Make sure you choose at least {{min}} list/s."
+msgstr "La selecziun n'è betg cumpletta. Controllai che Vus hajas tschernì almain {{min}} glista/s."
+
+#: views/modals/help.tpl.html:87
+msgid "The Start Voting Key (identified with a TRIANGLE), is a set of numbers or a combination of letters and numbers provided in your Voting Card via postal mail. You will have to type them in the first screen of the portal to identify yourself and to start the voting process. Note: If you enter a wrong key or leave spaces in blank the system will inform you with an error message."
+msgstr "Il code d'inizialisaziun (segnà cun in TRIANGUL) consista d'ina sequenza da cifras u d'ina cumbinaziun da cifras e da bustabs che sa chatta sin Voss attest da votar che Vus avais survegnì per posta. Vus stuais endatar el sin la pagina da partenza dal portal per As identifitgar e per cumenzar cun il process da votaziun. Remartga: sche Vus endatais in code incorrect u laschais spazis vids tranteren, infurmescha il sistem Vus cun in messadi d'errur."
+
+#: contests/components/candidate-pre-selector.tpl.html:51
+msgid "The text contains invalid characters."
+msgstr "Il text cuntegna segns nunvalaivels."
+
+#: views/modals/help.tpl.html:276
+msgid "The typed text is validated, consists at least of a last name and first name, and can contain any of these valid values:"
+msgstr "Il text endatà è vegnì confermà e po cuntegnair las suandantas valurs valaivlas:"
+
+#: views/legal/legalTerms.tpl.html:43
+msgid "The URL you are using is not correct. For security reasons, you are not allowed to manually refresh the website or use the navigation buttons of your browser. Please restart the voting process using the URL shown on your voting card."
+msgstr "L'URL che Vus utilisais n'è betg correcta. Per motivs da segirezza na dastgais Vus betg actualisar manualmain la website u duvrar las frizzas da navigaziun da Voss navigatur. Cumenzai p.pl. il process da votar cun l'URL che Vus chattais sin Vossa carta da votar."
+
+#: views/review/review.tpl.html:86
+msgid "The vote you're trying to send is invalid. Please restart the voting process."
+msgstr "La vusch che Vus empruvais da dar giu è nunvalaivla. Reinizialisai p.pl. il process da votar."
+
+#: views/confirm/confirmation.tpl.html:53
+msgid "The voting process has been completed."
+msgstr "Il process da votar è vegnì terminà cun success."
+
+#: contests/components/candidate-pre-selector.tpl.html:58
+msgid "The write-in has an incorrect format."
+msgstr "Il format da l'endataziun n'è betg correct."
+
+#: contests/components/contest-chooser.tpl.html:46
+msgid "There are some write-ins using a wrong set of characters. Please review the highlighted texts below."
+msgstr "Insaquants dals candidats che Vus avais agiuntà han segns nunvalaivels. Controllai p.pl. ils texts marcads qua sut."
+
+#: views/identification/ident-dob.tpl.html:93
+#: views/identification/ident-svk.tpl.html:62
+#: views/review/review.tpl.html:72
+msgid "This Voting Card is inactive. Please contact the Support team for further details."
+msgstr "Quest attest da votar è inactiv. Contactai p.pl. il @@support.rm@@ per ulteriurs detagls."
+
+#: views/modals/help.tpl.html:40
+msgid "To start the voting process, please enter the Start Voting Key as well as your date of birth. The Start Voting Key is on the printed Voting Card that you have received by mail."
+msgstr "Per cumenzar cun il process da votaziun stuais Vus endatar il code d'inizialisaziun e Vossa data da naschientscha. Il code d'inizialisaziun chattais Vus sin l'attest da votar che Vus avais survegnì per e-mail."
+
+#: views/modals/help.tpl.html:39
+msgid "To start the voting process, please enter the Start Voting Key as well as your year of birth. The Start Voting Key is on the printed Voting Card that you have received by mail."
+msgstr "Per cumenzar cun il process da votaziun stuais Vus endatar il code d'inizialisaziun e Voss onn da naschientscha. Il code d'inizialisaziun chattais Vus sin l'attest da votar che Vus avais survegnì per e-mail."
+
+#: views/modals/help.tpl.html:38
+msgid "To start the voting process, please enter the Start Voting Key. The Start Voting Key is on the printed Voting Card that you have received by mail."
+msgstr "Per cumenzar cun il process da votaziun stuais Vus endatar il code d'inizialisaziun. Quel è inditgà sin l'attest da votar che Vus avais survegnì per e-mail."
+
+#: contests/components/candidate-pre-selector.tpl.html:69
+msgid "Type the name, first name and additional information"
+msgstr "Endatar il num ed ulteriuras infurmaziuns"
+
+#: views/modals/help.tpl.html:279
+msgid "Uppercase characters from A to Z"
+msgstr "Maiusclas dad A fin Z"
+
+#: views/legal/legalTerms.tpl.html:14
+msgid "uses a false identity or the identity of another voter;"
+msgstr "dovra ina faussa identitad u l'identitad d'ina autra votanta u d'in auter votant;"
+
+#: views/validate/validate.tpl.html:100
+msgid "Verify and cast"
+msgstr "Verifitgar e consegnar"
+
+#: directives/breadcrumbs.js:17
+msgid "Verify and Cast"
+msgstr "Verifitgar e consegnar"
+
+#: directives/breadcrumbs.js:18
+#: views/confirm/confirmation.tpl.html:5
+#: views/confirm/confirmation.tpl.html:9
+msgid "Vote Cast"
+msgstr "Consegnà la vusch"
+
+#: views/confirm/confirmation.tpl.html:36
+msgid "Vote Cast Return Code"
+msgstr "Code da finalisaziun"
+
+#: views/modals/help.tpl.html:66
+msgid "Vote Cast Return Code: you will have to verify this code is the same as the one you have on your Voting Card."
+msgstr "Code da finalisaziun: Vus stuais controllar, sche quest code correspunda al code sin Voss attest da votar."
+
+#: layout/header.html:6
+msgid "Voter Portal"
+msgstr "Portal dals votants"
+
+#: views/legal/legalTerms.tpl.html:15
+msgid "votes more than once in a voting template;"
+msgstr "votescha dapli ch'ina giada a chaschun dal medem project da votaziun;"
+
+#: views/identification/ident-svk.tpl.html:106
+#: views/identification/ident-svk.tpl.html:91
+#: views/review/review.tpl.html:100
+#: views/review/review.tpl.html:115
+#: views/validate/validate.tpl.html:72
+#: views/validate/validate.tpl.html:87
+msgid "We are experiencing an internal server error. Please try again later or contact the Support team"
+msgstr "Noss server intern ha chaschunà in sbagl. Empruvai p.pl. anc ina giada pli tard u contactai il @@support.rm@@"
+
+#: views/identification/ident-dob.tpl.html:122
+#: views/identification/ident-dob.tpl.html:137
+msgid "We are experiencing an internal server error. Please try again later or contact the support team."
+msgstr "Noss server intern ha chaschunà in sbagl. Empruvai p.pl. anc ina giada pli tard u contactai il @@support.rm@@."
+
+#: views/modals/help.tpl.html:136
+msgid "What are the Choice Codes?"
+msgstr "Tge èn ils codes da controlla?"
+
+#: views/confirm/confirmation.tpl.html:50
+#: views/modals/help.tpl.html:199
+#: views/validate/validate.tpl.html:359
+msgid "What if codes do not match?"
+msgstr "Tge fatsch jau, sch'ils codes na correspundan betg in a l'auter?"
+
+#: views/modals/help.tpl.html:158
+msgid "What is the Ballot Casting Key?"
+msgstr "Tge è il code da conferma?"
+
+#: views/modals/help.tpl.html:219
+msgid "What is the difference between seal and cast?"
+msgstr "Tge è la differenza tranter sigillar e votar?"
+
+#: views/modals/help.tpl.html:75
+msgid "What is the Start Voting Key?"
+msgstr "Tge è il code d'inizialisaziun?"
+
+#: views/modals/help.tpl.html:179
+msgid "What is the Vote Cast Return Code?"
+msgstr "Tge è il code da finalisaziun?"
+
+#: views/modals/help.tpl.html:48
+msgid "What is the Voting Card?"
+msgstr "Tge è l'attest da votar?"
+
+#: views/confirm/confirmation.tpl.html:38
+#: views/identification/ident-dob.tpl.html:199
+#: views/identification/ident-svk.tpl.html:163
+#: views/validate/validate.tpl.html:126
+#: views/validate/validate.tpl.html:371
+msgid "What is this"
+msgstr "Tge è quai?"
+
+#: views/modals/help.tpl.html:281
+msgid "White space character"
+msgstr "Spazi vid"
+
+#: contests/components/candidate-pre-selector.tpl.html:70
+msgid "Write-in field for position:"
+msgstr "Champ per agiuntar candidats per posiziun:"
+
+#: contests/components/candidate-selector.tpl.html:21
+msgid "Write-in Position"
+msgstr "Posiziun per agiuntar candidats"
+
+#: views/identification/auth-challenge-dob.tpl.html:32
+msgid "Year"
+msgstr "Onn"
+
+#: views/identification/auth-challenge-yob.tpl.html:2
+msgid "Year of birth"
+msgstr "Onn da naschientscha"
+
+#: views/modals/abandon.tpl.html:23
+msgid "Yes, cancel"
+msgstr "Gea, interrumper la votaziun"
+
+#: views/legal/legalTerms.tpl.html:33
+msgid "Yes, I have taken note of them"
+msgstr "Gea, jau hai prendì enconuschientscha."
+
+#: views/modals/abandonValidate.tpl.html:22
+msgid "Yes, leave"
+msgstr "Gea, bandunar il process"
+
+#: views/modals/sendVoteConfirm.tpl.html:23
+msgid "Yes, seal vote"
+msgstr "Gea, sigillar la vusch."
+
+#: views/validate/validate.tpl.html:110
+msgid "You abandoned the process in this step. Continue voting."
+msgstr "Vus avais bandunà en quest pass il process da votaziun. Cuntinuar cun la votaziun."
+
+#: contests/components/candidate-selector.tpl.html:125
+msgid "You already selected this candidate"
+msgstr "Vus avais gia selecziunà quest candidat"
+
+#: contests/components/candidate-selector.tpl.html:128
+msgid "You already selected this candidate on the current position"
+msgstr "Vus avais gia selecziunà quest candidat in quest posiziun"
+
+#: views/modals/help.tpl.html:251
+msgid "You are able to leave the voting process at any time before casting your vote. Remember that in order to cast your vote and to complete the voting process you must enter the Ballot Casting Key, sealing your options is not enough. If you leave the process without sealing your vote your selection will be lost. If you leave the process after sealing your vote your selection will be saved. If you have sealed your options but you have not verified them by entering the Ballot Casting Key, your vote will not be cast. You will have to return to the platform to confirm your vote with the Ballot Casting Key to make it effective."
+msgstr "Vus pudais bandunar da tut temp il process da votaziun, avant che Vus avais votà. Resguardai che Vus stuais endatar Voss code da conferma per pudair dar giu Vossa vusch e per pudair terminar il process da votaziun, sigillar Vossa selecziun na tanscha betg. <br/><br/>Sche Vus bandunais il process senza sigillar Vossa votaziun, va Vossa selecziun a perder. Sche Vus bandunais il process suenter avair sigillà Vossa votaziun, vegn Vossa selecziun arcunada. Sche Vus avais sigillà Vossa selecziun, na l'avais dentant betg verifitgà cun il code da conferma, na dais Vus betg giu Vossa vusch. Vus stuais returnar sin la plattafurma per confermar Vossa votaziun cun il code da conferma per votar definitivamain.<br/><br/>Uscheditg che Vus n'avais betg endatà il code da conferma, pudais Vus interrumper da tut temp il process da votaziun electronica e votar per posta u a l'urna."
+
+#: views/modals/sendVoteConfirm.tpl.html:14
+msgid "You are about to send your vote"
+msgstr "Vus essas vi da trametter Vossa vusch."
+
+#: views/modals/abandon.tpl.html:20
+msgid "You can return and start the online voting process again or vote in paper."
+msgstr "Vus pudais turnar e cumenzar da nov cun il process da la votaziun electronica u votar per correspundenza u a l'urna."
+
+#: views/modals/help.tpl.html:108
+msgid "You can select your options by clicking the checkboxes in the list. If you wish to change your choices deselect the checkbox and click in the final option box."
+msgstr "Per far Vossa selecziun, cliccai simplamain sin ils quadrets da controlla en la glista. Sche Vus vulais midar Vossa selecziun, deactivai il quadret da controlla e cliccai en il quadret da selecziun final.<br/><br/>Per eleger ina candidata u in candidat cliccar sin \"Eleger\" per tscherner ina gliesta u ina candidata resp. in candidat. Betg eleger ina candidata resp. in candidat, sche Vus vulais dar giu in \"cedel\" vid.<br/>Sche Vus vulais modifitgar Vossa selecziun, pudais Vus cliccar sin \"Modifitgar\" u sin \"Stizzar\"."
+
+#: views/identification/ident-dob.tpl.html:203
+#: views/identification/ident-svk.tpl.html:167
+msgid "You can use both upper and lowercase"
+msgstr "I na dependa betg, sche Vus duvrais maiusclas u minusclas."
+
+#: views/identification/ident-dob.tpl.html:178
+#: views/identification/ident-svk.tpl.html:147
+msgid "You cancelled the voting process."
+msgstr "Vus avais interrut il process da votaziun."
+
+#: views/review/review.tpl.html:254
+msgid "You did not select any list. It will be counted as:"
+msgstr "Vus n'avais tschernì nagina glista. Quai vegn quintà sco:"
+
+#: views/review/review.tpl.html:167
+#: views/review/review.tpl.html:205
+#: views/review/review.tpl.html:276
+#: views/validate/validate.tpl.html:153
+#: views/validate/validate.tpl.html:200
+#: views/validate/validate.tpl.html:266
+#: views/validate/validate.tpl.html:303
+msgid "You did not select any option. It will be counted as:"
+msgstr "Vus n'avais tschernì nagina opziun. Quai vegn quintà sco:"
+
+#: views/modals/help.tpl.html:273
+msgid "You just need to type the name and first name of the desired candidate into the field provided to this aim."
+msgstr "Vus stuais sulettamain endatar il num dal candidat giavischà en il champ respectiv."
+
+#: views/identification/ident-dob.tpl.html:180
+msgid "You left the voting process. Please login again with your Start Voting Key and your date of birth to record your vote permanently."
+msgstr "Vus avais bandunà il process da votaziun. As annunziai per plaschair danovamain cun Voss code d'inizialisaziun e cun Vossa data da naschientscha per memorisar Vossa votaziun permanentamain."
+
+#: views/identification/ident-dob.tpl.html:179
+msgid "You left the voting process. Please login again with your Start Voting Key and your year of birth to record your vote permanently."
+msgstr "Vus avais bandunà il process da votaziun. As annunziai per plaschair danovamain cun Voss code d'inizialisaziun per memorisar Vossa votaziun permanentamain."
+
+#: views/identification/ident-svk.tpl.html:148
+msgid "You left the voting process. Please login again with your Start Voting Key to record your vote permanently."
+msgstr "Vus avais bandunà il process da votaziun. As annunziai per plaschair danovamain per memorisar Vossa votaziun permanentamain."
+
+#: views/identification/ident-dob.tpl.html:181
+#: views/identification/ident-svk.tpl.html:149
+msgid "You quit successfully."
+msgstr "Vus avais terminà cun success Vossa votaziun. Sche Vus vulais far la segira ch'i n'è betg pussaivel da trair eventualas conclusiuns davart Vossas votaziuns ed elecziuns sin l'apparat che Vus avais utilisà (computer, tablet, smartphone), cussegliain nus a Vus da svidar il cache dal navigatur suenter mintga votaziun/elecziun. Vus chattais ils instrucziuns co stizzar la cronologia dal navigatur <a href=\"https://www.evoting.ch/rm#rules\" target=\"_blank\">quia</a>. "
+
+#: contests/components/candidate-selector.tpl.html:131
+msgid "You reached the maximum cumulate allowed"
+msgstr "Vus avais cuntanschì la cumulaziun maximala"
+
+#: views/validate/validate.tpl.html:417
+msgid "You reached the maximum number of attempts entering your key. Please contact the Support team"
+msgstr "Vus avais cuntanschì il dumber permess maximalmain d'emprovas per endatar Voss code. Contactai per plaschair il @@support.rm@@."
+
+#: views/identification/ident-dob.tpl.html:78
+msgid "You reached the maximum number of attempts for entering your keys. Please contact the support team."
+msgstr "Vus avais cuntanschì il dumber permess maximalmain d'emprovas per endatar Voss code. Contactai per plaschair il @@support.rm@@."
+
+#: views/modals/help.tpl.html:211
+msgid "You should contact the Election support team."
+msgstr "Contactai p.pl. il @@support.rm@@ per l'elecziun."
+
+#: views/modals/help.tpl.html:191
+msgid "You will have to verify that the displayed code matches the ‘Vote Cast Return Code’ identified with a STAR in your Voting Card. If they both match then the voting process has been completed successfully."
+msgstr "Vus stuais verifitgar ch'il code inditgà correspundia al ‘code da finalisaziun’segnà cun ina STAILA sin Voss attest da votar. Sch'ils dus codes correspundan in a l'auter, avais Vus terminà cun success il process da votaziun."
+
+#: views/legal/legalTerms.tpl.html:52
+msgid "Your Browser (or its version) is not compatible with the Voter Portal. Try one of the following:"
+msgstr "Voss navigatur (u questa versiun) n'è betg cumpatibel cun il portal da votants. Empruvar in dals suandants:"
+
+#: views/validate/validate.tpl.html:159
+#: views/validate/validate.tpl.html:160
+#: views/validate/validate.tpl.html:206
+#: views/validate/validate.tpl.html:207
+#: views/validate/validate.tpl.html:228
+#: views/validate/validate.tpl.html:229
+#: views/validate/validate.tpl.html:280
+#: views/validate/validate.tpl.html:281
+#: views/validate/validate.tpl.html:309
+#: views/validate/validate.tpl.html:310
+#: views/validate/validate.tpl.html:335
+#: views/validate/validate.tpl.html:336
+msgid "Your choice code:"
+msgstr "Voss code da controlla:"
+
+#: views/validate/validate.tpl.html:145
+#: views/validate/validate.tpl.html:179
+#: views/validate/validate.tpl.html:253
+msgid "Your choice codes"
+msgstr "Voss code da controlla"
+
+#: contests/components/candidate-pre-selector.tpl.html:110
+msgid "your current candidate is:"
+msgstr "Voss candidat actual è:"
+
+#: contests/components/list-pre-selector.tpl.html:58
+msgid "your current list is:"
+msgstr "Vossa glista actuala è:"
+
+#: views/identification/ident-dob.tpl.html:32
+#: views/identification/ident-svk.tpl.html:32
+msgid "Your session has expired. Please enter your key to start again."
+msgstr "Vossa sessiun è scadida. Endatai p.pl. Voss code per cumenzar da nov."
+
+#: views/review/review.tpl.html:58
+#: views/validate/validate.tpl.html:58
+msgid "Your session has expired. Please log in again."
+msgstr "Vossa sesida è scadida. As annunziai per plaschair anc ina giada."
+
+#: views/confirm/confirmation.tpl.html:23
+msgid "Your vote was cast."
+msgstr "Vossa vusch è vegnida consegnada."
+
+#: views/modals/help.tpl.html:60
+msgid "Your Voting Card contains the needed keys and codes for the voting process. You will receive it via postal mail."
+msgstr "Voss attest da votar cuntegna ils codes che Vus duvrais per la votaziun. El As vegn tramess per posta."
+
+#: contests/components/candidate-finder.tpl.html:69
+msgid "{{$count}} candidate"
+msgid_plural "{{$count}} candidates"
+msgstr[0] "{{$count}} candidat"
+
+#: contests/components/candidate-finder.tpl.html:62
+msgid "{{$count}} candidate of {{data.allCandidates.length}} found for \"{{data.searchedText}}\""
+msgid_plural "{{$count}} candidates of {{data.allCandidates.length}} found for '{{data.searchedText}}'"
+msgstr[0] "{{$count}} candidat da {{data.allCandidates.length}} chattà per \"{{data.searchedText}}\""
+
+#: contests/components/list-finder.tpl.html:33
+msgid "{{data.lists.length}} list"
+msgstr "{{data.lists.length}} glista"
+
+#: contests/components/list-finder.tpl.html:30
+msgid "{{data.lists.length}} list of {{data.allLists.length}} found for \"{{data.searchedText}}\""
+msgstr "{{data.lists.length}} glista da {{data.allLists.length}} chattada per \"{{data.searchedText}}\""
+
+#: contests/components/list-finder.tpl.html:32
+msgid "{{data.lists.length}} lists"
+msgstr "{{data.lists.length}} glistas"
+
+#: contests/components/list-finder.tpl.html:31
+msgid "{{data.lists.length}} lists of {{data.allLists.length}} found for \"{{data.searchedText}}\""
+msgstr "{{data.lists.length}} glistas da {{data.allLists.length}} chattadas per \"{{data.searchedText}}\""
+
+#: contests/components/contest-chooser.tpl.html:6
+msgid "{{getSelectedCandidatesCount()}} of {{contest.candidatesQuestion.maxChoices}} seats filled"
+msgstr "{{getSelectedCandidatesCount()}} da {{contest.candidatesQuestion.maxChoices}} sezs occupads"
+
+#: views/modals/help.tpl.html:231
+msgid "“Sealing” a vote means to include your choices into a virtual envelop. To complete the voting process you will need to cast it. If you leave the process at this stage you will be able to return later on but you will not be able to change your options. To do so you will need to vote in paper through the traditional way. “Casting” a vote means to include this envelope with your choices into a ballot, making your vote effective. However, whenever a vote is cast, it is considered a final submission and therefore the voter is not able to vote again in the same election."
+msgstr "“Sigillar” vul dir metter Vossa vusch en ina cuverta virtuala. Per terminar Voss process da votaziun stuais Vus dar giu Vossa vusch. Sche Vus bandunais il process en quest mument, pudais Vus returnar pli tard, ma Vus na pudais betg pli midar Vossa selecziun. Per far midadas stuais Vus votar per correspundenza u a l'urna a moda tradiziunalal. “Dar giu la vusch” vul dir metter la cuverta virtuala en l'urna electronica per votar definitivamain. Cura che Vus avais votà, vala quai sco inoltraziun finala e Vus na pudais betg participar anc ina giada a la medema votaziun."

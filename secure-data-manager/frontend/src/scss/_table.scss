@@ -1,0 +1,86 @@
+// table
+// ----------------------------------------
+
+.table {
+  width: 100%;
+  text-align: left;
+  border-collapse: collapse;
+  font-size: 0.875em;
+
+  thead {
+    background-color: $table-thead-bg;
+    color: $table-thead-text;
+    transition: box-shadow .5s ease-in-out;
+    display: block;
+    position: relative;
+    z-index: $z-index-table-thead;
+
+    &.has-shadow {
+      box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+    }
+  }
+
+  tbody {
+    tr {
+      border-bottom: 1px solid $table-border-color;
+
+      &:hover {
+        background-color: $table-row-hover;
+      }
+    }
+  }
+
+  th,
+  td {
+    padding: 1em;
+  }
+
+  .table-batchselector {
+    width: 3em;
+    padding-right: 0;
+    text-align: center;
+
+    md-checkbox,
+    md-radio-button {
+      margin: 0;
+
+      .md-label {
+        display: none;
+      }
+    }
+  }
+
+  .link {
+    white-space: normal;
+    text-align: left;
+  }
+
+  tr {
+    @include display-flex();
+
+    th,
+    td {
+      @include flex-grow(1);
+      @include flex-basis(0);
+      word-break: break-word; //only for webkit
+      overflow: hidden;
+
+      &.table-batchselector {
+        @include flex-grow(0);
+        @include flex-basis(3em);
+      }
+
+      &.table-action {
+        @include flex-grow(0);
+        @include flex-basis(6.429em);
+      }
+    }
+  }
+
+  @for $i from 2 through 5 {
+    .grow-#{$i} {
+      @include flex-grow($i);
+    }
+  }
+
+}

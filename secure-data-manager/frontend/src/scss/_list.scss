@@ -1,0 +1,29 @@
+// list
+// ----------------------------------------
+
+// ordered list
+ol {
+  counter-reset: my-badass-counter;
+  list-style: none;
+  padding-left: 2em;
+
+  li {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-bottom: 2em;
+    }
+
+    &:before {
+      content: counter(my-badass-counter);
+      counter-increment: my-badass-counter;
+      position: absolute;
+      top: 0;
+      left: -1.778em;
+      font-size: 1.125em;
+      font-weight: 500;
+    }
+  }
+}
+
+

@@ -1,0 +1,9 @@
+{
+  "encryptionParams": {
+	"p": "Fw==",
+	"q": "Cw==",
+	"g": "Ag==",
+	"seed": "Ag==",
+	"counter": 123
+  }
+}

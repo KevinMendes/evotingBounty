@@ -1,0 +1,59 @@
+<!-- content-main -->
+<div class="content-main">
+	<div class="container">
+
+		<h1 class="sr-only" data-auto-focus tabindex="-1" translate>Vote Cast</h1>
+		<div class="page-header">
+			<div breadcrumbs current-step-completed="!isVoteNew()" current-step-num="4"></div>
+			<div class="page-title mtn">
+				<h2 class="sr-only" translate>Vote Cast</h2>
+				<div class="alert alert-success mbn" data-ng-if="isVoteNew()">
+					<p class="w-100" data-layout="row" data-layout-align="start center">
+						<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+						</svg>
+						<span class="phm" data-flex translate>Thanks for voting</span>
+					</p>
+				</div>
+				<div class="mtm mbn" data-ng-if="!isVoteNew()" role="alert">
+					<p class="w-100" data-layout="row" data-layout-align="start center">
+						<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+						</svg>
+						<span class="phm" data-flex translate>Your vote was cast.</span>
+					</p>
+				</div>
+				<p class="mtl" translate>Please match the code carefully with the one you can find in your Voting Card.</p>
+			</div>
+		</div>
+
+		<!-- code-notation -->
+		<div class="code-notation mbl">
+			<div class="code-notation-hd">
+				<svg aria-hidden="true" focusable="false" height="48" viewBox="0 0 24 24" width="48" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12,18.87L5.22,22.45,6.5,14.89,1,9.52l7.61-1.1L12,1.55l3.39,6.88L23,9.52l-5.5,5.36,1.28,7.56Z"/>
+				</svg>
+				<p class="control-label" translate>Vote Cast Return Code</p>
+				<a help-button="cast_code">
+					<span translate>What is this</span>
+				</a>
+			</div>
+			<div class="code-notation-content pam">
+				<p class="text-result man" id="vote_cast_return_code">{{voteCastReturnCodeFormatted}}</p>
+			</div>
+		</div>
+		<!-- /code-notation -->
+
+		<p translate>Do the generated codes above match the ones on your Voting Card? If so, your vote has been correctly cast.</p>
+		<div class="mtm mbl">
+			<a help-button="code_not_ok">
+				<span translate>What if codes do not match?</span>
+			</a>
+		</div>
+		<p translate>The voting process has been completed.</p>
+
+		<p ng-bind-html="getClearCacheText()"></p>
+	</div>
+	<!-- /container -->
+</div>
+<!-- /content-main -->

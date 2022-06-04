@@ -1,0 +1,27 @@
+{
+	"encryptionGroup": {
+		"p": "0x3B",
+		"q": "0x1D",
+		"g": "0x3"
+	},
+	"electionEventId": "314bd34dcf6e4de4b771a92fa3849d3d",
+	"controlComponentPublicKeys": {
+		"nodeId": 1,
+		"ccrChoiceReturnCodesEncryptionPublicKey": [
+			"0x5",
+			"0x1B",
+			"0x4"
+		],
+		"ccmElectionPublicKey": [
+			"0x9",
+			"0x16",
+			"0x29"
+		]
+	},
+	"signature": {
+		"signatureContents": "FQ==",
+		"certificateChain": [
+			"-----BEGIN CERTIFICATE-----\r\nMIIDNDCCAhygAwIBAgICAx4wDQYJKoZIhvcNAQELBQAwXTERMA8GA1UEAwwIdGVz\r\ndC5jb20xDTALBgNVBAsMBHRlc3QxDjAMBgNVBAoMBXRlc3QuMQ0wCwYDVQQHDAR0\r\nZXN0MQ0wCwYDVQQIDAR0ZXN0MQswCQYDVQQGEwJDQTAeFw0yMjAzMjExMDQyMTFa\r\nFw0yMzAzMjEwMDAwMDBaMF0xETAPBgNVBAMMCHRlc3QuY29tMQ0wCwYDVQQLDAR0\r\nZXN0MQ4wDAYDVQQKDAV0ZXN0LjENMAsGA1UEBwwEdGVzdDENMAsGA1UECAwEdGVz\r\ndDELMAkGA1UEBhMCQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDF\r\nySv2HFfaC5l5oX4wWDBhNXa3ExQOGFo2uumyXwzv4urU25IaVeNpePeSovZtDYKX\r\nntWLOrBWBc5/YBTvnahQsBERjiDYg/FnmNliDsOoMNsLU6Pj3GaDRiBePmPrhVRQ\r\n7w5p1xQu9wRejcne9Z1htOgY3lIZqJ3ea923eDkesJyKwTVRXYgYX/26eDv0Q2Hv\r\n0CSuu1ZpfzBwx6Nhn9z1ClDjWV5CKhtfYdGo5CD3XNhrjGQ0hh0LadNn0MmFr1qb\r\nYx+E6ZEcpGIUdUa//hDANV79Qlkcka217NpoVujaMfzPl4EHSpGTOvjdgIJ15spT\r\njuUztECAkzR2iezZDtcrAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAGrCMlPaoJz8\r\n01OWd+OuzuHbSufItYVSt9K5HK+4OQ+ca2IxEtowgZY5IU1kOzMFf2YkshhVCZ0m\r\ndNS/R4bi2aIQ5oi87cIoZqh5hDvvH6FGh5DQ3f3XiSWF8p4fmea5yM/r90jOTNlp\r\nTZHVin9yWBOx1ZH81o3YNLv7DAg+uuwLwRXnTxJaF+BYItWI1fBd+O7tlGhCouK5\r\nLXWqEk8Isl3dFqTUimC6Twf1cq0JqyEOM4w60U5K44pR6Qb0no3cGj93XtrSYqd2\r\n5K90k3GyZieyyWzpU5FqqAsujmG6FYBnM3jRqyPESVjwh5ALkJQds+WNzqpeEzDb\r\nHrA/rqtShiw=\r\n-----END CERTIFICATE-----\r\n"
+		]
+	}
+}

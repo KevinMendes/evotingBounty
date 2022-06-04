@@ -1,0 +1,67 @@
+{
+	"name": "ov-secure-data-manager",
+	"version": "0.14.1-0",
+	"license": "(c) Original Developers indicated in attribution.txt, 2022. All Rights Reserved except the Material Design resources, which were developed by Google",
+	"private": true,
+	"scripts": {
+		"updatePot": "grunt nggettext_extract",
+		"format": "prettier-eslint --write \"src/app/**/*.js\"",
+		"compile": "grunt app"
+	},
+	"dependencies": {
+		"lodash": "4.17.21",
+		"angular": "1.8.2",
+		"angular-animate": "1.8.2",
+		"angular-aria": "1.8.2",
+		"angular-ui-bootstrap": "2.5.6",
+		"angular-ui-router": "0.4.3",
+		"angular-material": "1.1.26",
+		"angular-promise-extras": "0.1.9",
+		"angular-gettext": "2.4.2",
+		"ng-file-upload": "12.2.13"
+	},
+	"devDependencies": {
+		"angular-mocks": "1.8.2",
+		"body-parser": "1.20.0",
+		"express": "4.17.3",
+		"grunt": "1.5.2",
+		"grunt-angular-gettext": "2.5.3",
+		"grunt-cli": "1.4.3",
+		"grunt-contrib-clean": "2.0.0",
+		"grunt-contrib-compress": "2.0.0",
+		"grunt-contrib-concat": "2.1.0",
+		"grunt-contrib-copy": "1.0.0",
+		"grunt-contrib-cssmin": "4.0.0",
+		"grunt-contrib-sass": "2.0.0",
+		"grunt-contrib-uglify": "5.1.0",
+		"grunt-contrib-watch": "1.1.0",
+		"grunt-express": "1.4.1",
+		"grunt-html2js": "0.8.0",
+		"grunt-karma": "4.0.2",
+		"grunt-ng-annotate": "4.0.0",
+		"grunt-sass": "3.1.0",
+		"install": "0.13.0",
+		"jasmine-core": "4.1.0",
+		"karma": "6.3.17",
+		"karma-coverage": "2.2.0",
+		"karma-jasmine": "4.0.2",
+		"karma-junit-reporter": "2.0.1",
+		"karma-phantomjs-launcher": "1.0.4",
+		"karma-spec-reporter": "0.0.34",
+		"matchdep": "2.0.0",
+		"node-sass": "4.14.1",
+		"nw-builder": "3.5.7",
+		"phantomjs": "2.1.7",
+		"searchjs": "1.1.0",
+		"stable": "0.1.8",
+		"temporary": "1.1.0",
+		"prettier-eslint-cli": "5.0.1"
+	},
+	"peerDependencies": {
+		"grunt-parallel": "0.5.1"
+	},
+	"engines": {
+		"node": ">=14",
+		"npm": ">=6"
+	}
+}

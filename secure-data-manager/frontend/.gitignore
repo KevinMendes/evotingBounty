@@ -1,0 +1,35 @@
+# Generated directories
+node_modules/
+bower_components/
+
+build/
+release/
+dist/
+nexus/
+cache/
+desktop_app/
+
+# sass cache folder
+.sass-cache/
+
+# Idea folder
+.idea
+
+# Mac OS X hidden files
+.DS_Store
+
+# Vim swap files
+.*.sw?
+
+# Gedit swap files
+*~
+
+# Logs
+*.log
+*.iml
+
+*.tern-port
+.project
+
+*.mo
+server/responses/langs

@@ -1,0 +1,470 @@
+<!-- modal help vote -->
+<div>
+	<div class="modal-header">
+		<div data-layout="row" data-layout-grid>
+			<div data-flex-order="1">
+				<button class="close has-icon" data-dismiss="modal" data-ng-click="cancel()" id="btn_modal_close_1" type="button">
+					<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+					</svg>
+					<span class="sr-only coloured-text" translate>Close</span>
+				</button>
+			</div>
+			<div class="overflow-x-auto-xs" data-flex data-flex-order="0">
+				<h2 class="modal-title" translate>Help</h2>
+			</div>
+		</div>
+	</div>
+	<div class="modal-body">
+		<dl aria-multiselectable="true" class="panel-group dl-expandable" id="accordion" role="tablist">
+			<dt aria-controls="collapse0" aria-selected="false" data-animate-icon="ci-rotate-180" data-toggle-icon="collapse0Icon"
+				data-togglerone-class="in"
+				data-togglerone-extended="collapse0" id="heading0" role="tab" tabindex="0">
+        <span class="btn expand-dd w-100 text-left btn-link">
+          <div class="d-table w-100">
+            <div class="d-table-row">
+              <span class="d-table-cell">
+                <span class="dt-title" translate>How do I start?</span>
+              </span>
+              <span class="d-table-cell text-right">
+                <svg aria-hidden="true" focusable="false" height="24" id="collapse0Icon" viewBox="0 0 24 24" width="24"
+					 xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </span>
+			</dt>
+			<dd aria-expanded="false" aria-labelledby="heading0" class="panel-collapse collapse" id="collapse0" role="tabpanel">
+				<p ng-if="config.identification === 'svk'" translate>To start the voting process, please enter the Start Voting Key. The Start Voting
+					Key is on the printed Voting Card that you have received by mail.</p>
+				<p ng-if="config.identification === 'yob'" translate>To start the voting process, please enter the Start Voting Key as well as your
+					year of birth. The Start Voting Key is on the printed Voting Card that you have received by mail.</p>
+				<p ng-if="config.identification === 'dob'" translate>To start the voting process, please enter the Start Voting Key as well as your
+					date of birth. The Start Voting Key is on the printed Voting Card that you have received by mail.</p>
+			</dd>
+			<dt aria-controls="collapse1" aria-selected="false" data-animate-icon="ci-rotate-180" data-toggle-icon="collapse1Icon"
+				data-togglerone-class="in" data-togglerone-extended="collapse1" id="heading2" role="tab" tabindex="0">
+        <span class="btn expand-dd w-100 text-left btn-link">
+          <div class="d-table w-100">
+            <div class="d-table-row">
+              <span class="d-table-cell">
+                <span class="dt-title" translate>What is the Voting Card?</span>
+              </span>
+              <span class="d-table-cell text-right">
+                <svg aria-hidden="true" focusable="false" height="24" id="collapse1Icon" viewBox="0 0 24 24" width="24"
+					 xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </span>
+			</dt>
+			<dd aria-expanded="false" aria-labelledby="heading2" class="panel-collapse collapse" id="collapse1" role="tabpanel">
+				<p translate>Your Voting Card contains the needed keys and codes for the voting process. You will receive it via postal mail.</p>
+				<p translate>In the Voting Card you will find:</p>
+				<ul>
+					<li translate>Start Voting Key: you will have to introduce this key to get into the voting platform.</li>
+					<li translate>Choice Codes: you will have to verify that the displayed codes match the ones you have in your Voting Card.</li>
+					<li translate>Ballot Casting Key: you will have to introduce this key to validate your options and cast the vote.</li>
+					<li translate>Vote Cast Return Code: you will have to verify this code is the same as the one you have on your Voting Card.</li>
+				</ul>
+			</dd>
+			<dt aria-controls="collapse2" aria-selected="false" data-animate-icon="ci-rotate-180" data-toggle-icon="collapse2Icon"
+				data-togglerone-class="in"
+				data-togglerone-extended="collapse2" id="start_voting_key" role="tab" tabindex="0">
+        <span class="btn expand-dd w-100 text-left btn-link">
+          <div class="d-table w-100">
+            <div class="d-table-row">
+              <span class="d-table-cell">
+                <span class="dt-title" translate>What is the Start Voting Key?</span>
+              </span>
+              <span class="d-table-cell text-right">
+                <svg aria-hidden="true" focusable="false" height="24" id="collapse2Icon" viewBox="0 0 24 24" width="24"
+					 xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </span>
+			</dt>
+			<dd aria-expanded="false" aria-labelledby="start_voting_key" class="panel-collapse collapse" id="collapse2" role="tabpanel">
+				<p translate>The Start Voting Key (identified with a TRIANGLE), is a set of numbers or a combination of letters and numbers provided
+					in your Voting Card via postal mail. You will have to type them in the first screen of the portal to identify yourself and to
+					start the voting process. Note: If you enter a wrong key or leave spaces in blank the system will inform you with an error
+					message.</p>
+			</dd>
+			<dt aria-controls="collapse3" aria-selected="false" data-animate-icon="ci-rotate-180" data-toggle-icon="collapse3Icon"
+				data-togglerone-class="in"
+				data-togglerone-extended="collapse3" id="heading3" role="tab" tabindex="0">
+        <span class="btn expand-dd w-100 text-left btn-link">
+          <div class="d-table w-100">
+            <div class="d-table-row">
+              <span class="d-table-cell">
+                <span class="dt-title" translate>How to make a choice?</span>
+              </span>
+              <span class="d-table-cell text-right">
+                <svg aria-hidden="true" focusable="false" height="24" id="collapse3Icon" viewBox="0 0 24 24" width="24"
+					 xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </span>
+			</dt>
+			<dd aria-expanded="false" aria-labelledby="heading3" class="panel-collapse collapse" id="collapse3" role="tabpanel">
+				<p translate>For any question provided, you can either choose YES, NO or leave it blank if you wish to cast a blank vote.</p>
+				<p translate>You can select your options by clicking the checkboxes in the list. If you wish to change your choices deselect the
+					checkbox and click in the final option box.</p>
+			</dd>
+			<dt aria-controls="collapse4" aria-selected="false" data-animate-icon="ci-rotate-180" data-toggle-icon="collapse4Icon"
+				data-togglerone-class="in"
+				data-togglerone-extended="collapse4" id="heading4" role="tab" tabindex="0">
+        <span class="btn expand-dd w-100 text-left btn-link">
+          <div class="d-table w-100">
+            <div class="d-table-row">
+              <span class="d-table-cell">
+                <span class="dt-title" translate>Can I change my selection?</span>
+              </span>
+              <span class="d-table-cell text-right">
+                <svg aria-hidden="true" focusable="false" height="24" id="collapse4Icon" viewBox="0 0 24 24" width="24"
+					 xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </span>
+			</dt>
+			<dd aria-expanded="false" aria-labelledby="heading4" class="panel-collapse collapse" id="collapse4" role="tabpanel">
+				<p translate>Once you are in the review and seal screen, you can change your options by clicking on the link “change” If your
+					selection is final, click on the “Seal” button to seal the ballot. You will not be able to change it electronically after this
+					point. This process may take a few seconds.</p>
+			</dd>
+			<dt aria-controls="collapse5" aria-selected="false" data-animate-icon="ci-rotate-180" data-toggle-icon="collapse5Icon"
+				data-togglerone-class="in"
+				data-togglerone-extended="collapse5" id="choice_codes" role="tab" tabindex="0">
+        <span class="btn expand-dd w-100 text-left btn-link">
+          <div class="d-table w-100">
+            <div class="d-table-row">
+              <span class="d-table-cell">
+                <span class="dt-title" translate>What are the Choice Codes?</span>
+              </span>
+              <span class="d-table-cell text-right">
+                <svg aria-hidden="true" focusable="false" height="24" id="collapse5Icon" viewBox="0 0 24 24" width="24"
+					 xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </span>
+			</dt>
+			<dd aria-expanded="false" aria-labelledby="choice_codes" class="panel-collapse collapse" id="collapse5" role="tabpanel">
+				<p translate>The Choice Codes are also provided in your Voting Card via postal mail and are identified with a DIAMOND.</p>
+				<p translate>The Choice Codes are an array of numbers that will be displayed onscreen together with the list of questions.</p>
+				<p translate>For each question, you should check that the displayed code is the one that identifies your selection. This code
+					confirmation is compulsory for security purposes.</p>
+			</dd>
+			<dt aria-controls="collapse6" aria-selected="false" data-animate-icon="ci-rotate-180" data-toggle-icon="collapse6Icon"
+				data-togglerone-class="in" data-togglerone-extended="collapse6" id="ballot_casting_key" role="tab" tabindex="0">
+        <span class="btn expand-dd w-100 text-left btn-link">
+          <div class="d-table w-100">
+            <div class="d-table-row">
+              <span class="d-table-cell">
+                <span class="dt-title" translate>What is the Ballot Casting Key?</span>
+              </span>
+              <span class="d-table-cell text-right">
+                <svg aria-hidden="true" focusable="false" height="24" id="collapse6Icon" viewBox="0 0 24 24" width="24"
+					 xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </span>
+			</dt>
+			<dd aria-expanded="false" aria-labelledby="ballot_casting_key" class="panel-collapse collapse" id="collapse6" role="tabpanel">
+				<p translate>The Ballot Casting Key (identified with a PENTAGON) is a key to validate your options and cast the vote. </p>
+				<p translate>Once the displayed codes match the ‘Choice Codes’ you should type the ‘Ballot Casting Key’ (provided in the Voting card
+					by traditional mail) to confirm your vote. This action will effectively cast your vote.</p>
+			</dd>
+			<dt aria-controls="collapse7" aria-selected="false" data-animate-icon="ci-rotate-180" data-toggle-icon="collapse7Icon"
+				data-togglerone-class="in"
+				data-togglerone-extended="collapse7" id="cast_code" role="tab" tabindex="0">
+        <span class="btn expand-dd w-100 text-left btn-link">
+          <div class="d-table w-100">
+            <div class="d-table-row">
+              <span class="d-table-cell">
+                <span class="dt-title" translate>What is the Vote Cast Return Code?</span>
+              </span>
+              <span class="d-table-cell text-right">
+                <svg aria-hidden="true" focusable="false" height="24" id="collapse7Icon" viewBox="0 0 24 24" width="24"
+					 xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </span>
+			</dt>
+			<dd aria-expanded="false" aria-labelledby="cast_code" class="panel-collapse collapse" id="collapse7" role="tabpanel">
+				<p translate>You will have to verify that the displayed code matches the ‘Vote Cast Return Code’ identified with a STAR in your Voting Card.
+					If they both match then the voting process has been completed successfully.</p>
+			</dd>
+			<dt aria-controls="collapse8" aria-selected="false" data-animate-icon="ci-rotate-180" data-toggle-icon="collapse8Icon"
+				data-togglerone-class="in" data-togglerone-extended="collapse8" id="code_not_ok" role="tab" tabindex="0">
+        <span class="btn expand-dd w-100 text-left btn-link">
+          <div class="d-table w-100">
+            <div class="d-table-row">
+              <span class="d-table-cell">
+                <span class="dt-title" translate>What if codes do not match?</span>
+              </span>
+              <span class="d-table-cell text-right">
+                <svg aria-hidden="true" focusable="false" height="24" id="collapse8Icon" viewBox="0 0 24 24" width="24"
+					 xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </span>
+			</dt>
+			<dd aria-expanded="false" aria-labelledby="code_not_ok" class="panel-collapse collapse" id="collapse8" role="tabpanel">
+				<p translate>You should contact the Election support team. </p>
+			</dd>
+			<dt aria-controls="collapse9" aria-selected="false" data-animate-icon="ci-rotate-180" data-toggle-icon="collapse9Icon"
+				data-togglerone-class="in"
+				data-togglerone-extended="collapse9" id="heading9" role="tab" tabindex="0">
+        <span class="btn expand-dd w-100 text-left btn-link">
+          <div class="d-table w-100">
+            <div class="d-table-row">
+              <span class="d-table-cell">
+                <span class="dt-title" translate>What is the difference between seal and cast?</span>
+              </span>
+              <span class="d-table-cell text-right">
+                <svg aria-hidden="true" focusable="false" height="24" id="collapse9Icon" viewBox="0 0 24 24" width="24"
+					 xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </span>
+			</dt>
+			<dd aria-expanded="false" aria-labelledby="heading9" class="panel-collapse collapse" id="collapse9" role="tabpanel">
+				<p translate>“Sealing” a vote means to include your choices into a virtual envelop. To complete the voting process you will need to
+					cast it. If you leave the process at this stage you will be able to return later on but you will not be able to change your
+					options. To do so you will need to vote in paper through the traditional way. “Casting” a vote means to include this envelope with
+					your choices into a ballot, making your vote effective. However, whenever a vote is cast, it is considered a final submission and
+					therefore the voter is not able to vote again in the same election.</p>
+			</dd>
+			<dt aria-controls="collapse10" aria-selected="false" data-animate-icon="ci-rotate-180" data-toggle-icon="collapse10Icon"
+				data-togglerone-class="in" data-togglerone-extended="collapse10" id="heading10" role="tab" tabindex="0">
+        <span class="btn expand-dd w-100 text-left btn-link">
+          <div class="d-table w-100">
+            <div class="d-table-row">
+              <span class="d-table-cell">
+                <span class="dt-title" translate>Can I leave or cancel my voting anytime?</span>
+              </span>
+              <span class="d-table-cell text-right">
+                <svg aria-hidden="true" focusable="false" height="24" id="collapse10Icon" viewBox="0 0 24 24" width="24"
+					 xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </span>
+			</dt>
+			<dd aria-expanded="false" aria-labelledby="heading10" class="panel-collapse collapse" id="collapse10" role="tabpanel">
+				<p translate>You are able to leave the voting process at any time before casting your vote. Remember that in order to cast your vote
+					and to complete the voting process you must enter the Ballot Casting Key, sealing your options is not enough. If you leave the
+					process without sealing your vote your selection will be lost. If you leave the process after sealing your vote your selection
+					will be saved. If you have sealed your options but you have not verified them by entering the Ballot Casting Key, your vote will
+					not be cast. You will have to return to the platform to confirm your vote with the Ballot Casting Key to make it effective.</p>
+			</dd>
+			<dt aria-controls="collapse12" aria-selected="false" data-animate-icon="ci-rotate-180" data-toggle-icon="collapse12Icon"
+				data-togglerone-class="in"
+				data-togglerone-extended="collapse12" id="write_ins" ng-show="config.contestsCapabilities.writeIns" role="tab" tabindex="0">
+        <span class="btn expand-dd w-100 text-left btn-link">
+          <div class="d-table w-100">
+            <div class="d-table-row">
+              <span class="d-table-cell">
+                <span class="dt-title" translate>How can I use write-ins?</span>
+              </span>
+              <span class="d-table-cell text-right">
+                <svg aria-hidden="true" focusable="false" height="24" id="collapse12Icon" viewBox="0 0 24 24" width="24"
+					 xmlns="http://www.w3.org/2000/svg">
+                  <path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+                </svg>
+              </span>
+            </div>
+          </div>
+        </span>
+			</dt>
+			<dd aria-expanded="false" aria-labelledby="write_ins" class="panel-collapse collapse" id="collapse12" role="tabpanel">
+				<p class="mbs" translate>Click on "Choose" or "Change". At the bottom, you will find the possibility to select a write-in option. By
+					selecting this option, you can enter your choice in a write-in field.</p>
+				<p class="mbs">
+					<span translate>You just need to type the name and first name of the desired candidate into the field provided to this aim.</span>
+					<span translate>If possible, please provide additional information (year of birth or address) to clearly identify the candidate.</span>
+				</p>
+				<p translate>The typed text is validated, consists at least of a last name and first name, and can contain any of these valid
+					values:</p>
+				<ul class="mts">
+					<li translate>Numeric characters from 0 to 9</li>
+					<li translate>Uppercase characters from A to Z</li>
+					<li translate>Lowercase characters from a to z</li>
+					<li translate>White space character</li>
+					<li>
+						<span translate>The following special characters:</span>
+						<ul class="char-table mts">
+							<li>
+								<span class="char-symbol">À</span>
+								<span class="char-symbol">Á</span>
+								<span class="char-symbol">Â</span>
+								<span class="char-symbol">Ã</span>
+								<span class="char-symbol">Ä</span>
+								<span class="char-symbol">Å</span>
+							</li>
+							<li>
+								<span class="char-symbol">à</span>
+								<span class="char-symbol">á</span>
+								<span class="char-symbol">â</span>
+								<span class="char-symbol">ã</span>
+								<span class="char-symbol">ä</span>
+								<span class="char-symbol">å</span>
+							</li>
+							<li>
+								<span class="char-symbol">È</span>
+								<span class="char-symbol">É</span>
+								<span class="char-symbol">Ê</span>
+								<span class="char-symbol">Ë</span>
+							</li>
+							<li>
+								<span class="char-symbol">è</span>
+								<span class="char-symbol">é</span>
+								<span class="char-symbol">ê</span>
+								<span class="char-symbol">ë</span>
+							</li>
+							<li>
+								<span class="char-symbol">Ì</span>
+								<span class="char-symbol">Í</span>
+								<span class="char-symbol">Î</span>
+								<span class="char-symbol">Ï</span>
+							</li>
+							<li>
+								<span class="char-symbol">ì</span>
+								<span class="char-symbol">í</span>
+								<span class="char-symbol">î</span>
+								<span class="char-symbol">ï</span>
+							</li>
+							<li>
+								<span class="char-symbol">Ò</span>
+								<span class="char-symbol">Ó</span>
+								<span class="char-symbol">Ô</span>
+								<span class="char-symbol">Õ</span>
+								<span class="char-symbol">Ö</span>
+							</li>
+							<li>
+								<span class="char-symbol">ò</span>
+								<span class="char-symbol">ó</span>
+								<span class="char-symbol">ô</span>
+								<span class="char-symbol">õ</span>
+								<span class="char-symbol">ö</span>
+							</li>
+							<li>
+								<span class="char-symbol">Ù</span>
+								<span class="char-symbol">Ú</span>
+								<span class="char-symbol">Û</span>
+								<span class="char-symbol">Ü</span>
+							</li>
+							<li>
+								<span class="char-symbol">ù</span>
+								<span class="char-symbol">ú</span>
+								<span class="char-symbol">û</span>
+								<span class="char-symbol">ü</span>
+							</li>
+							<li>
+								<span class="char-symbol">Æ</span>
+								<span class="char-symbol">æ</span>
+							</li>
+							<li>
+								<span class="char-symbol">Ç</span>
+								<span class="char-symbol">ç</span>
+							</li>
+							<li>
+								<span class="char-symbol">Œ</span>
+								<span class="char-symbol">œ</span>
+							</li>
+							<li>
+								<span class="char-symbol">Þ</span>
+								<span class="char-symbol">þ</span>
+							</li>
+							<li>
+								<span class="char-symbol">Ñ</span>
+								<span class="char-symbol">ñ</span>
+							</li>
+							<li>
+								<span class="char-symbol">Ø</span>
+								<span class="char-symbol">ø</span>
+							</li>
+							<li>
+								<span class="char-symbol">Š</span>
+								<span class="char-symbol">š</span>
+							</li>
+							<li>
+								<span class="char-symbol">Ý</span>
+								<span class="char-symbol">ý</span>
+							</li>
+							<li>
+								<span class="char-symbol">Ÿ</span>
+								<span class="char-symbol">ÿ</span>
+							</li>
+							<li>
+								<span class="char-symbol">Ž</span>
+								<span class="char-symbol">ž</span>
+							</li>
+							<li>
+								<span class="char-symbol">¢</span>
+							</li>
+							<li>
+								<span class="char-symbol">(</span>
+								<span class="char-symbol">)</span>
+							</li>
+							<li>
+								<span class="char-symbol">ð</span>
+							</li>
+							<li>
+								<span class="char-symbol">Ð</span>
+							</li>
+							<li>
+								<span class="char-symbol">ß</span>
+							</li>
+							<li>
+								<span class="char-symbol">'</span>
+							</li>
+							<li>
+								<span class="char-symbol">,</span>
+							</li>
+							<li>
+								<span class="char-symbol">-</span>
+							</li>
+							<li>
+								<span class="char-symbol">.</span>
+							</li>
+							<li>
+								<span class="char-symbol">/</span>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</dd>
+		</dl>
+	</div>
+</div>

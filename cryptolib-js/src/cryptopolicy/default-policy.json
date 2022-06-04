@@ -1,0 +1,131 @@
+{
+  "mathematical": {
+    "groups": {
+      "type": "QR_2048"
+    }
+  },
+  "primitives": {
+    "messageDigest": {
+      "algorithm": "SHA256"
+    },
+    "keyDerivation": {
+      "pbkdf": {
+        "keyLengthBytes": 16,
+        "minSaltLengthBytes": 32,
+        "hashAlgorithm": "SHA256",
+        "minPasswordLength": 16,
+        "maxPasswordLength": 1000,
+        "numIterations": 32000
+      }
+    }
+  },
+  "symmetric": {
+    "secretKey": {
+      "encryption": {
+        "lengthBytes": 16
+      },
+      "mac": {
+        "lengthBytes": 32
+      }
+    },
+    "cipher": {
+      "algorithm": {
+        "name": "AES-GCM",
+        "keyLengthBytes": 16,
+        "tagLengthBytes": 16
+      },
+      "ivLengthBytes": 12
+    },
+    "mac": {
+      "hashAlgorithm": "SHA256"
+    }
+  },
+  "asymmetric": {
+    "keyPair": {
+      "encryption": {
+        "algorithm": "RSA",
+        "keyLengthBits": 2048,
+        "publicExponent": 65537
+      }
+    },
+    "signer": {
+      "algorithm": "RSA",
+      "hashAlgorithm": "SHA256",
+      "padding": {
+        "name": "PSS",
+        "hashAlgorithm": "SHA256",
+        "saltLengthBytes": 32,
+        "maskGenerator": {
+          "name": "MGF1",
+          "hashAlgorithm": "SHA256"
+        }
+      },
+      "publicExponent": 65537
+    },
+    "cipher": {
+      "algorithm": {
+        "name": "RSA-KEM",
+        "secretKeyLengthBytes": 16,
+        "ivLengthBytes": 12,
+        "tagLengthBytes": 16,
+        "keyDeriver": {
+          "name": "KDF1",
+          "hashAlgorithm": "SHA256"
+        },
+        "symmetricCipher": "AES-GCM"
+      }
+    },
+    "xmlSigner": {
+      "signer": {
+        "algorithm": "RSA",
+        "hashAlgorithm": "SHA256",
+        "publicExponent": 65537
+      },
+      "canonicalizationAlgorithm": "http://www.w3.org/2001/10/xml-exc-c14n#",
+      "transformAlgorithm": "http://www.w3.org/2000/09/xmldsig#enveloped-signature"
+    }
+  },
+  "proofs": {
+    "messageDigest": {
+      "algorithm": "SHA256"
+    }
+  },
+  "digitalEnvelope": {
+    "symmetric": {
+      "secretKey": {
+        "encryption": {
+          "lengthBytes": 16
+        },
+        "mac": {
+          "lengthBytes": 32
+        }
+      },
+      "cipher": {
+        "algorithm": {
+          "name": "AES-GCM",
+          "keyLengthBytes": 16,
+          "tagLengthBytes": 16
+        },
+        "ivLengthBytes": 12
+      },
+      "mac": {
+        "hashAlgorithm": "SHA256"
+      }
+    },
+    "asymmetric": {
+      "cipher": {
+        "algorithm": {
+          "name": "RSA-KEM",
+          "secretKeyLengthBytes": 16,
+          "ivLengthBytes": 12,
+          "tagLengthBytes": 16,
+          "keyDeriver": {
+            "name": "KDF1",
+            "hashAlgorithm": "SHA256"
+          },
+          "symmetricCipher": "AES-GCM"
+        }
+      }
+    }
+  }
+}

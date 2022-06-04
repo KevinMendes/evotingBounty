@@ -1,0 +1,12 @@
+// chip
+// ----------------------------------------
+
+.chip {
+  margin: 0 .5em;
+  padding: 0 1em;
+  background-color: $chip-bg;
+  color: $chip-text;
+  border-radius: .75em;
+  text-align: center;
+  font-size: 0.857em;
+}

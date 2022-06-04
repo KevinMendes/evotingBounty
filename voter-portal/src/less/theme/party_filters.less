@@ -1,0 +1,21 @@
+.party_filters {
+  max-height: 0;
+  margin-top: .8em;
+  overflow: auto;
+  background-color: #fcfcfc;
+  opacity: 0;
+  transition: max-height 0.2s ease, opacity 0.2s ease 0.2s;
+
+  &.open {
+    max-height: 350px;
+    opacity: 1;
+  }
+
+  > div {
+    padding: 1em;
+  }
+
+  dd {
+    margin-bottom: 0.5em;
+  }
+}

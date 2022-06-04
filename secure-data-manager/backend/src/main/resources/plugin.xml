@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<Plugins>
+	<!--1_after_exporting_data_to_sdm  -->
+	<!--2_after_credential_generation  -->
+	<!-- Generate SPF after signing the voting card sets -->
+	<Phase name="generate_pre_voting_outputs">
+		<!-- election_event_alias_to_id -->
+		<Plugin type="cmd" order="1">
+			<![CDATA[java -jar #SDM_PATH#/integration/file_converter_tool/file-converter.jar
+					-action election_event_alias_to_id
+					-election_export_in #SDM_PATH#/sdmConfig/elections_config.json
+					-output #SDM_PATH#/config/#EE_ID#/CUSTOMER/output/election_event_alias_to_id_#EE_ALIAS#.csv
+					-log #SDM_PATH#/config/#EE_ID#/CUSTOMER/logs/file_converter_#EE_ALIAS#.log
+					-privateKey "#PRIVATE_KEY#"]]>
+		</Plugin>
+		<!-- data_config_pn -->
+		<Plugin type="cmd" order="2">
+			<![CDATA[java -jar #SDM_PATH#/integration/file_converter_tool/file-converter.jar
+					-action data_config_pn
+					-election_export_in #SDM_PATH#/sdmConfig/elections_config.json
+					-dataConfig #SDM_PATH#/config/#EE_ID#/CUSTOMER/output/dataConfig_#EE_ALIAS#.json
+					-output #SDM_PATH#/config/#EE_ID#/CUSTOMER/output/dataConfig_updated_#EE_ALIAS#.json
+					-log #SDM_PATH#/config/#EE_ID#/CUSTOMER/logs/file_converter_#EE_ALIAS#.log
+					-privateKey "#PRIVATE_KEY#"
+					-intCaPath #SDM_PATH#/config/integrationCA.pem]]>
+		</Plugin>
+		<!--voting_card_alias_to_id-->
+		<Plugin type="cmd" order="3">
+			<![CDATA[java -jar #SDM_PATH#/integration/file_converter_tool/file-converter.jar
+					-action voting_card_alias_to_id
+					-vca_in	#SDM_PATH#/config/#EE_ID#/CUSTOMER/output/voting_card_alias_#EE_ALIAS#.csv
+					-election_export_in #SDM_PATH#/sdmConfig/elections_config.json
+					-folder #SDM_PATH#/config/#EE_ID#/ONLINE/printing
+					-pattern printingData
+					-output #SDM_PATH#/config/#EE_ID#/CUSTOMER/output/voting_card_alias_to_id_#EE_ALIAS#.csv
+					-log #SDM_PATH#/config/#EE_ID#/CUSTOMER/logs/file_converter_#EE_ALIAS#.log
+					-privateKey "#PRIVATE_KEY#"
+					-intCaPath #SDM_PATH#/config/integrationCA.pem]]>
+		</Plugin>
+		<!--spf-->
+		<Plugin type="cmd" order="4">
+			<![CDATA[java -jar #SDM_PATH#/integration/spf_generator_tool/spf-generator.jar
+					-folder #SDM_PATH#/config/#EE_ID#/ONLINE/printing
+					-pattern printingData
+					-vca2id_in #SDM_PATH#/config/#EE_ID#/CUSTOMER/output/voting_card_alias_to_id_#EE_ALIAS#.csv
+					-dataConfig #SDM_PATH#/config/#EE_ID#/CUSTOMER/output/dataConfig_updated_#EE_ALIAS#.json
+					-election_export_in #SDM_PATH#/sdmConfig/elections_config.json
+					-eeId #EE_ID#
+					-csrPath #SDM_PATH#/config/csr
+					-output  #SDM_PATH#/config/#EE_ID#/ONLINE/printing/evoting-print_#EE_ALIAS#.xml
+					-log #SDM_PATH#/config/#EE_ID#/CUSTOMER/logs/print_file_generator_#EE_ALIAS#.log
+					-privateKey "#PRIVATE_KEY#"
+					-abCaPath #SDM_PATH#/config/tenant-100-CA.pem
+					-abCaPath #SDM_PATH#/config/platformRootCA.pem]]>
+		</Plugin>
+	</Phase>
+
+	<!--:3_after_decryption-->
+	<!-- Generate SDF and eCH-0110 files -->
+	<Phase name="decryption">
+		<!--sdf-->
+		<Plugin type="cmd" order="1">
+			<![CDATA[java -XX:+UseConcMarkSweepGC -Xms4g -Xmx4g
+					-jar #SDM_PATH#/integration/file_converter_tool/file-converter.jar
+					-action sdf
+					-folder #SDM_PATH#/config/#EE_ID#/ONLINE/electionInformation/ballots
+					-filename decompressedVotes.csv
+					-dataConfig #SDM_PATH#/config/#EE_ID#/CUSTOMER/output/dataConfig_updated_#EE_ALIAS#.json
+					-election_export_in #SDM_PATH#/sdmConfig/elections_config.json
+					-eeId #EE_ID#
+					-csrPath #SDM_PATH#/config/csr
+					-output #SDM_PATH#/config/#EE_ID#/CUSTOMER/output/evoting-decrypt_#EE_ALIAS#.xml
+					-log #SDM_PATH#/config/#EE_ID#/CUSTOMER/logs/file_converter_#EE_ALIAS#.log
+					-privateKey "#PRIVATE_KEY#"
+					-abCaPath #SDM_PATH#/config/tenant-100-CA.pem
+					-abCaPath #SDM_PATH#/config/platformRootCA.pem]]>
+		</Plugin>
+		<!-- counting -->
+		<Plugin type="cmd" order="3">
+			<![CDATA[java -XX:+UseConcMarkSweepGC -Xms4g -Xmx4g
+				-jar #SDM_PATH#/integration/eCH_counter_tool/ech-counter.jar
+				-eVconfig_in #SDM_PATH#/config/#EE_ID#/CUSTOMER/input/configuration-anonymized.xml
+				-eVdecrypt_in #SDM_PATH#/config/#EE_ID#/CUSTOMER/output/evoting-decrypt_#EE_ALIAS#.xml
+				-output #SDM_PATH#/config/#EE_ID#/CUSTOMER/output/eCH-0110_#EE_ALIAS#.xml
+				-log #SDM_PATH#/config/#EE_ID#/CUSTOMER/logs/eCH_counter_tool_#EE_ALIAS#.log
+				-privateKey "#PRIVATE_KEY#"
+				-election_export_in #SDM_PATH#/sdmConfig/elections_config.json
+				-eeId #EE_ID#
+				-csrPath #SDM_PATH#/config/csr
+				-abCaPath #SDM_PATH#/config/tenant-100-CA.pem
+				-abCaPath #SDM_PATH#/config/platformRootCA.pem
+				-intCaPath #SDM_PATH#/config/integrationCA.pem
+			]]>
+		</Plugin>
+	</Phase>
+</Plugins>

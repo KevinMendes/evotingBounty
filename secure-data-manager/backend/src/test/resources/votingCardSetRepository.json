@@ -1,0 +1,19 @@
+{
+  "id": "2209f935013f4033b8268ba46487647e",
+  "defaultTitle": "vcs_CH de l'\u00e9tranger",
+  "defaultDescription": "vcs_CH de l'\u00e9trangerFR-CT-1|FR-MU-9999",
+  "alias": "vcs_FR-CT-1|FR-MU-9999",
+  "numberOfVotingCardsToGenerate": 10,
+  "electionEvent": {
+    "id": "9293ab88b8d948ff88902f724ec97ba3"
+  },
+  "ballotBox": {
+    "id": "3922ee6d3b174ef7af874f2655bacf8c"
+  },
+  "verificationCardSetId": "ffbf3c4fd4314309b5988b3df2668a2c",
+  "status": "VCS_DOWNLOADED",
+  "details": "24/10/2019 11:00:44",
+  "synchronized": "false",
+  "ballotAlias": "ballot_1",
+  "ballotBoxAlias": "FR-CT-1|FR-MU-9999"
+}

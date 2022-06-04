@@ -1,0 +1,23 @@
+{
+  "id": "8e86048051ee4a41a3f81cc95e44f09c",
+  "ballot": {
+	"id": "16d12717e5b445fdbbab5515912f89bf"
+  },
+  "defaultTitle": "W\u00fcnnewil-Flamatt",
+  "defaultDescription": "W\u00fcnnewil-FlamattFR-BZ-1006|FR-MU-2309",
+  "alias": "FR-BZ-1006|FR-MU-2309",
+  "dateFrom": "2019-04-29T13:00:00Z",
+  "dateTo": "2019-06-29T13:00:00Z",
+  "electionEvent": {
+	"id": "0b149cfdaad04b04b990c3b1d4ca7639"
+  },
+  "electoralAuthority": {
+	"id": "16e020d934594544a6e17d1e410da513"
+  },
+  "test": "true",
+  "status": "READY",
+  "gracePeriod": "900",
+  "details": "07/05/2019 13:20:16",
+  "synchronized": "false",
+  "ballotAlias": "ballot_1"
+}

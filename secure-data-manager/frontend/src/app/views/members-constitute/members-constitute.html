@@ -1,0 +1,152 @@
+<md-dialog ng-class="{'full-screen': !(sharesType === 'adminBoard' && initializingAuthority && !keystoreOK)}" ng-controller="members">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2 class="flex"><span translate>Constitute board</span> {{selectedAuthority.alias}}</h2>
+            <div>
+                <md-button aria-label="{{'Close dialog' | translate}}" class="md-icon-button" ng-click="cancel()" ng-if="!twoStepsClosing">
+                    <md-icon md-svg-src="assets/icons/ic_close_24px.svg"></md-icon>
+                </md-button>
+                <div class="constitute-manager-close-question" ng-if="twoStepsClosing">
+                    <span translate>Confirm close?</span>
+                    <md-button aria-label="{{'Close dialog' | translate}}" class="md-icon-button" ng-click="cancel()">
+                        <span translate>Yes</span>
+                    </md-button>
+                    <md-button aria-label="{{'Close dialog' | translate}}" class="md-icon-button" ng-click="discard()">
+                        <span translate>No</span>
+                    </md-button>
+                </div>
+                <div class="constitute-manager-close" ng-if="twoStepsClosing">
+                    <span translate>Please note that if you cancel the Constitution process at this stage you will need to start it again from scratch. You may not be able to reuse any of the cards that you used so far. </span>
+                </div>
+            </div>
+        </div>
+    </md-toolbar>
+    <md-dialog-content class="md-dialog-content" role="document" tabindex="-1">
+        <div class="md-dialog-content-body">
+
+            <!-- STEP 1: load certification -->
+            <div ng-show="sharesType === 'adminBoard' && initializingAuthority && !keystoreOK">
+                <p class="alert alert-error" ng-if="errorInKeystore">
+                    <md-icon md-svg-src="assets/icons/ic_error_24px.svg"></md-icon>
+                    <span translate>The file or password is not correct. Try again.</span>
+                </p>
+                <ol>
+                    <li>
+                        <p translate>In order to start the constitution, upload the certificate, a file .SKS provided for this Admin Board</p>
+                        <input class="ng-hide" id="input-file-id" multiple onchange="angular.element(this).scope().filesChanged(this)" type="file"/>
+                        <label class="md-button md-raised md-primary" for="input-file-id" tabindex="0" translate>Choose File</label>
+                        <p class="md-caption">{{selectedFile}}</p>
+                    </li>
+                    <li ng-show="files">
+                        <p translate>Enter now your password</p>
+                        <md-input-container class="mbn">
+                            <label translate>Password</label>
+                            <input ng-model="password" type="password">
+                        </md-input-container>
+                        <div>
+                            <md-button class="md-raised md-primary mhn mbm" id="select" ng-click="confirmSelection()" ng-disabled="noFileOrPasswordSelected()"
+                                       ng-show="files">
+                                <span translate>OK</span>
+                            </md-button>
+                        </div>
+                    </li>
+                </ol>
+            </div>
+
+            <!-- STEP 2: constitute (full-screen layout) -->
+            <div class="constitute-manager-wrapper" ng-hide="sharesType === 'adminBoard' && initializingAuthority && !keystoreOK">
+                <div>
+                    <p>{{constituteMembersDescription()}}</p>
+                    <hr>
+                </div>
+                <div class="constitute-manager">
+                    <div class="constitute-manager-members">
+                        <md-list>
+                            <md-list-item ng-repeat="member in listOfMembers track by $index">
+                                <md-button id="memberButton_{{$index}}" ng-class="{'is-current': selectedMember === member && !members2DoneStatus[member], 'is-done': members2DoneStatus[member]}"
+                                           ng-click="select(member);"
+                                           ng-disabled="selectedMember === member || initializingAuthority || members2DoneStatus[member]">
+                                    <md-icon aria-label="{{'Member' | translate}}" class="icon-idle"
+                                             md-svg-src="assets/icons/ic_person_24px.svg"></md-icon>
+                                    <md-icon aria-label="{{'Current' | translate}}" class="icon-current"
+                                             md-svg-src="assets/icons/ic_arrow_forward_24px.svg"></md-icon>
+                                    <md-icon aria-label="{{'Done' | translate}}" class="icon-done"
+                                             md-svg-src="assets/icons/ic_done_24px.svg"></md-icon>
+                                    {{member}}
+                                </md-button>
+                            </md-list-item>
+                        </md-list>
+                    </div>
+                    <div class="constitute-manager-card">
+                        <!--
+                            states: isNotReady, isDone
+                            steps: introduceCard, reading, introducePIN, writing, extractCard
+                        -->
+                        <div class="constitute-manager-member" ng-if="initializingAuthority">
+                            <div>
+                                <h3 class="md-title text-center">
+                                    <md-icon aria-label="{{'Reading...' | translate}}" class="spin"
+                                             md-svg-src="assets/icons/ic_spinner_24px.svg"></md-icon>
+                                    <span translate>Starting the constitution...</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="constitute-manager-member" ng-show="!initializingAuthority && initiallySelected">
+                            <h3 class="constitute-manager-member-title md-display-1">{{selectedMember}}</h3>
+                            <div class="constitute-manager-member-interaction">
+                                <div ng-if="wizardStep === 'introduceCard'">
+                                    <p class="md-title text-center" translate>Introduce your card into the smartcard reader</p>
+                                    <md-icon aria-label="{{'Introduce your card' | translate}}" class="card-icon"
+                                             md-svg-src="assets/icons/ic_card_insert.svg"></md-icon>
+                                </div>
+                                <div ng-if="wizardStep === 'reading'">
+                                    <p class="md-title text-center">
+                                        <md-icon aria-label="{{'Reading...' | translate}}" class="spin"
+                                                 md-svg-src="assets/icons/ic_spinner_24px.svg"></md-icon>
+                                        <span translate>Reading...</span>
+                                    </p>
+                                </div>
+                                <div ng-show="wizardStep === 'introducePIN'">
+                                    <div>
+                                        <md-input-container>
+                                            <label translate>Choose a password</label>
+                                            <input id="pin1" ng-keypress="pin1_keypress($event)" ng-model="pin.value" type="password">
+                                        </md-input-container>
+                                    </div>
+                                    <div>
+                                        <md-input-container>
+                                            <label translate>Confirm password</label>
+                                            <input id="pin2" ng-keypress="pin2_keypress($event)" ng-model="confirmPin.value" type="password">
+                                        </md-input-container>
+                                    </div>
+                                    <div>
+                                        <md-button class="md-primary md-raised" ng-click="validatePin()">
+                                            <span translate>Ok</span>
+                                        </md-button>
+                                    </div>
+                                </div>
+                                <div ng-if="wizardStep === 'writing'">
+                                    <p class="md-title text-center">
+                                        <md-icon aria-label="{{'Reading...' | translate}}" class="spin"
+                                                 md-svg-src="assets/icons/ic_spinner_24px.svg"></md-icon>
+                                        <span translate>Recording...</span>
+                                    </p>
+                                </div>
+                                <div ng-if="wizardStep === 'extractCard'">
+                                    <p class="alert alert-success">
+                                        <md-icon md-svg-src="assets/icons/ic_done_24px.svg"></md-icon>
+                                        <span translate>Smartcard recorded</span>
+                                    </p>
+                                    <p class="md-title text-center" translate>Extract your card</p>
+                                    <md-icon aria-label="{{'Extract your card' | translate}}" class="card-icon"
+                                             md-svg-src="assets/icons/ic_card_extract.svg"></md-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </md-dialog-content>
+</md-dialog>

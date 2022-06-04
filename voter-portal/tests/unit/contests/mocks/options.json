@@ -1,0 +1,51 @@
+{
+  "template": "options",
+  "id": "9a7acc47f2c3450dbaa72489e6f77235",
+  "title": "01 Options Contest",
+  "description": "01 Options Contest",
+  "howToVote": "01 Election Event",
+  "expanded": true,
+  "optionsMinChoices": 0,
+  "optionsMaxChoices": 1,
+  "questions": [
+	{
+	  "options": [
+		{
+		  "prime": "2",
+		  "isBlank": false,
+		  "chosen": false,
+		  "ordinal": 1,
+		  "id": "11a8ba894e0d41f3bc3f0f94cf973fa5",
+		  "title": "",
+		  "description": "",
+		  "text": "A"
+		},
+		{
+		  "prime": "100003",
+		  "isBlank": false,
+		  "chosen": false,
+		  "ordinal": 2,
+		  "id": "07a1e78f948447509e800b2a31c8beb4",
+		  "title": "",
+		  "description": "",
+		  "text": "B"
+		}
+	  ],
+	  "blankOption": {
+		"prime": "3",
+		"isBlank": true,
+		"chosen": false,
+		"ordinal": 0,
+		"id": "322c01b96f8045379e9fc24ad60107c9",
+		"title": "",
+		"description": "",
+		"text": "Blank"
+	  },
+	  "ordinal": 1,
+	  "id": "d79ccedab0d04ee6a23348402e62b9ba",
+	  "title": "",
+	  "description": "",
+	  "text": "Choose Option"
+	}
+  ]
+}

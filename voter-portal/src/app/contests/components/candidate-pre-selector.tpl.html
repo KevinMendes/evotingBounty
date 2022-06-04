@@ -1,0 +1,137 @@
+<!-- candidate pre-selector -->
+
+<div class="pre-selector selector-box" data-ng-class="{'write-in': candidate.isWriteIn }" role="group">
+
+	<div class="selector-box-info overflow-x-auto">
+
+		<div id="label_candidate_{{contest.id}}_{{position}}">
+
+			<!-- case no candidate selected and no write-in allowed -->
+			<div class="h3 man" data-ng-if="(!candidate || candidate.isBlank)" id="label_{{contest.id}}_{{position}}">
+				<span class="sr-only" translate>Position {{position + 1}} of {{contest.candidatesQuestion.maxChoices}}:</span>
+				<span class="sr-only">
+          <span ng-if="getBlankCandidate(contest, 0).name">{{ getBlankCandidate(contest, 0).name }}</span>
+          <span ng-if="!getBlankCandidate(contest, 0).name" translate>No candidate chosen</span>
+        </span>
+				<em><span>{{ getBlankCandidate(contest, 0).name || ('No candidate chosen' | translate) }}</span></em>
+			</div>
+
+			<!-- case candidate selected -->
+			<div class="h3 man" data-ng-if="candidate && !candidate.isBlank && !candidate.isWriteIn" id="label_{{contest.id}}_{{position}}">
+				<p class="man">
+          <span>
+            <span class="sr-only" translate>Position {{position + 1}} of {{contest.candidatesQuestion.maxChoices}}:</span>
+            {{candidate.name}}
+          </span>
+					<span class="pull-right mlm mrxl-sm fwb" ng-show="candidate.attribute3">
+            {{ candidate.attribute3}}
+          </span>
+				</p>
+				<div ng-if="candidate.bio.length">
+					<p class="mbn mts fss text-muted" ng-repeat="info in candidate.bio track by $index">
+						{{info}}
+					</p>
+				</div>
+			</div>
+
+			<!-- case no candidate selected and write-in allowed -->
+			<div class="write-in-form-control"
+				 data-ng-if="candidate.isWriteIn">
+
+				<div aria-live="polite"
+					 class="alert alert-warning alert-invalid-writein"
+					 ng-if="candidate.writeInValidated" role="alert">
+          <span class="alert-icon mvs">
+            <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+            </svg>
+          </span>
+					<p class="alert-text invalid-alphabet-error">
+						<span translate>The text contains invalid characters.</span>
+						<span help-button="write_ins">
+              <span translate>See the valid ones</span>
+              <span class="sr-only" translate>More information about valid and invalid characters.</span>
+            </span>
+					</p>
+					<p class="alert-text invalid-name-error">
+						<span translate>The write-in has an incorrect format.</span>
+						<span help-button="write_ins">
+              <span translate>How can I use write-ins?</span>
+              <span class="sr-only" translate>How can I use write-ins?</span>
+            </span>
+					</p>
+				</div>
+
+				<input aria-label="{{'Write-in field for position:' | translate}} {{position + 1}}" class="form-control"
+					   data-ng-model="viewModel.writeInCandidate"
+					   id="write_in_{{contest.id}}_{{position}}"
+					   maxlength="94"
+					   ng-trim="false"
+					   placeholder="{{'Type the name, first name and additional information' | translate}}" type="text"
+				>
+				<div class="hidden" id="label_{{contest.id}}_{{position}}">{{viewModel.writeInCandidate}}</div>
+			</div>
+		</div>
+	</div>
+
+	<div aria-labelledby="label_{{contest.id}}_{{position}}" class="selector-box-actions pbn" role="group">
+
+		<div class="btn-select-candidate-goto" data-ng-focus="refocusBtn()" id="btn_choose_candidate_goto_{{contest.id}}_{{position}}">&nbsp;</div>
+		<a aria-atomic="true" aria-live="assertive"
+		   class="btn btn-secondary btn-block has-icon btn-select-candidate"
+		   data-ng-click="openCandidateSelectionModal()"
+		   href id="btn_choose_candidate_{{contest.id}}_{{position}}" tabindex="0">
+            <span data-ng-if="!candidate || candidate.isBlank">
+        <span translate>Choose</span>
+        <span class="sr-only">({{ getBlankCandidate(contest, 0).name || ('No candidate chosen' | translate) }})</span>
+      </span>
+			<span data-ng-if="candidate && !candidate.isBlank">
+        <span translate>Change</span>
+        <span class="sr-only">
+          (<span translate>your current candidate is:</span> {{candidate.name}})
+        </span>
+      </span>
+		</a>
+
+		<div class="actions-other" data-ng-if="candidate && !candidate.isBlank">
+			<button class="btn btn-link has-icon pan break-ellipsis pull-left"
+					data-ng-click="cumulate()"
+					id="btn_cumulate_{{candidate.getQualifiedId()}}"
+					ng-disabled="getCandidateCumul(candidate) === candidateMaxAllowedCumul() || hasAllSeatsOccupied(contest)"
+					ng-if="candidateMaxAllowedCumul() > 1 && !candidate.isWriteIn"
+					type="button">
+				<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"
+						  transform="rotate(45 12 12)"/>
+				</svg>
+				<span aria-hidden="true" translate>Cumulate</span>
+				<span class="sr-only" translate>Cumulate current candidate</span>
+			</button>
+			<button class="btn btn-link has-icon pan break-ellipsis"
+					data-ng-click="clearCandidate(true)"
+					id="btn_dropdown_{{candidate.getQualifiedId()}}_2"
+					type="button">
+				<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+				</svg>
+				<span aria-hidden="true" translate>Clear</span>
+				<span class="sr-only" translate>Clear current candidate</span>
+			</button>
+		</div>
+
+	</div>
+
+	<div aria-hidden="true"
+		 class="selector-box-details"
+		 data-ng-if="candidate.bio.length"
+		 id="card_candidate_{{candidate.getQualifiedId()}}_{{position}}">
+		<div class="more-info-card">
+			<div>
+				<p class="more-info-card-block" ng-repeat="info in candidate.bio track by $index">
+					{{info}}
+				</p>
+			</div>
+		</div>
+	</div>
+
+</div>

@@ -1,0 +1,67 @@
+<div data-ng-if="!NO_EEID && !invalidBrowser">
+	<!-- content-main -->
+	<div class="content-main">
+		<div class="container">
+			<!-- page-title -->
+			<div aria-live="polite" class="page-title mtl">
+				<h1 data-auto-focus tabindex="-1" translate>Penal provisions concerning the use of the voting portal</h1>
+			</div>
+
+			<div class="mtl" translate>
+				Anyone in particular may be punished with imprisonment or a fine under Articles 279 to 283 of the Criminal Code:
+			</div>
+			<ul class="mtm">
+				<li translate>uses a false identity or the identity of another voter;</li>
+				<li translate>votes more than once in a voting template;</li>
+				<li translate>alienates, misappropriates or adds ballot papers;</li>
+				<li translate>attempts to destroy, destroy, modify or alter ballot papers, registers or other materials used to determine the results
+					of votes, in whole or in part.
+				</li>
+			</ul>
+
+			<div class="mtl" translate>
+				Have you taken note of the above-mentioned penal provisions?
+			</div>
+
+		</div>
+	</div>
+	<!-- /content-main -->
+
+	<!-- navigation -->
+	<nav class="container navigation">
+		<h2 class="sr-only" id="title_navigation" translate>Continue process</h2>
+		<div data-layout="row" data-layout-wrap>
+			<div class="mbm" data-flex-xs="100">
+				<a class="btn btn-primary btn-block" data-ng-click="setAccepted()" data-ui-sref="identification" id="btn_agree"><span translate>Yes, I have taken note of them</span></a>
+			</div>
+		</div>
+	</nav>
+	<!-- /navigation -->
+</div>
+
+<div class="content-main" data-ng-if="NO_EEID&&!invalidBrowser">
+	<div class="container mbm">
+		<h1 class="sr-only" data-auto-focus tabindex="-1" translate>Page not found</h1>
+		<p class="error-msg" role="alert"><span translate>The URL you are using is not correct. For security reasons, you are not allowed to manually refresh the website or use the navigation buttons of your browser. Please restart the voting process using the URL shown on your voting card.</span>
+		</p>
+	</div>
+</div>
+
+<!-- browser not supported -->
+<div class="content-main" data-ng-if="invalidBrowser">
+	<div class="container mbm">
+		<h1 class="sr-only" data-auto-focus tabindex="-1" translate>Browser compatibility</h1>
+		<div class="error-msg" role="alert">
+			<p translate>Your Browser (or its version) is not compatible with the Voter Portal. Try one of the following:</p>
+			<ul>
+				<li translate>A desktop computer with a recent version of Windows and one of the latest version of MS Edge, Internet Explorer, Chrome
+					or Firefox
+				</li>
+				<li translate>A desktop computer with a recent version of Ubuntu and one of the latest version of Chrome or Firefox</li>
+				<li translate>A device with Android and Chrome mobile</li>
+				<li translate>A device with iOS and Safari mobile</li>
+				<li translate>A Mac with a recent version of macOS and Safari</li>
+			</ul>
+		</div>
+	</div>
+</div>

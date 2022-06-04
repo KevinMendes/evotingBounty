@@ -1,0 +1,97 @@
+{
+  "extends": "./.eslintrc-base.json",
+  "rules": {
+    // Possible errors
+    "no-unsafe-negation": 2,
+    // Best practices
+    "block-scoped-var": 2,
+    "curly": [
+      2,
+      "all"
+    ],
+    "dot-notation": [
+      2
+    ],
+    "no-else-return": 2,
+    "no-implicit-globals": 2,
+    "no-lone-blocks": 2,
+    "prefer-const": 2,
+    "no-var": 2,
+    //"no-multi-spaces"   : [2, { "exceptions": { "Property": true, "VariableDeclarator": true } }],
+
+    // Variables
+    "no-catch-shadow": 2,
+    "no-shadow": 2,
+    // Stylistic issues
+    "block-spacing": 2,
+    "camelcase": [
+      2,
+      {
+        "properties": "always"
+      }
+    ],
+    "indent": [
+      2,
+      2
+    ],
+    //"key-spacing"                : [2, { "beforeColon": false, "afterColon": true, "mode": "minimum" }],
+    "padding-line-between-statements": [
+      2,
+      {
+        "blankLine": "always",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": "*"
+      },
+      // always blank line after var-like statements
+      {
+        "blankLine": "any",
+        "prev": [
+          "const",
+          "let",
+          "var"
+        ],
+        "next": [
+          "const",
+          "let",
+          "var"
+        ]
+      },
+      // no need for a blank line between var-like statements
+      {
+        "blankLine": "always",
+        "prev": "directive",
+        "next": "*"
+      },
+      // new line after directives (e.g. "use strict")
+      {
+        "blankLine": "any",
+        "prev": "directive",
+        "next": "directive"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
+      }
+    ],
+    "newline-per-chained-call": 2,
+    "object-curly-spacing": [
+      2,
+      "always"
+    ],
+    "one-var": [
+      2,
+      "never"
+    ],
+    "one-var-declaration-per-line": 2,
+    "padded-blocks": [
+      2,
+      "always"
+    ]
+    //"consistent-this"            : [2, "_this"],
+  }
+}

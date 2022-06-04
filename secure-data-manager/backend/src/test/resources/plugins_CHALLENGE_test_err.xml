@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<Plugins>
+	<Phase name="generate_pre_voting_outputs">
+
+		<!--SECUENTIAL EXECUTOR TEST-->
+		<!--ERROR 101-->
+		<Plugin type="cmd" order="1">
+			<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar -action INVALID_ACTION -election_export_in #SDM_PATH#\sdmConfig\config.json -output #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\election_event_alias_to_id_#EE_ALIAS#.csv -log #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log]]>
+		</Plugin>
+		<!--ERROR 102 -->
+		<Plugin type="cmd" order="2">
+			<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar -action election_export]]>
+		</Plugin>
+		<!--ERROR 103 -->
+		<Plugin type="cmd" order="3">
+			<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar -action election_import -election_export_in INVALID_PARAMS -output #SDM_PATH#\fileConverter\electionEvents\#EE_ALIAS#\output\election_event_alias_to_id_#EE_ALIAS#.csv -log #SDM_PATH#\fileConverter\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log -privateKey #PRIVATE_KEY#]]>
+		</Plugin>
+		<!--ERROR 104 -->
+		<Plugin type="cmd" order="4">
+			<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar -action election_event_alias_to_id -election_export_in #SDM_PATH#\sdmConfig\config.jso -output #SDM_PATH#\fileConverter\electionEvents\#EE_ALIAS#\output\election_event_alias_to_id_#EE_ALIAS#.csv -log #SDM_PATH#\fileConverter\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log]]>
+		</Plugin>
+		<!--ERROR 105 -->
+		<Plugin type="cmd" order="5">
+			<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar -action election_event_alias_to_id -election_export_in #SDM_PATH#\sdmConfig\config.json -output #SDM_PATH#\fileConverter\electionEvents\#EE_ALIAS#\output\election_event_alias_to_id_#EE_ALIAS#.csv -log #SDM_PATH#\fileConverter\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log]]>
+		</Plugin>
+
+		<!--PLUGIN SEQUENCE RESOLVER TEST-->
+		<!--when_command_invalid_then_validate_false_test-->
+		<Plugin type="cmd" order="11">
+			<![CDATA[#SDM_PATH#\fileConverter\eCH_file_converter\pepito-converter.jar -action rc_config_pn -election_export_in #SDM_PATH#\sdmConfig\config.json -rcConfig #SDM_PATH#\fileConverter\electionEvents\#EE_ALIAS#\output\resultsCounterConfig_#EE_ALIAS#.csv -output #SDM_PATH#\electionEvents\#EE_ALIAS#\output\resultsCounterConfig_#EE_ALIAS#.csv -log #SDM_PATH#\fileConverter\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log -privateKey #PRIVATE_KEY#]]>
+		</Plugin>
+		<!--when_missing_params_of_file_converter_then_validate_false_test-->
+		<Plugin type="cmd" order="12">
+			<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar]]>
+		</Plugin>
+		<!--when_valid_params_of_file_converter_then_validateParametersForCommand_true_test-->
+		<Plugin type="cmd" order="13">
+			<![CDATA[#SDM_PATH#\fileConverter\eCH_file_converter\ech-file-converter.jar -action rc_config_pn -election_export_in #SDM_PATH#\sdmConfig\config.json -rcConfig #SDM_PATH#\fileConverter\electionEvents\#EE_ALIAS#\output\resultsCounterConfig_#EE_ALIAS#.csv -output #SDM_PATH#\electionEvents\#EE_ALIAS#\output\resultsCounterConfig_#EE_ALIAS#.csv -log #SDM_PATH#\fileConverter\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log -privateKey #PRIVATE_KEY#]]>
+		</Plugin>
+		<!--when_params_valid_of_copyTo_then_validate_true_test-->
+		<Plugin type="cmd" order="14">
+			<![CDATA[#SDM_PATH#\ECH\libs\copyToUsb.bat #USB_LETTER# #EE_ID# #EE_ALIAS#]]>
+		</Plugin>
+		<!--when_invalid_params_of_copyTo_then_validate_false_test-->
+		<Plugin type="cmd" order="15">
+			<![CDATA[#SDM_PATH#\ECH\libs\copyToUsb.bat #EE_IE# #EE_ALIAS#]]>
+		</Plugin>
+		<!--when_exists_params_copyFrom_then_validate_false_test-->
+		<Plugin type="cmd" order="16">
+			<![CDATA[#USB_LETTER#\sdm_#EE_ALIAS#\copyFromUsb.bat #EE_IE# #EE_ALIAS#]]>
+		</Plugin>
+
+	</Phase>
+</Plugins>

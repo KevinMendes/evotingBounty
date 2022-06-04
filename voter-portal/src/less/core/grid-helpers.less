@@ -1,0 +1,152 @@
+//
+// Grid helpers
+// --------------------------------------------------
+
+
+// Custom row
+.w-row {
+  .clearfix();
+  width: 100%;
+
+  > [class^="w-"] {
+    float: left;
+  }
+}
+
+// Widths stuff
+//
+// Force the widths
+
+// Extra small grid
+@iterations-w: 100;
+.looping-w (@index) when (@index > 0) {
+  .w-@{index} {
+    width: ~"@{index}%";
+  }
+  .looping-w(@index - @grid-percent-splits);
+}
+
+// end the loop when index is 0
+.looping-w (0) {
+  /* not empty */
+}
+
+;
+// "call" the loopingClass the first time with highest value
+.looping-w (@iterations-w);
+
+// 3 columns special case
+.w-33 {
+  width: (100%/3);
+}
+
+.w-66 {
+  width: ((100%/3) * 2);
+}
+
+// Small grid
+@media (min-width: @screen-sm-min) {
+  @iterations-w-sm: 100;
+  .looping-w-sm (@index) when (@index > 0) {
+    .w-sm-@{index} {
+      width: ~"@{index}%";
+    }
+    .looping-w-sm(@index - @grid-percent-splits);
+  }
+  .looping-w-sm (0) {
+    /* not empty */
+  };
+  .looping-w-sm (@iterations-w-sm);
+  // 3 columns special case
+  .w-sm-33 {
+    width: (100%/3);
+  }
+
+  .w-sm-66 {
+    width: ((100%/3) * 2);
+  }
+}
+
+
+// Medium grid
+@media (min-width: @screen-md-min) {
+  @iterations-w-md: 100;
+  .looping-w-md (@index) when (@index > 0) {
+    .w-md-@{index} {
+      width: ~"@{index}%";
+    }
+    .looping-w-md(@index - @grid-percent-splits);
+  }
+  .looping-w-md (0) {
+    /* not empty */
+  };
+  .looping-w-md (@iterations-w-md);
+  // 3 columns special case
+  .w-md-33 {
+    width: (100%/3);
+  }
+
+  .w-md-66 {
+    width: ((100%/3) * 2);
+  }
+}
+
+
+// Large grid
+@media (min-width: @screen-lg-min) {
+  @iterations-w-lg: 100;
+  .looping-w-lg (@index) when (@index > 0) {
+    .w-lg-@{index} {
+      width: ~"@{index}%";
+    }
+    .looping-w-lg(@index - @grid-percent-splits);
+  }
+  .looping-w-lg (0) {
+    /* not empty */
+  };
+  .looping-w-lg (@iterations-w-lg);
+  // 3 columns special case
+  .w-lg-33 {
+    width: (100%/3);
+  }
+
+  .w-lg-66 {
+    width: ((100%/3) * 2);
+  }
+}
+
+// Width reset
+.w-auto {
+  width: auto;
+}
+
+
+// Heights stuff
+//
+// Force the heights
+
+@iterations-h: 100;
+.looping-h (@index) when (@index > 0) {
+  .h-@{index} {
+    height: ~"@{index}%";
+  }
+  .looping-h(@index - @grid-percent-splits);
+}
+
+// end the loop when index is 0
+.looping-h (0) {
+  /* not empty */
+}
+
+;
+// "call" the loopingClass the first time with highest value
+.looping-h (@iterations-h);
+
+// 3 rows special case
+.h-33 {
+  height: (100%/3);
+}
+
+.h-66 {
+  height: ((100%/3) * 2);
+}

@@ -1,0 +1,324 @@
+@start-key-w: 46.125em;
+@casting-key-w: 17.188em;
+@key-box-xs: 19.250em;
+
+.start-voting-key,
+.ballot-casting-key {
+  .form-group {
+    margin-bottom: 0;
+    border: 1px solid @input-border;
+
+    .input-guided {
+      display: inline-block;
+      height: 3.3em;
+      position: relative;
+      font-family: "Roboto Mono", "Courier New", Courier, "Lucida Console", Monaco, monospace;
+      margin: 1px;
+
+      &:after {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 970;
+        height: 3.3em;
+        padding: 0.4em 0 0.4em 0.5em;
+        line-height: 3.4em;
+        letter-spacing: 0.875em;
+        overflow: hidden;
+        background-color: @panel-default-bg;
+        color: @input-border;
+
+        .has-error & {
+          background-color: #f5ecec;
+        }
+      }
+
+      .form-control {
+        position: relative;
+        z-index: 980;
+        height: 3.3em;
+        padding: 0.4em 0 0.4em 0.5em;
+        line-height: 2.5em;
+        letter-spacing: 0.875em;
+        background-color: transparent;
+        border: none;
+        margin: 0;
+        float: left;
+
+        &:focus,
+        &:active {
+          .tab-focus(@outline-color);
+        }
+      }
+    }
+
+    .btn-icon {
+      position: relative;
+      z-index: 980;
+      height: 3.5em;
+      padding-left: 7px;
+      padding-right: 7px;
+
+      &:focus,
+      &:active {
+        .tab-focus(@outline-color);
+      }
+
+      &[disabled] {
+        opacity: 0;
+      }
+    }
+  }
+}
+
+.start-voting-key {
+  .form-group {
+    width: @start-key-w;
+    @media (max-width: @screen-xs-max) {
+      display: inline-block;
+      width: @key-box-xs;
+      min-height: 3.2em;
+    }
+
+    .input-guided {
+      &:after {
+        content: '____ ____ ____ ____ ____ ____';
+        width: 100%;
+        @media (max-width: @screen-xs-max) {
+          height: 3.063em;
+          padding: 0 0.4em;
+          letter-spacing: -1px;
+          line-height: 4.143em;
+        }
+      }
+
+      .form-control {
+        width: 100%;
+        @media (max-width: @screen-xs-max) {
+          padding: 0 0.4em;
+          letter-spacing: -1px;
+        }
+      }
+    }
+  }
+}
+
+.ballot-casting-key {
+  .form-group {
+    width: @casting-key-w;
+    @media (max-width: @screen-xs-max) {
+      width: @key-box-xs;
+    }
+
+    .input-guided {
+      &:after {
+        content: '____ ____ _';
+        width: 100%;
+        letter-spacing: 0.625em;
+        @media (max-width: @screen-xs-max) {
+          letter-spacing: 0.5em;
+        }
+      }
+
+      .form-control {
+        width: 100%;
+        letter-spacing: 0.625em;
+        @media (max-width: @screen-xs-max) {
+          letter-spacing: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+.day-of-birth {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: auto;
+  margin: 0 (@grid-gutter-width * -1 / 2);
+  @media (max-width: @screen-xs-max) {
+    margin: 0 (@grid-gutter-width * -1 / 4);
+  }
+
+  > * {
+    padding: (@grid-gutter-width / 2);
+
+    @media (max-width: @screen-xs-max) {
+      padding: (@grid-gutter-width / 4);
+    }
+  }
+
+  .control-label {
+    color: @text-muted;
+    font-family: @font-family-base;
+    font-size: 0.875em;
+  }
+
+  .form-control {
+    height: 2.75em;
+    padding: 0.4em 0.5em;
+    font-family: "Roboto Mono", "Courier New", Courier, "Lucida Console", Monaco, monospace;
+    @media (max-width: @screen-xs-max) {
+      padding: 0.4em;
+      font-size: 0.875em;
+    }
+  }
+
+  .date-of-birth-day,
+  .date-of-birth-month {
+    .form-control {
+      width: 4.5em;
+
+      @media (max-width: @screen-xs-max) {
+        width: 5em;
+      }
+    }
+  }
+
+  .date-of-birth-year .form-control {
+    width: 7.2em;
+  }
+}
+
+.date-of-birth-day,
+.date-of-birth-month,
+.date-of-birth-year,
+.year-of-birth {
+
+  display: inline-block;
+  width: 4em;
+  height: 3.5em;
+  position: relative;
+  font-family: "Roboto Mono", "Courier New", Courier, "Lucida Console", Monaco, monospace;
+  @media (max-width: @screen-xs-max) {
+    width: 4em;
+    letter-spacing: 1em;
+  }
+
+  &:after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 970;
+    content: '____';
+    width: 100%;
+    height: 3.5em;
+    padding: 0.4em 0 0.4em 1em;
+    line-height: 3.4em;
+    letter-spacing: 0.875em;
+    overflow: hidden;
+    background-color: @panel-default-bg;
+    color: #6e6e6e;
+
+    .has-error & {
+      background-color: #f5ecec;
+    }
+
+    @media (max-width: @screen-xs-max) {
+      height: 3.063em;
+      padding: 0 .5em 0 .8em;
+      letter-spacing: .675em;
+      line-height: 4.143em;
+    }
+  }
+
+  .form-control {
+    position: relative;
+    z-index: 980;
+    height: 3.5em;
+    padding: 0.4em 0 0.4em 1em;
+    line-height: 2.5em;
+    letter-spacing: 0.875em;
+    background-color: transparent;
+    margin: 0;
+    float: left;
+
+    &:focus,
+    &:active {
+      .tab-focus(@outline-color);
+    }
+
+    width: 100%;
+    @media (max-width: @screen-xs-max) {
+      padding: 0 0.86em;
+    }
+  }
+}
+
+.year-of-birth {
+  width: 7.5em;
+}
+
+.date-of-birth-day,
+.date-of-birth-month {
+
+  &:after {
+    content: '__';
+  }
+}
+
+.form-control-wrapper {
+  position: relative;
+
+  .form-control {
+    padding: .4em 1.875em .4em .4em;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    &:not([multiple]) {
+      background-color: rgba(255, 255, 255, 0); /* solid color with alpha for IE */
+    }
+
+    &::-ms-expand { /* Hide the arrow for IE10 */
+      display: none;
+    }
+
+    @media screen and (-ms-high-contrast: active) {
+      padding: (@grid-gutter-width / 2);
+      &::-ms-expand { /* Show the arrow if WHCM */
+        display: block;
+      }
+    }
+
+    [dir="rtl"] & {
+      padding: .4em .4em .4em 1.875em;
+      @media screen and (-ms-high-contrast: active) {
+        padding: (@grid-gutter-width / 2);
+      }
+    }
+  }
+
+  &:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 0.688em;
+    width: 0;
+    height: 0;
+    border-left: 0.25em solid transparent;
+    border-right: 0.25em solid transparent;
+    border-top: 0.5em solid #666;
+    pointer-events: none;
+    margin-top: -0.25em;
+    overflow: hidden;
+    @media screen and (-ms-high-contrast: active) {
+      display: none;
+    }
+
+    [dir="rtl"] & {
+      right: auto;
+      left: 0.688em;
+    }
+  }
+}

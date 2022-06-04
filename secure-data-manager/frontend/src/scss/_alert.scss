@@ -1,0 +1,27 @@
+// alert
+// ----------------------------------------
+
+.alert {
+  display: inline-block;
+  margin-bottom: $layout-gutter-width;
+  padding: ($layout-gutter-width / 2) $layout-gutter-width;
+  border-radius: 3px;
+
+  &.alert-error {
+    background-color: $alert-error-bg;
+    color: $alert-error-text;
+
+    md-icon {
+      color: $alert-error-text;
+    }
+  }
+
+  &.alert-success {
+    background-color: $alert-success-bg;
+    color: $alert-success-text;
+
+    md-icon {
+      color: $alert-success-text;
+    }
+  }
+}

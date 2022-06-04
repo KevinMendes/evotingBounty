@@ -1,0 +1,115 @@
+{
+  "id": "a27216e0b423405fbec833902239ca34",
+  "defaultTitle": "ballot_vote",
+  "defaultDescription": "ballot_test1",
+  "alias": "ballot",
+  "electionEvent": {
+	"id": "cefcc4e5afa044c59d42b7e4f5a1098f"
+  },
+  "contests": [
+	{
+	  "id": "bd704d1c090042f9a6735e793d20ea12",
+	  "defaultTitle": "Test",
+	  "alias": "1-2",
+	  "defaultDescription": "Test",
+	  "electionEvent": {
+		"id": "cefcc4e5afa044c59d42b7e4f5a1098f"
+	  },
+	  "template": "listsAndCandidates",
+	  "fullBlank": "true",
+	  "options": [
+		{
+		  "id": "51abae7cc8d94504b24a84a15adc1aff",
+		  "representation": "2",
+		  "attribute": "7c82f2aaa48d4338b5b619d05890ac44"
+		},
+		{
+		  "id": "3931b6d0f6384420890945343a63a94b",
+		  "representation": "5",
+		  "attribute": "ed2694269a564b1ea11aba6f919d6155"
+		},
+		{
+		  "id": "e4ad5eb78ba149918d9bcb5ce0738d70",
+		  "representation": "13",
+		  "attribute": "8a5ba28fa2314000adeee26a202b5b09"
+		}
+	  ],
+	  "attributes": [
+		{
+		  "id": "7c82f2aaa48d4338b5b619d05890ac44",
+		  "alias": "BLANK_91ae085310b94ee48a0dfafb9f1b5080",
+		  "correctness": "false",
+		  "related": [
+			"4c432e954efa4d8dbc5c5a8416d2e054"
+		  ]
+		},
+		{
+		  "id": "4c432e954efa4d8dbc5c5a8416d2e054",
+		  "alias": "candidates",
+		  "correctness": "true",
+		  "related": [
+		  ]
+		},
+		{
+		  "id": "b113518471644cfb93b5e1552b5bded7",
+		  "alias": "WRITE_IN_91ae085310b94ee48a0dfafb9f1b5080",
+		  "correctness": "false",
+		  "related": [
+			"4c432e954efa4d8dbc5c5a8416d2e054"
+		  ]
+		},
+		{
+		  "id": "8e5f48a8fa254c898b5e627bc28bbf8e",
+		  "alias": "list_for_1-1",
+		  "correctness": "false",
+		  "related": [
+		  ]
+		},
+		{
+		  "id": "393f997b655342a5bcde9c97f306be53",
+		  "alias": "list_for_1-2",
+		  "correctness": "false",
+		  "related": [
+		  ]
+		},
+		{
+		  "id": "8a5ba28fa2314000adeee26a202b5b09",
+		  "alias": "1-1",
+		  "correctness": "false",
+		  "related": [
+			"8e5f48a8fa254c898b5e627bc28bbf8e",
+			"4c432e954efa4d8dbc5c5a8416d2e054"
+		  ]
+		},
+		{
+		  "id": "ed2694269a564b1ea11aba6f919d6155",
+		  "alias": "1-2",
+		  "correctness": "false",
+		  "related": [
+			"393f997b655342a5bcde9c97f306be53",
+			"4c432e954efa4d8dbc5c5a8416d2e054"
+		  ]
+		}
+	  ],
+	  "questions": [
+		{
+		  "id": "91ae085310b94ee48a0dfafb9f1b5080",
+		  "max": "1",
+		  "min": "1",
+		  "accumulation": "1",
+		  "writeIn": "true",
+		  "blankAttribute": "7c82f2aaa48d4338b5b619d05890ac44",
+		  "writeInAttribute": "b113518471644cfb93b5e1552b5bded7",
+		  "attribute": "4c432e954efa4d8dbc5c5a8416d2e054",
+		  "fusions": [
+		  ]
+		}
+	  ]
+	}
+  ],
+  "status": "SIGNED",
+  "details": "Synchronized",
+  "synchronized": "true",
+  "ballotBoxes": "XY-CT-1|XY-MU-111 + XY-BZ-1111|XY-MU-1111",
+  "signedObject": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c"
+}

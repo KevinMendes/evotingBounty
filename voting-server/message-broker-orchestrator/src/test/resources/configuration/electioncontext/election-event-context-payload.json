@@ -1,0 +1,99 @@
+{
+	"encryptionGroup": {
+		"p": "0xB",
+		"q": "0x5",
+		"g": "0x3"
+	},
+	"electionEventContext": {
+		"electionEventId": "e3e3c2fd8a16489291c5c24e7b74b26e",
+		"verificationCardSetContexts": [
+			{
+				"verificationCardSetId": "e77dbe3c70874ea584c490a0c6ac0ca4",
+				"ballotBoxId": "E1A6F972679C8BD8A7C25C400A842EE7",
+				"numberOfWriteInFields": 1
+			}
+		],
+		"combinedControlComponentPublicKeys": [
+			{
+				"nodeId": 1,
+				"ccrChoiceReturnCodesEncryptionPublicKey": [
+					"0x4",
+					"0x9"
+				],
+				"ccmElectionPublicKey": [
+					"0x4",
+					"0x9"
+				]
+			},
+			{
+				"nodeId": 2,
+				"ccrChoiceReturnCodesEncryptionPublicKey": [
+					"0x4",
+					"0x9"
+				],
+				"ccmElectionPublicKey": [
+					"0x4",
+					"0x9"
+				]
+			},
+			{
+				"nodeId": 3,
+				"ccrChoiceReturnCodesEncryptionPublicKey": [
+					"0x4",
+					"0x9"
+				],
+				"ccmElectionPublicKey": [
+					"0x4",
+					"0x9"
+				]
+			},
+			{
+				"nodeId": 4,
+				"ccrChoiceReturnCodesEncryptionPublicKey": [
+					"0x4",
+					"0x9"
+				],
+				"ccmElectionPublicKey": [
+					"0x4",
+					"0x9"
+				]
+			}
+		],
+		"electoralBoardPublicKey": [
+			"0x4",
+			"0x9"
+		],
+		"electionPublicKey": [
+			"0x1",
+			"0x1"
+		],
+		"choiceReturnCodesEncryptionPublicKey": [
+			"0x3",
+			"0x5"
+		],
+		"startTime": [
+			2022,
+			3,
+			31,
+			16,
+			43,
+			58,
+			361000000
+		],
+		"finishTime": [
+			2022,
+			4,
+			7,
+			16,
+			43,
+			58,
+			361000000
+		]
+	},
+	"signature": {
+		"signatureContents": "2FqNSHBO7vkp3m6fPQ4ySijd4PgQ2N7LEqflakXYqhE=",
+		"certificateChain": [
+			"-----BEGIN CERTIFICATE-----\r\nMIIDNDCCAhygAwIBAgICAtowDQYJKoZIhvcNAQELBQAwXTERMA8GA1UEAwwIdGVz\r\ndC5jb20xDTALBgNVBAsMBHRlc3QxDjAMBgNVBAoMBXRlc3QuMQ0wCwYDVQQHDAR0\r\nZXN0MQ0wCwYDVQQIDAR0ZXN0MQswCQYDVQQGEwJDQTAeFw0yMjAzMzExNDQzNTla\r\nFw0yMzAzMzEwMDAwMDBaMF0xETAPBgNVBAMMCHRlc3QuY29tMQ0wCwYDVQQLDAR0\r\nZXN0MQ4wDAYDVQQKDAV0ZXN0LjENMAsGA1UEBwwEdGVzdDENMAsGA1UECAwEdGVz\r\ndDELMAkGA1UEBhMCQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC/\r\nv9yoURw72+5Nkj7TblwoXqx5wCA8c+SefV6gU5HcNn/UMUIwttCyZfUKNhwLOYv/\r\nWIqCsIzhs85+Fx0nP8gP4F+lIyv/OL7Al9OJdiyiBCUryzsumwaYueuBkx2oH8dK\r\n1fMeQpTva9anCOHMzKC45jaj5MBj2IE/W9k9lO+pd86qLOBkwYfAH+80HFf7gv4g\r\nTnRPBENVodPIS1MDSOImNuADJKz0aP+lQKTQjvmeDrVc0E0OcNui6FwOYhkzzpzX\r\nJv3KWXyz3NrDJt0VB+A/Z8/VToH2OBriG8j405c4l5eM9c6GpLyXvkXgz0ABkxVs\r\n2m/HTi0RsqT27KHT3sWBAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAJe4W1iVP618\r\nE2NBlVBV+PyYhZhkQIeL1B+Zqzjpeg0lDwZC9cCvbXuaMwXcRTUdggeOKPGTbHnH\r\nOnSSCVcr3YTh9J/+jFp+hIarY17SD1b5SKkDyQZFMKdJ18FcwAaIlrf+dVmnmpzN\r\nqmOcHqKpwHIDObsZa4JDY0TeN8e21FSJbBxXO5JXQJQ1zFlwqJ4T60fyb2o1PZBm\r\ntkqWRgnLCH1KaEGM9COJkKU46BDADWf9LJ6SvRKJDeyHLRC1aOT8JxtHRdlH1sRk\r\nahNmxV2fOCZBTv9ysjfG87v3VdUR0qiZQWrbErcFN2IDfcSv87NIcMJTtfXm1aVN\r\nasBWRiTRnbs=\r\n-----END CERTIFICATE-----\r\n"
+		]
+	}
+}

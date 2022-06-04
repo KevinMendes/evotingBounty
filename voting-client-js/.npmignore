@@ -1,0 +1,16 @@
+# Generated directories
+assembly/
+node_modules/
+npm/
+test/
+build/
+release/
+ov-api*tgz
+**/target/
+
+
+# Mac OS X hidden files
+.DS_Store
+
+# Logs
+*.log

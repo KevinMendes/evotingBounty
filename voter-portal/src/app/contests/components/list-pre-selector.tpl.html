@@ -1,0 +1,59 @@
+<!-- list pre-selector -->
+
+<div aria-labelledby="label_list_{{selectedList.getQualifiedId()}}_{{contest.id}}" class="pre-selector selector-box" role="group">
+
+	<div class="selector-box-info overflow-x-auto">
+
+		<div id="label_list_{{selectedList.getQualifiedId()}}_{{contest.id}}">
+			<h3 class="text-muted fsxl fwb man" data-ng-if="!selectedList || selectedList.isBlank">
+				<span class="sr-only">{{ getBlankList(contest).name || noListChosenCopy | translate }}</span>
+				<em><span>{{ getBlankList(contest).name || noListChosenCopy | translate }}</span></em>
+			</h3>
+			<h3 class="h3 man fsxl" data-ng-if="selectedList && !selectedList.isBlank">
+				<span class="sr-only" translate>Selected list:</span>
+				{{selectedList.name}}
+			</h3>
+			<p class="mbn text-muted" data-ng-if="selectedList.details.listType_apparentment">
+				<span class="list_attribute1">{{selectedList.details.listType_apparentment}}</span>
+			</p>
+			<p class="mbn text-muted" data-ng-if="selectedList.details.listType_sousApparentment">
+				<span class="list_attribute2">{{selectedList.details.listType_sousApparentment}}</span>
+			</p>
+			<p class="mbn text-muted" ng-repeat="description in selectedList.description">{{description}}</p>
+		</div>
+	</div>
+
+	<div class="selector-box-actions pbn">
+
+		<a aria-expanded="false" aria-live="polite"
+		   class="btn btn-secondary btn-select has-icon btn-select-list"
+		   data-ng-click="openListSelectionModal()"
+		   href=""
+		   id="btn_choose_party_list_{{contest.id}}">
+      <span data-ng-if="!selectedList || selectedList.isBlank">
+        <span translate>Choose</span>
+        <span class="sr-only">({{ getBlankList(contest).name || noListChosenCopy | translate }})</span>
+      </span>
+			<span data-ng-if="selectedList && !selectedList.isBlank">
+        <span translate>Change</span>
+        <span class="sr-only">
+          (<span translate>your current list is:</span>
+          {{selectedList.name}})
+        </span>
+      </span>
+		</a>
+
+		<div class="actions-other" data-ng-if="selectedList && !selectedList.isBlank">
+			<button class="btn btn-link has-icon btn-other"
+					data-ng-click="clearList()"
+					id="btn_dropdown_{{selectedList.getQualifiedId()}}_1"
+					type="button">
+				<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+				</svg>
+				<span aria-hidden="true" translate>Clear</span>
+				<span class="sr-only" translate>Clear current list</span>
+			</button>
+		</div>
+	</div>
+</div>

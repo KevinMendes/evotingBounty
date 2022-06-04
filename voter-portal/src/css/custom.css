@@ -1,0 +1,57 @@
+/*
+ * (c) Copyright 2022 Swiss Post Ltd.
+ */
+
+/*
+   Here you can customize the basic
+   look & feel of the Voter Portal
+   just replace the values
+   not the selectors neither the properties
+*/
+
+/*
+   ==========================
+   Look & feel for the header
+   ==========================
+*/
+
+/*
+   --------->>> IMPORTANT!!!! <<<---------
+   Both the header background color and the text color
+   MUST have a minimun contrast rate of 4.5:1
+   to reach the required level AA Accessibility.
+   If you are not sure, you can check it here:
+   http://webaim.org/resources/contrastchecker/
+*/
+
+/*
+   Header border bottom:
+   By default, the header has no border.
+   If you want to customize it
+   set the width and the color
+*/
+.header {
+    background-color: #fcce00;
+    border-color: #fcce00;
+    border-bottom-width: 0;
+}
+
+/* Header text color: */
+/* Use the same color for color and fill properties */
+.header,
+.header .btn {
+    color: #000;
+}
+
+.header svg,
+.header .btn.has-icon svg {
+    fill: #000;
+}
+
+/**
+* The client will search '@@HeaderHeight@@' and it will be replaced it
+* by a valid value, otherwise the dafault value will be applied
+*/
+.header-height {
+    top: @ @HeaderHeight @ @;
+}

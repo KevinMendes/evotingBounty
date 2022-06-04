@@ -1,0 +1,39 @@
+
+Step 1: Generate encryption parameters command
+ java -jar config-cryptographic-parameters-tool-{VERSION}.jar -genEncryptionParameters -seed_path <path to seed file> -seed_sig_path <seed's signature path>
+ -p12_path <path to keystore> -trusted_ca_path <path to trusted CA>  [-out <output folder>]
+
+  -seed_path <path to seed file>             The input path of the seed data file for
+                                             encryption parameters generation.
+  -seed_sig_path <seed's signature path>     The path of the PKCS7 signature of the
+                                             seed, encoded in DER format.
+  -p12_path <path to keystore>               The PKCS12 with the private key used
+                                             to sign the seed and that will sign the
+                                             encryptionParameters' JWT.
+  -trusted_ca_path <path to trusted CA>      The path of the PEM certificate to be
+                                             trusted by the tool.
+  -out (optional)                            Output folder where the files will be
+                                             generated. Default = output/
+  
+                                             
+ Example:
+  java -jar config-cryptographic-parameters-tool-0.8.2.0.jar -genEncryptionParameters -seed_path seed.txt -seed_sig_path seed.txt.p7 -p12_path integration.p12
+  -trusted_ca_path rootCA.pem -out my_output/
+
+Step 2: Generate a list of prime group members (given a set of encryption parameters)
+ java -jar config-cryptographic-parameters-tool-{VERSION}.jar -primeGroupMembers -params_path <params json file> -p12_path <keystore file path>
+ -trusted_ca_path <path to trusted CA>  [-out <output folder>]
+
+  -params_path                               The jwt file signed by the key contained
+                                             in the p12.
+  -p12_path                                  The PKCS12 with the private key used to
+                                             sign the parameters and that will also sign
+                                             the primesFile.
+  -trusted_ca_path <path to trusted CA>      The path of the PEM certificate to be
+                                             trusted by the tool.
+  -out (optional)                            Output folder where the files will be
+                                             generated. Default = output/
+ 
+ Example:
+  java -jar config-cryptographic-parameters-tool-0.8.2.0.jar -primeGroupMembers -params_path encryptionParams.json.sign -p12_path integration.p12
+  -trusted_ca_path rootCA.pem -out my_output/

@@ -1,0 +1,60 @@
+{
+  "id": "e133300f6a124ca8aea3fd7c935b18e0",
+  "defaultTitle": "dd-ab",
+  "defaultDescription": "dd-ab",
+  "alias": "dd-ab",
+  "electionEvent": {
+	"id": "6eb1403ab44d4fedb86a6f73adcf17fc"
+  },
+  "template": "options",
+  "fullBlank": "false",
+  "options": [
+	{
+	  "id": "c6897cc6f7f04df393a4ec9bf388970c",
+	  "representation": "100103",
+	  "attribute": "95331a0df37e44299a28d64d9ca6ba2e"
+	},
+	{
+	  "id": "491280b4d21a45c2bc35445d8803ff58",
+	  "representation": "10009",
+	  "attribute": "b4f8afb4d56b449cbcd1ae28b94300ee"
+	}
+  ],
+  "attributes": [
+	{
+	  "id": "f9f3b581f27a43789f42f4841002d319",
+	  "alias": "dd-ab",
+	  "correctness": true,
+	  "related": []
+	},
+	{
+	  "id": "95331a0df37e44299a28d64d9ca6ba2e",
+	  "alias": "dd-ab1",
+	  "correctness": false,
+	  "related": [
+		"f9f3b581f27a43789f42f4841002d319"
+	  ]
+	},
+	{
+	  "id": "b4f8afb4d56b449cbcd1ae28b94300ee",
+	  "alias": "Blank",
+	  "correctness": false,
+	  "related": [
+		"2ad28ae479a645e39936aa14aac81372",
+		"f9f3b581f27a43789f42f4841002d319"
+	  ]
+	}
+  ],
+  "questions": [
+	{
+	  "id": "50e2e005c2c0413a96cd6b36e659fae0",
+	  "max": "1",
+	  "min": "0",
+	  "cumul": "1",
+	  "writeIn": "false",
+	  "fusions": [],
+	  "blankAttribute": "b4f8afb4d56b449cbcd1ae28b94300ee",
+	  "attribute": "f9f3b581f27a43789f42f4841002d319"
+	}
+  ]
+}

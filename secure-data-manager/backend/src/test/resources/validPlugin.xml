@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<Plugins>
+	<Phase name="export">
+		<Plugin type="cmd" order="0"><![CDATA[fileConverter.bat 1]]></Plugin>
+		<Plugin type="cmd" order="1"><![CDATA[fileConverter.bat 2]]></Plugin>
+		<Plugin type="cmd" order="2"><![CDATA[fileConverter.bat 3]]></Plugin>
+		<Plugin type="cmd" order="3"><![CDATA[fileConverter.bat 4]]></Plugin>
+	</Phase>
+	<Phase name="import">
+		<Plugin type="cmd" order="0"><![CDATA[fileConverter.bat 1]]></Plugin>
+		<Plugin type="cmd" order="1"><![CDATA[fileConverter.bat 2]]></Plugin>
+		<Plugin type="cmd" order="2"><![CDATA[fileConverter.bat 3]]></Plugin>
+		<Plugin type="cmd" order="3"><![CDATA[fileConverter.bat 4]]></Plugin>
+	</Phase>
+	<Phase name="generate_pre_voting_outputs">
+		<!--Plugin type="cmd" order="0"><![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar -action election_event_alias_to_id -election_export_in #SDM_PATH#\sdmConfig\config.json -output #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\election_event_alias_to_id_#EE_ALIAS#.csv -log #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\logs\ech-file-converter_#EE_ALIAS#.log]]></Plugin-->
+		<!--Plugin type="cmd" order="0"><![CDATA[#SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\copyToUsb.bat #USB_LETTER# #EE_ID# #EE_ALIAS# #SDM_PATH# > #SDM_PATH#\logs\copyFromUsb.log]]></Plugin-->
+		<!--Plugin type="cmd" order="0"><![CDATA[#USB_LETTER#\sdm_#EE_ALIAS#\copyFromUsb.bat #EE_ALIAS# #USB_LETTER#\sdm_#EE_ALIAS# > #SDM_PATH#\logs\copyFromUsb.log ]]></Plugin-->
+		<!--Plugin type="cmd" order="1">
+				<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar
+			-action election_event_alias_to_id
+			-election_export_in #SDM_PATH#\sdmConfig\config.json
+			-output #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\election_event_alias_to_id_#EE_ALIAS#.csv
+			-log #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log
+			]]>
+		</Plugin>
+		<Plugin type="cmd" order="2">
+				<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar
+			-action rc_config_pn
+			-election_export_in #SDM_PATH#\sdmConfig\config.json
+			-rcConfig #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\resultsCounterConfig_#EE_ALIAS#.json
+			-output #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\resultsCounterConfig_#EE_ALIAS#.json
+			-log #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log
+			]]>
+		</Plugin>
+		<!voting_card_alias_to_id-->
+		<!--Plugin type="cmd" order="3">
+				<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar
+			-action voting_card_alias_to_id
+			-vca_in	#SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\voting_card_alias_#EE_ALIAS#.csv
+			-election_export_in #SDM_PATH#\sdmConfig\config.json
+			-folder #SDM_PATH#\config\#EE_ID#\ONLINE\printing
+			-pattern printingData_
+			-output #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\voting_card_alias_to_id_#EE_ALIAS#.csv
+			-log #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log
+			]]>
+		</Plugin>
+		<!spf-->
+		<!--Plugin type="cmd" order="4">
+				<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar
+			-action spf
+			-folder #SDM_PATH#\config\#EE_ID#\ONLINE\printing
+			-pattern printingData_
+			-vca2id_in #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\voting_card_alias_to_id_#EE_ALIAS#.csv
+			-election_export_in #SDM_PATH#\sdmConfig\config.json
+			-results_counter_config #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\resultsCounterConfig_#EE_ALIAS#.json
+			-output  #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\spf_#EE_ALIAS#.xml
+			-log #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log
+			]]>
+		</Plugin-->
+		<Plugin type="cmd" order="1">
+			<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar
+					-action election_event_alias_to_id
+					-election_export_in #SDM_PATH#\sdmConfig\config.json
+					-output #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\election_event_alias_to_id_#EE_ALIAS#.csv
+					-log #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log
+					]]>
+		</Plugin>
+		<Plugin type="cmd" order="2">
+			<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar
+					-action rc_config_pn
+					-election_export_in #SDM_PATH#\sdmConfig\config.json
+					-rcConfig #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\resultsCounterConfig_#EE_ALIAS#.json
+					-output #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\resultsCounterConfig_#EE_ALIAS#.json
+					-log #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log
+					]]>
+		</Plugin>
+		<Plugin type="cmd" order="3">
+			<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar
+				-action voting_card_alias_ea_code
+				-vca_in #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\voting_card_alias_#EE_ALIAS#.csv
+				-election_export_in #SDM_PATH#\sdmConfig\config.json
+				-folder #SDM_PATH#\config\#EE_ID#\ONLINE\printing
+				-pattern printingData_
+				-extendedAuthProperties #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\extendedAuthentication.properties
+				-output #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\voting_card_alias_ea_code_#EE_ALIAS#.csv
+				-log #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log]]>
+		</Plugin>
+		<!--voting_card_alias_to_id-->
+		<Plugin type="cmd" order="4">
+			<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar
+					-action voting_card_alias_to_id
+					-vca_in	#SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\voting_card_alias_#EE_ALIAS#.csv
+					-election_export_in #SDM_PATH#\sdmConfig\config.json
+					-folder #SDM_PATH#\config\#EE_ID#\ONLINE\printing
+					-pattern new_printingData_
+					-output #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\election_event_alias_to_id_#EE_ALIAS#.csv
+					-log #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log
+					]]>
+		</Plugin>
+		<!--spf-->
+		<Plugin type="cmd" order="5">
+			<![CDATA[java -jar #SDM_PATH#\eCH\eCH_file_converter\ech-file-converter.jar
+					-action spf
+					-folder #SDM_PATH#\config\#EE_ID#\ONLINE\printing
+					-pattern printingData_
+					-vca2id_in #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\voting_card_alias_to_id_#EE_ALIAS#.csv
+					-election_export_in #SDM_PATH#\sdmConfig\config.json
+					-results_counter_config #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\resultsCounterConfig_#EE_ALIAS#.json
+					-output  #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\output\spf_#EE_ALIAS#.xml
+					-log #SDM_PATH#\eCH\electionEvents\#EE_ALIAS#\logs\eCH_file_converter_#EE_ALIAS#.log
+					]]>
+		</Plugin>
+	</Phase>
+	<Phase name="tally">
+		<Plugin type="cmd" order="0"><![CDATA[fileConverter.bat 2 #SDM_PATH# #EE_ALIAS# #EE_ID# #PRIVATE_KEY# ]]></Plugin>
+		<Plugin type="cmd" order="1"><![CDATA[fileConverter.bat 2 #SDM_PATH# #EE_ALIAS# #EE_ID# #PRIVATE_KEY# ]]></Plugin>
+		<Plugin type="cmd" order="2"><![CDATA[fileConverter.bat 2 #SDM_PATH# #EE_ALIAS# #EE_ID# #PRIVATE_KEY# ]]></Plugin>
+		<Plugin type="cmd" order="3"><![CDATA[fileConverter.bat 2 #SDM_PATH# #EE_ALIAS# #EE_ID# #PRIVATE_KEY# ]]></Plugin>
+	</Phase>
+</Plugins>
+

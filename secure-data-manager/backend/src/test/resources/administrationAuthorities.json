@@ -1,0 +1,32 @@
+{
+  "result": [
+    {
+      "id": "cf11f344017646889cfb59579f2957fd",
+      "defaultTitle": "ad",
+      "defaultDescription": null,
+      "alias": "ad",
+      "minimumThreshold": "1",
+      "administrationBoard": [
+        "1",
+        "2"
+      ],
+      "status": "CONSTITUTED",
+      "details": "Synchronized",
+      "synchronized": "true"
+    },
+    {
+      "id": "ce833d1773dc48009dd85c144a0f2e09",
+      "defaultTitle": "ad2",
+      "defaultDescription": null,
+      "alias": "ad2",
+      "minimumThreshold": "1",
+      "administrationBoard": [
+        "1",
+        "2"
+      ],
+      "status": "CONSTITUTED",
+      "details": "Synchronized",
+      "synchronized": "true"
+    }
+  ]
+}

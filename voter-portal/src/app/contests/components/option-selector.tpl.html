@@ -1,0 +1,34 @@
+<div class="option-selector" data-layout="row" data-layout-wrap>
+	<div class="ballot-options-question" data-flex data-flex-xs="100">
+		<div class="h3 ballot-question-title man" id="question_{{question.getQualifiedId()}}">
+			<h3 data-markdown-to-html="question.text"></h3>
+			<alert-message alert-text="error.message"
+						   alert-type="error.type"
+						   ng-repeat="error in contest.errors">
+			</alert-message>
+		</div>
+	</div>
+	<div class="ballot-options-answer" data-flex-xs="100">
+		<div aria-labelledby="question_{{question.getQualifiedId()}}" role="radiogroup">
+			<div class="form-group mbn">
+				<div class="checkbox form-custom" data-ng-repeat="o in question.options">
+					<input data-ng-model="question.chosen" data-ng-value="o.id" id="check_{{o.getQualifiedId()}}"
+						   name="radioFor{{question.id}}"
+						   type="radio">
+					<label class="word-break" for="check_{{o.getQualifiedId()}}">{{o.text}}</label>
+				</div>
+			</div>
+			<div class="text-right" data-ng-if="question.optionsMinChoices == 0 && question.chosen">
+				<button aria-live="polite" class="btn btn-link has-icon" data-ng-click="resetRadio()" id="btn_clear_{{question.getQualifiedId()}}"
+						type="button">
+					<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+					</svg>
+					<span aria-hidden="true" translate>Clear</span>
+					<span class="sr-only" translate>Clear current option</span>
+					<span class="sr-only" data-ng-if="!question.chosen" translate>(no option chosen)</span>
+				</button>
+			</div>
+		</div>
+	</div>
+</div>

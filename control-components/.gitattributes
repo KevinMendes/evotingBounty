@@ -1,0 +1,2 @@
+*.sh text eol=lf
+*.p12 binary

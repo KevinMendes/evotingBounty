@@ -1,0 +1,64 @@
+<div class="collapsible-contest" data-ng-class="{'is-closed': !contest.expanded}">
+
+	<div class="collapsibler" data-layout="row" data-layout-align="start center" data-ng-click="contest.expanded = !contest.expanded">
+		<div class="ballot-group-title">
+			<h2 class="overflow-x-auto" data-flex>{{ contest.title }}</h2>
+			<p class="text-muted mts mbn" data-ng-if="contest.isType(contestTypes.LISTS_AND_CANDIDATES)" translate>{{getSelectedCandidatesCount()}} of
+				{{contest.candidatesQuestion.maxChoices}} seats filled</p>
+		</div>
+		<button aria-controls="contest_wrapper_{{contest.id}}" aria-expanded="{{contest.expanded ? 'true' : 'false'}}" class="btn btn-link has-icon"
+				id="btn_contest_collapsible_{{contest.id}}"
+				type="button">
+			<svg aria-hidden="true" data-ng-class="{'ci-rotate-180': contest.expanded}" focusable="false" height="24" viewBox="0 0 24 24"
+				 width="24" xmlns="http://www.w3.org/2000/svg">
+				<path d="M16.59 8.59L12 13.17 7.41 8.59 6 10l6 6 6-6z"/>
+			</svg>
+			<span data-ng-if="!contest.expanded">
+        <span aria-hidden="true" class="hidden-xs" translate>Show</span>
+        <span class="sr-only"><span translate>Show options for:</span> {{contest.title}}</span>
+      </span>
+			<span data-ng-if="contest.expanded">
+        <span aria-hidden="true" class="hidden-xs" translate>Hide</span>
+        <span class="sr-only"><span translate>Hide options for:</span> {{contest.title}}</span>
+      </span>
+		</button>
+	</div>
+
+	<div class="contest-wrapper" id="contest_wrapper_{{contest.id}}">
+		<div class="contest">
+			<p data-ng-if="contest.howToVote">{{contest.howToVote}}</p>
+			<p data-ng-if="contest.candidatesQuestion.hasWriteIns">
+				<span translate>Please click on "Choose" or "Change" to display the list of candidates. You also have the possibility to choose a write-in candidate. For more information see:</span>
+				<span help-button="write_ins">
+          <span translate>How can I use write-ins?</span>
+          <span class="sr-only" translate>How can I use write-ins?</span>
+        </span>
+			</p>
+			<p data-ng-if="(contest.isType(contestTypes.LISTS_AND_CANDIDATES) || contest.isType(contestTypes.CANDIDATES_ONLY)) && !contest.candidatesQuestion.hasWriteIns">
+				<span data-ng-if="!contest.canCumulate()" translate>Please click on "Choose" or "Change" to display the list of candidates.</span>
+				<span data-ng-if="contest.canCumulate()" translate>Please click on "Choose" to display the list of candidates. You can accumulate candidates only if there are empty positions.</span>
+			</p>
+			<alert-message alert-params="error.params"
+						   alert-text="error.message"
+						   alert-type="error.type"
+						   ng-hide="error.isHidden"
+						   ng-repeat="error in contest.errors">
+			</alert-message>
+
+			<options data-ng-if="contest.isType(contestTypes.OPTIONS)"
+					 data-ng-model="contest"
+					 id="contest_{{contest.id}}">
+			</options>
+			<lists-and-candidates data-ng-if="contest.isType(contestTypes.LISTS_AND_CANDIDATES)"
+								  data-ng-model="contest"
+								  id="contest_{{contest.id}}">
+			</lists-and-candidates>
+			<candidates-only data-ng-if="contest.isType(contestTypes.CANDIDATES_ONLY)"
+							 data-ng-model="contest"
+							 id="contest_{{contest.id}}">
+			</candidates-only>
+
+		</div>
+	</div>
+	<auto-scroll></auto-scroll>
+</div>

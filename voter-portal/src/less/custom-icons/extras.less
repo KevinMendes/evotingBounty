@@ -1,0 +1,159 @@
+// Spinning Icons
+// --------------------------
+.ci-spin {
+  -webkit-animation: ci-spin 2s infinite linear;
+  animation: ci-spin 2s infinite linear;
+}
+
+@-webkit-keyframes ci-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes ci-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+
+// Bordered Icons
+// --------------------------
+
+.ci-border {
+  padding: .2em .25em;
+  border: solid .08em @ci-border-color;
+  border-radius: .1em;
+}
+
+
+// Icon Sizes
+// -------------------------
+
+/* makes the font 33% larger relative to the icon container */
+.ci-lg {
+  font-size: (4em / 3);
+  line-height: (3em / 4);
+  vertical-align: -15%;
+}
+
+.ci-2x {
+  font-size: 2em;
+}
+
+.ci-3x {
+  font-size: 3em;
+}
+
+.ci-4x {
+  font-size: 4em;
+}
+
+.ci-5x {
+  font-size: 5em;
+}
+
+
+// List Icons
+// -------------------------
+
+.ci-ul {
+  padding-left: 0;
+  margin-left: @ci-li-width;
+  list-style-type: none;
+
+  > li {
+    position: relative;
+  }
+}
+
+.ci-li {
+  position: absolute;
+  left: -@ci-li-width;
+  width: @ci-li-width;
+  top: (2em / 14);
+  text-align: center;
+
+  &.ci-lg {
+    left: (-@ci-li-width + (4em / 14));
+  }
+}
+
+
+// Rotated & Flipped Icons
+// -------------------------
+
+.ci-rotate-90 {
+  .ci-icon-rotate(90deg, 1);
+}
+
+.ci-rotate-180 {
+  .ci-icon-rotate(180deg, 2);
+}
+
+.ci-rotate-270 {
+  .ci-icon-rotate(270deg, 3);
+}
+
+.ci-flip-horizontal {
+  .ci-icon-flip(-1, 1, 0);
+}
+
+.ci-flip-vertical {
+  .ci-icon-flip(1, -1, 2);
+}
+
+// Hook for IE8-9
+// -------------------------
+
+:root .ci-rotate-90,
+:root .ci-rotate-180,
+:root .ci-rotate-270,
+:root .ci-flip-horizontal,
+:root .ci-flip-vertical {
+  filter: none;
+}
+
+
+// Stacked Icons
+// -------------------------
+
+.ci-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.ci-stack-1x,
+.ci-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.ci-stack-1x {
+  line-height: inherit;
+}
+
+.ci-stack-2x {
+  font-size: 2em;
+}
+
+.ci-inverse {
+  color: @ci-inverse;
+}

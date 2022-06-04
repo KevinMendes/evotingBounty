@@ -1,0 +1,47 @@
+<sv-sidebar id="side-menu" title-long="'Secure Data Manager'" title-short="'SDM'"></sv-sidebar>
+
+<main class="sv-main" ng-cloak>
+
+    <ov-toolbar class="sv-toolbar">
+
+        <div ng-if="!isAdminAuthorityActivated()">
+            <md-button class="md-raised md-secondary"
+                       id="activate"
+                       ng-click="activateAdminBoard()"
+                       title="{{'Activate Admin Board' | translate}}">
+                <md-icon alt="{{'Activate' | translate}}" md-svg-src="assets/icons/ic_admin_board.svg"></md-icon>
+                <span class="hide-xs" translate>Activate Admin Board</span>
+            </md-button>
+        </div>
+
+        <div ng-if="isAdminAuthorityActivated()">
+            <md-button class="md-raised md-secondary"
+                       id="deactivate"
+                       ng-click="deactivateAdminBoard()"
+                       title="{{'Deactivate Admin Board' | translate}}">
+                <md-icon alt="{{'Deactivate' | translate}}" md-svg-src="assets/icons/ic_no_admin_board.svg"></md-icon>
+                <span class="hide-xs" translate>Deactivate Admin Board</span>
+            </md-button>
+        </div>
+
+        <div ng-click="synchronizeInTabs()">
+            <md-button class="md-raised md-primary"
+                       id="synchronize"
+                       title="{{'Sync' | translate}}">
+                <md-icon alt="{{'Sync' | translate}}" md-svg-src="assets/icons/ic_autorenew_24px.svg" ng-class="{'spin':isSync()}"></md-icon>
+                <span class="hide-xs" translate>Sync</span>
+            </md-button>
+        </div>
+
+    </ov-toolbar>
+
+    <div class="sv-content">
+
+        <div class="sv-content-view" ng-cloak ng-if="state == 'ballots'" ui-view="ballots"></div>
+        <div class="sv-content-view" ng-cloak ng-if="state == 'voting-cards'" ui-view="voting-cards"></div>
+        <div class="sv-content-view" ng-cloak ng-if="state == 'electoral-authorities'" ui-view="electoral-authorities"></div>
+        <div class="sv-content-view" ng-cloak ng-if="state == 'ballot-boxes'" ui-view="ballot-boxes"></div>
+
+    </div>
+
+</main>

@@ -1,0 +1,104 @@
+// sv-sidebar
+// ----------------------------------------
+
+sv-sidebar {
+  background: $sidebar-bg;
+  color: $sidebar-text;
+  border-right: 1px solid $sidebar-border-color;
+
+  [dir="rtl"] & {
+    border-right: none;
+    border-left: 1px solid $sidebar-border-color;
+  }
+
+  .sv-toolbar {
+    padding: 0 1.5em;
+    border-bottom: 1px solid $sidebar-border-color;
+  }
+
+  .sv-nav {
+    .md-button {
+      text-transform: none;
+
+      &:hover,
+      &:focus {
+        background-color: $sidebar-bg-hover;
+      }
+
+      &.current {
+        background-color: $sidebar-current-bg;
+        color: $sidebar-current-text;
+      }
+
+      md-icon {
+        color: $sidebar-icon;
+      }
+
+      &.current md-icon {
+        color: $sidebar-icon-current;
+      }
+    }
+  }
+
+  .election-event-title {
+    padding: 0 1em;
+    margin: .5em 0;
+    line-height: 36px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  hr {
+    border: none;
+    border-bottom: 1px solid $sidebar-border-color;
+  }
+
+  .lang-selector {
+    &:not(.md-input-invalid) {
+      > md-select {
+        .md-select-value {
+          border-color: $sidebar-text;
+        }
+
+        &:hover {
+          background-color: $sidebar-bg-hover;
+        }
+      }
+
+      &.md-input-focused {
+        md-select {
+          background-color: $sidebar-bg-hover;
+        }
+
+        > md-icon {
+          color: inherit;
+        }
+      }
+    }
+
+    @media (max-width: 959px) {
+      &.md-input-focused,
+      &:hover {
+        background-color: $sidebar-bg-hover;
+      }
+    }
+  }
+
+  // animation
+  transition: max-width $sidebar-animation-duration ease-out, background-color $sidebar-animation-duration ease-out;
+  > * {
+    transition: opacity $sidebar-animation-duration ease-out;
+  }
+}
+
+
+.sidebar-is-closed sv-sidebar {
+  max-width: 5px;
+  background-color: $sidebar-bg-closed;
+
+  > * {
+    opacity: 0;
+  }
+}
+

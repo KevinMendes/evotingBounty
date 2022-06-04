@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>ch.post.it.evoting.securedatamanager</groupId>
+		<artifactId>secure-data-manager</artifactId>
+		<version>0.14.1.0</version>
+	</parent>
+
+	<artifactId>frontend</artifactId>
+	<packaging>pom</packaging>
+	<name>Secure Data Manager - Frontend</name>
+
+	<properties>
+		<jacoco.skip>true</jacoco.skip>
+		<nwjs.target.directory>${project.build.directory}/nwjs/0.51.2-sdk</nwjs.target.directory>
+		<sonar.sources>src,test</sonar.sources>
+	</properties>
+
+	<profiles>
+		<!-- DEFAULT ONLINE PROFILE-->
+		<profile>
+			<id>default</id>
+			<activation>
+				<activeByDefault>true</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-clean-plugin</artifactId>
+						<configuration>
+							<filesets>
+								<fileset>
+									<directory>build</directory>
+								</fileset>
+								<fileset>
+									<directory>desktop_app</directory>
+								</fileset>
+								<fileset>
+									<directory>server</directory>
+								</fileset>
+							</filesets>
+						</configuration>
+					</plugin>
+					<plugin>
+						<groupId>com.googlecode.maven-download-plugin</groupId>
+						<artifactId>download-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>download-nwjs-win64</id>
+								<goals>
+									<goal>wget</goal>
+								</goals>
+								<phase>initialize</phase>
+								<configuration>
+									<url>${nwjs.win64.url}</url>
+									<unpack>true</unpack>
+									<outputDirectory>${nwjs.target.directory}</outputDirectory>
+									<sha256>${nwjs.win64.sha256}</sha256>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<configuration>
+							<descriptors>
+								<descriptor>assembly/package.xml</descriptor>
+							</descriptors>
+							<appendAssemblyId>false</appendAssemblyId>
+						</configuration>
+						<executions>
+							<execution>
+								<id>create-archive</id>
+								<goals>
+									<goal>single</goal>
+								</goals>
+								<phase>package</phase>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<artifactId>maven-antrun-plugin</artifactId>
+						<executions>
+							<execution>
+								<goals>
+									<goal>run</goal>
+								</goals>
+								<phase>process-sources</phase>
+								<configuration>
+									<target name="building">
+										<move file="${nwjs.target.directory}/${nwjs.win64.name}" tofile="${nwjs.target.directory}/win64"/>
+									</target>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+					<plugin>
+						<groupId>org.codehaus.mojo</groupId>
+						<artifactId>exec-maven-plugin</artifactId>
+						<executions>
+							<execution>
+								<id>npm install (initialize)</id>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+								<phase>initialize</phase>
+								<configuration>
+									<executable>npm</executable>
+									<arguments>
+										<argument>ci</argument>
+									</arguments>
+								</configuration>
+							</execution>
+							<execution>
+								<id>npm build (compile)</id>
+								<goals>
+									<goal>exec</goal>
+								</goals>
+								<phase>compile</phase>
+								<configuration>
+									<executable>npm</executable>
+									<arguments>
+										<argument>run</argument>
+										<argument>compile</argument>
+									</arguments>
+								</configuration>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+</project>

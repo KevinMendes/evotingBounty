@@ -1,0 +1,95 @@
+// ov-toolbar
+// ----------------------------------------
+
+ov-toolbar {
+  background-color: $toolbar-bg;
+  color: $toolbar-text;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+
+  a {
+    color: $toolbar-text;
+    text-decoration: none;
+    border-bottom: 1px solid $toolbar-text;
+
+    &:hover,
+    &:focus {
+      color: $toolbar-text-hover;
+      box-shadow: 0 1px 0 $toolbar-text-hover;
+    }
+  }
+
+  md-icon {
+    color: $toolbar-text;
+
+    [dir="rtl"] & {
+      transform: rotate(180deg);
+    }
+  }
+
+  md-input-container {
+    margin: 0;
+  }
+
+  md-select {
+    .md-select-value {
+      border-bottom-color: $toolbar-text;
+    }
+
+    &:not([disabled]):focus,
+    &:not([disabled]):hover {
+      .md-select-value {
+        border-bottom-color: $toolbar-text;
+        color: $toolbar-text;
+        border-bottom-width: 2px;
+        border-bottom-style: solid;
+        padding-bottom: 0;
+      }
+    }
+  }
+
+  .md-button {
+    &.md-primary {
+      &.md-raised:not([disabled]),
+      &.md-fab:not([disabled]) {
+        background-color: $toolbar-primary-bg;
+        color: $toolbar-primary-text;
+
+        md-icon {
+          color: $toolbar-primary-text;
+        }
+
+        &:hover,
+        &:focus,
+        &.md-focused {
+          background-color: $toolbar-primary-bg-hover;
+        }
+      }
+    }
+
+    &.md-secondary {
+      &.md-raised:not([disabled]),
+      &.md-fab:not([disabled]) {
+        background-color: $toolbar-secondary-bg;
+        color: $toolbar-secondary-text;
+
+        md-icon {
+          color: $toolbar-secondary-text;
+        }
+
+        &:hover,
+        &.md-focused {
+          background-color: $toolbar-secondary-bg-hover;
+        }
+      }
+    }
+  }
+}
+
+// within dialog
+md-dialog {
+  md-toolbar {
+    margin: 0;
+    background-color: $toolbar-bg-light;
+    color: $toolbar-bg-light-text;
+  }
+}

@@ -1,0 +1,96 @@
+// dialog
+// ----------------------------------------
+
+md-backdrop {
+  &.md-opaque {
+    background-color: $dialog-backdrop;
+  }
+}
+
+md-dialog {
+  border-radius: 4px;
+  background-color: $dialog-bg;
+
+  md-toolbar {
+    margin: .4em 0 0;
+  }
+
+  .md-button {
+    &.md-primary:not([disabled]) {
+      color: $button-primary;
+
+      &:hover,
+      &:focus {
+        color: $button-primary-hover;
+
+        md-icon {
+          color: $button-primary;
+        }
+      }
+
+      md-icon {
+        color: $button-primary;
+      }
+
+      &.md-raised,
+      &.md-fab {
+        color: $button-primary-contrast;
+        background-color: $button-primary;
+
+        &:hover,
+        &:focus {
+          background-color: $button-primary-hover;
+
+          md-icon {
+            color: $button-primary-contrast;
+          }
+        }
+
+        md-icon {
+          color: $button-primary-contrast;
+        }
+      }
+    }
+  }
+
+  .md-title-wrapper {
+    @include display-flex();
+    @include align-items(center);
+    margin-bottom: 2em;
+
+    .md-title {
+      @include flex(1);
+      margin: 0;
+    }
+  }
+
+  .md-actions,
+  md-dialog-actions {
+    border-top-color: $dialog-actions-border;
+
+    .md-confirm-button {
+      @extend .md-raised;
+    }
+  }
+
+  // full-screen layout
+  &.full-screen {
+    width: 98%;
+    height: 98%;
+    max-width: 98%;
+    max-height: 98%;
+
+    md-dialog-content {
+      @include display-flex();
+      @include flex-direction(column);
+      height: 100%;
+
+      .md-dialog-content-body {
+        @include flex(1);
+        @include display-flex();
+        overflow: hidden;
+      }
+    }
+  }
+
+}

@@ -1,0 +1,59 @@
+.wizard {
+  display: table;
+  width: 100%;
+  margin-bottom: 4em;
+  padding: 1em 0 0;
+  border-bottom: 1px solid @border-color;
+  counter-reset: my-badass-counter;
+
+  li {
+    display: table-cell;
+    position: relative;
+    width: 25%;
+    //padding-bottom: 1em;
+    text-align: center;
+    vertical-align: bottom;
+
+    .wizard-step:after {
+      content: counter(my-badass-counter);
+      counter-increment: my-badass-counter;
+      //position: absolute;
+      //bottom: -0.9em;
+      //left: 50%;
+      width: 1.8em;
+      height: 1.8em;
+      //margin-left: -0.9em;
+      border: 1px solid #c2bfb9;
+      border-radius: 0.9em;
+      background-color: @panel-default-bg;
+      line-height: 1.6em;
+      //bottom: 0;
+      //transform: translateY(50%);
+      display: block;
+      margin: 0 auto -1em;
+    }
+
+    &.current {
+      .bold();
+
+      .wizard-step:after {
+        .fwn();
+        background-color: @brand-info;
+        color: @brand-info-contrast;
+        border-color: @brand-info-contrast;
+      }
+    }
+
+    &.done {
+      .text-muted();
+
+      .wizard-step:after {
+        font-family: @ci-font-family;
+        content: @ci-check;
+        background-color: @brand-success;
+        color: @brand-success-contrast;
+        border-color: @brand-success-contrast;
+      }
+    }
+  }
+}

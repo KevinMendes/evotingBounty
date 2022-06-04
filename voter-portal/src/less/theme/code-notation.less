@@ -1,0 +1,59 @@
+.code-notation {
+  display: inline-block;
+  padding: 1px;
+  //margin-bottom: 2.500em;
+  border: 1px solid @border-color;
+
+  .code-notation-hd {
+    padding: 0.313em 0.750em;
+    background-color: #f0f0f0;
+    line-height: 3em;
+
+    svg {
+      float: left;
+
+      [dir="rtl"] & {
+        float: right;
+      }
+    }
+
+    .control-label {
+      display: inline-block;
+      margin: 0 1em;
+    }
+  }
+
+  .code-notation-content {
+    padding: 0.625em;
+  }
+
+  .code-notation-info {
+    margin-bottom: 1em;
+    //padding: 0 1em;
+    color: @text-muted;
+  }
+
+  .form-control-msg {
+    line-height: 1.4em;
+
+    .icon {
+      height: 1.5em;
+    }
+  }
+
+  .has-warning .form-control-msg {
+    svg {
+      fill: @brand-warning-contrast;
+    }
+  }
+
+  .has-error .form-control-msg {
+    svg {
+      fill: @brand-danger-contrast;
+    }
+  }
+
+  .form-control-msg:after {
+    left: -1px;
+  }
+}

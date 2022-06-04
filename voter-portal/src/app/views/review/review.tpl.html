@@ -1,0 +1,389 @@
+<form class="form-block">
+
+	<!-- content-main -->
+	<div class="content-main">
+
+		<!-- alert toast -->
+		<toast-alert class="toast header-height" data-ng-class="{'is-closed': errors.alertClosed}"
+					 data-ng-if="errors.validationHasError || errors.voteFailed">
+			<div aria-live="polite" data-ng-switch data-on="errors.validationHasError" id="alert_main" role="alert">
+				<div data-ng-switch data-ng-switch-when="true" data-on="errors.validationErrorMsg">
+					<div class="alert alert-warning" data-ng-switch-when="ELECTION_OVER_DATE">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+              </svg>
+            </span>
+						<p class="alert-text" translate>Sorry, the Election is over</p>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+					<div class="alert alert-warning" data-ng-switch-when="ELECTION_NOT_STARTED">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+              </svg>
+            </span>
+						<p class="alert-text" translate>Sorry, the Election has not started yet</p>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+					<div class="alert alert-danger" data-ng-switch-when="CONNECTION_ERROR">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </span>
+						<p class="alert-text" translate>The Internet connection is lost. Please try again later.</p>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+					<div class="alert alert-danger" data-ng-switch-when="AUTH_TOKEN_EXPIRED">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </span>
+						<p class="alert-text" translate>Your session has expired. Please log in again.</p>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+					<div class="alert alert-danger" data-ng-switch-when="BLOCKED">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </span>
+						<p class="alert-text" translate>This Voting Card is inactive. Please contact the Support team for further details.</p>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+					<div class="alert alert-danger" data-ng-switch-when="VALIDATION_ERROR">
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </span>
+						<p class="alert-text" translate>The vote you're trying to send is invalid. Please restart the voting process.</p>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+					<div class="alert alert-danger" data-ng-switch-default>
+            <span class="alert-icon">
+              <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+              </svg>
+            </span>
+						<p class="alert-text" translate>We are experiencing an internal server error. Please try again later or contact the Support
+							team</p>
+						<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+							<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+								<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+							</svg>
+							<span class="sr-only" translate>Close</span>
+						</button>
+					</div>
+				</div>
+				<div class="alert alert-danger" data-ng-switch-default>
+          <span class="alert-icon">
+            <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/>
+            </svg>
+          </span>
+					<p class="alert-text" translate>We are experiencing an internal server error. Please try again later or contact the Support
+						team</p>
+					<button class="btn alert-close" data-ng-click="dissmissToast()" title="{{'Close message'|translate}}" type="button">
+						<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+						</svg>
+						<span class="sr-only" translate>Close</span>
+					</button>
+				</div>
+			</div>
+		</toast-alert>
+
+		<div class="container">
+
+			<h1 class="sr-only" data-auto-focus tabindex="-1" translate>Review and Seal</h1>
+			<div class="page-header">
+				<div breadcrumbs current-step-num="2"></div>
+				<div class="page-title mtn">
+					<p translate>Review your choices and seal your ballot.</p>
+				</div>
+			</div>
+
+			<!-- contest -->
+			<div class="ballot-group" data-ng-repeat="contest in elections" ng-class="{ 'contest--blank-vote': contest.isBlank }">
+
+				<!-- options -->
+				<div data-ng-if="contest.isType(contestTypes.OPTIONS)">
+					<div data-layout="row" data-layout-align="start end" data-layout-grid>
+						<div class="ballot-group-title mbm">
+							<h2 id="contest_id_{{contest.id}}">
+								{{contest.title}}
+							</h2>
+						</div>
+						<div class="mbm">
+							<a aria-describedby="contest_id_{{contest.id}}" class="btn btn-link has-icon text-right phn"
+							   href="#/choose#contest_{{contest.id}}">
+								<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24"
+									 xmlns="http://www.w3.org/2000/svg">
+									<path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+									/>
+								</svg>
+								<span class="hidden-xs" translate>Change choices</span>
+								<span class="sr-only">: {{contest.title}}</span>
+							</a>
+						</div>
+					</div>
+					<div class="ballot-options" data-ng-repeat="question in contest.questions">
+						<div data-layout="row" data-layout-wrap>
+							<div class="ballot-options-question" data-flex data-flex-xs="100">
+								<div class="h3 ballot-question-title man">
+									<h3 data-markdown-to-html="question.text" id="question_{{question.getQualifiedId()}}"></h3>
+								</div>
+							</div>
+							<div class="ballot-options-answer" data-flex-xs="100" data-ng-class="{'alert-danger': question.error}">
+								<p class="text-result man" data-layout="row" data-layout-align="start center">
+									<span class="sr-only" data-ng-if="isBlankImplicitAnswer(question)" translate>You did not select any option. It will be counted as:</span>
+									<span data-flex>{{getOption(question)}}</span>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /options -->
+
+				<!-- candidates only -->
+				<div data-ng-if="contest.isType(contestTypes.CANDIDATES_ONLY)">
+					<div data-layout="row" data-layout-align="start end" data-layout-grid>
+						<div class="ballot-group-title mbm">
+							<h2 id="contest_id_{{contest.id}}">
+								{{contest.title}}
+							</h2>
+						</div>
+						<div class="mbm">
+							<a aria-describedby="contest_id_{{contest.id}}" class="btn btn-link has-icon text-right phn"
+							   href="#/choose#contest_{{contest.id}}">
+								<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24"
+									 xmlns="http://www.w3.org/2000/svg">
+									<path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+									/>
+								</svg>
+								<span class="hidden-xs" translate>Change choices</span>
+								<span class="sr-only">: {{contest.title}}</span>
+							</a>
+						</div>
+					</div>
+					<div>
+						<div class="ballot-election">
+							<!-- ballot-candidate -->
+							<ul class="list-unstyled mbn">
+								<li class="ballot-election-candidate" data-ng-repeat="candidate in contest.selectedCandidates track by $index">
+									<div data-layout="row">
+										<div class="ballot-election-name" data-flex>
+											<div data-ng-if="candidate.isBlank">
+												<div class="text-result overflow-x-auto">
+                                                    <span class="sr-only"
+														  translate>Position {{$index + 1}} of {{contest.selectedCandidates.length}}:</span>
+													<span class="sr-only" translate>You did not select any option. It will be counted as:</span>
+													{{candidate.name}}
+												</div>
+											</div>
+											<div data-ng-if="!candidate.isBlank">
+												<div class="text-result overflow-x-auto">
+                                                    <span class="sr-only"
+														  translate>Position {{$index + 1}} of {{contest.selectedCandidates.length}}:</span>
+													{{candidate.name}}
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /candidates only -->
+
+				<!-- elections -->
+				<div data-ng-if="contest.isType(contestTypes.LISTS_AND_CANDIDATES)">
+					<div data-layout="row" data-layout-align="start end" data-layout-grid>
+						<div class="ballot-group-title mbm">
+							<h2 id="contest_id_{{contest.id}}">
+								{{contest.title}}
+							</h2>
+						</div>
+						<div class="mbm">
+							<a aria-describedby="contest_id_{{contest.id}}" class="btn btn-link has-icon text-right phn"
+							   href="#/choose#contest_{{contest.id}}">
+								<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24"
+									 xmlns="http://www.w3.org/2000/svg">
+									<path d="M3 17.25V21h3.75L17.81 9.94l-3.75-3.75L3 17.25zM20.71 7.04c.39-.39.39-1.02 0-1.41l-2.34-2.34c-.39-.39-1.02-.39-1.41 0l-1.83 1.83 3.75 3.75 1.83-1.83z"
+									/>
+								</svg>
+								<span class="hidden-xs" translate>Change choices</span>
+								<span class="sr-only">: {{contest.title}}</span>
+							</a>
+						</div>
+					</div>
+					<div data-ng-repeat="selectedList in contest.selectedLists">
+						<div class="ballot-election" data-ng-if="selectedList.chosen">
+							<!-- ballot-party -->
+							<div class="ballot-election-party">
+								<div data-layout="row">
+									<div class="ballot-election-name" data-flex>
+										<h3 class="man text-result">
+											<span class="sr-only" data-ng-if="selectedList.isBlank" translate>You did not select any list. It will be counted as:</span>
+											<span class="sr-only" data-ng-if="!selectedList.isBlank" translate>Selected list:</span>
+											<span>{{selectedList.name}}</span>
+										</h3>
+										<p class="mbn text-muted text-result" data-ng-if="selectedList.details.listType_apparentment">
+											<span class="fss">{{selectedList.details.listType_apparentment}}</span>
+										</p>
+										<p class="mbn text-muted text-result" data-ng-if="selectedList.details.listType_sousApparentment">
+											<span class="fss">{{selectedList.details.listType_sousApparentment}}</span>
+										</p>
+										<p class="mbn text-muted" ng-repeat="description in selectedList.description">{{description}}</p>
+									</div>
+								</div>
+							</div>
+							<!-- ballot-candidate -->
+							<ul class="list-unstyled mbn">
+								<li class="ballot-election-candidate" data-ng-repeat="candidate in contest.selectedCandidates track by $index">
+									<div data-layout="row">
+										<div class="ballot-election-name" data-flex>
+											<div data-ng-if="candidate.isBlank">
+												<div class="text-result overflow-x-auto">
+                                                    <span class="sr-only"
+														  translate>Position {{$index + 1}} of {{contest.selectedCandidates.length}}:</span>
+													<span class="sr-only" translate>You did not select any option. It will be counted as:</span>
+													{{candidate.name}}
+												</div>
+											</div>
+											<div data-ng-if="!candidate.isBlank">
+												<div class="text-result overflow-x-auto">
+                                                    <span class="sr-only"
+														  translate>Position {{$index + 1}} of {{contest.selectedCandidates.length}}:</span>
+													{{candidate.name}}
+												</div>
+											</div>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<!-- /elections -->
+
+			</div>
+			<!-- /contest -->
+
+		</div>
+	</div>
+
+	<!-- navigation -->
+	<nav class="container navigation">
+		<h2 class="sr-only" id="title_sealing" translate>Information on sealing</h2>
+		<div class="alert alert-info mtn" id="alert_sealing">
+			<p aria-labelledby="title_sealing" class="w-100" data-layout="row" data-layout-align="start start">
+				<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+					<path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-6h2v6zm0-8h-2V7h2v2z"/>
+				</svg>
+				<span class="phm" data-flex translate>After sealing the ballot you will not be able to change your choices</span>
+			</p>
+		</div>
+		<h2 class="sr-only" id="title_navigation" translate>Continue process</h2>
+		<div data-layout="row" data-layout-wrap>
+			<div class="mbm" data-flex-xs="100">
+				<button aria-describedby="alert_sealing" class="btn btn-primary btn-block has-icon" data-ng-click="sendVote()"
+						data-ng-disabled="data.processing"
+						id="btn_continue_to_validate"
+						type="submit">
+					<svg aria-hidden="true" class="ci-spin" data-ng-if="data.processing" focusable="false" height="24" viewBox="0 0 24 24"
+						 width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.23,12.63A0.56,0.56,0,0,1,17.79,12h0a0.56,0.56,0,0,1,.44-0.63h4.32A0.56,0.56,0,0,1,23,12h0a0.56,0.56,0,0,1-.44.63H18.23Zm-16.79,0A0.56,0.56,0,0,1,1,12H1a0.56,0.56,0,0,1,.44-0.63H5.76a0.56,0.56,0,0,1,.44.63h0a0.56,0.56,0,0,1-.44.63H1.44Zm9.93,5.6A0.56,0.56,0,0,1,12,17.79h0a0.56,0.56,0,0,1,.63.44v4.32A0.56,0.56,0,0,1,12,23h0a0.56,0.56,0,0,1-.63-0.44V18.23Zm0-16.79A0.56,0.56,0,0,1,12,1h0a0.56,0.56,0,0,1,.63.44V5.76a0.56,0.56,0,0,1-.63.44h0a0.56,0.56,0,0,1-.63-0.44V1.44ZM17,15.76A0.56,0.56,0,0,1,17,15h0a0.56,0.56,0,0,1,.71-0.31l3.7,2.23a0.56,0.56,0,0,1,.06.77h0a0.56,0.56,0,0,1-.71.31ZM2.63,7.09a0.56,0.56,0,0,1-.05-0.77h0A0.56,0.56,0,0,1,3.28,6L7,8.24A0.56,0.56,0,0,1,7,9H7a0.56,0.56,0,0,1-.71.31L2.63,7.09h0ZM8.24,17A0.56,0.56,0,0,1,9,17H9a0.56,0.56,0,0,1,.31.71l-2.23,3.7a0.56,0.56,0,0,1-.77.05h0A0.56,0.56,0,0,1,6,20.72L8.24,17h0ZM16.9,2.63a0.56,0.56,0,0,1,.77-0.05h0a0.56,0.56,0,0,1,.31.71L15.76,7A0.56,0.56,0,0,1,15,7h0a0.56,0.56,0,0,1-.31-0.7l2.23-3.7h0ZM7,15.76A0.56,0.56,0,0,0,7,15H7a0.56,0.56,0,0,0-.71-0.31l-3.7,2.23a0.56,0.56,0,0,0-.05.77h0a0.56,0.56,0,0,0,.71.31ZM21.37,7.09a0.56,0.56,0,0,0,.05-0.77h0A0.56,0.56,0,0,0,20.71,6L17,8.24A0.56,0.56,0,0,0,17,9h0a0.57,0.57,0,0,0,.71.31l3.7-2.23h0ZM15.76,17A0.56,0.56,0,0,0,15,17h0a0.56,0.56,0,0,0-.31.71l2.23,3.7a0.57,0.57,0,0,0,.77.05h0A0.56,0.56,0,0,0,18,20.72L15.76,17h0ZM7.09,2.63a0.56,0.56,0,0,0-.77-0.05h0A0.56,0.56,0,0,0,6,3.28L8.24,7A0.57,0.57,0,0,0,9,7H9a0.56,0.56,0,0,0,.31-0.7L7.1,2.63h0Z"/>
+					</svg>
+					<span aria-hidden="true" data-ng-if="data.processing" translate>Sealing ballot</span>
+					<span data-ng-if="!data.processing" translate>Seal ballot</span>
+				</button>
+			</div>
+			<div data-flex data-flex-xs="100">
+				<a aria-expanded="false" class="btn btn-link has-icon" data-ng-click="cancelVote()" data-ng-disabled="data.processing" href=""
+				   id="btn_cancel">
+					<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+					</svg>
+					<span translate>Cancel the process</span>
+				</a>
+			</div>
+		</div>
+	</nav>
+	<!-- /navigation -->
+
+</form>
+
+<div class="review-modal-backdrop modal-backdrop fade in" data-ng-if="data.processing"></div>
+<div class="review-modal modal fade in" data-ng-if="data.processing" role="alert">
+	<div class="modal-sending">
+		<div class="container">
+			<h1 class="sr-only" data-auto-focus role="alert" tabindex="-1" translate>Sealing ballot. Please wait.</h1>
+			<p aria-hidden="true" class="h1">{{data.progress.text|translate}}</p>
+			<ul class="list-unstyled">
+				<li data-layout="row">
+					<svg aria-hidden="true" class="ci-spin" data-ng-if="data.progress.step1.running" focusable="false" height="24"
+						 viewBox="0 0 24 24"
+						 width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.23,12.63A0.56,0.56,0,0,1,17.79,12h0a0.56,0.56,0,0,1,.44-0.63h4.32A0.56,0.56,0,0,1,23,12h0a0.56,0.56,0,0,1-.44.63H18.23Zm-16.79,0A0.56,0.56,0,0,1,1,12H1a0.56,0.56,0,0,1,.44-0.63H5.76a0.56,0.56,0,0,1,.44.63h0a0.56,0.56,0,0,1-.44.63H1.44Zm9.93,5.6A0.56,0.56,0,0,1,12,17.79h0a0.56,0.56,0,0,1,.63.44v4.32A0.56,0.56,0,0,1,12,23h0a0.56,0.56,0,0,1-.63-0.44V18.23Zm0-16.79A0.56,0.56,0,0,1,12,1h0a0.56,0.56,0,0,1,.63.44V5.76a0.56,0.56,0,0,1-.63.44h0a0.56,0.56,0,0,1-.63-0.44V1.44ZM17,15.76A0.56,0.56,0,0,1,17,15h0a0.56,0.56,0,0,1,.71-0.31l3.7,2.23a0.56,0.56,0,0,1,.06.77h0a0.56,0.56,0,0,1-.71.31ZM2.63,7.09a0.56,0.56,0,0,1-.05-0.77h0A0.56,0.56,0,0,1,3.28,6L7,8.24A0.56,0.56,0,0,1,7,9H7a0.56,0.56,0,0,1-.71.31L2.63,7.09h0ZM8.24,17A0.56,0.56,0,0,1,9,17H9a0.56,0.56,0,0,1,.31.71l-2.23,3.7a0.56,0.56,0,0,1-.77.05h0A0.56,0.56,0,0,1,6,20.72L8.24,17h0ZM16.9,2.63a0.56,0.56,0,0,1,.77-0.05h0a0.56,0.56,0,0,1,.31.71L15.76,7A0.56,0.56,0,0,1,15,7h0a0.56,0.56,0,0,1-.31-0.7l2.23-3.7h0ZM7,15.76A0.56,0.56,0,0,0,7,15H7a0.56,0.56,0,0,0-.71-0.31l-3.7,2.23a0.56,0.56,0,0,0-.05.77h0a0.56,0.56,0,0,0,.71.31ZM21.37,7.09a0.56,0.56,0,0,0,.05-0.77h0A0.56,0.56,0,0,0,20.71,6L17,8.24A0.56,0.56,0,0,0,17,9h0a0.57,0.57,0,0,0,.71.31l3.7-2.23h0ZM15.76,17A0.56,0.56,0,0,0,15,17h0a0.56,0.56,0,0,0-.31.71l2.23,3.7a0.57,0.57,0,0,0,.77.05h0A0.56,0.56,0,0,0,18,20.72L15.76,17h0ZM7.09,2.63a0.56,0.56,0,0,0-.77-0.05h0A0.56,0.56,0,0,0,6,3.28L8.24,7A0.57,0.57,0,0,0,9,7H9a0.56,0.56,0,0,0,.31-0.7L7.1,2.63h0Z"
+						/>
+					</svg>
+					<svg aria-hidden="true" data-ng-if="data.progress.step1.success" focusable="false" height="24" viewBox="0 0 24 24"
+						 width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+					</svg>
+					<span class="phm" data-flex role="alert">{{data.progress.step1.text|translate}}</span>
+					<!-- Sealing Ballot -->
+				</li>
+				<li data-layout="row">
+					<svg aria-hidden="true" class="ci-spin" data-ng-if="data.progress.step2.running" focusable="false" height="24"
+						 viewBox="0 0 24 24"
+						 width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M18.23,12.63A0.56,0.56,0,0,1,17.79,12h0a0.56,0.56,0,0,1,.44-0.63h4.32A0.56,0.56,0,0,1,23,12h0a0.56,0.56,0,0,1-.44.63H18.23Zm-16.79,0A0.56,0.56,0,0,1,1,12H1a0.56,0.56,0,0,1,.44-0.63H5.76a0.56,0.56,0,0,1,.44.63h0a0.56,0.56,0,0,1-.44.63H1.44Zm9.93,5.6A0.56,0.56,0,0,1,12,17.79h0a0.56,0.56,0,0,1,.63.44v4.32A0.56,0.56,0,0,1,12,23h0a0.56,0.56,0,0,1-.63-0.44V18.23Zm0-16.79A0.56,0.56,0,0,1,12,1h0a0.56,0.56,0,0,1,.63.44V5.76a0.56,0.56,0,0,1-.63.44h0a0.56,0.56,0,0,1-.63-0.44V1.44ZM17,15.76A0.56,0.56,0,0,1,17,15h0a0.56,0.56,0,0,1,.71-0.31l3.7,2.23a0.56,0.56,0,0,1,.06.77h0a0.56,0.56,0,0,1-.71.31ZM2.63,7.09a0.56,0.56,0,0,1-.05-0.77h0A0.56,0.56,0,0,1,3.28,6L7,8.24A0.56,0.56,0,0,1,7,9H7a0.56,0.56,0,0,1-.71.31L2.63,7.09h0ZM8.24,17A0.56,0.56,0,0,1,9,17H9a0.56,0.56,0,0,1,.31.71l-2.23,3.7a0.56,0.56,0,0,1-.77.05h0A0.56,0.56,0,0,1,6,20.72L8.24,17h0ZM16.9,2.63a0.56,0.56,0,0,1,.77-0.05h0a0.56,0.56,0,0,1,.31.71L15.76,7A0.56,0.56,0,0,1,15,7h0a0.56,0.56,0,0,1-.31-0.7l2.23-3.7h0ZM7,15.76A0.56,0.56,0,0,0,7,15H7a0.56,0.56,0,0,0-.71-0.31l-3.7,2.23a0.56,0.56,0,0,0-.05.77h0a0.56,0.56,0,0,0,.71.31ZM21.37,7.09a0.56,0.56,0,0,0,.05-0.77h0A0.56,0.56,0,0,0,20.71,6L17,8.24A0.56,0.56,0,0,0,17,9h0a0.57,0.57,0,0,0,.71.31l3.7-2.23h0ZM15.76,17A0.56,0.56,0,0,0,15,17h0a0.56,0.56,0,0,0-.31.71l2.23,3.7a0.57,0.57,0,0,0,.77.05h0A0.56,0.56,0,0,0,18,20.72L15.76,17h0ZM7.09,2.63a0.56,0.56,0,0,0-.77-0.05h0A0.56,0.56,0,0,0,6,3.28L8.24,7A0.57,0.57,0,0,0,9,7H9a0.56,0.56,0,0,0,.31-0.7L7.1,2.63h0Z"
+						/>
+					</svg>
+					<svg aria-hidden="true" data-ng-if="data.progress.step2.success" focusable="false" height="24" viewBox="0 0 24 24"
+						 width="24" xmlns="http://www.w3.org/2000/svg">
+						<path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+					</svg>
+					<span class="phm" data-flex role="alert">{{data.progress.step2.text|translate}}</span>
+					<!-- Generating choice codes -->
+				</li>
+			</ul>
+		</div>
+	</div>
+</div>

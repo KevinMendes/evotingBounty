@@ -1,0 +1,21 @@
+{
+  "languages": [
+	{
+	  "code": "fr_CH",
+	  "name": "Français"
+	},
+	{
+	  "code": "de_CH",
+	  "name": "Deutsch"
+	},
+	{
+	  "code": "it_CH",
+	  "name": "Italiano"
+	},
+	{
+	  "code": "rm_CH",
+	  "name": "Rumantsch"
+	}
+  ],
+  "default": "fr_CH"
+}

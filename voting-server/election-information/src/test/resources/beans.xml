@@ -1,0 +1,23 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+			 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+			 bean-discovery-mode="all">
+	<decorators>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.infrastructure.persistence.VoteCastCodeRepositoryDecorator</class>
+		<class>
+			ch.post.it.evoting.votingserver.electioninformation.services.domain.service.confirmation.ConfirmationMessageValidationServiceDecorator
+		</class>
+		<class>
+			ch.post.it.evoting.votingserver.electioninformation.services.domain.service.confirmation.ConfirmationMessageCredentialIdValidationDecorator
+		</class>
+		<class>
+			ch.post.it.evoting.votingserver.electioninformation.services.domain.service.confirmation.ConfirmationMessageElectionDatesValidationDecorator
+		</class>
+		<class>
+			ch.post.it.evoting.votingserver.electioninformation.services.domain.service.confirmation.ConfirmationMessageMathematicalGroupValidationDecorator
+		</class>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.domain.service.confirmation.ConfirmationMessageSignatureValidationDecorator
+		</class>
+	</decorators>
+
+</beans>

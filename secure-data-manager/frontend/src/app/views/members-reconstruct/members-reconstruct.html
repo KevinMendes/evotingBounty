@@ -1,0 +1,122 @@
+<md-dialog class="full-screen">
+    <md-toolbar>
+        <div class="md-toolbar-tools">
+            <h2 class="flex"><span translate>Activate board</span> {{selectedAuthority.alias}}</h2>
+            <div>
+                <md-button aria-label="{{'Close dialog' | translate}}" class="md-icon-button" ng-click="cancel()" ng-if="!twoStepsClosing">
+                    <md-icon md-svg-src="assets/icons/ic_close_24px.svg"></md-icon>
+                </md-button>
+                <div class="constitute-manager-close-question" ng-if="twoStepsClosing">
+                    <span translate>Confirm close?</span>
+                    <md-button aria-label="{{'Close dialog' | translate}}" class="md-icon-button" ng-click="cancel()">
+                        <span translate>Yes</span>
+                    </md-button>
+                    <md-button aria-label="{{'Close dialog' | translate}}" class="md-icon-button" ng-click="discard()">
+                        <span translate>No</span>
+                    </md-button>
+                </div>
+                <div class="constitute-manager-close" ng-if="twoStepsClosing">
+                    <span translate>Please note that if you cancel the Activation process at this stage you will need to start it again from scratch.</span>
+                </div>
+            </div>
+        </div>
+    </md-toolbar>
+    <md-dialog-content class="md-dialog-content" role="document" tabindex="-1">
+        <div class="md-dialog-content-body">
+
+            <div class="constitute-manager-wrapper">
+                <div>
+                    <p>{{activateBoardMessage()}}</p>
+                    <p translate>The minimum number of required members is {{selectedAuthority.minimumThreshold}}</p>
+                    <md-button class="md-primary md-raised" ng-click="activateBoard()"
+                               ng-disabled="numberOfSuccessfullyWrittenSmartCards<selectedAuthority.minimumThreshold">
+                        <md-icon alt="{{'Activate' | translate}}" md-svg-src="assets/icons/ic_admin_board.svg"></md-icon>
+                        <span translate>Activate</span>
+                    </md-button>
+                    <hr>
+                </div>
+                <div class="constitute-manager">
+                    <div class="constitute-manager-members">
+                        <md-list>
+                            <md-list-item ng-repeat="member in listOfMembers track by $index">
+                                <md-button id="memberButton_{{$index}}" ng-class="{'is-current': selectedMember === member && !members[member].status, 'is-done': members[member].status}"
+                                           ng-click="select(member);"
+                                           ng-disabled="selectedMember === member || initializingAuthority || members[member].status">
+                                    <md-icon aria-label="{{'Member' | translate}}" class="icon-idle"
+                                             md-svg-src="assets/icons/ic_person_24px.svg"></md-icon>
+                                    <md-icon aria-label="{{'Current' | translate}}" class="icon-current"
+                                             md-svg-src="assets/icons/ic_arrow_forward_24px.svg"></md-icon>
+                                    <md-icon aria-label="{{'Done' | translate}}" class="icon-done"
+                                             md-svg-src="assets/icons/ic_done_24px.svg"></md-icon>
+                                    {{member}}
+                                </md-button>
+                            </md-list-item>
+                        </md-list>
+                    </div>
+                    <div class="constitute-manager-card">
+                        <!--
+                            states: isNotReady, isDone
+                            steps: introduceCard, reading, introducePIN, recovering, extractCard
+                        -->
+                        <div class="constitute-manager-member" ng-if="initializingAuthority">
+                            <div>
+                                <h3 class="md-title text-center">
+                                    <md-icon aria-label="{{'Reading...' | translate}}" class="spin"
+                                             md-svg-src="assets/icons/ic_spinner_24px.svg"></md-icon>
+                                    <span translate>Starting the activation...</span>
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="constitute-manager-member" ng-show="!initializingAuthority && initiallySelected">
+                            <h3 class="constitute-manager-member-title md-display-1">{{selectedMember}}</h3>
+                            <div class="constitute-manager-member-interaction">
+                                <div ng-if="wizardStep === 'introduceCard'">
+                                    <p class="md-title text-center" translate>Introduce your card into the smartcard reader</p>
+                                    <md-icon aria-label="{{'Introduce your card' | translate}}" class="card-icon"
+                                             md-svg-src="assets/icons/ic_card_insert.svg"></md-icon>
+                                </div>
+                                <div ng-if="wizardStep === 'reading'">
+                                    <p class="md-title text-center">
+                                        <md-icon aria-label="{{'Reading...' | translate}}" class="spin"
+                                                 md-svg-src="assets/icons/ic_spinner_24px.svg"></md-icon>
+                                        <span translate>Reading...</span>
+                                    </p>
+                                </div>
+                                <div ng-show="wizardStep === 'introducePIN'">
+                                    <div>
+                                        <md-input-container>
+                                            <label translate>Write your password</label>
+                                            <input id="pin1" ng-keypress="pin1_keypress($event)" ng-model="pin.value" type="password">
+                                        </md-input-container>
+                                    </div>
+                                    <div>
+                                        <md-button class="md-primary md-raised" ng-click="validatePin()">
+                                            <span translate>Ok</span>
+                                        </md-button>
+                                    </div>
+                                </div>
+                                <div ng-if="wizardStep === 'recovering'">
+                                    <p class="md-title text-center">
+                                        <md-icon aria-label="{{'Reading...' | translate}}" class="spin"
+                                                 md-svg-src="assets/icons/ic_spinner_24px.svg"></md-icon>
+                                        <span translate>Recovering...</span>
+                                    </p>
+                                </div>
+                                <div ng-if="wizardStep === 'extractCard'">
+                                    <p class="alert alert-success">
+                                        <md-icon md-svg-src="assets/icons/ic_done_24px.svg"></md-icon>
+                                        <span translate>Smartcard read</span>
+                                    </p>
+                                    <p class="md-title text-center" translate>Extract your card</p>
+                                    <md-icon aria-label="{{'Extract your card' | translate}}" class="card-icon"
+                                             md-svg-src="assets/icons/ic_card_extract.svg"></md-icon>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </md-dialog-content>
+</md-dialog>

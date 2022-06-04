@@ -1,0 +1,77 @@
+//
+// Breadcrumbs
+// --------------------------------------------------
+
+.breadcrumb-wrapper {
+  background-color: @breadcrumb-bg;
+}
+
+.breadcrumb {
+  display: none;
+}
+
+@media (min-width: @screen-sm) {
+
+  .breadcrumb {
+    font-size: 1em; //14px in 14em base
+    display: block;
+    padding: @breadcrumb-padding-vertical @breadcrumb-padding-horizontal;
+    margin-bottom: 0;
+    list-style: none;
+    background-color: @breadcrumb-bg;
+    border-radius: @border-radius-base;
+
+    a {
+      color: @breadcrumb-color;
+    }
+
+    .active {
+      font-family: 'Roboto Bold', @font-family-sans-serif, sans-serif;
+      color: @breadcrumb-active-color;
+    }
+
+    > li {
+      display: inline-block;
+      position: relative;
+      padding: 0 2.143em 0 0;
+      line-height: 3.143em;
+
+      // Textual separation
+      &:after {
+        position: absolute;
+        right: 0.357em;
+        top: 50%;
+        margin-top: -0.5em;
+        line-height: 1em;
+        font-family: "customicons", sans-serif;
+        content: @ci-breadcrumb-separator;
+        color: @breadcrumb-separator-color;
+      }
+
+      &:last-child:after {
+        content: "" !important;
+      }
+
+      // RTL state
+      [dir="rtl"] & {
+        padding: 0 0 0 2.143em;
+        // Textual separation
+        &:after {
+          left: 0.357em;
+          right: auto;
+          content: @ci-breadcrumb-separator-rtl;
+        }
+
+        // Home element
+        &:first-child a {
+          padding: 0 2.071em 0 0;
+
+          &:before {
+            right: 0;
+            left: auto;
+          }
+        }
+      }
+    }
+  }
+}

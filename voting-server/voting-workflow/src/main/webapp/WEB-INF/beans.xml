@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+			 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+													 http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+			 bean-discovery-mode="all">
+	<decorators>
+		<class>ch.post.it.evoting.votingserver.votingworkflow.services.domain.service.VotingCardStateServiceDecorator</class>
+		<class>ch.post.it.evoting.votingserver.votingworkflow.services.infrastructure.remote.AuthenticationTokenRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.votingworkflow.services.infrastructure.remote.ValidationRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.votingworkflow.services.infrastructure.remote.VoteRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.votingworkflow.services.infrastructure.remote.ConfirmationInformationRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.votingworkflow.services.infrastructure.remote.VoteCastCodeRepositoryDecorator</class>
+	</decorators>
+</beans>

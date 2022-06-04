@@ -1,0 +1,80 @@
+// status-box
+// ----------------------------------------
+
+.status-box {
+  padding: ($layout-gutter-width / 2) $layout-gutter-width;
+  background-color: $status-box-bg;
+  color: $status-box-text;
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, .2), 0px 1px 1px 0px rgba(0, 0, 0, .14), 0px 2px 1px -1px rgba(0, 0, 0, .12);
+  font-size: .875em;
+
+  .md-title {
+    margin: .4em 0;
+  }
+
+  hr {
+    margin: .5em 0 1em;
+    border: none;
+    box-shadow: 0 1px rgba(0, 0, 0, .12);
+    height: 1px;
+  }
+}
+
+.status-row {
+  @include display-flex();
+  @include flex-wrap(wrap);
+  @include align-items(flex-start);
+  padding: 0 0 0 ($layout-gutter-width * 2);
+
+  [dir="rtl"] & {
+    padding: 0 ($layout-gutter-width * 2) 0 0;
+  }
+}
+
+.status-item {
+  @include display-flex();
+  @include align-items(center);
+  @include justify-content(space-between);
+  width: 9em;
+  margin: .25em 6em .25em 0;
+  line-height: 1.5em;
+}
+
+.status-batch-title {
+  @include display-flex();
+  width: 10em;
+  margin: 1.063em 1em 0 0;
+  line-height: 1.5em;
+  font-size: 1.143em;
+
+  [dir="rtl"] & {
+    margin: 1.438em 0 0 1em;
+  }
+}
+
+.status-batches {
+  @include flex(1);
+  @include display-flex();
+  overflow-y: auto;
+}
+
+.status-batch-item {
+  width: 10em;
+  min-width: 10em;
+  margin: .75em ($layout-gutter-width * 2) .5em 0;
+
+  [dir="rtl"] & {
+    margin: .75em 0 .5em ($layout-gutter-width * 2);
+  }
+
+  font-size: .857em;
+  letter-spacing: .020em;
+
+  > * {
+    margin: ($layout-gutter-width / 2) 0;
+
+    &:first-child {
+      margin-top: 0;
+    }
+  }
+}

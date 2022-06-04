@@ -1,0 +1,86 @@
+// variables-custom
+// ----------------------------------------
+
+$custom-primary-color: #004976;
+$custom-primary-dark-color: #003454;
+$custom-primary-contrast-color: #fff;
+$custom-primary-hover-color: #0069a9;
+$custom-secondary-color: #0076a8;
+$custom-secondary-contrast-color: #fff;
+$custom-secondary-hover-color: #009adb;
+
+// $button ----------------------------------------
+$button-primary: $custom-primary-color;
+$button-primary-contrast: $custom-primary-contrast-color;
+$button-primary-hover: $custom-primary-hover-color;
+$button-secondary: $custom-secondary-color;
+$button-secondary-contrast: $custom-secondary-contrast-color;
+$button-secondary-hover: $custom-secondary-hover-color;
+
+// $checkbox --------------------------------------
+$checkbox-primary: $custom-primary-color;
+$checkbox-primary-contrast: $custom-primary-contrast-color;
+
+// $dialog ----------------------------------------
+$dialog-constitute-current: $custom-primary-color;
+
+// $color -----------------------------------------
+$color-interactive: $custom-primary-color;
+
+// $empty -----------------------------------------
+$empty-icon-bg: #dcf2ff;
+
+// $input -----------------------------------------
+$input-primary: $custom-primary-color;
+
+// $nav-bar ---------------------------------------
+$nav-bar-bg: #fff;
+$nav-bar-text: #000;
+$nav-bar-bg-hover: rgba(0, 0, 0, .06);
+$nav-bar-text-active: $custom-primary-color;
+$nav-bar-ink-bar: $custom-primary-color;
+$nav-bar-disabled-bg: rgba(0, 0, 0, .12);
+$nav-bar-disabled-text: rgba(0, 0, 0, .06);
+
+// $progress-bar ----------------------------------
+$progress-bar-bg: #d0d0d0;
+$progress-bar-complete: $custom-primary-color;
+
+// $select --------------------------------------
+$select-primary: $custom-primary-color;
+$select-content-text-selected: $custom-primary-color;
+
+// $slider --------------------------------------
+$slider-primary: $custom-primary-color;
+$slider-focus-ring-primary: $custom-primary-dark-color;
+
+// $sidebar ------------------------------------
+$sidebar-bg: #dadada;
+$sidebar-text: rgba(0, 0, 0, .87);
+$sidebar-current-bg: $custom-primary-color;
+$sidebar-current-text: rgba(255, 255, 255, 0.87);
+$sidebar-border-color: rgba(0, 0, 0, .12);
+$sidebar-bg-hover: rgba(0, 0, 0, .12);
+$sidebar-icon: $custom-primary-color;
+$sidebar-icon-current: rgba(255, 255, 255, 0.87);
+$sidebar-bg-closed: $custom-primary-color;
+
+// $status-box ------------------------------------
+$status-box-bg: #eaeced;
+$status-box-text: inherit;
+
+// $table ------------------------------------
+$table-thead-bg: #eaeced;
+$table-row-hover: #edf8ff;
+
+// toolbar ------------------------------------
+$toolbar-bg: #fff;
+$toolbar-text: #000;
+$toolbar-primary-bg: $custom-primary-color;
+$toolbar-primary-bg-hover: $custom-primary-hover-color;
+$toolbar-primary-text: #fff;
+$toolbar-secondary-bg: $custom-secondary-color;
+$toolbar-secondary-bg-hover: $custom-secondary-hover-color;
+$toolbar-secondary-text: #fff;
+$toolbar-bg-light: #fff;
+$toolbar-bg-light-text: #000000;

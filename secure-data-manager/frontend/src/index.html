@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html data-ng-app="app" lang="{{langAttr}}">
+<head>
+    <meta charset="utf-8">
+    <title>Secure Data Manager</title>
+    <link href="assets/img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+    <% styles.forEach(function (file) { %>
+    <link href="<%= file %>" rel="stylesheet" type="text/css"/>
+    <% }); %>
+    <% scripts.forEach(function (file) { %>
+    <script src="<%= file %>" type="text/javascript"></script>
+    <% }); %>
+</head>
+<body data-ui-view dir="ltr">
+<div class="sv-viewport-wrapper" id="main-wrapper" ui-view="view"></div>
+</body>
+</html>

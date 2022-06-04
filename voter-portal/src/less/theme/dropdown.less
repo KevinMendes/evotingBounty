@@ -1,0 +1,101 @@
+// dropdown
+// ----------------------------------------
+
+.dropdown {
+  abbr {
+    float: left;
+
+    [dir="rtl"] {
+      float: right;
+    }
+  }
+
+  svg {
+    &.caret-arrow {
+      float: right;
+      margin: 0 0 0 0.313em;
+
+      [dir="rtl"] {
+        float: left;
+        margin: 0 0.313em 0 0;
+      }
+    }
+  }
+}
+
+.dropdown-menu {
+  left: inherit;
+  right: 0;
+  padding: 0;
+
+  li {
+    display: block;
+    // &:not(:last-child) {
+    // 	border-bottom: 1px solid lightgrey;
+    // }
+    .btn {
+      color: @dropdwown-menu-color;
+      text-align: left;
+
+      svg {
+        fill: @dropdwown-menu-color;
+      }
+
+      &:hover,
+      &:focus {
+        svg {
+          fill: @dropdown-link-hover-color;
+        }
+      }
+    }
+  }
+}
+
+.dropdown-list {
+  .dropdown-list-btn {
+    display: block;
+    width: 100%;
+    height: @input-height-base; // Make inputs at least the height of their button counterpart (base line-height + padding + border)
+    padding: @padding-base-vertical @padding-base-horizontal;
+    font-size: @font-size-base-em;
+    line-height: @line-height-base;
+    color: @input-color;
+    text-align: left;
+    background: @input-bg;
+    border: 1px solid @input-border;
+    border-radius: @input-border-radius;
+
+    &:focus {
+      .tab-focus(@outline-color);
+    }
+
+    .dropdown-list-btn-wrapper {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-box;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+
+      .dropdown-list-btn-tag {
+        -webkit-flex: 1;
+        -ms-flex: 1;
+        flex: 1;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  }
+
+  .dropdown-menu {
+    left: 0;
+    right: 0;
+
+    > li > a {
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}
+

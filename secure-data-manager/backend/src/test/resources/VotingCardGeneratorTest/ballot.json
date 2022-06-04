@@ -1,0 +1,59 @@
+{
+  "contests": [
+	{
+	  "id": "690c5dd67c1045a2bdaf1d1104417fb0",
+	  "defaultTitle": "Cantonal referendum",
+	  "alias": "1038046106-2",
+	  "defaultDescription": "Cantonal referendum",
+	  "electionEvent": {
+		"id": "1"
+	  },
+	  "template": "options",
+	  "fullBlank": "false",
+	  "options": [
+		{
+		  "attribute": "9046cb2ab17347ae8a44061d5026df3e",
+		  "id": "48fce3f1f9274fb1a66ef0a09e542748",
+		  "representation": "71"
+		}
+	  ],
+	  "attributes": [
+		{
+		  "related": [],
+		  "id": "235c5ea9ff57489aa193608dcc802328",
+		  "alias": "1045844956-EVotingAbstimmungsfrage",
+		  "correctness": "true"
+		},
+		{
+		  "related": [
+			"235c5ea9ff57489aa193608dcc802328"
+		  ],
+		  "id": "9046cb2ab17347ae8a44061d5026df3e",
+		  "alias": "a56d1cb2-1578-3636-9537-ded89b4c4715",
+		  "correctness": "false"
+		}
+	  ],
+	  "questions": [
+		{
+		  "id": "968a760bc55642cd91805540bfeef161",
+		  "max": "1",
+		  "min": "0",
+		  "accumulation": "1",
+		  "writeIn": "false",
+		  "blankAttribute": "5559d28970674b80864aafab5a175088",
+		  "writeInAttribute": "27ff29c5a71e4143b15e8c22669b9a93",
+		  "attribute": "235c5ea9ff57489aa193608dcc802328",
+		  "fusions": []
+		}
+	  ]
+	}
+  ],
+  "defaultTitle": "ballot_1038046106-1_1038046106-2_1-2",
+  "alias": "ballot_3",
+  "id": "3f66e21a953744d2a6139bc6f4c89507",
+  "electionEvent": {
+	"id": "1"
+  },
+  "defaultDescription": "ballot_1038046106-1_1038046106-2_1-2",
+  "ballotBoxes": "CT-CH-1|CT-MU-10009 + CT-CT-1|CT-MU-10009"
+}

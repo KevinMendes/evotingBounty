@@ -1,0 +1,43 @@
+<sv-sidebar id="side-menu" title-long="'Secure Data Manager'" title-short="'SDM'"></sv-sidebar>
+
+<main class="sv-main">
+
+    <ov-toolbar class="sv-toolbar">
+
+        <div ng-if="showImport()">
+            <input
+                    callback="import(path)"
+                    class="ng-hide"
+                    id="input-folder-import"
+                    nwdirectory
+                    ov-folder-input-model
+                    type="file" webkitdirectory
+            />
+            <md-button
+                    class="md-raised md-secondary"
+                    id="import"
+                    ov-folder-input="input-folder-import"
+                    title="{{'Import' || translate}}">
+                <md-icon aria-label="{{'Import' | translate}}" md-svg-src="assets/icons/ic_file_import_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Import</span>
+            </md-button>
+        </div>
+
+        <div>
+            <md-button class="md-raised md-primary"
+                       id="synchronize" ng-click="synchronize()" title="{{'Sync'|translate}}">
+                <md-icon aria-label="{{'Sync'|translate}}" md-svg-src="assets/icons/ic_autorenew_24px.svg" ng-class="{'spin':isSync()}"></md-icon>
+                <span class="hide-xs" translate>Sync</span>
+            </md-button>
+        </div>
+
+    </ov-toolbar>
+
+    <div class="sv-content">
+
+        <div class="sv-content-view" ng-cloak ng-if="state == 'election-event-list'" ui-view="election-event-list"></div>
+        <div class="sv-content-view" ng-cloak ng-if="state == 'administration-board-list'" ui-view="administration-board-list"></div>
+
+    </div>
+
+</main>

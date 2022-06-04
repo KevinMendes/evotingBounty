@@ -1,0 +1,56 @@
+// Font families
+// -------------------------
+@font-face {
+  font-family: 'Roboto Mono';
+  src: url('@{icon-font-path}robotomono-regular.eot?-ldguj1');
+  src: url('@{icon-font-path}robotomono-regular.eot?#iefix-ldguj1') format('embedded-opentype'),
+  url('@{icon-font-path}robotomono-regular.woff?-ldguj1') format('woff'),
+  url('@{icon-font-path}robotomono-regular.ttf?-ldguj1') format('truetype'),
+  url('@{icon-font-path}robotomono-regular.svg?-ldguj1#robotomono-regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.text-result {
+  font-size: 1.375em;
+  .bold();
+}
+
+.word-break {
+  word-break: break-word;
+}
+
+.word-wrap,
+.hyphenate {
+  -ms-word-break: break-all;
+  word-break: break-all;
+
+  // Non standard for webkit
+  word-break: break-word;
+
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  -ms-hyphens: auto;
+  hyphens: auto;
+}
+
+.word-wrap-xs,
+.hyphenate-xs {
+  @media (max-width: @screen-xs-max) {
+    -ms-word-break: break-all;
+    word-break: break-all;
+    word-break: break-word;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -ms-hyphens: auto;
+    hyphens: auto;
+  }
+}
+
+.overflow-x-auto {
+  overflow-x: auto;
+
+  @media (max-width: @screen-xs-max) {
+    overflow-x: auto;
+  }
+}

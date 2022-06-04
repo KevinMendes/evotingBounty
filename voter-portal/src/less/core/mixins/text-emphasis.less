@@ -1,0 +1,23 @@
+// Typography
+
+.text-emphasis-variant(@color) {
+  color: @color;
+  a&:hover {
+    color: darken(@color, 10%);
+  }
+}
+
+.bold() {
+  font-weight: inherit;
+  font-family: 'Roboto Bold', @font-family-sans-serif; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
+}
+
+.regular() {
+  font-weight: normal;
+  font-family: @font-family-sans-serif; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
+}
+
+.light() {
+  font-weight: normal;
+  font-family: 'Roboto Light', @font-family-sans-serif; /* stylelint-disable-line font-family-no-missing-generic-family-keyword */
+}

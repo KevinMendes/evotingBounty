@@ -1,0 +1,6 @@
+{
+  "identification": "dob",
+  "contestsCapabilities": {
+	"writeIns": true
+  }
+}

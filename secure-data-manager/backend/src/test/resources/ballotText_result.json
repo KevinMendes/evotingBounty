@@ -1,0 +1,404 @@
+{
+  "result": [
+    {
+      "ballot": {
+        "id": "c32a5bc357194002bbfd164425226052"
+      },
+      "locale": "fr-CH",
+      "status": "LOCKED",
+      "texts": {
+        "c32a5bc357194002bbfd164425226052": {
+          "title": "ballot_7673AAF9-A4D5-11E6-ACC2-00155D28151E",
+          "description": "ballot_7673AAF9-A4D5-11E6-ACC2-00155D28151E"
+        },
+        "c3dbefb06e334c7eaa5fce6aac2953e8": [
+          {
+            "text": "Liste sans en-tête"
+          }
+        ],
+        "d175ebdeba384632b354c6157ea0b77e": [
+          {
+            "candidateType_attribute1": "03.02"
+          },
+          {
+            "candidateType_positionOnList": "2"
+          }
+        ],
+        "390fff9a1c0340428c27e2b3d1535144": {
+          "title": "Election du Conseil d'Etat (2ème tour)",
+          "description": "Election du Conseil d'Etat (2ème tour)",
+          "howToVote": null,
+          "attributeKeys": {
+            "candidateType_attribute1": "Référence sur la position",
+            "candidateType_positionOnList": "Position on List FR",
+            "listType_attribute1": "Liste description"
+          }
+        },
+        "cef80a0a597d42a8960a25e0af4e107e": [
+          {
+            "candidateType_attribute1": "02.02"
+          },
+          {
+            "candidateType_positionOnList": "2"
+          }
+        ],
+        "9a042ded06ca431f9c8707d595590eda": [
+          {
+            "candidateType_attribute1": "03.01"
+          },
+          {
+            "candidateType_positionOnList": "1"
+          }
+        ],
+        "aa156c20c1194c17a3cc9071a6bbcd50": [
+          {
+            "listType_attribute1": "PDC - L'Entente Fribourgeoise"
+          }
+        ],
+        "8cf9ed7edbe846d2b503098d908da940": [
+          {
+            "candidateType_attribute1": "01.02"
+          },
+          {
+            "candidateType_positionOnList": "2"
+          }
+        ],
+        "2c50afb9f97a4a2fbf9ab50b2d24d9d2": [
+          {
+            "listType_attribute1": "Parti socialiste fribourgeois (PS)"
+          }
+        ],
+        "33febab6f8b746eba1aab9ff48c9df8c": [
+          {
+            "listType_attribute1": "PLR - L'Entente Fribourgeoise"
+          }
+        ],
+        "b9098800f2444d4bb2fca5983cad928d": [
+          {
+            "candidateType_attribute1": "02.01"
+          },
+          {
+            "candidateType_positionOnList": "1"
+          }
+        ],
+        "7d55f28beddd4236be1cec065181fc8e": [
+          {
+            "text": "Aucun nom sélectionné"
+          }
+        ],
+        "54e58b1cfab542208d201e7c75d14976": [
+          {
+            "candidateType_attribute1": "01.01"
+          },
+          {
+            "candidateType_positionOnList": "1"
+          }
+        ]
+      },
+      "id": "c32a5bc357194002bbfd164425226052fr-CH",
+      "signedObject": "eyJhbGciOiJQUzI1NiJ9.eyJvYmplY3RUb1NpZ24iOiJ7XCJiYWxsb3RcIjp7XCJpZFwiOlwiYzMyYTViYzM1NzE5NDAwMmJiZmQxNjQ0MjUyMjYwNTJcIn0sXCJsb2NhbGVcIjpcImZyLUNIXCIsXCJzdGF0dXNcIjpcIkxPQ0tFRFwiLFwidGV4dHNcIjp7XCJjMzJhNWJjMzU3MTk0MDAyYmJmZDE2NDQyNTIyNjA1MlwiOntcInRpdGxlXCI6XCJiYWxsb3RfNzY3M0FBRjktQTRENS0xMUU2LUFDQzItMDAxNTVEMjgxNTFFXCIsXCJkZXNjcmlwdGlvblwiOlwiYmFsbG90Xzc2NzNBQUY5LUE0RDUtMTFFNi1BQ0MyLTAwMTU1RDI4MTUxRVwifSxcImMzZGJlZmIwNmUzMzRjN2VhYTVmY2U2YWFjMjk1M2U4XCI6W3tcInRleHRcIjpcIkxpc3RlIHNhbnMgZW4tdMOqdGVcIn1dLFwiZDE3NWViZGViYTM4NDYzMmIzNTRjNjE1N2VhMGI3N2VcIjpbe1wiY2FuZGlkYXRlVHlwZV9hdHRyaWJ1dGUxXCI6XCIwMy4wMlwifSx7XCJjYW5kaWRhdGVUeXBlX3Bvc2l0aW9uT25MaXN0XCI6XCIyXCJ9XSxcIjM5MGZmZjlhMWMwMzQwNDI4YzI3ZTJiM2QxNTM1MTQ0XCI6e1widGl0bGVcIjpcIkVsZWN0aW9uIGR1IENvbnNlaWwgZCdFdGF0ICgyw6htZSB0b3VyKVwiLFwiZGVzY3JpcHRpb25cIjpcIkVsZWN0aW9uIGR1IENvbnNlaWwgZCdFdGF0ICgyw6htZSB0b3VyKVwiLFwiaG93VG9Wb3RlXCI6bnVsbCxcImF0dHJpYnV0ZUtleXNcIjp7XCJjYW5kaWRhdGVUeXBlX2F0dHJpYnV0ZTFcIjpcIlLDqWbDqXJlbmNlIHN1ciBsYSBwb3NpdGlvblwiLFwiY2FuZGlkYXRlVHlwZV9wb3NpdGlvbk9uTGlzdFwiOlwiUG9zaXRpb24gb24gTGlzdCBGUlwiLFwibGlzdFR5cGVfYXR0cmlidXRlMVwiOlwiTGlzdGUgZGVzY3JpcHRpb25cIn19LFwiY2VmODBhMGE1OTdkNDJhODk2MGEyNWUwYWY0ZTEwN2VcIjpbe1wiY2FuZGlkYXRlVHlwZV9hdHRyaWJ1dGUxXCI6XCIwMi4wMlwifSx7XCJjYW5kaWRhdGVUeXBlX3Bvc2l0aW9uT25MaXN0XCI6XCIyXCJ9XSxcIjlhMDQyZGVkMDZjYTQzMWY5Yzg3MDdkNTk1NTkwZWRhXCI6W3tcImNhbmRpZGF0ZVR5cGVfYXR0cmlidXRlMVwiOlwiMDMuMDFcIn0se1wiY2FuZGlkYXRlVHlwZV9wb3NpdGlvbk9uTGlzdFwiOlwiMVwifV0sXCJhYTE1NmMyMGMxMTk0YzE3YTNjYzkwNzFhNmJiY2Q1MFwiOlt7XCJsaXN0VHlwZV9hdHRyaWJ1dGUxXCI6XCJQREMgLSBMJ0VudGVudGUgRnJpYm91cmdlb2lzZVwifV0sXCI4Y2Y5ZWQ3ZWRiZTg0NmQyYjUwMzA5OGQ5MDhkYTk0MFwiOlt7XCJjYW5kaWRhdGVUeXBlX2F0dHJpYnV0ZTFcIjpcIjAxLjAyXCJ9LHtcImNhbmRpZGF0ZVR5cGVfcG9zaXRpb25Pbkxpc3RcIjpcIjJcIn1dLFwiMmM1MGFmYjlmOTdhNGEyZmJmOWFiNTBiMmQyNGQ5ZDJcIjpbe1wibGlzdFR5cGVfYXR0cmlidXRlMVwiOlwiUGFydGkgc29jaWFsaXN0ZSBmcmlib3VyZ2VvaXMgKFBTKVwifV0sXCIzM2ZlYmFiNmY4Yjc0NmViYTFhYWI5ZmY0OGM5ZGY4Y1wiOlt7XCJsaXN0VHlwZV9hdHRyaWJ1dGUxXCI6XCJQTFIgLSBMJ0VudGVudGUgRnJpYm91cmdlb2lzZVwifV0sXCJiOTA5ODgwMGYyNDQ0ZDRiYjJmY2E1OTgzY2FkOTI4ZFwiOlt7XCJjYW5kaWRhdGVUeXBlX2F0dHJpYnV0ZTFcIjpcIjAyLjAxXCJ9LHtcImNhbmRpZGF0ZVR5cGVfcG9zaXRpb25Pbkxpc3RcIjpcIjFcIn1dLFwiN2Q1NWYyOGJlZGRkNDIzNmJlMWNlYzA2NTE4MWZjOGVcIjpbe1widGV4dFwiOlwiQXVjdW4gbm9tIHPDqWxlY3Rpb25uw6lcIn1dLFwiNTRlNThiMWNmYWI1NDIyMDhkMjAxZTdjNzVkMTQ5NzZcIjpbe1wiY2FuZGlkYXRlVHlwZV9hdHRyaWJ1dGUxXCI6XCIwMS4wMVwifSx7XCJjYW5kaWRhdGVUeXBlX3Bvc2l0aW9uT25MaXN0XCI6XCIxXCJ9XX0sXCJpZFwiOlwiYzMyYTViYzM1NzE5NDAwMmJiZmQxNjQ0MjUyMjYwNTJmci1DSFwiLFwiZGV0YWlsc1wiOlwiMjEvMTAvMjAxOSAxMTowODowNFwiLFwic3luY2hyb25pemVkXCI6XCJ0cnVlXCJ9In0.NT39FF1dnP4xqNvNhA90l3w0U-VyVG0wnqAATa9jsUQEi_xsgDqTaW8GwJUj-8B4Xxt7MPt9UTfFh1Iq-tIDAQstNKTo9J86xfyu-y822AFUkyKjvL1O70hFkwdlGAh_VZ0wvU1TJ0p9iUWTjGk2gyki7ltYsWLblLQoCHnyDdgd0EoSUoSCdar0YrtjHMZWZaIUTrwKVuLuA4c-lJX2_LqdvGNRzsd34mwS4xG0qlxWUF4XVOTE0ZNRxS-P7EaYlCLkdb73Xo-K2o6Z3RlSB2ia5pgCH_BgjaI3l7elsWHDqsgGqTHfisCNjcwjv8RIKzmnVMXQSNLQNpPXUnMHWQ",
+      "details": "21/10/2019 11:08:04",
+      "synchronized": "true"
+    },
+    {
+      "ballot": {
+        "id": "c32a5bc357194002bbfd164425226052"
+      },
+      "locale": "de-CH",
+      "status": "LOCKED",
+      "texts": {
+        "c32a5bc357194002bbfd164425226052": {
+          "title": "ballot_7673AAF9-A4D5-11E6-ACC2-00155D28151E",
+          "description": "ballot_7673AAF9-A4D5-11E6-ACC2-00155D28151E"
+        },
+        "c3dbefb06e334c7eaa5fce6aac2953e8": [
+          {
+            "text": "Leere Liste"
+          }
+        ],
+        "d175ebdeba384632b354c6157ea0b77e": [
+          {
+            "candidateType_attribute1": "03.02"
+          },
+          {
+            "candidateType_positionOnList": "2"
+          }
+        ],
+        "390fff9a1c0340428c27e2b3d1535144": {
+          "title": "Staatsratswahl (2. Wahlgang)",
+          "description": "Staatsratswahl (2. Wahlgang)",
+          "howToVote": null,
+          "attributeKeys": {
+            "candidateType_attribute1": "Referenz auf Position",
+            "candidateType_positionOnList": "Position on List DE",
+            "listType_attribute1": "Liste Beschreibung"
+          }
+        },
+        "cef80a0a597d42a8960a25e0af4e107e": [
+          {
+            "candidateType_attribute1": "02.02"
+          },
+          {
+            "candidateType_positionOnList": "2"
+          }
+        ],
+        "9a042ded06ca431f9c8707d595590eda": [
+          {
+            "candidateType_attribute1": "03.01"
+          },
+          {
+            "candidateType_positionOnList": "1"
+          }
+        ],
+        "aa156c20c1194c17a3cc9071a6bbcd50": [
+          {
+            "listType_attribute1": "CVP - Das Freiburger Bündnis"
+          }
+        ],
+        "8cf9ed7edbe846d2b503098d908da940": [
+          {
+            "candidateType_attribute1": "01.02"
+          },
+          {
+            "candidateType_positionOnList": "2"
+          }
+        ],
+        "2c50afb9f97a4a2fbf9ab50b2d24d9d2": [
+          {
+            "listType_attribute1": "Sozialdemokratische Partei des Kantons Freiburg (SP)"
+          }
+        ],
+        "33febab6f8b746eba1aab9ff48c9df8c": [
+          {
+            "listType_attribute1": "FDP - Das Freiburger Bündnis"
+          }
+        ],
+        "b9098800f2444d4bb2fca5983cad928d": [
+          {
+            "candidateType_attribute1": "02.01"
+          },
+          {
+            "candidateType_positionOnList": "1"
+          }
+        ],
+        "7d55f28beddd4236be1cec065181fc8e": [
+          {
+            "text": "Kein Name ausgewählt"
+          }
+        ],
+        "54e58b1cfab542208d201e7c75d14976": [
+          {
+            "candidateType_attribute1": "01.01"
+          },
+          {
+            "candidateType_positionOnList": "1"
+          }
+        ]
+      },
+      "id": "c32a5bc357194002bbfd164425226052de-CH",
+      "signedObject": "eyJhbGciOiJQUzI1NiJ9.eyJvYmplY3RUb1NpZ24iOiJ7XCJiYWxsb3RcIjp7XCJpZFwiOlwiYzMyYTViYzM1NzE5NDAwMmJiZmQxNjQ0MjUyMjYwNTJcIn0sXCJsb2NhbGVcIjpcImRlLUNIXCIsXCJzdGF0dXNcIjpcIkxPQ0tFRFwiLFwidGV4dHNcIjp7XCJjMzJhNWJjMzU3MTk0MDAyYmJmZDE2NDQyNTIyNjA1MlwiOntcInRpdGxlXCI6XCJiYWxsb3RfNzY3M0FBRjktQTRENS0xMUU2LUFDQzItMDAxNTVEMjgxNTFFXCIsXCJkZXNjcmlwdGlvblwiOlwiYmFsbG90Xzc2NzNBQUY5LUE0RDUtMTFFNi1BQ0MyLTAwMTU1RDI4MTUxRVwifSxcImMzZGJlZmIwNmUzMzRjN2VhYTVmY2U2YWFjMjk1M2U4XCI6W3tcInRleHRcIjpcIkxlZXJlIExpc3RlXCJ9XSxcImQxNzVlYmRlYmEzODQ2MzJiMzU0YzYxNTdlYTBiNzdlXCI6W3tcImNhbmRpZGF0ZVR5cGVfYXR0cmlidXRlMVwiOlwiMDMuMDJcIn0se1wiY2FuZGlkYXRlVHlwZV9wb3NpdGlvbk9uTGlzdFwiOlwiMlwifV0sXCIzOTBmZmY5YTFjMDM0MDQyOGMyN2UyYjNkMTUzNTE0NFwiOntcInRpdGxlXCI6XCJTdGFhdHNyYXRzd2FobCAoMi4gV2FobGdhbmcpXCIsXCJkZXNjcmlwdGlvblwiOlwiU3RhYXRzcmF0c3dhaGwgKDIuIFdhaGxnYW5nKVwiLFwiaG93VG9Wb3RlXCI6bnVsbCxcImF0dHJpYnV0ZUtleXNcIjp7XCJjYW5kaWRhdGVUeXBlX2F0dHJpYnV0ZTFcIjpcIlJlZmVyZW56IGF1ZiBQb3NpdGlvblwiLFwiY2FuZGlkYXRlVHlwZV9wb3NpdGlvbk9uTGlzdFwiOlwiUG9zaXRpb24gb24gTGlzdCBERVwiLFwibGlzdFR5cGVfYXR0cmlidXRlMVwiOlwiTGlzdGUgQmVzY2hyZWlidW5nXCJ9fSxcImNlZjgwYTBhNTk3ZDQyYTg5NjBhMjVlMGFmNGUxMDdlXCI6W3tcImNhbmRpZGF0ZVR5cGVfYXR0cmlidXRlMVwiOlwiMDIuMDJcIn0se1wiY2FuZGlkYXRlVHlwZV9wb3NpdGlvbk9uTGlzdFwiOlwiMlwifV0sXCI5YTA0MmRlZDA2Y2E0MzFmOWM4NzA3ZDU5NTU5MGVkYVwiOlt7XCJjYW5kaWRhdGVUeXBlX2F0dHJpYnV0ZTFcIjpcIjAzLjAxXCJ9LHtcImNhbmRpZGF0ZVR5cGVfcG9zaXRpb25Pbkxpc3RcIjpcIjFcIn1dLFwiYWExNTZjMjBjMTE5NGMxN2EzY2M5MDcxYTZiYmNkNTBcIjpbe1wibGlzdFR5cGVfYXR0cmlidXRlMVwiOlwiQ1ZQIC0gRGFzIEZyZWlidXJnZXIgQsO8bmRuaXNcIn1dLFwiOGNmOWVkN2VkYmU4NDZkMmI1MDMwOThkOTA4ZGE5NDBcIjpbe1wiY2FuZGlkYXRlVHlwZV9hdHRyaWJ1dGUxXCI6XCIwMS4wMlwifSx7XCJjYW5kaWRhdGVUeXBlX3Bvc2l0aW9uT25MaXN0XCI6XCIyXCJ9XSxcIjJjNTBhZmI5Zjk3YTRhMmZiZjlhYjUwYjJkMjRkOWQyXCI6W3tcImxpc3RUeXBlX2F0dHJpYnV0ZTFcIjpcIlNvemlhbGRlbW9rcmF0aXNjaGUgUGFydGVpIGRlcyBLYW50b25zIEZyZWlidXJnIChTUClcIn1dLFwiMzNmZWJhYjZmOGI3NDZlYmExYWFiOWZmNDhjOWRmOGNcIjpbe1wibGlzdFR5cGVfYXR0cmlidXRlMVwiOlwiRkRQIC0gRGFzIEZyZWlidXJnZXIgQsO8bmRuaXNcIn1dLFwiYjkwOTg4MDBmMjQ0NGQ0YmIyZmNhNTk4M2NhZDkyOGRcIjpbe1wiY2FuZGlkYXRlVHlwZV9hdHRyaWJ1dGUxXCI6XCIwMi4wMVwifSx7XCJjYW5kaWRhdGVUeXBlX3Bvc2l0aW9uT25MaXN0XCI6XCIxXCJ9XSxcIjdkNTVmMjhiZWRkZDQyMzZiZTFjZWMwNjUxODFmYzhlXCI6W3tcInRleHRcIjpcIktlaW4gTmFtZSBhdXNnZXfDpGhsdFwifV0sXCI1NGU1OGIxY2ZhYjU0MjIwOGQyMDFlN2M3NWQxNDk3NlwiOlt7XCJjYW5kaWRhdGVUeXBlX2F0dHJpYnV0ZTFcIjpcIjAxLjAxXCJ9LHtcImNhbmRpZGF0ZVR5cGVfcG9zaXRpb25Pbkxpc3RcIjpcIjFcIn1dfSxcImlkXCI6XCJjMzJhNWJjMzU3MTk0MDAyYmJmZDE2NDQyNTIyNjA1MmRlLUNIXCIsXCJkZXRhaWxzXCI6XCIyMS8xMC8yMDE5IDExOjA4OjA0XCIsXCJzeW5jaHJvbml6ZWRcIjpcInRydWVcIn0ifQ.HB38GDVXBtJrGks-mOh15rcdIgMFAyrK46L_ro93zKuAqGgyOOySX0VtMSsJNxMKI3-sw7cE86j1M8DyF-fG33HYSln9-QcBwUzUGQiEDSVOsYVR3uSExHDEbMUTs-jxSRzqM9sA8fMa8V_9JdANXYOgr2DDxZXcRYEi5ruzQaYk7MO2vCrQ2YHr3zqD7ShkNK_p-TwuLP4xnQVH2wYuWt_moybqS0c0qdwLbnnQIFBsQzT7i8hxMKvRngdXInakG9Tro67njphu8LZX3GMgUau2pJRXQ-nN063o-E2D9W2jbWptXJjsMpghy8QyHzkh6GrayXG7najPs_VfWlBPZA",
+      "details": "21/10/2019 11:08:04",
+      "synchronized": "true"
+    },
+    {
+      "ballot": {
+        "id": "c32a5bc357194002bbfd164425226052"
+      },
+      "locale": "it-CH",
+      "status": "LOCKED",
+      "texts": {
+        "c32a5bc357194002bbfd164425226052": {
+          "title": "ballot_7673AAF9-A4D5-11E6-ACC2-00155D28151E",
+          "description": "ballot_7673AAF9-A4D5-11E6-ACC2-00155D28151E"
+        },
+        "c3dbefb06e334c7eaa5fce6aac2953e8": [
+          {
+            "text": "Liste sans en-tête"
+          }
+        ],
+        "d175ebdeba384632b354c6157ea0b77e": [
+          {
+            "candidateType_attribute1": "03.02"
+          },
+          {
+            "candidateType_positionOnList": "2"
+          }
+        ],
+        "390fff9a1c0340428c27e2b3d1535144": {
+          "title": "Election du Conseil d'Etat (2ème tour)",
+          "description": "Election du Conseil d'Etat (2ème tour)",
+          "howToVote": null,
+          "attributeKeys": {
+            "candidateType_attribute1": "Riferimento sur la position",
+            "candidateType_positionOnList": "Position on List IT",
+            "listType_attribute1": "Descrizione di Lista"
+          }
+        },
+        "cef80a0a597d42a8960a25e0af4e107e": [
+          {
+            "candidateType_attribute1": "02.02"
+          },
+          {
+            "candidateType_positionOnList": "2"
+          }
+        ],
+        "9a042ded06ca431f9c8707d595590eda": [
+          {
+            "candidateType_attribute1": "03.01"
+          },
+          {
+            "candidateType_positionOnList": "1"
+          }
+        ],
+        "aa156c20c1194c17a3cc9071a6bbcd50": [
+          {
+            "listType_attribute1": "PDC - L'Entente Fribourgeoise"
+          }
+        ],
+        "8cf9ed7edbe846d2b503098d908da940": [
+          {
+            "candidateType_attribute1": "01.02"
+          },
+          {
+            "candidateType_positionOnList": "2"
+          }
+        ],
+        "2c50afb9f97a4a2fbf9ab50b2d24d9d2": [
+          {
+            "listType_attribute1": "Parti socialiste fribourgeois (PS)"
+          }
+        ],
+        "33febab6f8b746eba1aab9ff48c9df8c": [
+          {
+            "listType_attribute1": "PLR - L'Entente Fribourgeoise"
+          }
+        ],
+        "b9098800f2444d4bb2fca5983cad928d": [
+          {
+            "candidateType_attribute1": "02.01"
+          },
+          {
+            "candidateType_positionOnList": "1"
+          }
+        ],
+        "7d55f28beddd4236be1cec065181fc8e": [
+          {
+            "text": "Nessun nominativo selezionato"
+          }
+        ],
+        "54e58b1cfab542208d201e7c75d14976": [
+          {
+            "candidateType_attribute1": "01.01"
+          },
+          {
+            "candidateType_positionOnList": "1"
+          }
+        ]
+      },
+      "id": "c32a5bc357194002bbfd164425226052it-CH",
+      "signedObject": "eyJhbGciOiJQUzI1NiJ9.eyJvYmplY3RUb1NpZ24iOiJ7XCJiYWxsb3RcIjp7XCJpZFwiOlwiYzMyYTViYzM1NzE5NDAwMmJiZmQxNjQ0MjUyMjYwNTJcIn0sXCJsb2NhbGVcIjpcIml0LUNIXCIsXCJzdGF0dXNcIjpcIkxPQ0tFRFwiLFwidGV4dHNcIjp7XCJjMzJhNWJjMzU3MTk0MDAyYmJmZDE2NDQyNTIyNjA1MlwiOntcInRpdGxlXCI6XCJiYWxsb3RfNzY3M0FBRjktQTRENS0xMUU2LUFDQzItMDAxNTVEMjgxNTFFXCIsXCJkZXNjcmlwdGlvblwiOlwiYmFsbG90Xzc2NzNBQUY5LUE0RDUtMTFFNi1BQ0MyLTAwMTU1RDI4MTUxRVwifSxcImMzZGJlZmIwNmUzMzRjN2VhYTVmY2U2YWFjMjk1M2U4XCI6W3tcInRleHRcIjpcIkxpc3RlIHNhbnMgZW4tdMOqdGVcIn1dLFwiZDE3NWViZGViYTM4NDYzMmIzNTRjNjE1N2VhMGI3N2VcIjpbe1wiY2FuZGlkYXRlVHlwZV9hdHRyaWJ1dGUxXCI6XCIwMy4wMlwifSx7XCJjYW5kaWRhdGVUeXBlX3Bvc2l0aW9uT25MaXN0XCI6XCIyXCJ9XSxcIjM5MGZmZjlhMWMwMzQwNDI4YzI3ZTJiM2QxNTM1MTQ0XCI6e1widGl0bGVcIjpcIkVsZWN0aW9uIGR1IENvbnNlaWwgZCdFdGF0ICgyw6htZSB0b3VyKVwiLFwiZGVzY3JpcHRpb25cIjpcIkVsZWN0aW9uIGR1IENvbnNlaWwgZCdFdGF0ICgyw6htZSB0b3VyKVwiLFwiaG93VG9Wb3RlXCI6bnVsbCxcImF0dHJpYnV0ZUtleXNcIjp7XCJjYW5kaWRhdGVUeXBlX2F0dHJpYnV0ZTFcIjpcIlJpZmVyaW1lbnRvIHN1ciBsYSBwb3NpdGlvblwiLFwiY2FuZGlkYXRlVHlwZV9wb3NpdGlvbk9uTGlzdFwiOlwiUG9zaXRpb24gb24gTGlzdCBJVFwiLFwibGlzdFR5cGVfYXR0cmlidXRlMVwiOlwiRGVzY3JpemlvbmUgZGkgTGlzdGFcIn19LFwiY2VmODBhMGE1OTdkNDJhODk2MGEyNWUwYWY0ZTEwN2VcIjpbe1wiY2FuZGlkYXRlVHlwZV9hdHRyaWJ1dGUxXCI6XCIwMi4wMlwifSx7XCJjYW5kaWRhdGVUeXBlX3Bvc2l0aW9uT25MaXN0XCI6XCIyXCJ9XSxcIjlhMDQyZGVkMDZjYTQzMWY5Yzg3MDdkNTk1NTkwZWRhXCI6W3tcImNhbmRpZGF0ZVR5cGVfYXR0cmlidXRlMVwiOlwiMDMuMDFcIn0se1wiY2FuZGlkYXRlVHlwZV9wb3NpdGlvbk9uTGlzdFwiOlwiMVwifV0sXCJhYTE1NmMyMGMxMTk0YzE3YTNjYzkwNzFhNmJiY2Q1MFwiOlt7XCJsaXN0VHlwZV9hdHRyaWJ1dGUxXCI6XCJQREMgLSBMJ0VudGVudGUgRnJpYm91cmdlb2lzZVwifV0sXCI4Y2Y5ZWQ3ZWRiZTg0NmQyYjUwMzA5OGQ5MDhkYTk0MFwiOlt7XCJjYW5kaWRhdGVUeXBlX2F0dHJpYnV0ZTFcIjpcIjAxLjAyXCJ9LHtcImNhbmRpZGF0ZVR5cGVfcG9zaXRpb25Pbkxpc3RcIjpcIjJcIn1dLFwiMmM1MGFmYjlmOTdhNGEyZmJmOWFiNTBiMmQyNGQ5ZDJcIjpbe1wibGlzdFR5cGVfYXR0cmlidXRlMVwiOlwiUGFydGkgc29jaWFsaXN0ZSBmcmlib3VyZ2VvaXMgKFBTKVwifV0sXCIzM2ZlYmFiNmY4Yjc0NmViYTFhYWI5ZmY0OGM5ZGY4Y1wiOlt7XCJsaXN0VHlwZV9hdHRyaWJ1dGUxXCI6XCJQTFIgLSBMJ0VudGVudGUgRnJpYm91cmdlb2lzZVwifV0sXCJiOTA5ODgwMGYyNDQ0ZDRiYjJmY2E1OTgzY2FkOTI4ZFwiOlt7XCJjYW5kaWRhdGVUeXBlX2F0dHJpYnV0ZTFcIjpcIjAyLjAxXCJ9LHtcImNhbmRpZGF0ZVR5cGVfcG9zaXRpb25Pbkxpc3RcIjpcIjFcIn1dLFwiN2Q1NWYyOGJlZGRkNDIzNmJlMWNlYzA2NTE4MWZjOGVcIjpbe1widGV4dFwiOlwiTmVzc3VuIG5vbWluYXRpdm8gc2VsZXppb25hdG9cIn1dLFwiNTRlNThiMWNmYWI1NDIyMDhkMjAxZTdjNzVkMTQ5NzZcIjpbe1wiY2FuZGlkYXRlVHlwZV9hdHRyaWJ1dGUxXCI6XCIwMS4wMVwifSx7XCJjYW5kaWRhdGVUeXBlX3Bvc2l0aW9uT25MaXN0XCI6XCIxXCJ9XX0sXCJpZFwiOlwiYzMyYTViYzM1NzE5NDAwMmJiZmQxNjQ0MjUyMjYwNTJpdC1DSFwiLFwiZGV0YWlsc1wiOlwiMjEvMTAvMjAxOSAxMTowODowNFwiLFwic3luY2hyb25pemVkXCI6XCJ0cnVlXCJ9In0.M_JO3s9s4hyYWXA9kbvb21pwMv1Ts4CFey0GTuGztTY2RVv0KQfHdXFr0EJ0r8-rtVzmodhJ-oanpZp0s0iLhZv-W6NDUu2uAtv26f-SybqUQYvXrdyVYbyAJO97Pel5-We35grLwKXFSyuvnwBYTwJaIu704bNB2-ctvztaBfKmlJKpWCs0RLuuFA09rlAVN-ELmISyINYGVmQ2hwbQRdGOEECkDVGIiZPljWo-Wzw1CFXr_EhhYqVhU9b87-J91AVLUm-iKGXhLD1I62GD6tnFTUr3ZDQeEPr2cln1PCKAkV6GZ-Mx2C2tTdIDVPnGrS6UZ4czDbXHRvFquPUE1Q",
+      "details": "21/10/2019 11:08:04",
+      "synchronized": "true"
+    },
+    {
+      "ballot": {
+        "id": "c32a5bc357194002bbfd164425226052"
+      },
+      "locale": "rm-CH",
+      "status": "LOCKED",
+      "texts": {
+        "c32a5bc357194002bbfd164425226052": {
+          "title": "ballot_7673AAF9-A4D5-11E6-ACC2-00155D28151E",
+          "description": "ballot_7673AAF9-A4D5-11E6-ACC2-00155D28151E"
+        },
+        "c3dbefb06e334c7eaa5fce6aac2953e8": [
+          {
+            "text": "Leere Liste"
+          }
+        ],
+        "d175ebdeba384632b354c6157ea0b77e": [
+          {
+            "candidateType_attribute1": "03.02"
+          },
+          {
+            "candidateType_positionOnList": "2"
+          }
+        ],
+        "390fff9a1c0340428c27e2b3d1535144": {
+          "title": "Staatsratswahl (2. Wahlgang)",
+          "description": "Staatsratswahl (2. Wahlgang)",
+          "howToVote": null,
+          "attributeKeys": {
+            "candidateType_attribute1": "Référence sur la position",
+            "candidateType_positionOnList": "Position on List RM",
+            "listType_attribute1": "Liste description"
+          }
+        },
+        "cef80a0a597d42a8960a25e0af4e107e": [
+          {
+            "candidateType_attribute1": "02.02"
+          },
+          {
+            "candidateType_positionOnList": "2"
+          }
+        ],
+        "9a042ded06ca431f9c8707d595590eda": [
+          {
+            "candidateType_attribute1": "03.01"
+          },
+          {
+            "candidateType_positionOnList": "1"
+          }
+        ],
+        "aa156c20c1194c17a3cc9071a6bbcd50": [
+          {
+            "listType_attribute1": "CVP - Das Freiburger Bündnis"
+          }
+        ],
+        "8cf9ed7edbe846d2b503098d908da940": [
+          {
+            "candidateType_attribute1": "01.02"
+          },
+          {
+            "candidateType_positionOnList": "2"
+          }
+        ],
+        "2c50afb9f97a4a2fbf9ab50b2d24d9d2": [
+          {
+            "listType_attribute1": "Sozialdemokratische Partei des Kantons Freiburg (SP)"
+          }
+        ],
+        "33febab6f8b746eba1aab9ff48c9df8c": [
+          {
+            "listType_attribute1": "FDP - Das Freiburger Bündnis"
+          }
+        ],
+        "b9098800f2444d4bb2fca5983cad928d": [
+          {
+            "candidateType_attribute1": "02.01"
+          },
+          {
+            "candidateType_positionOnList": "1"
+          }
+        ],
+        "7d55f28beddd4236be1cec065181fc8e": [
+          {
+            "text": "Nagin num selecziunà"
+          }
+        ],
+        "54e58b1cfab542208d201e7c75d14976": [
+          {
+            "candidateType_attribute1": "01.01"
+          },
+          {
+            "candidateType_positionOnList": "1"
+          }
+        ]
+      },
+      "id": "c32a5bc357194002bbfd164425226052rm-CH",
+      "signedObject": "eyJhbGciOiJQUzI1NiJ9.eyJvYmplY3RUb1NpZ24iOiJ7XCJiYWxsb3RcIjp7XCJpZFwiOlwiYzMyYTViYzM1NzE5NDAwMmJiZmQxNjQ0MjUyMjYwNTJcIn0sXCJsb2NhbGVcIjpcInJtLUNIXCIsXCJzdGF0dXNcIjpcIkxPQ0tFRFwiLFwidGV4dHNcIjp7XCJjMzJhNWJjMzU3MTk0MDAyYmJmZDE2NDQyNTIyNjA1MlwiOntcInRpdGxlXCI6XCJiYWxsb3RfNzY3M0FBRjktQTRENS0xMUU2LUFDQzItMDAxNTVEMjgxNTFFXCIsXCJkZXNjcmlwdGlvblwiOlwiYmFsbG90Xzc2NzNBQUY5LUE0RDUtMTFFNi1BQ0MyLTAwMTU1RDI4MTUxRVwifSxcImMzZGJlZmIwNmUzMzRjN2VhYTVmY2U2YWFjMjk1M2U4XCI6W3tcInRleHRcIjpcIkxlZXJlIExpc3RlXCJ9XSxcImQxNzVlYmRlYmEzODQ2MzJiMzU0YzYxNTdlYTBiNzdlXCI6W3tcImNhbmRpZGF0ZVR5cGVfYXR0cmlidXRlMVwiOlwiMDMuMDJcIn0se1wiY2FuZGlkYXRlVHlwZV9wb3NpdGlvbk9uTGlzdFwiOlwiMlwifV0sXCIzOTBmZmY5YTFjMDM0MDQyOGMyN2UyYjNkMTUzNTE0NFwiOntcInRpdGxlXCI6XCJTdGFhdHNyYXRzd2FobCAoMi4gV2FobGdhbmcpXCIsXCJkZXNjcmlwdGlvblwiOlwiU3RhYXRzcmF0c3dhaGwgKDIuIFdhaGxnYW5nKVwiLFwiaG93VG9Wb3RlXCI6bnVsbCxcImF0dHJpYnV0ZUtleXNcIjp7XCJjYW5kaWRhdGVUeXBlX2F0dHJpYnV0ZTFcIjpcIlLDqWbDqXJlbmNlIHN1ciBsYSBwb3NpdGlvblwiLFwiY2FuZGlkYXRlVHlwZV9wb3NpdGlvbk9uTGlzdFwiOlwiUG9zaXRpb24gb24gTGlzdCBSTVwiLFwibGlzdFR5cGVfYXR0cmlidXRlMVwiOlwiTGlzdGUgZGVzY3JpcHRpb25cIn19LFwiY2VmODBhMGE1OTdkNDJhODk2MGEyNWUwYWY0ZTEwN2VcIjpbe1wiY2FuZGlkYXRlVHlwZV9hdHRyaWJ1dGUxXCI6XCIwMi4wMlwifSx7XCJjYW5kaWRhdGVUeXBlX3Bvc2l0aW9uT25MaXN0XCI6XCIyXCJ9XSxcIjlhMDQyZGVkMDZjYTQzMWY5Yzg3MDdkNTk1NTkwZWRhXCI6W3tcImNhbmRpZGF0ZVR5cGVfYXR0cmlidXRlMVwiOlwiMDMuMDFcIn0se1wiY2FuZGlkYXRlVHlwZV9wb3NpdGlvbk9uTGlzdFwiOlwiMVwifV0sXCJhYTE1NmMyMGMxMTk0YzE3YTNjYzkwNzFhNmJiY2Q1MFwiOlt7XCJsaXN0VHlwZV9hdHRyaWJ1dGUxXCI6XCJDVlAgLSBEYXMgRnJlaWJ1cmdlciBCw7xuZG5pc1wifV0sXCI4Y2Y5ZWQ3ZWRiZTg0NmQyYjUwMzA5OGQ5MDhkYTk0MFwiOlt7XCJjYW5kaWRhdGVUeXBlX2F0dHJpYnV0ZTFcIjpcIjAxLjAyXCJ9LHtcImNhbmRpZGF0ZVR5cGVfcG9zaXRpb25Pbkxpc3RcIjpcIjJcIn1dLFwiMmM1MGFmYjlmOTdhNGEyZmJmOWFiNTBiMmQyNGQ5ZDJcIjpbe1wibGlzdFR5cGVfYXR0cmlidXRlMVwiOlwiU296aWFsZGVtb2tyYXRpc2NoZSBQYXJ0ZWkgZGVzIEthbnRvbnMgRnJlaWJ1cmcgKFNQKVwifV0sXCIzM2ZlYmFiNmY4Yjc0NmViYTFhYWI5ZmY0OGM5ZGY4Y1wiOlt7XCJsaXN0VHlwZV9hdHRyaWJ1dGUxXCI6XCJGRFAgLSBEYXMgRnJlaWJ1cmdlciBCw7xuZG5pc1wifV0sXCJiOTA5ODgwMGYyNDQ0ZDRiYjJmY2E1OTgzY2FkOTI4ZFwiOlt7XCJjYW5kaWRhdGVUeXBlX2F0dHJpYnV0ZTFcIjpcIjAyLjAxXCJ9LHtcImNhbmRpZGF0ZVR5cGVfcG9zaXRpb25Pbkxpc3RcIjpcIjFcIn1dLFwiN2Q1NWYyOGJlZGRkNDIzNmJlMWNlYzA2NTE4MWZjOGVcIjpbe1widGV4dFwiOlwiTmFnaW4gbnVtIHNlbGVjeml1bsOgXCJ9XSxcIjU0ZTU4YjFjZmFiNTQyMjA4ZDIwMWU3Yzc1ZDE0OTc2XCI6W3tcImNhbmRpZGF0ZVR5cGVfYXR0cmlidXRlMVwiOlwiMDEuMDFcIn0se1wiY2FuZGlkYXRlVHlwZV9wb3NpdGlvbk9uTGlzdFwiOlwiMVwifV19LFwiaWRcIjpcImMzMmE1YmMzNTcxOTQwMDJiYmZkMTY0NDI1MjI2MDUycm0tQ0hcIixcImRldGFpbHNcIjpcIjIxLzEwLzIwMTkgMTE6MDg6MDRcIixcInN5bmNocm9uaXplZFwiOlwidHJ1ZVwifSJ9.iRJPqKhJX0ZgO9cKlrQpqhEI8guRC7FYFuCdwaP1MoNQYwHx4yIIpshhdlByY1xzBuvMuxBQF3v8VBIIl5zfC3EdROpvCF6_uloyluYGCqPekEQL6Y8_ZFT5o2NLWtXv1vW6TsDk4FWiksovD7Tkx5wCjXY87J3JeX9I3QaeZWjXcfDu1HjmYN-XDRSsKESgexki0iVbobvgJ1MagEqLyz3lL9wNfnXJaAukM9ttq0D2J4HQix6PCCXu_PwwKjhX4jfg46rltwXehR5CM-5SkOxWs0kV4IcHNmzBZ_NcOUdxsRsBhWVb2N33X_P0OhIiqWvCwpZx8I_0EpUNPtN0Bg",
+      "details": "21/10/2019 11:08:04",
+      "synchronized": "true"
+    }
+  ]
+}

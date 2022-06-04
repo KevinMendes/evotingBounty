@@ -1,0 +1,16 @@
+<div>
+    <md-button aria-label="{{'Menu'|translate}}" class="md-icon-button" id="toolbar_menu_button" ng-click="toggleLeftMenu()" title="{{'Menu'|translate}}"
+               type="button">
+        <md-icon aria-label="{{'Menu'|translate}}" md-svg-src="assets/icons/menu.svg"></md-icon>
+    </md-button>
+</div>
+<div class="sv-toolbar-path">
+    <h1>
+        <span>{{getMainTitle()}}</span>
+        <span ng-if="enableElectionEventSection()">
+        <md-icon md-svg-src="assets/icons/ic_chevron_right_24px.svg"></md-icon>
+        <span>{{getElectionEventSection()}}</span>
+    </span>
+    </h1>
+</div>
+<ng-transclude class="sv-toolbar-action"></ng-transclude>

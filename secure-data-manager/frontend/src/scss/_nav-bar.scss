@@ -1,0 +1,78 @@
+// nav-bar
+// ----------------------------------------
+
+.md-nav-bar {
+  background-color: $nav-bar-bg;
+  color: $nav-bar-text;
+  border: none;
+
+  .md-button {
+    &:not([disabled]) {
+      color: $nav-bar-text;
+
+      &.md-active {
+        color: $nav-bar-text-active;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: $nav-bar-bg-hover;
+      }
+    }
+
+    &[disabled] {
+      background-color: $nav-bar-disabled-bg;
+      color: $nav-bar-disabled-text;
+    }
+  }
+}
+
+md-nav-ink-bar {
+  height: 0.250em;
+  background-color: $nav-bar-ink-bar;
+}
+
+// filter status case
+.filter-status {
+  .md-nav-bar {
+    overflow-x: auto;
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px -1px rgba(0, 0, 0, 0.12);
+  }
+}
+
+// filter test case
+.filter-test {
+  .md-nav-bar {
+    background: none;
+    color: $color-body-text;
+    height: 36px;
+
+    .md-button {
+      &:not([disabled]) {
+        color: $color-body-text;
+        margin: 0 4px;
+        padding: 6px 16px;
+
+        &.md-active {
+          color: $button-primary;
+        }
+
+        &:hover,
+        &:focus {
+          color: $button-primary-hover;
+          background-color: transparent;
+        }
+      }
+
+      &[disabled] {
+        background-color: $button-disabled-bg;
+        color: $button-disabled-text;
+      }
+    }
+  }
+
+  md-nav-ink-bar {
+    height: 0.250em;
+    background-color: $button-primary;
+  }
+}

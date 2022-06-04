@@ -1,0 +1,106 @@
+<div class="candidate-finder">
+	<form aria-labelledby="fc_search_label" role="group">
+		<div class="form-group">
+			<h3 class="control-label fsn fwb man" for="fc_search" id="fc_search_label" translate>Search a candidate by name</h3>
+			<div class="candidate-search">
+				<div class="candidate-search-input">
+					<div class="input-has-action">
+						<input aria-labelledby="fc_search_label" class="form-control" data-enter="searchCandidate()"
+							   data-ng-model="data.searchCandidateText" id="fc_search"
+							   type="text">
+						<div>
+							<button class="btn btn-icon" data-ng-click="clearCandidate()" data-ng-disabled="!data.searchCandidateText"
+									id="btn_clear_candidate"
+									type="button">
+								<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24"
+									 xmlns="http://www.w3.org/2000/svg">
+									<path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/>
+								</svg>
+								<span class="sr-only" translate>Clear candidate</span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<div class="candidate-search-action">
+					<button class="btn btn-secondary has-icon" data-ng-click="searchCandidate()" id="btn_search_candidate" type="submit">
+						<svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+							<path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"/>
+						</svg>
+						<span class="hidden-xs" translate>Search candidate</span>
+					</button>
+				</div>
+			</div>
+		</div>
+		<div class="finder-filter" data-layout="row" data-layout-xs="column">
+			<div class="finder-filter-list" data-flex data-ng-if="data.allLists.length > 1">
+				<div class="mbm" ng-show="!data.contest.isType(contestTypes.CANDIDATES_ONLY)">
+					<h3 class="control-label fsn fwb man" for="candidate_header_1"><span translate>Show candidates from</span></h3>
+					<div class="btn-group dropdown-list" keyboard-nav uib-dropdown>
+						<button aria-describedby="candidate_header_1" class="btn dropdown-list-btn" dropdown-info id="simple_btn_candidate_filter"
+								type="button"
+								uib-dropdown-toggle>
+              <span class="dropdown-list-btn-wrapper">
+                <span class="dropdown-list-btn-tag">
+                  <span data-ng-if="data.selectedList.name !== null">{{data.selectedList.name}}</span>
+                  <span data-ng-if="data.selectedList.name == null">{{data.allListsText|translate}}</span>
+                </span>
+                <span class="dropdown-list-btn-icon">
+                  <svg aria-hidden="true" class="caret-arrow" focusable="false" height="24" viewBox="0 0 24 24" width="24"
+					   xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7 10l5 5 5-5z"/>
+                  </svg>
+                </span>
+              </span>
+						</button>
+						<ul aria-describedby="candidate_header_1" class="dropdown-menu" uib-dropdown-menu>
+							<li role="menuitem">
+								<a class="btn" data-ng-click="filterByListById()" href="">{{data.allListsText|translate}}</a>
+							</li>
+							<li data-ng-model="data.selectedList" data-ng-repeat="list in data.allLists" role="menuitem">
+								<a class="btn" data-ng-click="filterByListById(list.id)" href="">{{list.name}}</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+				<!-- results count -->
+				<p class="pts" data-ng-if="data.searchedText && !(data.candidates | filter: showOnlySelectedFilter()).length" translate>
+					No Results Found. Try again using another search
+				</p>
+				<p class="pts"
+				   data-ng-if="!data.contest.candidatesQuestion.hasWriteIns && data.searchedText && (data.candidates | filter: showOnlySelectedFilter()).length">
+          <span translate
+				translate-n="(data.candidates | filter: showOnlySelectedFilter()).length"
+				translate-plural="{{$count}} candidates of {{data.allCandidates.length}} found for '{{data.searchedText}}'">
+            {{$count}} candidate of {{data.allCandidates.length}} found for "{{data.searchedText}}"
+          </span>
+				</p>
+				<p class="pts" data-ng-if="!data.searchedText && !data.contest.candidatesQuestion.hasWriteIns">
+          <span translate
+				translate-n="(data.candidates | filter: showOnlySelectedFilter()).length"
+				translate-plural="{{$count}} candidates">
+            {{$count}} candidate
+          </span>
+				</p>
+			</div>
+			<div class="finder-filter-selected" data-flex data-ng-show="data.contest.candidatesQuestion.cumul > 1">
+				<div class="checkbox">
+					<input data-ng-model="showOnlySelected" id="fc_only_selected_candidates" type="checkbox">
+					<label for="fc_only_selected_candidates">
+						<span class="fwb" translate>Show only already selected candidates</span>
+					</label>
+				</div>
+			</div>
+		</div>
+	</form>
+	<h3 class="sr-only" data-ng-if="data.searchedText"><span translate>Search results</span></h3>
+	<h3 class="sr-only" data-ng-if="!data.searchedText"><span translate>Candidates</span></h3>
+	<div class="ballot-modal-list mtm">
+		<div class="ballot-election list-item" data-ng-repeat="candidate in data.candidates | filter: showOnlySelectedFilter()">
+			<div candidate="candidate" candidate-selector contest="data.contest" on-selected="onSelected" position="data.position"></div>
+		</div>
+
+		<div class="ballot-election list-item has-write-in" ng-if="data.contest.candidatesQuestion.hasWriteIns">
+			<div candidate="writeInCandidate" candidate-selector contest="data.contest" on-selected="onSelected" position="data.position"></div>
+		</div>
+	</div>
+</div>

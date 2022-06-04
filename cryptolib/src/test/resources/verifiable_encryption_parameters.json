@@ -1,0 +1,10 @@
+{
+  "encryptionParams": {
+	"p": "Fw==",
+	"q": "Cw==",
+	"g": "Ag==",
+	"seed": "ElectionName",
+	"pCounter": 123,
+	"qCounter": 456
+  }
+}

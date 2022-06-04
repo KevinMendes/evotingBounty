@@ -1,0 +1,44 @@
+// base
+// ----------------------------------------
+
+// box model
+html {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html,
+body {
+  height: 100vh; // use height instead min-height to properly transmit the height heritage
+  min-width: 456px; // to match with angular material lower queries
+  background-color: $color-body-bg;
+  color: $color-body-text;
+}
+
+p {
+  margin: 0 0 1em;
+}
+
+a {
+  color: $color-interactive;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+pre {
+  background: #f5f5f5;
+  padding: .5em;
+  white-space: pre-wrap;
+  word-break: break-word;
+  word-wrap: break-word;
+  border-radius: 3px;
+  font-size: 1.077em;
+}

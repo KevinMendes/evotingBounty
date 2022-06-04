@@ -1,0 +1,26 @@
+// input
+// ----------------------------------------
+
+md-input-container {
+
+  label,
+  .md-placeholder {
+    color: rgba(0, 0, 0, 0.38);
+  }
+
+  .md-input {
+    color: rgba(0, 0, 0, 0.87);
+    border-color: rgba(0, 0, 0, 0.12);
+  }
+
+  &:not(.md-input-invalid).md-input-focused label,
+  &:not(.md-input-invalid).md-input-focused md-icon {
+    color: $button-primary;
+  }
+
+  &:not(.md-input-invalid).md-input-focused .md-input,
+  &:not(.md-input-invalid).md-input-resized .md-input {
+    border-color: $button-primary;
+  }
+
+}

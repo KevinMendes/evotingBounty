@@ -1,0 +1,25 @@
+// collapse
+// ----------------------------------------
+
+.collapse {
+  display: none;
+
+  &.in {
+    display: block;
+  }
+}
+
+.collapsing {
+  position: relative;
+  height: 0;
+  overflow: hidden;
+  -webkit-transition-timing-function: ease;
+  -o-transition-timing-function: ease;
+  transition-timing-function: ease;
+  -webkit-transition-duration: $collpase-duration;
+  -o-transition-duration: $collpase-duration;
+  transition-duration: $collpase-duration;
+  -webkit-transition-property: height, visibility;
+  -o-transition-property: height, visibility;
+  transition-property: height, visibility;
+}

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://maven.apache.org/POM/4.0.0" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>ch.post.it.evoting</groupId>
+		<artifactId>evoting-dependencies</artifactId>
+		<version>0.14.1.0</version>
+		<relativePath>../evoting-dependencies/pom.xml</relativePath>
+	</parent>
+
+	<artifactId>voting-client-js</artifactId>
+	<version>0.14.1.0</version>
+	<packaging>pom</packaging>
+	<name>Voting Client (Javascript library)</name>
+
+	<properties>
+		<skipTests>false</skipTests>
+		<jacoco.skip>true</jacoco.skip>
+		<sonar.sources>src,test</sonar.sources>
+	</properties>
+
+	<dependencies>
+		<dependency>
+			<groupId>ch.post.it.evoting.cryptolib</groupId>
+			<artifactId>cryptolib-js</artifactId>
+			<type>pom</type>
+		</dependency>
+		<dependency>
+			<groupId>ch.post.it.evoting.cryptoprimitives.ts</groupId>
+			<artifactId>crypto-primitives-ts</artifactId>
+			<type>zip</type>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-clean-plugin</artifactId>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>coverage</directory>
+						</fileset>
+						<fileset>
+							<directory>dist</directory>
+						</fileset>
+						<fileset>
+							<directory>vendor</directory>
+						</fileset>
+					</filesets>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<!-- Unzip shared resources -->
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>unpack-crypto-primitives-ts</id>
+						<goals>
+							<goal>unpack-dependencies</goal>
+						</goals>
+						<phase>generate-sources</phase>
+						<configuration>
+							<outputDirectory>${project.basedir}/vendor/crypto-primitives-ts</outputDirectory>
+							<includeGroupIds>ch.post.it.evoting.cryptoprimitives.ts</includeGroupIds>
+							<includeArtifactIds>crypto-primitives-ts</includeArtifactIds>
+							<excludeTransitive>true</excludeTransitive>
+							<excludeTypes>pom</excludeTypes>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>exec-maven-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>npm install (generate-sources)</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<phase>generate-sources</phase>
+						<configuration>
+							<executable>npm</executable>
+							<arguments>
+								<argument>ci</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>npm run build (compile)</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<phase>compile</phase>
+						<configuration>
+							<executable>npm</executable>
+							<arguments>
+								<argument>run</argument>
+								<argument>build</argument>
+							</arguments>
+						</configuration>
+					</execution>
+					<execution>
+						<id>npm run test (test)</id>
+						<goals>
+							<goal>exec</goal>
+						</goals>
+						<phase>test</phase>
+						<configuration>
+							<executable>npm</executable>
+							<arguments>
+								<argument>run</argument>
+								<argument>test:coverage</argument>
+							</arguments>
+							<skip>${skipTests}</skip>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+</project>

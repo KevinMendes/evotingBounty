@@ -1,0 +1,173 @@
+// constitute-manager
+// ----------------------------------------
+.constitute-manager-close {
+  padding: 1.0em;
+  width: 16em;
+  border-radius: 5px;
+  background: $toast-bg;
+  font-size: 0.6em;
+  position: absolute;
+  color: $toast-text;
+  right: 1.0em;
+}
+
+.constitute-manager-close-question {
+  font-size: 0.7em;
+
+  .md-button {
+    font-size: 0.7em;
+    color: $color-interactive;
+    text-decoration: underline;
+    margin: 0.000em;
+    max-width: 3.571em;
+  }
+}
+
+.constitute-manager-close:before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-bottom: 10px solid $toast-bg;
+  top: -0.500em;
+  left: 2.500em;
+}
+
+.constitute-manager-wrapper {
+  @include flex(1);
+  @include display-flex();
+  @include flex-direction(column);
+
+  .constitute-manager {
+    @include flex(1);
+    @include display-flex();
+    @include flex-direction(row);
+
+    .constitute-manager-members {
+      min-width: 20%;
+      max-width: 50%;
+      overflow-y: auto;
+
+      md-list {
+        padding: 1em 0 0;
+      }
+
+      .md-button {
+        width: 100%;
+        height: 3.429em;
+        margin: 0 0 ($layout-gutter-width / 2);
+        padding: 0 ($layout-gutter-width / 2);
+        color: inherit;
+        text-align: left;
+        border-top-left-radius: 3px;
+        border-bottom-left-radius: 3px;
+        border-top-right-radius: 0;
+        border-bottom-right-radius: 0;
+
+        [dir="rtl"] & {
+          text-align: right;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          border-top-right-radius: 3px;
+          border-bottom-right-radius: 3px;
+        }
+
+        // icons
+        md-icon {
+          width: 2.286em;
+          height: 2.286em;
+          margin-right: ($layout-gutter-width / 2);
+          padding: 0.286em;
+          border-radius: 50%;
+
+          [dir="rtl"] & {
+            margin-right: 0;
+            margin-left: ($layout-gutter-width / 2);
+          }
+        }
+
+        .icon-idle {
+          color: $dialog-constitute-idle;
+        }
+
+        .icon-current {
+          background-color: $dialog-constitute-current;
+          color: $dialog-constitute-current-contrast;
+          display: none;
+        }
+
+        .icon-done {
+          background-color: $dialog-constitute-done;
+          color: $dialog-constitute-done-contrast;
+          display: none;
+        }
+
+        &.is-current {
+          background-color: $dialog-constitute-bg-active;
+
+          .icon-idle {
+            display: none;
+          }
+
+          .icon-current {
+            display: inline-block;
+          }
+
+          .icon-done {
+            display: none;
+          }
+        }
+
+        &.is-done {
+          .icon-idle {
+            display: none;
+          }
+
+          .icon-current {
+            display: none;
+          }
+
+          .icon-done {
+            display: inline-block;
+          }
+        }
+      }
+    }
+
+    .constitute-manager-card {
+      @include flex(1);
+      overflow-y: auto;
+      padding: $layout-gutter-width;
+      background-color: $dialog-constitute-bg-active;
+
+      .constitute-manager-member {
+        @include display-flex();
+        @include flex-direction(column);
+        height: 100%;
+
+        .constitute-manager-member-title {
+          text-align: center;
+        }
+
+        .constitute-manager-member-interaction {
+          @include flex(1);
+          @include display-flex();
+          @include justify-content(center);
+
+          md-input-container {
+            min-width: 11.625em;
+            margin-bottom: 0;
+          }
+        }
+      }
+
+      .card-icon {
+        display: block;
+        width: 7.5em;
+        height: 4.5em;
+      }
+    }
+  }
+}

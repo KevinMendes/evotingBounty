@@ -1,0 +1,23 @@
+<div class="d-block">
+	<label class="control-label" for="fc_yob" translate>Year of birth</label>
+	<!-- error messages -->
+	<div aria-live="polite"
+		 data-ng-class="{'has-warning': authForm.$submitted && !authForm.$dirty && (authForm.dob.$invalid || authForm.year.$invalid) }"
+		 role="alert">
+		<p class="form-control-msg mbm d-inline-block"
+		   data-ng-if="authForm.$submitted && !authForm.$dirty && (authForm.dob.$invalid || authForm.year.$invalid)">
+      <span class="icon">
+        <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+        </svg>
+      </span>
+			<span data-ng-if="authForm.dob.$error.filled" translate>Please introduce your year of birth</span>
+			<span data-ng-if="authForm.year.$invalid || authForm.dob.$error.format" translate>Please introduce a valid year of birth</span>
+		</p>
+	</div>
+	<div class="year-of-birth"
+		 data-ng-class="{ 'has-warning': authForm.$submitted && !authForm.$dirty && (authForm.dob.$invalid || authForm.year.$invalid) }">
+		<input autocomplete="off" class="form-control" data-format="4" data-input-guided data-model-maxlength="4" data-model-minlength="4"
+			   data-ng-model="year" id="fc_yob" name="year" ng-trim="false" required type="text">
+	</div>
+</div>

@@ -1,0 +1,53 @@
+{
+  "encryptionGroup": {
+	"p": "0x3B",
+	"q": "0x1D",
+	"g": "0x3"
+  },
+  "encryptedVerifiableVote": {
+	"contextIds": {
+	  "electionEventId": "e3e3c2fd8a16489291c5c24e7b74b26e",
+	  "verificationCardSetId": "e77dbe3c70874ea584c490a0c6ac0ca4",
+	  "verificationCardId": "dd4063884c144446a6dfb63c42eb9e86"
+	},
+	"encryptedVote": {
+	  "gamma": "0x23",
+	  "phis": [
+		"0x4",
+		"0x4"
+	  ]
+	},
+	"exponentiatedEncryptedVote": {
+	  "gamma": "0x2E",
+	  "phis": [
+		"0x7",
+		"0x19"
+	  ]
+	},
+	"encryptedPartialChoiceReturnCodes": {
+	  "gamma": "0x4",
+	  "phis": [
+		"0x11",
+		"0x15"
+	  ]
+	},
+	"exponentiationProof": {
+	  "e": "0xB",
+	  "z": "0x1C"
+	},
+	"plaintextEqualityProof": {
+	  "e": "0x15",
+	  "z": [
+		"0x9",
+		"0x1"
+	  ]
+	}
+  },
+  "requestId": "4",
+  "signature": {
+	"signatureContents": "LcGbYRWDKHOuep1txPMmJtJDlOyJ3eCKJCjvtyMaNvU=",
+	"certificateChain": [
+	  "-----BEGIN CERTIFICATE-----\r\nMIIDNDCCAhygAwIBAgICAO4wDQYJKoZIhvcNAQELBQAwXTERMA8GA1UEAwwIdGVz\r\ndC5jb20xDTALBgNVBAsMBHRlc3QxDjAMBgNVBAoMBXRlc3QuMQ0wCwYDVQQHDAR0\r\nZXN0MQ0wCwYDVQQIDAR0ZXN0MQswCQYDVQQGEwJDQTAeFw0yMjAyMTExMzQxNDBa\r\nFw0yMzAyMTEwMDAwMDBaMF0xETAPBgNVBAMMCHRlc3QuY29tMQ0wCwYDVQQLDAR0\r\nZXN0MQ4wDAYDVQQKDAV0ZXN0LjENMAsGA1UEBwwEdGVzdDENMAsGA1UECAwEdGVz\r\ndDELMAkGA1UEBhMCQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCE\r\nTFM/Svj0NSP7TFtEaa1kvBSCcDsx2QeO6ID9hmU0WQfjL0GTxR8eeoP4KjCtrACi\r\nfm1Y4dZTwDPzjzBXi4AQMdoFhmsP7YNMNCxAgEW4Y7unQMuNYtlvu41YduFOOOg7\r\ndleaU6/0lA51BhPXfVJlsCCrn5sqqup7DYB/Eg4PT3xyjenpkFXf5kGgmqfl+nrj\r\nRVJ96DqBK5Nq1y72nKsqWgxjr6xiU9udtKg4/mEgi8lgXstOluZFDVUF7owno7Nh\r\nTJpmV3vYuIqwRqqbktUEeLAbgzDrN9tXPTGc987s38zxg+QqvFb06cYbz3Jw+aaj\r\nUQEPdnUdwzw+YZaEJwC5AgMBAAEwDQYJKoZIhvcNAQELBQADggEBADVaNY0l+NHK\r\nBN7Mpajnm7jmyQ2R+6H2UCUIyGRhdT1uK3EwRuvMoHv5pM58pz6ky/qxnaqNv8PC\r\n8faCIzRnaJXJRz/Vh05qBOYrAKc6jyzsGsgTeGM2NWRmgDKND4Movgd1//E2wa3Z\r\nRDQL0ZfqV7SdsAY9uQ/u6NdmFSW3I9lc63XO0JiCGkrGRnPXVSNv2b04/1bvoOih\r\n/PUoR0mTpJO5TdgDcgMQ9Spr2X3hWJQm+v5ymM1ifU9filY7piq/MVdLxBqZ2ne3\r\nDZKABDqw2HDsYmsaFVfDrJnrr++7qDee9pHvyNxq7K5n2rzagNV4PmgzhYxMW6CW\r\nyo+rNXIxPi8=\r\n-----END CERTIFICATE-----\r\n"
+	]
+  }
+}

@@ -1,0 +1,72 @@
+@keyframes open-toast {
+  from {
+    transform: translateY(-100%);
+  }
+  to {
+    transform: translateY(100%);
+  }
+}
+
+.toast {
+  position: fixed;
+  z-index: @zindex-toast;
+  top: @header-height;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  transform: translateY(-100%);
+
+  .alert {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-box;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+
+    @media (max-width: @screen-xs-max) {
+      max-width: (@container-sm - @grid-gutter-width);
+    }
+    @media (min-width: @screen-sm-min) {
+      width: (@container-sm - @grid-gutter-width);
+    }
+    @media (min-width: @screen-md-min) {
+      width: (@container-md - @grid-gutter-width);
+    }
+    @media (min-width: @screen-lg-min) {
+      width: (@container-lg - @grid-gutter-width);
+    }
+    margin: 0;
+    box-shadow: 0 0.188rem 0.063rem -0.125rem rgba(0, 0, 0, 0.14), 0 0.125rem 0.125rem 0 rgba(0, 0, 0, 0.098), 0 0.063rem 0.313rem 0 rgba(0, 0, 0, 0.084);
+    animation-name: open-toast;
+    animation-duration: .5s;
+    -webkit-transform: translateY(100%);
+    transform: translateY(100%);
+    transition: transform .5s;
+    -webkit-transition: -webkit-transform .5s;
+  }
+
+  &.is-closed {
+    .alert {
+      -webkit-transform: translateY(0);
+      transform: translateY(0);
+
+      .alert-close {
+        display: none;
+      }
+    }
+  }
+}

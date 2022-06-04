@@ -1,0 +1,36 @@
+<md-dialog aria-label="Mixing confirmation dialog">
+	<form ng-cloak>
+		<md-toolbar>
+			<div class="md-toolbar-tools">
+				<h2 translate>Confirm mixing of ballot boxes</h2>
+				<span flex></span>
+				<md-button class="md-icon-button" ng-click="cancel()">
+					<md-icon aria-label="{{'Close dialog' | translate}}" md-svg-src="assets/icons/ic_close_24px.svg"></md-icon>
+				</md-button>
+			</div>
+		</md-toolbar>
+
+		<md-dialog-content>
+			<div class="md-dialog-content">
+				<p translate>Please input the following code to confirm the operation</p>
+				<h2 class="text-center">{{expectedMixingConfirmationCode}}</h2>
+				<p>
+					<md-input-container>
+						<label for="confirmationCode" translate>Confirmation code</label>
+						<input autocomplete="off" id="confirmationCode" ng-model="inputMixingConfirmationCode" type="text">
+					</md-input-container>
+				</p>
+			</div>
+		</md-dialog-content>
+
+		<md-dialog-actions layout="row">
+			<md-button ng-click="cancel()">
+				{{'Cancel' | translate}}
+			</md-button>
+			<md-button class="md-primary md-raised" ng-click="answer()" ng-disabled="expectedMixingConfirmationCode !== inputMixingConfirmationCode">
+				{{'Confirm' | translate}}
+			</md-button>
+		</md-dialog-actions>
+	</form>
+</md-dialog>
+

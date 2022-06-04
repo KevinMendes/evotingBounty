@@ -1,0 +1,36 @@
+.scroll-block {
+  overflow: hidden;
+}
+
+.view-wrapper {
+  @media (max-width: @screen-xs-max) {
+    margin-top: 2.750em;
+  }
+}
+
+.layout-wrapper {
+  display: block;
+  height: auto;
+}
+
+.layout-header {
+  position: fixed;
+  z-index: @zindex-header;
+  width: 100%;
+  height: @header-height;
+}
+
+.layout-main {
+  padding-top: @header-height;
+}
+
+.navigation {
+  margin-top: 1em;
+  padding-bottom: 2em;
+
+  .btn-primary {
+    min-width: 13.75em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}

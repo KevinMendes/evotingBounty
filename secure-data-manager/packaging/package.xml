@@ -1,0 +1,55 @@
+<assembly xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+					xmlns="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2"
+					xsi:schemaLocation="http://maven.apache.org/plugins/maven-assembly-plugin/assembly/1.1.2 http://maven.apache.org/xsd/assembly-1.1.2.xsd">
+	<id>files</id>
+	<formats>
+		<format>zip</format>
+	</formats>
+	<includeBaseDirectory>false</includeBaseDirectory>
+
+	<fileSets>
+		<!-- Win 64 SDM -->
+		<!-- NwJS executable -->
+		<fileSet>
+			<directory>${project.build.directory}/install/Secure Data Manager/win64</directory>
+			<outputDirectory>win64</outputDirectory>
+		</fileSet>
+		<!-- sdm & sdmConfig folder -->
+		<fileSet>
+			<directory>${project.build.directory}/install/sdm</directory>
+			<outputDirectory>win64/sdm</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${project.build.directory}/install/langs</directory>
+			<outputDirectory>win64/sdm/langs</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>${project.build.directory}/install/unpackedConfigEngine/properties</directory>
+			<excludes>
+				<exclude>springConfig*</exclude>
+			</excludes>
+			<outputDirectory>win64/sdm/sdmConfig/certificateProperties</outputDirectory>
+		</fileSet>
+		<!-- OpenJDK jre -->
+		<fileSet>
+			<directory>${project.build.directory}/install/OpenJDK-win64</directory>
+			<outputDirectory>win64</outputDirectory>
+		</fileSet>
+	</fileSets>
+	<files>
+		<file>
+			<source>${project.basedir}/resources/backend-server.bat</source>
+			<outputDirectory>win64</outputDirectory>
+			<filtered>true</filtered>
+		</file>
+		<file>
+			<source>${project.basedir}/resources/application.properties</source>
+			<outputDirectory>win64</outputDirectory>
+		</file>
+		<file>
+			<source>${project.basedir}/resources/version.txt</source>
+			<outputDirectory/>
+			<filtered>true</filtered>
+		</file>
+	</files>
+</assembly>

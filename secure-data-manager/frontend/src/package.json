@@ -1,0 +1,20 @@
+{
+	"main": "index.html",
+	"name": "Secure Data Manager",
+	"description": "Secure Data Manager",
+	"version": "0.14.1-0",
+	"license": "(c) Original Developers indicated in attribution.txt, 2022. All Rights Reserved.",
+	"single-instance": false,
+	"window": {
+		"title": "Secure Data Manager App",
+		"frame": true,
+		"fullscreen": false,
+		"toolbar": false,
+		"position": "center",
+		"min_width": 1280,
+		"min_height": 720,
+		"width": 1280,
+		"height": 720,
+		"resizable": true
+	}
+}

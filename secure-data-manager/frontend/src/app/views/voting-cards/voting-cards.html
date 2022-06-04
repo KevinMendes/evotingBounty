@@ -1,0 +1,180 @@
+<tab-bar class="filter-status" filter-active="filterActive" filter-counter="statusCount" filter-tabs="filterTabs"
+         on-tab-selected="onTabSelected"></tab-bar>
+
+<div class="datatable-controls">
+    <h2 class="sr-only" translate>Voting Card Sets</h2>
+    <div class="pbm" ng-if="batchesTotals(['votingcardsets']).length > 0">
+        <div class="status-box">
+            <h3 class="md-title" translate>Ongoing processes</h3>
+            <div class="status-row" ng-repeat="batchesTotal in batchesTotals(['votingcardsets'])">
+                <div class="status-batch-title">
+                    <em class="truncate" ng-if="batchesTotal.type == 'votingcardsets'" title="{{'Generating' | translate}}" translate>Generating</em>
+                    <span ng-if="batches(batchesTotal.type).length > 1">&nbsp;({{batchesTotal.processed}}/{{batchesTotal.total}})</span>
+                    <span>:</span>
+                </div>
+                <div class="status-batches">
+                    <div class="status-batch-item" ng-repeat="batch in batches(batchesTotal.type)">
+                        <div>({{batch.processedItems}}/{{batch.totalItems}})</div>
+                        <md-progress-linear md-mode="determinate" value="{{batch.completedPct}}"></md-progress-linear>
+                        <em class="status-ongoing-progress-time truncate" md-caption title="{{batch.remainingMS | elapsed}}">{{batch.remainingMS |
+                            elapsed}}</em>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="datatable-actions">
+        <div class="datatable-actions-main">
+            <md-button aria-label="{{'Precompute' | translate}}"
+                       class="md-primary md-raised"
+                       id="precompute"
+                       ng-attr-title="{{getSelectVCSText()}}"
+                       ng-click="precomputeVotingCardSets()"
+                       ng-disabled="isThereNoVCSSelected()"
+                       ng-if="vcPrecomputationEnabled() && tableFilter === 'LOCKED'">
+                <md-icon aria-label="{{'Precompute' | translate}}" md-svg-src="assets/icons/ic_menu_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Precompute</span>
+            </md-button>
+            <md-button aria-label="{{'Compute' | translate}}"
+                       class="md-primary md-raised"
+                       id="compute" ng-attr-title="{{getSelectVCSText()}}"
+                       ng-click="computeVotingCardSet()"
+                       ng-disabled="isThereNoVCSSelected()"
+                       ng-if="vcComputationEnabled() && tableFilter === 'PRECOMPUTED'">
+                <md-icon aria-label="{{'Compute' | translate}}" md-svg-src="assets/icons/ic_list_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Compute</span>
+            </md-button>
+            <md-button aria-label="{{'Download' | translate}}"
+                       class="md-primary md-raised"
+                       id="download"
+                       ng-attr-title="{{getSelectVCSText()}}"
+                       ng-click="downloadVotingCardSet()"
+                       ng-disabled="isThereNoVCSSelected()"
+                       ng-if="vcDownloadEnabled() && tableFilter === 'COMPUTED'">
+                <md-icon aria-label="{{'Download' | translate}}" md-svg-src="assets/icons/ic_file_download_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Download</span>
+            </md-button>
+            <md-button aria-label="{{'Generate' | translate}}"
+                       class="md-primary md-raised"
+                       id="generate"
+                       ng-attr-title="{{getSelectVCSText()}}"
+                       ng-click="generateVotingCardSet()"
+                       ng-disabled="isThereNoVCSSelected()"
+                       ng-if="tableFilter === 'VCS_DOWNLOADED'">
+                <md-icon aria-label="{{'Generate' | translate}}" md-svg-src="assets/icons/ic_wrap_text_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Generate</span>
+            </md-button>
+            <md-button aria-label="{{'Sign' | translate}}"
+                       class="md-primary md-raised"
+                       id="sign"
+                       ng-attr-title="{{getSelectVCSText()}}"
+                       ng-click="sign()"
+                       ng-disabled="isThereNoVCSSelected()"
+                       ng-if="tableFilter === 'GENERATED'">
+                <md-icon aria-label="{{'Sign' | translate}}" md-svg-src="assets/icons/ic_vpn_key_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Sign</span>
+            </md-button>
+            <md-button aria-label="{{'Custom files' || translate}}"
+                       class="md-primary md-raised"
+                       id="generate_pre-voting_outputs"
+                       ng-attr-title="{{getSelectVCSText()}}"
+                       ng-click="generatePreVotingOutputs()"
+                       ng-disabled="isThereNoVCSSelected()"
+                       ng-if="generatePreVotingOutputsEnabled() && tableFilter === 'SIGNED'">
+                <md-icon aria-label="{{'Custom files' | translate}}" md-svg-src="assets/icons/ic_file_download_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Custom files</span>
+            </md-button>
+        </div>
+    </div>
+</div>
+
+<div class="datatable-data">
+    <table class="table" aria-describedby="">
+        <thead>
+        <tr>
+            <td class="table-batchselector">
+                <md-checkbox aria-label="{{'Checkbox' | translate}}" class="md-datatable-theme md-primary" data-ng-model="selectAll"
+                             ng-change="onSelectAll(selectAll)" ng-disabled="filteredRows.length === 0"></md-checkbox>
+            </td>
+            <th class="grow-2" scope="col">
+                <span class="no-wrap" title="{{'Title'|translate}}" translate>Title</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Alias'|translate}}" translate>Alias</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Ballot Box'|translate}}" translate>Ballot Box</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Ballot'|translate}}" translate>Ballot</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Next step'|translate}}" translate>Next step</span>
+            </th>
+            <th class="grow-2" scope="col">
+                <span class="no-wrap" title="{{'Details'|translate}}" translate>Details</span>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-ng-repeat="votingCardSet in data.votingCardSets.result | filter:customFilter:true as filteredRows">
+            <td class="table-batchselector">
+                <md-checkbox aria-label="{{'Checkbox' | translate}}" class="md-datatable-theme md-primary" data-ng-model="votingCardSet.selected"
+                             id="check_{{votingCardSet.id}}" ng-change="updateSelectAll(votingCardSet.selected)"></md-checkbox>
+            </td>
+            <td class="grow-2">{{votingCardSet.defaultTitle}}</td>
+            <td>{{votingCardSet.alias}}</td>
+            <td>{{votingCardSet.ballotBoxAlias}}</td>
+            <td>{{votingCardSet.ballotAlias}}</td>
+            <td>
+                <span ng-if="votingCardSet.status=='LOCKED'" translate>To pre-compute</span>
+                <span ng-if="votingCardSet.status=='PRECOMPUTED'" translate>To compute</span>
+                <span ng-if="votingCardSet.status=='COMPUTING'" translate>Computing</span>
+                <span ng-if="votingCardSet.status=='COMPUTED'" translate>To download</span>
+                <span ng-if="votingCardSet.status=='VCS_DOWNLOADED'" translate>To generate</span>
+                <span ng-if="votingCardSet.status=='GENERATED'" translate>To sign</span>
+                <span ng-if="votingCardSet.status=='SIGNED'" translate>Done</span>
+            </td>
+            <td class="grow-2">
+                <div>
+                    <span class="no-wrap" title="{{votingCardSet.details | translate}}">{{votingCardSet.details | translate}}</span>
+                </div>
+                <!-- if no ongoing process -->
+                <div data-ng-if="!progress(votingCardSet.id).processing">
+                    <div data-ng-if="progress(votingCardSet.id).itemCount">
+                        <span class="text-muted no-wrap" title="{{'Generated voting cards:'|translate}}" translate>Generated voting cards:</span>
+                        <span>{{progress(votingCardSet.id).itemCount}}</span>
+                    </div>
+                    <div data-ng-if="progress(votingCardSet.id).errorCount">
+                        <span class="text-muted text-danger no-wrap" title="{{'Errors:'|translate}}" translate>Errors:</span>
+                        <span>{{progress(votingCardSet.id).errorCount}}</span>
+                    </div>
+                </div>
+                <!-- if ongoing process -->
+                <div data-ng-if="progress(votingCardSet.id).queued">
+                    <em class="fss no-wrap" title="{{'Queued...' | translate}}" translate>Queued...</em>
+                </div>
+                <div data-ng-if="votingCardSet.processing">
+                    <em class="fss no-wrap" data-ng-if="votingCardSet.status=='LOCKED'" title="{{'Pre-computing...' | translate}}" translate>Pre-computing...</em>
+                    <em class="fss no-wrap" data-ng-if="votingCardSet.status=='PRECOMPUTED'" title="{{'Computing...' | translate}}" translate>Computing...</em>
+                    <em class="fss no-wrap" data-ng-if="votingCardSet.status=='COMPUTED'" title="{{'Downloading...' | translate}}" translate>Downloading...</em>
+                </div>
+                <div data-ng-if="progress(votingCardSet.id).processing">
+                    <em class="fss no-wrap" data-ng-if="votingCardSet.status=='VCS_DOWNLOADED'" title="{{'Generating...' | translate}}" translate>Generating...</em>
+                    <div class="progress-bar">
+                        <span class="bar" style="width: {{progress(votingCardSet.id).pct}}%;"></span>
+                        <span class="sr-only">{{progress(votingCardSet.id).pct}}%</span>
+                    </div>
+                </div>
+                <div data-ng-if="progress(votingCardSet.id).processing && progress(votingCardSet.id).eta>0">
+                    <span class="no-wrap" title="{{'Estimated time:'|translate}}" translate>Estimated time:</span>
+                    <span class="no-wrap" title="{{ progress(votingCardSet.id).eta | elapsed }}">{{ progress(votingCardSet.id).eta | elapsed }}</span>
+                </div>
+                <div data-ng-if="progress(votingCardSet.id).processing && progress(votingCardSet.id).eta<0">
+                    <span class="no-wrap" title="{{'Estimating time'|translate}}" translate>Estimating time</span>
+                </div>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

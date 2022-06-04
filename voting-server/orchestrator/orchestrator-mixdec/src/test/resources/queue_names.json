@@ -1,0 +1,20 @@
+{
+  "m1": {
+	"md-mixdec": {
+	  "res": "md-mixdec-m1-res",
+	  "req": "md-mixdec-m1-req"
+	}
+  },
+  "m3": {
+	"md-mixdec": {
+	  "res": "md-mixdec-m3-res",
+	  "req": "md-mixdec-m3-req"
+	}
+  },
+  "m2": {
+	"md-mixdec": {
+	  "res": "md-mixdec-m2-res",
+	  "req": "md-mixdec-m2-req"
+	}
+  }
+}

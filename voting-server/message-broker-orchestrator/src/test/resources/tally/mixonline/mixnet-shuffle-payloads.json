@@ -1,0 +1,546 @@
+[
+	{
+		"electionEventId": "e3e3c2fd8a16489291c5c24e7b74b26e",
+		"ballotBoxId": "e3e3c2fd8a16489291c5c2222222222e",
+		"encryptionGroup": {
+			"p": "0x3B",
+			"q": "0x1D",
+			"g": "0x3"
+		},
+		"verifiableDecryptions": {
+			"ciphertexts": [
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x3",
+						"0x9"
+					]
+				},
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x1",
+						"0x3"
+					]
+				}
+			],
+			"decryptionProofs": [
+				{
+					"e": "0x0",
+					"z": [
+						"0x0",
+						"0x2"
+					]
+				},
+				{
+					"e": "0x4",
+					"z": [
+						"0x4",
+						"0x0"
+					]
+				}
+			]
+		},
+		"verifiableShuffle": {
+			"shuffledCiphertexts": [
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x3",
+						"0x9"
+					]
+				},
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x1",
+						"0x3"
+					]
+				}
+			],
+			"shuffleArgument": {
+				"c_A": [
+					"0x3"
+				],
+				"c_B": [
+					"0x3"
+				],
+				"productArgument": {
+					"singleValueProductArgument": {
+						"c_d": "0x1",
+						"c_delta": "0x9",
+						"c_Delta": "0x5",
+						"a_tilde": [
+							"0x4",
+							"0x4"
+						],
+						"b_tilde": [
+							"0x2",
+							"0x4"
+						],
+						"r_tilde": "0x4",
+						"s_tilde": "0x3"
+					}
+				},
+				"multiExponentiationArgument": {
+					"c_A_0": "0x4",
+					"c_B": [
+						"0x4",
+						"0x5"
+					],
+					"E": [
+						{
+							"gamma": "0x5",
+							"phis": [
+								"0x3",
+								"0x3"
+							]
+						},
+						{
+							"gamma": "0x4",
+							"phis": [
+								"0x1",
+								"0x1"
+							]
+						}
+					],
+					"a": [
+						"0x3",
+						"0x1"
+					],
+					"r": "0x0",
+					"b": "0x4",
+					"s": "0x2",
+					"tau": "0x4"
+				}
+			}
+		},
+		"remainingElectionPublicKey": [
+			"0x3",
+			"0x3"
+		],
+		"previousRemainingElectionPublicKey": [
+			"0x1",
+			"0x3"
+		],
+		"nodeElectionPublicKey": [
+			"0x5",
+			"0x5"
+		],
+		"nodeId": 1,
+		"signature": {
+			"signatureContents": "BaWZPzvnlaxcKRX25x4Q4t6D1z96ltSUYeJoLA5T0ic=",
+			"certificateChain": [
+				"-----BEGIN CERTIFICATE-----\r\nMIIDNDCCAhygAwIBAgICAgUwDQYJKoZIhvcNAQELBQAwXTERMA8GA1UEAwwIdGVz\r\ndC5jb20xDTALBgNVBAsMBHRlc3QxDjAMBgNVBAoMBXRlc3QuMQ0wCwYDVQQHDAR0\r\nZXN0MQ0wCwYDVQQIDAR0ZXN0MQswCQYDVQQGEwJDQTAeFw0yMjAyMjIxNDU3NDNa\r\nFw0yMzAyMjIwMDAwMDBaMF0xETAPBgNVBAMMCHRlc3QuY29tMQ0wCwYDVQQLDAR0\r\nZXN0MQ4wDAYDVQQKDAV0ZXN0LjENMAsGA1UEBwwEdGVzdDENMAsGA1UECAwEdGVz\r\ndDELMAkGA1UEBhMCQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCM\r\nWokqmhIFOCHOEtI3TCN5ydil0HXq1Rb8cKJOe5VQ9B+xGeoFuhiiueRgHRZhBKpC\r\ncEJekJDAlELROXOTpjjkg4s0XdYCdz6xlRYcGYVoBegnHZIprXaD8QB5ZSbIjwb8\r\nDhwR/Ofp9W3jzPD8Ut0srl42N46Kk8Vh+hPtUxc5Uag4XN7l7i3bHV34yEJtrZ9s\r\n8fXun98/X/o7McHSJhjmZgHCWFdNmOWAlg5uG2DYteh+tPLxm1PfVR6z0T9B33GU\r\npWeTtU/f74ElhXsBGoDtMo0p4vHg0rGsgNqyyDDwVBKGjFJqwY3hndosA8SHwGJC\r\nkHefrPuLsLwiX3pW22WHAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAFRMTUGiMjiw\r\nI+rxS8/x8qjlEHwovjVxYguVJaOv4+Snf2rJjyrzDMrvEljSY88uPclgxIlbYYzx\r\nGHE/PIbYfM0Pjt3S3ve4nCwnLBw6v3W7PPHdJEezsNqYwDtuHdqY5gdfPKA1o3M4\r\nzK9epBufcsal8tFtlQtGfBw+Bz2zm+AT7r5ROJLtin2NkbTJig8Fy8HKNhFodMxo\r\n0QGC/4O/OdqdN79U9+5N/+wPTCpqAzwJND8+iqMA7rxPstb1UdqrNArdsYZWRTTv\r\nEyhW8g33fUJcsz+p3aHmn+qJerfWPFywdiRuJnjyhDuasP7bWgqmsKL7IVrCUnKM\r\nzSwNhLtUVuY=\r\n-----END CERTIFICATE-----\r\n"
+			]
+		}
+	},
+	{
+		"electionEventId": "e3e3c2fd8a16489291c5c24e7b74b26e",
+		"ballotBoxId": "e3e3c2fd8a16489291c5c2222222222e",
+		"encryptionGroup": {
+			"p": "0x3B",
+			"q": "0x1D",
+			"g": "0x3"
+		},
+		"verifiableDecryptions": {
+			"ciphertexts": [
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x3",
+						"0x9"
+					]
+				},
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x1",
+						"0x3"
+					]
+				}
+			],
+			"decryptionProofs": [
+				{
+					"e": "0x0",
+					"z": [
+						"0x0",
+						"0x2"
+					]
+				},
+				{
+					"e": "0x4",
+					"z": [
+						"0x4",
+						"0x0"
+					]
+				}
+			]
+		},
+		"verifiableShuffle": {
+			"shuffledCiphertexts": [
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x3",
+						"0x9"
+					]
+				},
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x1",
+						"0x3"
+					]
+				}
+			],
+			"shuffleArgument": {
+				"c_A": [
+					"0x3"
+				],
+				"c_B": [
+					"0x3"
+				],
+				"productArgument": {
+					"singleValueProductArgument": {
+						"c_d": "0x1",
+						"c_delta": "0x9",
+						"c_Delta": "0x5",
+						"a_tilde": [
+							"0x4",
+							"0x4"
+						],
+						"b_tilde": [
+							"0x2",
+							"0x4"
+						],
+						"r_tilde": "0x4",
+						"s_tilde": "0x3"
+					}
+				},
+				"multiExponentiationArgument": {
+					"c_A_0": "0x4",
+					"c_B": [
+						"0x4",
+						"0x5"
+					],
+					"E": [
+						{
+							"gamma": "0x5",
+							"phis": [
+								"0x3",
+								"0x3"
+							]
+						},
+						{
+							"gamma": "0x4",
+							"phis": [
+								"0x1",
+								"0x1"
+							]
+						}
+					],
+					"a": [
+						"0x3",
+						"0x1"
+					],
+					"r": "0x0",
+					"b": "0x4",
+					"s": "0x2",
+					"tau": "0x4"
+				}
+			}
+		},
+		"remainingElectionPublicKey": [
+			"0x5",
+			"0x3"
+		],
+		"previousRemainingElectionPublicKey": [
+			"0x5",
+			"0x4"
+		],
+		"nodeElectionPublicKey": [
+			"0x1",
+			"0x1"
+		],
+		"nodeId": 2,
+		"signature": {
+			"signatureContents": "BaWZPzvnlaxcKRX25x4Q4t6D1z96ltSUYeJoLA5T0ic=",
+			"certificateChain": [
+				"-----BEGIN CERTIFICATE-----\r\nMIIDNDCCAhygAwIBAgICAgUwDQYJKoZIhvcNAQELBQAwXTERMA8GA1UEAwwIdGVz\r\ndC5jb20xDTALBgNVBAsMBHRlc3QxDjAMBgNVBAoMBXRlc3QuMQ0wCwYDVQQHDAR0\r\nZXN0MQ0wCwYDVQQIDAR0ZXN0MQswCQYDVQQGEwJDQTAeFw0yMjAyMjIxNDU3NDNa\r\nFw0yMzAyMjIwMDAwMDBaMF0xETAPBgNVBAMMCHRlc3QuY29tMQ0wCwYDVQQLDAR0\r\nZXN0MQ4wDAYDVQQKDAV0ZXN0LjENMAsGA1UEBwwEdGVzdDENMAsGA1UECAwEdGVz\r\ndDELMAkGA1UEBhMCQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCM\r\nWokqmhIFOCHOEtI3TCN5ydil0HXq1Rb8cKJOe5VQ9B+xGeoFuhiiueRgHRZhBKpC\r\ncEJekJDAlELROXOTpjjkg4s0XdYCdz6xlRYcGYVoBegnHZIprXaD8QB5ZSbIjwb8\r\nDhwR/Ofp9W3jzPD8Ut0srl42N46Kk8Vh+hPtUxc5Uag4XN7l7i3bHV34yEJtrZ9s\r\n8fXun98/X/o7McHSJhjmZgHCWFdNmOWAlg5uG2DYteh+tPLxm1PfVR6z0T9B33GU\r\npWeTtU/f74ElhXsBGoDtMo0p4vHg0rGsgNqyyDDwVBKGjFJqwY3hndosA8SHwGJC\r\nkHefrPuLsLwiX3pW22WHAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAFRMTUGiMjiw\r\nI+rxS8/x8qjlEHwovjVxYguVJaOv4+Snf2rJjyrzDMrvEljSY88uPclgxIlbYYzx\r\nGHE/PIbYfM0Pjt3S3ve4nCwnLBw6v3W7PPHdJEezsNqYwDtuHdqY5gdfPKA1o3M4\r\nzK9epBufcsal8tFtlQtGfBw+Bz2zm+AT7r5ROJLtin2NkbTJig8Fy8HKNhFodMxo\r\n0QGC/4O/OdqdN79U9+5N/+wPTCpqAzwJND8+iqMA7rxPstb1UdqrNArdsYZWRTTv\r\nEyhW8g33fUJcsz+p3aHmn+qJerfWPFywdiRuJnjyhDuasP7bWgqmsKL7IVrCUnKM\r\nzSwNhLtUVuY=\r\n-----END CERTIFICATE-----\r\n"
+			]
+		}
+	},
+	{
+		"electionEventId": "e3e3c2fd8a16489291c5c24e7b74b26e",
+		"ballotBoxId": "e3e3c2fd8a16489291c5c2222222222e",
+		"encryptionGroup": {
+			"p": "0x3B",
+			"q": "0x1D",
+			"g": "0x3"
+		},
+		"verifiableDecryptions": {
+			"ciphertexts": [
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x3",
+						"0x9"
+					]
+				},
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x1",
+						"0x3"
+					]
+				}
+			],
+			"decryptionProofs": [
+				{
+					"e": "0x0",
+					"z": [
+						"0x0",
+						"0x2"
+					]
+				},
+				{
+					"e": "0x4",
+					"z": [
+						"0x4",
+						"0x0"
+					]
+				}
+			]
+		},
+		"verifiableShuffle": {
+			"shuffledCiphertexts": [
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x3",
+						"0x9"
+					]
+				},
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x1",
+						"0x3"
+					]
+				}
+			],
+			"shuffleArgument": {
+				"c_A": [
+					"0x3"
+				],
+				"c_B": [
+					"0x3"
+				],
+				"productArgument": {
+					"singleValueProductArgument": {
+						"c_d": "0x1",
+						"c_delta": "0x9",
+						"c_Delta": "0x5",
+						"a_tilde": [
+							"0x4",
+							"0x4"
+						],
+						"b_tilde": [
+							"0x2",
+							"0x4"
+						],
+						"r_tilde": "0x4",
+						"s_tilde": "0x3"
+					}
+				},
+				"multiExponentiationArgument": {
+					"c_A_0": "0x4",
+					"c_B": [
+						"0x4",
+						"0x5"
+					],
+					"E": [
+						{
+							"gamma": "0x5",
+							"phis": [
+								"0x3",
+								"0x3"
+							]
+						},
+						{
+							"gamma": "0x4",
+							"phis": [
+								"0x1",
+								"0x1"
+							]
+						}
+					],
+					"a": [
+						"0x3",
+						"0x1"
+					],
+					"r": "0x0",
+					"b": "0x4",
+					"s": "0x2",
+					"tau": "0x4"
+				}
+			}
+		},
+		"remainingElectionPublicKey": [
+			"0x3",
+			"0x5"
+		],
+		"previousRemainingElectionPublicKey": [
+			"0x4",
+			"0x9"
+		],
+		"nodeElectionPublicKey": [
+			"0x9",
+			"0x9"
+		],
+		"nodeId": 3,
+		"signature": {
+			"signatureContents": "BaWZPzvnlaxcKRX25x4Q4t6D1z96ltSUYeJoLA5T0ic=",
+			"certificateChain": [
+				"-----BEGIN CERTIFICATE-----\r\nMIIDNDCCAhygAwIBAgICAgUwDQYJKoZIhvcNAQELBQAwXTERMA8GA1UEAwwIdGVz\r\ndC5jb20xDTALBgNVBAsMBHRlc3QxDjAMBgNVBAoMBXRlc3QuMQ0wCwYDVQQHDAR0\r\nZXN0MQ0wCwYDVQQIDAR0ZXN0MQswCQYDVQQGEwJDQTAeFw0yMjAyMjIxNDU3NDNa\r\nFw0yMzAyMjIwMDAwMDBaMF0xETAPBgNVBAMMCHRlc3QuY29tMQ0wCwYDVQQLDAR0\r\nZXN0MQ4wDAYDVQQKDAV0ZXN0LjENMAsGA1UEBwwEdGVzdDENMAsGA1UECAwEdGVz\r\ndDELMAkGA1UEBhMCQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCM\r\nWokqmhIFOCHOEtI3TCN5ydil0HXq1Rb8cKJOe5VQ9B+xGeoFuhiiueRgHRZhBKpC\r\ncEJekJDAlELROXOTpjjkg4s0XdYCdz6xlRYcGYVoBegnHZIprXaD8QB5ZSbIjwb8\r\nDhwR/Ofp9W3jzPD8Ut0srl42N46Kk8Vh+hPtUxc5Uag4XN7l7i3bHV34yEJtrZ9s\r\n8fXun98/X/o7McHSJhjmZgHCWFdNmOWAlg5uG2DYteh+tPLxm1PfVR6z0T9B33GU\r\npWeTtU/f74ElhXsBGoDtMo0p4vHg0rGsgNqyyDDwVBKGjFJqwY3hndosA8SHwGJC\r\nkHefrPuLsLwiX3pW22WHAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAFRMTUGiMjiw\r\nI+rxS8/x8qjlEHwovjVxYguVJaOv4+Snf2rJjyrzDMrvEljSY88uPclgxIlbYYzx\r\nGHE/PIbYfM0Pjt3S3ve4nCwnLBw6v3W7PPHdJEezsNqYwDtuHdqY5gdfPKA1o3M4\r\nzK9epBufcsal8tFtlQtGfBw+Bz2zm+AT7r5ROJLtin2NkbTJig8Fy8HKNhFodMxo\r\n0QGC/4O/OdqdN79U9+5N/+wPTCpqAzwJND8+iqMA7rxPstb1UdqrNArdsYZWRTTv\r\nEyhW8g33fUJcsz+p3aHmn+qJerfWPFywdiRuJnjyhDuasP7bWgqmsKL7IVrCUnKM\r\nzSwNhLtUVuY=\r\n-----END CERTIFICATE-----\r\n"
+			]
+		}
+	},
+	{
+		"electionEventId": "e3e3c2fd8a16489291c5c24e7b74b26e",
+		"ballotBoxId": "e3e3c2fd8a16489291c5c2222222222e",
+		"encryptionGroup": {
+			"p": "0x3B",
+			"q": "0x1D",
+			"g": "0x3"
+		},
+		"verifiableDecryptions": {
+			"ciphertexts": [
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x3",
+						"0x9"
+					]
+				},
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x1",
+						"0x3"
+					]
+				}
+			],
+			"decryptionProofs": [
+				{
+					"e": "0x0",
+					"z": [
+						"0x0",
+						"0x2"
+					]
+				},
+				{
+					"e": "0x4",
+					"z": [
+						"0x4",
+						"0x0"
+					]
+				}
+			]
+		},
+		"verifiableShuffle": {
+			"shuffledCiphertexts": [
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x3",
+						"0x9"
+					]
+				},
+				{
+					"gamma": "0x9",
+					"phis": [
+						"0x1",
+						"0x3"
+					]
+				}
+			],
+			"shuffleArgument": {
+				"c_A": [
+					"0x3"
+				],
+				"c_B": [
+					"0x3"
+				],
+				"productArgument": {
+					"singleValueProductArgument": {
+						"c_d": "0x1",
+						"c_delta": "0x9",
+						"c_Delta": "0x5",
+						"a_tilde": [
+							"0x4",
+							"0x4"
+						],
+						"b_tilde": [
+							"0x2",
+							"0x4"
+						],
+						"r_tilde": "0x4",
+						"s_tilde": "0x3"
+					}
+				},
+				"multiExponentiationArgument": {
+					"c_A_0": "0x4",
+					"c_B": [
+						"0x4",
+						"0x5"
+					],
+					"E": [
+						{
+							"gamma": "0x5",
+							"phis": [
+								"0x3",
+								"0x3"
+							]
+						},
+						{
+							"gamma": "0x4",
+							"phis": [
+								"0x1",
+								"0x1"
+							]
+						}
+					],
+					"a": [
+						"0x3",
+						"0x1"
+					],
+					"r": "0x0",
+					"b": "0x4",
+					"s": "0x2",
+					"tau": "0x4"
+				}
+			}
+		},
+		"remainingElectionPublicKey": [
+			"0x4",
+			"0x4"
+		],
+		"previousRemainingElectionPublicKey": [
+			"0x5",
+			"0x3"
+		],
+		"nodeElectionPublicKey": [
+			"0x9",
+			"0x1"
+		],
+		"nodeId": 4,
+		"signature": {
+			"signatureContents": "BaWZPzvnlaxcKRX25x4Q4t6D1z96ltSUYeJoLA5T0ic=",
+			"certificateChain": [
+				"-----BEGIN CERTIFICATE-----\r\nMIIDNDCCAhygAwIBAgICAgUwDQYJKoZIhvcNAQELBQAwXTERMA8GA1UEAwwIdGVz\r\ndC5jb20xDTALBgNVBAsMBHRlc3QxDjAMBgNVBAoMBXRlc3QuMQ0wCwYDVQQHDAR0\r\nZXN0MQ0wCwYDVQQIDAR0ZXN0MQswCQYDVQQGEwJDQTAeFw0yMjAyMjIxNDU3NDNa\r\nFw0yMzAyMjIwMDAwMDBaMF0xETAPBgNVBAMMCHRlc3QuY29tMQ0wCwYDVQQLDAR0\r\nZXN0MQ4wDAYDVQQKDAV0ZXN0LjENMAsGA1UEBwwEdGVzdDENMAsGA1UECAwEdGVz\r\ndDELMAkGA1UEBhMCQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCM\r\nWokqmhIFOCHOEtI3TCN5ydil0HXq1Rb8cKJOe5VQ9B+xGeoFuhiiueRgHRZhBKpC\r\ncEJekJDAlELROXOTpjjkg4s0XdYCdz6xlRYcGYVoBegnHZIprXaD8QB5ZSbIjwb8\r\nDhwR/Ofp9W3jzPD8Ut0srl42N46Kk8Vh+hPtUxc5Uag4XN7l7i3bHV34yEJtrZ9s\r\n8fXun98/X/o7McHSJhjmZgHCWFdNmOWAlg5uG2DYteh+tPLxm1PfVR6z0T9B33GU\r\npWeTtU/f74ElhXsBGoDtMo0p4vHg0rGsgNqyyDDwVBKGjFJqwY3hndosA8SHwGJC\r\nkHefrPuLsLwiX3pW22WHAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAFRMTUGiMjiw\r\nI+rxS8/x8qjlEHwovjVxYguVJaOv4+Snf2rJjyrzDMrvEljSY88uPclgxIlbYYzx\r\nGHE/PIbYfM0Pjt3S3ve4nCwnLBw6v3W7PPHdJEezsNqYwDtuHdqY5gdfPKA1o3M4\r\nzK9epBufcsal8tFtlQtGfBw+Bz2zm+AT7r5ROJLtin2NkbTJig8Fy8HKNhFodMxo\r\n0QGC/4O/OdqdN79U9+5N/+wPTCpqAzwJND8+iqMA7rxPstb1UdqrNArdsYZWRTTv\r\nEyhW8g33fUJcsz+p3aHmn+qJerfWPFywdiRuJnjyhDuasP7bWgqmsKL7IVrCUnKM\r\nzSwNhLtUVuY=\r\n-----END CERTIFICATE-----\r\n"
+			]
+		}
+	}
+]

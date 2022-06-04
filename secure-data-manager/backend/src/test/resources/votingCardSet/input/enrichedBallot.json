@@ -1,0 +1,188 @@
+{
+  "id": "1234",
+  "electionEvent": {
+    "id": "9bc5c84773b640c59599a953ccdbfe18"
+  },
+  "contests": [
+    {
+      "id": "100",
+      "type": "switzerland_votation",
+      "options": [
+        {
+          "id": "optionA1",
+          "representation": "3",
+          "attributes": [
+            "attributegroupA"
+          ]
+        },
+        {
+          "id": "optionA2",
+          "representation": "5",
+          "attributes": [
+            "attributegroupA"
+          ]
+        },
+        {
+          "id": "optionB1",
+          "representation": "7",
+          "attributes": [
+            "attributegroupB"
+          ]
+        },
+        {
+          "id": "optionB2",
+          "representation": "11",
+          "attributes": [
+            "attributegroupB"
+          ]
+        }
+      ],
+      "optionsAttributes": [
+        {
+          "id": "attributegroupA",
+          "type": "group",
+          "correctness": true
+        },
+        {
+          "id": "attributegroupB",
+          "type": "group",
+          "correctness": true
+        }
+      ]
+    },
+    {
+      "id": "100",
+      "type": "switzerland_election",
+      "options": [
+        {
+          "id": "optionPA",
+          "representation": "13",
+          "attributes": [
+            "attributepartyA"
+          ]
+        },
+        {
+          "id": "optionPB",
+          "representation": "17",
+          "attributes": [
+            "attributepartyB"
+          ]
+        },
+        {
+          "id": "optionblank",
+          "representation": "19",
+          "attributes": [
+            "attributepartyblank",
+            "attributeblank"
+          ]
+        },
+        {
+          "id": "optionPAC1",
+          "representation": "23",
+          "attributes": [
+            "attributecandidatepartyA"
+          ]
+        },
+        {
+          "id": "optionPAC2",
+          "representation": "29",
+          "attributes": [
+            "attributecandidatepartyA"
+          ]
+        },
+        {
+          "id": "optionPAC3",
+          "representation": "31",
+          "attributes": [
+            "attributecandidatepartyA"
+          ]
+        },
+        {
+          "id": "optionPBC1",
+          "representation": "37",
+          "attributes": [
+            "attributecandidatepartyB"
+          ]
+        },
+        {
+          "id": "optionPBC2",
+          "representation": "41",
+          "attributes": [
+            "attributecandidatepartyB"
+          ]
+        },
+        {
+          "id": "optionPBC3",
+          "representation": "43",
+          "attributes": [
+            "attributecandidatepartyB"
+          ]
+        },
+        {
+          "id": "optionblankC1",
+          "representation": "47",
+          "attributes": [
+            "attributecandidatepartyblank",
+            "attributeblank"
+          ]
+        },
+        {
+          "id": "optionblankC2",
+          "representation": "53",
+          "attributes": [
+            "attributecandidatepartyblank",
+            "attributeblank"
+          ]
+        },
+        {
+          "id": "optionblankC3",
+          "representation": "59",
+          "attributes": [
+            "attributecandidatepartyblank",
+            "attributeblank"
+          ]
+        }
+      ],
+      "optionsAttributes": [
+        {
+          "id": "attributepartyA",
+          "type": "party",
+          "correctness": true
+        },
+        {
+          "id": "attributepartyB",
+          "type": "party",
+          "correctness": true
+        },
+        {
+          "id": "attributepartyblank",
+          "type": "party",
+          "correctness": true
+        },
+        {
+          "id": "attributecandidatepartyA",
+          "type": "candidate",
+          "partyAttributeId": "attributepartyA",
+          "correctness": true
+        },
+        {
+          "id": "attributecandidatepartyB",
+          "type": "candidate",
+          "partyAttributeId": "attributepartyB",
+          "correctness": true
+        },
+        {
+          "id": "attributecandidatepartyblank",
+          "type": "candidate",
+          "partyAttributeId": "attributepartyblank",
+          "correctness": true
+        },
+        {
+          "id": "attributeblank",
+          "type": "blank",
+          "correctness": false
+        }
+      ]
+    }
+  ]
+}

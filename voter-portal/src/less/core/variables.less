@@ -1,0 +1,1280 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## Gray and brand colors for use across Bootstrap.
+
+@gray-darker: lighten(#000, 13.5%); // #222
+@gray-dark: lighten(#000, 20%); // #333
+@gray: lighten(#000, 33.5%); // #555
+@gray-light: lighten(#000, 60%); // #999
+@gray-lighter: lighten(#000, 93.5%); // #eee
+
+@brand-primary: #fcce00;
+@brand-secondary: #727272;
+@brand-success: #3d614c;
+@brand-info: #467a9c;
+@brand-warning: #8d4832;
+@brand-danger: #963939;
+
+@brand-primary-contrast: #000;
+@brand-secondary-contrast: #fff;
+@brand-success-contrast: #fff;
+@brand-info-contrast: #fff;
+@brand-warning-contrast: #fff;
+@brand-danger-contrast: #fff;
+
+//== Custom Icons variables
+
+@ci-font-family: "customicons";
+@ci-check: "\e691";
+@ci-info: "\e64b";
+@ci-alert: "\e603";
+@ci-error: "\e635";
+@ci-check-circled: "\e692";
+@ci-chevron-down: "\e616";
+@ci-chevron-left: "\e617";
+@ci-chevron-right: "\e618";
+@ci-chevron-up: "\e619";
+@ci-home: "\e649";
+@ci-search: "\e687";
+@ci-breadcrumb-separator: @ci-chevron-right;
+@ci-breadcrumb-separator-rtl: @ci-chevron-left;
+
+
+//== Scaffolding
+//
+// ## Settings for some of the most global styles.
+
+//** Background color for `<body>`.
+@body-bg: #f0f0f0;
+//** Global text color on `<body>`.
+@text-color: #333;
+@border-color: #c2bfb9;
+
+//** Global textual link color.
+@link-color: #fcce00;
+//** Link hover color set via `darken()` function.
+@link-hover-color: #380627;
+@link-no-underline-hover: @link-hover-color;
+//** Global text decoration link
+@link-text-decoration: underline;
+@link-hover-text-decoration: none;
+//** Global outline color
+@outline-color: #2186a7;
+
+@page-wrapper-heading-bg: rgba(255, 255, 255, 0);
+@page-wrapper-body-bg: rgba(255, 255, 255, 0);
+
+@page-wrapper-bg-image-sm: url('@{img-path}page-wrapper-bg-sm.png');
+@page-wrapper-bg-image-md: url('@{img-path}page-wrapper-bg-md.png');
+@page-wrapper-bg-image-lg: url('@{img-path}page-wrapper-bg-lg.png');
+
+@main-container-bg: rgba(255, 255, 255, 0);
+@main-container-border-color: rgba(255, 255, 255, 0);
+@main-container-border-width: 0;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-family-sans-serif: 'Roboto Regular', "Helvetica Neue", Helvetica, Arial, sans-serif;
+@font-family-serif: Georgia, "Times New Roman", Times, serif;
+//** Default monospace fonts for `<code>`, `<kbd>`, and `<pre>`.
+@font-family-monospace: Menlo, Monaco, Consolas, "Courier New", monospace;
+@font-family-base: @font-family-sans-serif;
+
+@font-size-medium-mult: 1.14;
+@font-size-large-mult: 1.25;
+
+@font-size-base: 16px;
+@font-size-base-em: 1em;
+@font-size-medium: ceil((@font-size-base * @font-size-medium-mult)); // ~16px
+@font-size-large: ceil((@font-size-base * 1.25)); // ~18px
+@font-size-small: ceil((@font-size-base * 0.85)); // ~12px
+
+@font-size-h1: 2.143em; // ~30px in 14px base
+@font-size-h2: 1.714em; // ~24px in 14px base
+@font-size-h3: 1.286em; // ~18px in 14px base
+@font-size-h4: 1.143em; // ~36px in 14px base
+@font-size-h5: 1em; // ~14px base
+@font-size-h6: 0.857em; // ~12px in 14px base
+
+@font-color-h1: @headings-color;
+@font-color-h2: @headings-color;
+@font-color-h3: @headings-color;
+@font-color-h4: @headings-color;
+@font-color-h5: @headings-color;
+@font-color-h6: @headings-color;
+
+@font-family-h1: 'Roboto Light', @font-family-sans-serif;
+@font-family-h2: 'Roboto Light', @font-family-sans-serif;
+@font-family-h3: 'Roboto Light', @font-family-sans-serif;
+@font-family-h4: @font-family-sans-serif;
+@font-family-h5: @font-family-sans-serif;
+@font-family-h6: @font-family-sans-serif;
+
+//** Type extended
+@font-xxsmall: 0.714em; // 10px in 14 base
+@font-xsmall: 0.786em; // 11px in 14 base
+@font-small: 0.857em; // 12px in 14 base
+@font-default: 1em; // 14px in 14 base
+@font-medium: 1.143em; // 16px in 14 base
+@font-xmedium: 1.286em; // 18px in 14 base
+@font-large: 1.429em; // 20px in 14 base
+@font-xlarge: 1.714em; // 24px in 14 base
+@font-xxlarge: 2.143em; // 30px in 14 base
+@font-xxxlarge: 3.429em; // 48px in 14 base
+
+//** Unit-less `line-height` for use in components like buttons.
+@line-height-base: 1.428571429; // 20/14
+//** Computed "line-height" (`font-size` * `line-height`) for use with `margin`, `padding`, etc.
+@line-height-computed: floor((@font-size-base * @line-height-base)); // ~20px
+
+//** By default, this inherits from the `<body>`.
+@headings-font-family: inherit;
+@headings-font-weight: 500;
+@headings-line-height: @line-height-base;
+@headings-color: @text-color;
+
+
+//-- Images
+//
+//## Specify custom locations of the images.
+
+@img-path: "../assets/img/";
+
+
+//-- Iconography
+//
+//## Specify custom locations of the include Glyphicons icon font. Useful for those including Bootstrap via Bower.
+
+@icon-font-path: "../assets/fonts/";
+@icon-font-name: "glyphicons-halflings-regular";
+@icon-font-svg-id: "glyphicons_halflingsregular";
+
+//== Components
+//
+//## Define common padding and border radius sizes and more. Values based on 14px text and 1.428 line-height (~20px to start).
+
+@padding-btn-vertical: 0.429em;
+
+@padding-base-vertical: 6px;
+@padding-base-horizontal: 12px;
+
+@padding-large-vertical: 10px;
+@padding-large-horizontal: 16px;
+
+@padding-small-vertical: 5px;
+@padding-small-horizontal: 10px;
+
+@padding-xs-vertical: 1px;
+@padding-xs-horizontal: 5px;
+
+@line-height-large: 1.33;
+@line-height-small: 1.5;
+
+@border-width-base: 1px;
+
+@border-radius-base: 0;
+@border-radius-large: 6px;
+@border-radius-small: 3px;
+
+//** Bricks
+@brick-base: (@grid-gutter-width/2);
+@brick-lg: @grid-gutter-width;
+
+//** Spaces helpers
+@space-sm: floor(@brick-base/2);
+@space-md: @brick-base;
+@space-lg: @brick-lg;
+@space-xlg: (@brick-lg * 2);
+
+//** Global color for active items (e.g., navs or dropdowns).
+@component-active-color: #fff;
+//** Global background color for active items (e.g., navs or dropdowns).
+@component-active-bg: @brand-primary;
+
+//** Width of the `border` for generating carets that indicator dropdowns.
+@caret-width-base: 4px;
+//** Carets increase slightly in size for larger components.
+@caret-width-large: 5px;
+
+
+//== Tables
+//
+//## Customizes the `.table` component with basic values, each used across all table variations.
+
+//** Padding for `<th>`s and `<td>`s.
+@table-cell-padding: 8px;
+//** Padding for cells in `.table-condensed`.
+@table-condensed-cell-padding: 5px;
+
+//** Default background color used for all tables.
+@table-bg: rgba(255, 255, 255, 0);
+//** Background color used for `.table-striped`.
+@table-bg-accent: #f9f9f9;
+//** Background color used for `.table-hover`.
+@table-bg-hover: #f5f5f5;
+@table-bg-active: @table-bg-hover;
+
+//** Border color for table and cell borders.
+@table-border-color: #ddd;
+@table-responsive-border-color: #ddd;
+
+
+//== Buttons
+//
+//## For each of Bootstrap's buttons, define text, background and border color.
+
+@btn-font-weight: normal;
+@btn-border-width: 1px;
+
+@btn-default-color: #000;
+@btn-default-bg: #fff;
+@btn-default-border: #000;
+
+@btn-default-color-hover: #000;
+@btn-default-bg-hover: #eee;
+@btn-default-border-hover: #000;
+
+@btn-default-color-disabled: #626c6e;
+@btn-default-bg-disabled: rgba(255, 255, 255, 0);
+@btn-default-border-disabled: #9ba0a2;
+
+@btn-primary-color: #fff;
+@btn-primary-bg: #373c3e;
+@btn-primary-border: @btn-primary-bg;
+
+@btn-primary-color-hover: #fff;
+@btn-primary-bg-hover: #000;
+@btn-primary-border-hover: @btn-primary-bg-hover;
+
+@btn-primary-color-disabled: #626c6e;
+@btn-primary-bg-disabled: rgba(255, 255, 255, 0);
+@btn-primary-border-disabled: #9ba0a2;
+
+@btn-secondary-color: #fff;
+@btn-secondary-bg: #727779;
+@btn-secondary-border: @btn-secondary-bg;
+
+@btn-secondary-color-hover: #fff;
+@btn-secondary-bg-hover: #4c5356;
+@btn-secondary-border-hover: @btn-secondary-bg-hover;
+
+@btn-secondary-color-disabled: #626c6e;
+@btn-secondary-bg-disabled: rgba(255, 255, 255, 0);
+@btn-secondary-border-disabled: #9ba0a2;
+
+@btn-tertiary-color: #666;
+@btn-tertiary-bg: #fff;
+@btn-tertiary-border: #999;
+
+@btn-tertiary-color-hover: #333;
+@btn-tertiary-bg-hover: #fff;
+@btn-tertiary-border-hover: #333;
+
+@btn-tertiary-color-disabled: #666;
+@btn-tertiary-bg-disabled: rgba(255, 255, 255, 0);
+@btn-tertiary-border-disabled: #bdbdbd;
+
+@btn-success-color: @state-success-text;
+@btn-success-bg: @state-success-bg;
+@btn-success-border: @state-success-border;
+
+@btn-success-color-hover: @state-success-text;
+@btn-success-bg-hover: darken(@state-success-bg, 10%);
+@btn-success-border-hover: darken(@state-success-border, 10%);
+
+@btn-success-color-disabled: #626c6e;
+@btn-success-bg-disabled: rgba(255, 255, 255, 0);
+@btn-success-border-disabled: #9ba0a2;
+
+@btn-info-color: @state-info-text;
+@btn-info-bg: @state-info-bg;
+@btn-info-border: @state-info-border;
+
+@btn-info-color-hover: @state-info-text;
+@btn-info-bg-hover: darken(@state-info-bg, 10%);
+@btn-info-border-hover: darken(@state-info-border, 10%);
+
+@btn-info-color-disabled: #626c6e;
+@btn-info-bg-disabled: rgba(255, 255, 255, 0);
+@btn-info-border-disabled: #9ba0a2;
+
+@btn-warning-color: @state-warning-text;
+@btn-warning-bg: @state-warning-bg;
+@btn-warning-border: @state-warning-border;
+
+@btn-warning-color-hover: @state-warning-text;
+@btn-warning-bg-hover: darken(@state-warning-bg, 10%);
+@btn-warning-border-hover: darken(@state-warning-border, 10%);
+
+@btn-warning-color-disabled: #626c6e;
+@btn-warning-bg-disabled: rgba(255, 255, 255, 0);
+@btn-warning-border-disabled: #9ba0a2;
+
+@btn-danger-color: @state-danger-text;
+@btn-danger-bg: @state-danger-bg;
+@btn-danger-border: @state-danger-border;
+
+@btn-danger-color-hover: @state-danger-text;
+@btn-danger-bg-hover: darken(@state-danger-bg, 10%);
+@btn-danger-border-hover: darken(@state-danger-border, 10%);
+
+@btn-danger-color-disabled: #626c6e;
+@btn-danger-bg-disabled: rgba(255, 255, 255, 0);
+@btn-danger-border-disabled: #9ba0a2;
+
+@btn-link-disabled-color: @gray-light;
+
+@btn-switcher-bg: #413e3a;
+@btn-switcher-active-bg: #d7d4cf;
+@btn-switcher-color: #ada8a1;
+@btn-switcher-active-color: #4b4742;
+@btn-switcher-border-color: @btn-switcher-active-bg;
+
+
+//== Forms
+//
+//##
+
+//** `<input>` background color
+@input-bg: #fff;
+//** `<input disabled>`
+@input-color-disabled: #6b6864;
+@input-bg-disabled: #ebe9e6;
+@input-border-disabled: @input-bg-disabled;
+
+//** Text color for `<input>`s
+@input-color: @text-color;
+//** `<input>` border color
+@input-border: #6e6e6e;
+//** `<input>` border radius
+@input-border-radius: @border-radius-base;
+//** Border color for inputs on focus
+@input-border-focus: #4b7fa1;
+
+//** Placeholder text color
+@input-color-placeholder: @gray-light;
+
+//** Default `.form-control` height
+@input-height-base: (@line-height-computed + (@padding-base-vertical * 2) + 2);
+//** Large `.form-control` height
+@input-height-large: (ceil(@font-size-large * @line-height-large) + (@padding-large-vertical * 2) + 2);
+//** Small `.form-control` height
+@input-height-small: (floor(@font-size-small * @line-height-small) + (@padding-small-vertical * 2) + 2);
+
+@legend-color: @gray-dark;
+@legend-border-color: #e5e5e5;
+
+//** Background color for textual input addons
+@input-group-addon-bg: @border-color;
+//** Border color for textual input addons
+@input-group-addon-border-color: @border-color;
+@input-group-addon-color: #fff;
+
+//** Input with icon
+
+@input-with-icon-custom-icon-color: #716e6a;
+
+
+//== Dropdowns
+//
+//## Dropdown menu container and contents.
+
+//** Background for the dropdown menu.
+@dropdown-bg: #fff;
+//** Dropdown menu `border-color`.
+@dropdown-border: @border-color;
+//** Dropdown menu `border-color` **for IE8**.
+@dropdown-fallback-border: #ccc;
+//** Divider color for between dropdown items.
+@dropdown-divider-bg: #e5e5e5;
+
+//** Dropdown link text color.
+@dropdown-link-color: @gray-dark;
+//** Hover color for dropdown links.
+@dropdown-link-hover-color: #fff;
+//** Hover background for dropdown links.
+@dropdown-link-hover-bg: #4b7fa1;
+
+//** Active dropdown menu item text color.
+@dropdown-link-active-color: @component-active-color;
+//** Active dropdown menu item background color.
+@dropdown-link-active-bg: @component-active-bg;
+
+//** Disabled dropdown menu item background color.
+@dropdown-link-disabled-color: @gray-light;
+
+//** Text color for headers within dropdown menus.
+@dropdown-header-color: @gray-light;
+
+// Note: Deprecated @dropdown-caret-color as of v3.1.0
+@dropdown-caret-color: #000;
+
+@dropdown-btn-bg: #d7d4cf;
+@dropdown-btn-txt: #6b6864;
+@dropdown-btn-weight: regular;
+
+//-- Z-index master list
+//
+// Warning: Avoid customizing these values. They're used for a bird's eye view
+// of components dependent on the z-axis and are designed to all work together.
+//
+// Note: These variables are not generated into the Customizer.
+
+@zindex-input-file: 980;
+@zindex-form-control-msg: 990;
+@zindex-navbar: 1000;
+@zindex-dropdown: 1000;
+@zindex-popover: 1010;
+@zindex-tooltip: 1015;
+@zindex-form-custom: 1020;
+@zindex-back-to-top: 1020;
+@zindex-navbar-fixed: 1022;
+@zindex-nav-side: 1023;
+@zindex-sticky-header: 1025;
+@zindex-waimenu: 1026;
+@zindex-modal-background: 1040;
+@zindex-modal: 1050;
+
+
+//== Media queries breakpoints
+//
+//## Define the breakpoints at which your layout will change, adapting to different screen sizes.
+
+// Extra small screen / phone
+// Note: Deprecated @screen-xs and @screen-phone as of v3.0.1
+@screen-xs: 480px;
+@screen-xs-min: @screen-xs;
+@screen-phone: @screen-xs-min;
+
+// Small screen / tablet
+// Note: Deprecated @screen-sm and @screen-tablet as of v3.0.1
+@screen-sm: 768px;
+@screen-sm-min: @screen-sm;
+@screen-tablet: @screen-sm-min;
+
+// Medium screen / desktop
+// Note: Deprecated @screen-md and @screen-desktop as of v3.0.1
+@screen-md: 992px;
+@screen-md-min: @screen-md;
+@screen-desktop: @screen-md-min;
+
+// Large screen / wide desktop
+// Note: Deprecated @screen-lg and @screen-lg-desktop as of v3.0.1
+@screen-lg: 1200px;
+@screen-lg-min: @screen-lg;
+@screen-lg-desktop: @screen-lg-min;
+
+// So media queries don't overlap when required, provide a maximum
+@screen-xs-max: (@screen-sm-min - 1);
+@screen-sm-max: (@screen-md-min - 1);
+@screen-md-max: (@screen-lg-min - 1);
+
+
+//== Grid system
+//
+//## Define your custom responsive grid.
+
+//** Minimun width of the grid
+@grid-min-width: 320px;
+//** Number of columns in the grid.
+@grid-columns: 12;
+//** Padding between columns. Gets divided in half for the left and right.
+@grid-gutter-width: 30px;
+// Navbar collapse
+//** Point at which the navbar becomes uncollapsed.
+@grid-float-breakpoint: @screen-sm-min;
+//** Point at which the navbar begins collapsing.
+@grid-float-breakpoint-max: (@grid-float-breakpoint - 1);
+
+
+//== Grid helpers
+//
+//## Define the splits of the grid helpers
+
+// Splitter that sets the stretches where there will defined a percentage width from 0 to 100. Must be a 100 divider, like 1, 2, 4, 5 or 10.
+@grid-percent-splits: 5;
+
+
+//== Container sizes
+//
+//## Define the maximum width of `.container` for different screen sizes.
+
+// Not responsive
+@not-responsive-min-width: ((960px + @grid-gutter-width));
+
+// Container fixed
+@container-fixed: 602px;
+
+// Small screen / tablet
+@container-tablet: ((720px + @grid-gutter-width));
+//** For `@screen-sm-min` and up.
+@container-sm: @container-tablet;
+
+// Medium screen / desktop
+@container-desktop: ((960px + @grid-gutter-width));
+//** For `@screen-md-min` and up.
+@container-md: @container-desktop;
+
+// Large screen / wide desktop
+@container-large-desktop: ((1140px + @grid-gutter-width));
+//** For `@screen-lg-min` and up.
+@container-lg: @container-large-desktop;
+
+//== Header
+//
+//##
+
+// Basics of the header
+@header-height: 44px;
+@header-bg: @brand-primary;
+@header-color: #fff;
+@header-border-color: @brand-primary;
+@header-border-width: 0;
+
+
+//== Footer
+//
+//##
+
+// Basics of the footer
+@footer-height: 3.143em;
+@footer-bg: #dbdbdb;
+@footer-color: #565656;
+@footer-border: #dbdbdb;
+@footer-link-color: #666;
+
+
+//== Navbar
+//
+//##
+
+// Basics of a navbar
+@navbar-height: 50px;
+@navbar-margin-bottom: @line-height-computed;
+@navbar-border-radius: @border-radius-base;
+@navbar-padding-horizontal: floor((@grid-gutter-width / 2));
+@navbar-padding-vertical: ((@navbar-height - @line-height-computed) / 2);
+@navbar-collapse-max-height: 340px;
+
+@navbar-default-color: #777;
+@navbar-default-bg: #f8f8f8;
+@navbar-default-border: darken(@navbar-default-bg, 6.5%);
+
+// Navbar links
+@navbar-default-link-color: #777;
+@navbar-default-link-hover-color: #333;
+@navbar-default-link-hover-bg: rgba(255, 255, 255, 0);
+@navbar-default-link-active-color: #555;
+@navbar-default-link-active-bg: darken(@navbar-default-bg, 6.5%);
+@navbar-default-link-disabled-color: #ccc;
+@navbar-default-link-disabled-bg: rgba(255, 255, 255, 0);
+
+// Navbar brand label
+@navbar-default-brand-color: @navbar-default-link-color;
+@navbar-default-brand-hover-color: darken(@navbar-default-brand-color, 10%);
+@navbar-default-brand-hover-bg: rgba(255, 255, 255, 0);
+
+// Navbar toggle
+@navbar-default-toggle-hover-bg: #ddd;
+@navbar-default-toggle-icon-bar-bg: #888;
+@navbar-default-toggle-border-color: #ddd;
+
+
+// Inverted navbar
+// Reset inverted navbar basics
+@navbar-inverse-color: @gray-light;
+@navbar-inverse-bg: #222;
+@navbar-inverse-border: darken(@navbar-inverse-bg, 10%);
+
+// Inverted navbar links
+@navbar-inverse-link-color: @gray-light;
+@navbar-inverse-link-hover-color: #fff;
+@navbar-inverse-link-hover-bg: rgba(255, 255, 255, 0);
+@navbar-inverse-link-active-color: @navbar-inverse-link-hover-color;
+@navbar-inverse-link-active-bg: darken(@navbar-inverse-bg, 10%);
+@navbar-inverse-link-disabled-color: #444;
+@navbar-inverse-link-disabled-bg: rgba(255, 255, 255, 0);
+
+// Inverted navbar brand label
+@navbar-inverse-brand-color: @navbar-inverse-link-color;
+@navbar-inverse-brand-hover-color: #fff;
+@navbar-inverse-brand-hover-bg: rgba(255, 255, 255, 0);
+
+// Inverted navbar toggle
+@navbar-inverse-toggle-hover-bg: #333;
+@navbar-inverse-toggle-icon-bar-bg: #fff;
+@navbar-inverse-toggle-border-color: #333;
+
+
+//== Navs
+//
+//##
+
+//=== Shared nav styles
+@nav-link-padding: 10px 15px;
+@nav-link-hover-bg: @gray-lighter;
+
+@nav-disabled-link-color: @gray-light;
+@nav-disabled-link-hover-color: @gray-light;
+
+@nav-open-link-hover-color: #fff;
+
+//== Tabs
+@nav-tabs-border-color: #ddd;
+
+@nav-tabs-link-hover-border-color: @gray-lighter;
+
+@nav-tabs-active-link-hover-bg: @body-bg;
+@nav-tabs-active-link-hover-color: @gray;
+@nav-tabs-active-link-hover-border-color: #ddd;
+
+@nav-tabs-justified-link-border-color: #ddd;
+@nav-tabs-justified-active-link-border-color: @body-bg;
+
+@nav-tabs-main-overlap-bottom: -1px;
+@nav-tabs-login-overlap-bottom: -1px;
+
+//== Pills
+@nav-pills-border-radius: @border-radius-base;
+@nav-pills-active-link-hover-bg: @component-active-bg;
+@nav-pills-active-link-hover-color: @component-active-color;
+
+
+//== Pagination
+//
+//##
+
+@pagination-color: @text-color;
+@pagination-bg: #d7d4cf;
+@pagination-border: @border-color;
+
+@pagination-hover-color: @text-color;
+@pagination-hover-bg: #fff;
+@pagination-hover-border: @border-color;
+
+@pagination-active-color: @text-color;
+@pagination-active-bg: #fff;
+@pagination-active-border: @border-color;
+
+@pagination-disabled-color: @gray-light;
+@pagination-disabled-bg: #ebeae7;
+@pagination-disabled-border: #ddd;
+
+
+//== Pager
+//
+//##
+
+@pager-bg: @pagination-bg;
+@pager-border: @pagination-border;
+@pager-border-radius: 15px;
+
+@pager-hover-bg: @pagination-hover-bg;
+
+@pager-active-bg: @pagination-active-bg;
+@pager-active-color: @pagination-active-color;
+
+@pager-disabled-color: @pagination-disabled-color;
+
+
+//== Jumbotron
+//
+//##
+
+@jumbotron-padding: 30px;
+@jumbotron-color: inherit;
+@jumbotron-bg: @gray-lighter;
+@jumbotron-heading-color: inherit;
+@jumbotron-font-size: ceil((@font-size-base * 1.5));
+
+
+//== Form states and alerts
+//
+//## Define colors for form feedback states and, by default, alerts.
+
+@state-success-text: @brand-success-contrast;
+@state-success-bg: @brand-success;
+@state-success-border: @brand-success;
+@state-success-bg-light: #e4ebe6;
+
+@state-info-text: @brand-info-contrast;
+@state-info-bg: @brand-info;
+@state-info-border: @brand-info;
+@state-info-bg-light: @brand-info;
+
+@state-warning-text: @brand-warning-contrast;
+@state-warning-bg: @brand-warning;
+@state-warning-border: @brand-warning;
+@state-warning-bg-light: @brand-warning;
+
+@state-danger-text: @brand-danger-contrast;
+@state-danger-bg: @brand-danger;
+@state-danger-border: @brand-danger;
+@state-danger-bg-light: #f5ecec;
+
+@state-uploading-text: #fff;
+@state-uploading-bg: #333;
+@state-uploading-border: #333;
+@state-uploading-bg-light: #333;
+
+//== Tooltips
+//
+//##
+
+//** Tooltip max width
+@tooltip-max-width: 200px;
+//** Tooltip text color
+@tooltip-color: #fff;
+//** Tooltip background color
+@tooltip-bg: #000;
+@tooltip-opacity: .9;
+
+//** Tooltip arrow width
+@tooltip-arrow-width: 5px;
+//** Tooltip arrow color
+@tooltip-arrow-color: @tooltip-bg;
+
+
+//== Popovers
+//
+//##
+
+//** Popover body background color
+@popover-bg: #fff;
+//** Popover maximum width
+@popover-max-width: 276px;
+//** Popover border color
+@popover-border-color: rgba(0, 0, 0, .2);
+//** Popover fallback border color
+@popover-fallback-border-color: #ccc;
+
+//** Popover title background color
+@popover-title-bg: darken(@popover-bg, 3%);
+
+//** Popover arrow width
+@popover-arrow-width: 10px;
+//** Popover arrow color
+@popover-arrow-color: #fff;
+
+//** Popover outer arrow width
+@popover-arrow-outer-width: (@popover-arrow-width + 1);
+//** Popover outer arrow color
+@popover-arrow-outer-color: fadein(@popover-border-color, 5%);
+//** Popover outer arrow fallback color
+@popover-arrow-outer-fallback-color: darken(@popover-fallback-border-color, 20%);
+
+
+//== Labels
+//
+//##
+
+//** Default label background color
+@label-default-bg: @gray-light;
+//** Primary label background color
+@label-primary-bg: @brand-primary;
+//** Success label background color
+@label-success-bg: @brand-success;
+//** Info label background color
+@label-info-bg: @brand-info;
+//** Warning label background color
+@label-warning-bg: @brand-warning;
+//** Danger label background color
+@label-danger-bg: @brand-danger;
+
+//** Default label text color
+@label-color: #fff;
+//** Default text color of a linked label
+@label-link-hover-color: #fff;
+
+
+//== Modals
+//
+//##
+
+//** Padding applied to the modal body
+@modal-inner-padding: 20px;
+
+//** Padding applied to the modal title
+@modal-title-padding: 15px;
+//** Modal title line-height
+@modal-title-line-height: @line-height-base;
+
+//** Background color of modal content area
+@modal-content-bg: #fff;
+//** Modal content border color
+@modal-content-border-color: rgba(0, 0, 0, .2);
+//** Modal content border color **for IE8**
+@modal-content-fallback-border-color: #999;
+
+//** Modal backdrop background color
+@modal-backdrop-bg: #000;
+//** Modal backdrop opacity
+@modal-backdrop-opacity: .5;
+//** Modal header border color
+@modal-header-border-color: #e5e5e5;
+//** Modal footer border color
+@modal-footer-border-color: @modal-header-border-color;
+
+@modal-lg: 900px;
+@modal-md: 600px;
+@modal-sm: 300px;
+
+@modal-border-radius: 0;
+@modal-border: 0;
+@modal-box-shadow: none;
+@modal-header-bg-color: #6b6864;
+@modal-header-txt-color: #f3f2f1;
+
+@modal-body-bg-color: #f3f2f1;
+@modal-footer-bg-color: #f7f6f5;
+
+/* modal-info */
+@modal-info-header-bg-color: #688598;
+@modal-info-icon: @ci-info;
+
+/* modal-alert */
+@modal-alert-header-bg-color: #ca7c56;
+@modal-alert-icon: @ci-alert;
+
+/* modal-error */
+@modal-error-header-bg-color: #c25f5f;
+@modal-error-icon: @ci-error;
+
+/* modal-confirmation */
+@modal-confirmation-header-bg-color: #579b72;
+@modal-confirmation-icon: @ci-check-circled;
+
+
+//== Alerts
+//
+//## Define alert colors, border radius, and padding.
+
+@alert-padding-vertical: 8px;
+@alert-padding-horizontal: 15px;
+@alert-border-radius: @border-radius-base;
+@alert-link-font-weight: bold;
+
+@alert-success-bg: @state-success-bg;
+@alert-success-text: @state-success-text;
+@alert-success-border: @state-success-border;
+
+@alert-info-bg: @state-info-bg;
+@alert-info-text: @state-info-text;
+@alert-info-border: @state-info-border;
+
+@alert-warning-bg: @state-warning-bg;
+@alert-warning-text: @state-warning-text;
+@alert-warning-border: @state-warning-border;
+
+@alert-danger-bg: @state-danger-bg;
+@alert-danger-text: @state-danger-text;
+@alert-danger-border: @state-danger-border;
+
+@alert-uploading-bg: @state-uploading-bg;
+@alert-uploading-text: @state-uploading-text;
+@alert-uploading-border: @state-uploading-border;
+@alert-uploading-progress: #4ea874;
+@alert-uploading-close: @state-uploading-text;
+
+
+//== Progress bars
+//
+//##
+
+//** Background color of the whole progress component
+@progress-bg: #f5f5f5;
+//** Progress bar text color
+@progress-bar-color: #fff;
+
+//** Default progress bar color
+@progress-bar-bg: @brand-primary;
+//** Success progress bar color
+@progress-bar-success-bg: @brand-success;
+//** Warning progress bar color
+@progress-bar-warning-bg: @brand-warning;
+//** Danger progress bar color
+@progress-bar-danger-bg: @brand-danger;
+//** Info progress bar color
+@progress-bar-info-bg: @brand-info;
+
+
+//== List group
+//
+//##
+
+//** Background color on `.list-group-item`
+@list-group-bg: #fff;
+//** `.list-group-item` border color
+@list-group-border: #ddd;
+//** List group border radius
+@list-group-border-radius: @border-radius-base;
+
+//** Background color of single list elements on hover
+@list-group-hover-bg: #f5f5f5;
+//** Text color of active list elements
+@list-group-active-color: @component-active-color;
+//** Background color of active list elements
+@list-group-active-bg: @component-active-bg;
+//** Border color of active list elements
+@list-group-active-border: @list-group-active-bg;
+@list-group-active-text-color: lighten(@list-group-active-bg, 40%);
+
+@list-group-link-color: #555;
+@list-group-link-heading-color: #333;
+
+
+//== Panels
+//
+//##
+
+@panel-bg: #fff;
+@panel-border-color: @border-color;
+@panel-body-padding: 15px;
+@panel-border-radius: 0;
+@panel-border-width: 1px;
+@panel-heading-bg: rgba(255, 255, 255, 0);
+@panel-inner-border: #ddd;
+@panel-footer-bg: rgba(255, 255, 255, 0);
+
+@panel-default-text: inherit;
+@panel-default-bg: @panel-bg;
+@panel-default-border: darken(@panel-bg, 10%);
+@panel-default-heading-text: @text-color;
+@panel-default-heading-bg: darken(@panel-bg, 10%);
+@panel-default-footer-text: @text-color;
+@panel-default-footer-bg: lighten(@text-color, 75%);
+
+@panel-primary-text: inherit;
+@panel-primary-bg: @panel-bg;
+@panel-primary-border: @brand-primary;
+@panel-primary-heading-text: #fff;
+@panel-primary-heading-bg: @brand-primary;
+@panel-primary-footer-text: @text-color;
+@panel-primary-footer-bg: lighten(@text-color, 75%);
+
+@panel-secondary-text: inherit;
+@panel-secondary-bg: @panel-bg;
+@panel-secondary-border: @brand-secondary;
+@panel-secondary-heading-text: #fff;
+@panel-secondary-heading-bg: @brand-secondary;
+@panel-secondary-footer-text: @text-color;
+@panel-secondary-footer-bg: lighten(@text-color, 75%);
+
+@panel-success-text: inherit;
+@panel-success-bg: @panel-bg;
+@panel-success-border: @state-success-border;
+@panel-success-heading-text: @state-success-text;
+@panel-success-heading-bg: @state-success-bg;
+@panel-success-footer-text: @text-color;
+@panel-success-footer-bg: lighten(@text-color, 75%);
+
+@panel-info-text: inherit;
+@panel-info-bg: @panel-bg;
+@panel-info-border: @state-info-border;
+@panel-info-heading-text: @state-info-text;
+@panel-info-heading-bg: @state-info-bg;
+@panel-info-footer-text: @text-color;
+@panel-info-footer-bg: lighten(@text-color, 75%);
+
+@panel-warning-text: inherit;
+@panel-warning-bg: @panel-bg;
+@panel-warning-border: @state-warning-border;
+@panel-warning-heading-text: @state-warning-text;
+@panel-warning-heading-bg: @state-warning-bg;
+@panel-warning-footer-text: @text-color;
+@panel-warning-footer-bg: lighten(@text-color, 75%);
+
+@panel-danger-text: inherit;
+@panel-danger-bg: @panel-bg;
+@panel-danger-border: @state-danger-border;
+@panel-danger-heading-text: @state-danger-text;
+@panel-danger-heading-bg: @state-danger-bg;
+@panel-danger-footer-text: @text-color;
+@panel-danger-footer-bg: lighten(@text-color, 75%);
+
+@panel-captcha-border: #cbc8c3;
+
+@panel-login-border-width: 1px;
+@panel-login-border-color: #c2bfb9;
+@panel-login-bg: @panel-bg;
+
+
+//== Thumbnails
+//
+//##
+
+//** Padding around the thumbnail image
+@thumbnail-padding: 4px;
+//** Thumbnail background color
+@thumbnail-bg: @body-bg;
+//** Thumbnail border color
+@thumbnail-border: #ddd;
+//** Thumbnail border radius
+@thumbnail-border-radius: @border-radius-base;
+
+//** Custom text color for thumbnail captions
+@thumbnail-caption-color: @text-color;
+//** Padding around the thumbnail caption
+@thumbnail-caption-padding: 9px;
+
+
+//== Wells
+//
+//##
+
+@well-bg: #f5f5f5;
+@well-border: darken(@well-bg, 7%);
+
+@well-info-bg: #ebe9e6;
+
+//== Badges
+//
+//##
+
+@badge-color: #fff;
+//** Linked badge text color on hover
+@badge-link-hover-color: #fff;
+@badge-bg: @gray-light;
+
+//** Badge text color in active nav link
+@badge-active-color: @link-color;
+//** Badge background color in active nav link
+@badge-active-bg: #fff;
+
+@badge-font-weight: bold;
+@badge-line-height: 1;
+@badge-border-radius: 10px;
+
+
+//== Breadcrumbs
+//
+//##
+
+@breadcrumb-padding-vertical: 5px;
+@breadcrumb-padding-horizontal: 0;
+//** Breadcrumb background color
+@breadcrumb-bg: #fff;
+//** Breadcrumb text color
+@breadcrumb-color: @brand-primary;
+//** Text color of current page in the breadcrumb
+@breadcrumb-active-color: @text-color;
+//** Textual separator for between breadcrumb elements
+@breadcrumb-separator-color: @text-color;
+
+
+//== Carousel
+//
+//##
+
+@carousel-text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+
+@carousel-control-color: #fff;
+@carousel-control-width: 15%;
+@carousel-control-opacity: .5;
+@carousel-control-font-size: 20px;
+
+@carousel-indicator-active-bg: #fff;
+@carousel-indicator-border-color: #fff;
+
+@carousel-caption-color: #fff;
+
+
+//== Close
+//
+//##
+
+@close-font-weight: bold;
+@close-color: #000;
+@close-text-shadow: none;
+
+
+//== Code
+//
+//##
+
+@code-color: #c7254e;
+@code-bg: #f9f2f4;
+
+@kbd-color: #fff;
+@kbd-bg: #333;
+
+@pre-bg: #f5f5f5;
+@pre-color: @gray-dark;
+@pre-border-color: #ccc;
+@pre-scrollable-max-height: 340px;
+
+
+//== Type
+//
+//##
+
+//** Text muted color
+@text-muted: #666;
+//** Abbreviations and acronyms border color
+@abbr-border-color: @gray-light;
+//** Headings small color
+@headings-small-color: @gray-light;
+//** Blockquote small color
+@blockquote-small-color: @gray-light;
+//** Blockquote font size
+@blockquote-font-size: (@font-size-base * 1.25);
+//** Blockquote border color
+@blockquote-border-color: @gray-lighter;
+//** Page header border color
+@page-header-border-color: @gray-lighter;
+
+
+//== Miscellaneous
+//
+//##
+
+//** Horizontal line color.
+@hr-border: @text-color;
+
+//** Horizontal offset for forms and lists.
+@component-offset-horizontal: 180px;
+
+
+/* TABLES */
+@table-sub-header: #dfddd9;
+@table-cell-border: #dfdcd7;
+@table-row-total: #ebe9e6;
+
+/* INPUT FILE */
+@input-file-loading-bg: #e4e4e4;
+@input-file-loading-border: #bdbdbd;
+@input-file-loaded-bg: @state-success-bg-light;
+@input-file-loaded-border: @state-success-border;
+@input-file-failed-bg: @state-danger-bg-light;
+@input-file-failed-border: @state-danger-border;
+@input-file-progress-bg: @text-color;
+@input-file-progress-bar: #4ea874;
+@input-file-loading-btn-disabled-bg: #f0f0f0;
+@input-file-loading-btn-disabled-border: #9ba0a2;
+
+/* PASSWORD STRENGTH */
+@pass-strength-bar-height: 8px;
+@pass-strength-bar-bg: #d7d4cf;
+@pass-strength-weak: #c25f5f;
+@pass-strength-good: #ca7c56;
+@pass-strength-strong: #76ac8b;
+
+/* STEPS */
+@steps-h-bg: #ebe9e6;
+@steps-h-border: #dfdcd7;
+@steps-h-text: #0f0902;
+@steps-h-current: @steps-h-text;
+@steps-h-icon-color: @steps-h-text;
+
+@steps-v-step-duration-xl: 44px;
+@steps-v-step-duration-l: 32px;
+@steps-v-step-duration-m: 22px;
+
+/* BACK TO TOP */
+@backtotop-bg: #292929;
+@backtotop-txt: #a8a49e;
+@backtotop-hover-bg: #000;
+@backtotop-hover-txt: #fff;
+
+/* MEDIA */
+@media-border-color: #dfdcd7;
+
+/* SELECT2 */
+@select2-choices-bg: #f3f2f1;
+@select2-choices-border: #d7d4cf;
+@select2-font-family: "customicons";
+@select2-icon-search: "\e687";
+@select2-chevron-down: "\e616";
+
+/* HEADER */
+@nav-user-bg: #d7d4cf;
+@nav-user-bg-hover: #D7D4D1;
+@nav-user-hover-txt: #292929;
+@nav-user-icon-color: #ada8a1;
+@nav-user-subitem-bg: #ada8a1;
+@nav-user-subitem-hover-bg: #9c9790;
+@nav-user-subitem-hover-txt: #292929;
+@nav-user-subitem-border-color: #928e89;
+
+/* HOME */
+@home-title: #fff;
+@home-subtitle: #fff;
+
+/* PAGE TITLE */
+@page-title-xs: #e5e2de;
+@page-title-sm: @text-color;
+
+/* NAV SIDE */
+@nav-side-bg: #292929;
+@nav-side-header-bg: #161616;
+@nav-side-header-height: @header-height;
+@nav-side-list-subitems-bg: #212121;
+@nav-side-list-textcolor: #aeaaa4;
+@nav-side-list-item-border-color: #31302f;
+@nav-side-list-item-expanded-bg: #353432;
+@nav-side-list-item-hover-bg: #302F2F;
+@nav-side-list-item-hover-textcolor: #fff;
+@nav-side-current-color: @brand-primary;
+
+/* NAV TABS */
+@nav-tabs-main-color: #cdc8c2;
+@nav-tabs-main-bg: rgba(255, 255, 255, 0);
+@nav-tabs-main-border-color: rgba(255, 255, 255, 0);
+
+@nav-tabs-main-hover-color: #fff;
+@nav-tabs-main-hover-bg: @nav-tabs-main-bg;
+
+@nav-tabs-main-active-color: #6b6864;
+@nav-tabs-main-active-bg: #f3f2f1;
+@nav-tabs-main-active-border-color: @border-color;
+@nav-tabs-main-active-border-bottom-color: rgba(255, 255, 255, 0);
+
+
+@nav-tabs-login-color: @nav-tabs-main-color;
+@nav-tabs-login-bg: @nav-tabs-main-bg;
+@nav-tabs-login-border-color: @nav-tabs-main-border-color;
+
+@nav-tabs-login-hover-color: @nav-tabs-main-hover-color;
+@nav-tabs-login-hover-bg: @nav-tabs-main-hover-bg;
+
+@nav-tabs-login-active-color: @nav-tabs-main-active-color;
+@nav-tabs-login-active-bg: @nav-tabs-main-active-bg;
+@nav-tabs-login-active-border-color: @nav-tabs-main-active-border-color;
+@nav-tabs-login-active-border-bottom-color: @nav-tabs-main-active-border-bottom-color;
+
+/* TABLE RESPONSIVE */
+@table-adaptative-thead-bgcolor: #d7d4cf;
+@table-adaptative-thead-txtcolor: #5e5b57;
+@table-adaptative-thead-cursor: pointer;
+
+@row-bgcolor: #fff;
+
+@row-notification-bgcolor: #f6edda;
+@row-notification-txtcolor: #7b6952;
+
+@row-update-bgcolor: #dae4ea;
+@row-update-txtcolor: #4b7fa1;
+
+@table-adaptative-mobile-border-row: #dfdcd7;
+@table-adaptative-mobile-header-border-bottom: #6b6864;
+
+@table-adaptative-border-radius: 5px;
+
+@subitem-row-bgcolor: #ebe9e6;
+@subitem-row-border-color: #d8d5cf;
+
+/* SELECT CONTROL */
+@select-control-icon: "\e64f";
+@select-label-color: inherit;
+
+/* SPINNER */
+@spinner-wheel-size: 4em;
+@spinner-up-color: #333;
+@spinner-down-color: #ddd;

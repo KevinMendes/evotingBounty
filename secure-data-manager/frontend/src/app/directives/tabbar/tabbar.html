@@ -1,0 +1,9 @@
+<md-nav-bar
+        md-no-ink-bar="disableInkBar"
+        md-selected-nav-item="selectedTab"
+        nav-bar-aria-label="navigation links">
+    <md-nav-item data-ng-repeat="tab in filterTabs" md-nav-click="filterBy(tab)" name="{{tab.text}}">
+        {{tab.text | translate}} ({{!filterCounter || !filterCounter[tab.code] ? '0' : filterCounter[tab.code]}})
+    </md-nav-item>
+</md-nav-bar>
+

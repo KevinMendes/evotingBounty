@@ -1,0 +1,17 @@
+<span>
+    <span ng-hide="InProgress.get(id)" ng-transclude></span>
+    <span ng-show="InProgress.get(id)">
+        <md-progress-linear md-mode="determinate"
+                            value="{{InProgress.get(id).percentage}}">
+        </md-progress-linear>
+        <div class="bottom-block" ng-show="InProgress.get(id).remainingTime!=-1 && InProgress.get(id).percentage!=100" translate>
+            Remaining Time {{InProgress.get(id).remainingTime|elapsed}}
+        </div>
+        <div class="bottom-block" ng-show="InProgress.get(id).percentage==100" translate>
+            Finished...
+        </div>
+        <div class="bottom-block" ng-show="InProgress.get(id).remainingTime==-1" translate>
+            Waiting for Remaining Time
+        </div>
+    </span>
+</span>

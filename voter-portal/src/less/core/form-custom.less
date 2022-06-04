@@ -1,0 +1,127 @@
+// radio & checkbox
+.radio.form-custom,
+.checkbox.form-custom {
+  position: relative;
+  height: 2.3em;
+  padding: 0;
+
+  input[type='radio'],
+  input[type='checkbox'] {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    z-index: @zindex-form-custom;
+    margin: -10px 0 0 3px;
+    height: 20px;
+    width: 20px;
+  }
+
+  label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: @zindex-form-custom;
+    padding-left: 1.875em;
+    line-height: 2.3em;
+    background-color: #f0f0f0; //just to avoid the input showing from behind
+    &:before {
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      left: 0;
+      z-index: @zindex-form-custom+1;
+      width: 1.5em;
+      height: 1.5em;
+      margin-top: -0.75em;
+      border: 2px solid #666;
+      background-color: #fff;
+    }
+  }
+
+  // checked
+  input[type='radio']:checked + label:after,
+  input[type='checkbox']:checked + label:after {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    z-index: @zindex-form-custom+2;
+  }
+
+  // focus
+  input[type='radio']:focus + label,
+  input[type='checkbox']:focus + label {
+    color: @link-color;
+
+    &:before {
+      .custom-form-focus(@link-color, transparent);
+    }
+  }
+}
+
+.radio.form-custom {
+  label:before {
+    border-radius: 12px;
+  }
+
+  input[type='radio']:checked + label:after {
+    left: 4px;
+    margin-top: -8px;
+    width: 16px;
+    height: 16px;
+    content: '';
+    border-radius: 8px;
+    background-color: #666;
+  }
+
+  input[type='radio']:checked:focus + label:after {
+    background-color: @link-color;
+  }
+}
+
+.checkbox.form-custom {
+  label:before {
+    border-radius: 0.188em;
+  }
+
+  input[type='checkbox']:checked + label:after {
+    left: -2px;
+    margin-top: -16px;
+    font-size: 30px;
+    font-family: @ci-font-family;
+    content: @ci-check;
+    color: #666;
+  }
+
+  input[type='checkbox']:checked:focus + label:after {
+    color: @link-color;
+  }
+}
+
+// select
+.form-custom select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  -webkit-border-radius: 0; /* Safari 3-4, iOS 1-3.2, Android 1.6- */
+  -moz-border-radius: 0; /* Firefox 1-3.6 */
+  border-radius: 0; /* Opera 10.5, IE 9, Safari 5, Chrome, Firefox 4, iOS 4, Android 2.1+ */
+
+  &::-ms-expand { /* Hide the arrow for IE10 */
+    display: none;
+  }
+
+  padding-right: 40px;
+  // the arrow
+  background-image: url("@{img-path}select-arrow.png");
+  background-repeat: no-repeat;
+  background-position: right 50%;
+  text-indent: 0.01px;
+  text-overflow: '';
+
+  [dir="rtl"] & {
+    padding-right: @padding-base-horizontal;
+    padding-left: 40px;
+    background-position: 16px 50%;
+  }
+}

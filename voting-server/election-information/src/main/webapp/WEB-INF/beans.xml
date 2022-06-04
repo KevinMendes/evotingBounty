@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			 xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+			 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+													 http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+			 bean-discovery-mode="all">
+	<decorators>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.domain.service.ballotbox.BallotBoxServiceDecorator</class>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.domain.model.rule.ElectionDatesRuleDecorator</class>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.domain.model.rule.MaxNumberOfAllowedVotesDecorator</class>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.domain.service.vote.VoteValidationServiceDecorator</class>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.domain.service.confirmation.ConfirmationMessageValidationServiceDecorator
+		</class>
+		<class>
+			ch.post.it.evoting.votingserver.electioninformation.services.domain.service.confirmation.ConfirmationMessageElectionDatesValidationDecorator
+		</class>
+		<class>
+			ch.post.it.evoting.votingserver.electioninformation.services.domain.service.confirmation.ConfirmationMessageMathematicalGroupValidationDecorator
+		</class>
+		<class>
+			ch.post.it.evoting.votingserver.electioninformation.services.domain.service.confirmation.ConfirmationMessageCredentialIdValidationDecorator
+		</class>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.domain.model.rule.VoteIdsRuleDecorator</class>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.domain.model.rule.VoteCorrectnessRuleDecorator</class>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.infrastructure.persistence.BallotBoxInformationRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.infrastructure.persistence.BallotBoxRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.infrastructure.persistence.BallotRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.infrastructure.persistence.BallotTextRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.electioninformation.services.infrastructure.persistence.VoteCastCodeRepositoryDecorator</class>
+	</decorators>
+</beans>

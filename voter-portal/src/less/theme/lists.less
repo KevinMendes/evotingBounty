@@ -1,0 +1,73 @@
+.list-ballots {
+  list-style: none;
+  margin-bottom: 2.500em;
+  padding: 0;
+
+  li {
+    padding: 0.938em 0;
+    line-height: 2.313em;
+    border-bottom: 1px solid @border-color;
+  }
+
+  .radio.form-custom label,
+  .checkbox.form-custom label,
+  .label {
+    font-size: 1.250em;
+    background-color: @panel-default-bg;
+  }
+}
+
+
+dl.dl-expandable {
+  dt {
+    margin-bottom: 0;
+    margin-top: 0.5em;
+
+    .expand-dd {
+      color: darken(#316d94, 5%);
+      background-color: #e6e6e6;
+      font-size: 1.2em;
+      font-weight: 500;
+      font-family: @font-family-sans-serif;
+
+      &:focus:active {
+        box-shadow: inset 0 0 10px 1px #999;
+      }
+
+      &:hover,
+      &:focus {
+        background-color: darken(#e6e6e6, 5%);
+      }
+
+      svg {
+        fill: #316d94;
+      }
+
+      &.btn-link {
+        text-decoration: none;
+
+        .dt-title {
+          border-bottom: 2px solid darken(#316d94, 5%);
+
+        }
+
+        &:hover {
+          .dt-title {
+            border-color: lighten(#316d94, 10%);
+          }
+        }
+      }
+    }
+  }
+
+  dd {
+    background-color: #FFF;
+    border: 1px solid #e6e6e6;
+    padding: 1em;
+    margin-bottom: 0;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+}

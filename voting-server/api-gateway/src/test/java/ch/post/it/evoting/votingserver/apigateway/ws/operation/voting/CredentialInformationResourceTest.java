@@ -1,0 +1,118 @@
+/*
+ * (c) Copyright 2022 Swiss Post Ltd.
+ */
+package ch.post.it.evoting.votingserver.apigateway.ws.operation.voting;
+
+import static org.mockito.ArgumentMatchers.eq;
+import static org.mockito.Mockito.when;
+
+import java.io.IOException;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.ws.rs.core.Application;
+import javax.ws.rs.core.Response;
+
+import org.glassfish.jersey.internal.inject.AbstractBinder;
+import org.glassfish.jersey.server.ResourceConfig;
+import org.glassfish.jersey.test.JerseyTest;
+import org.glassfish.jersey.test.TestProperties;
+import org.junit.Assert;
+import org.junit.ClassRule;
+import org.junit.Rule;
+import org.junit.Test;
+import org.junit.contrib.java.lang.system.EnvironmentVariables;
+import org.junit.contrib.java.lang.system.RestoreSystemProperties;
+import org.junit.rules.TestRule;
+import org.mockito.Mock;
+import org.mockito.Mockito;
+import org.mockito.MockitoAnnotations;
+import org.slf4j.Logger;
+
+import com.google.gson.JsonObject;
+
+import ch.post.it.evoting.votingserver.apigateway.services.infrastructure.remote.voting.VotingWorkflowVotingClient;
+import ch.post.it.evoting.votingserver.apigateway.ws.proxy.XForwardedForFactoryImpl;
+import ch.post.it.evoting.votingserver.commons.tracking.TrackIdGenerator;
+
+import retrofit2.Call;
+
+public class CredentialInformationResourceTest extends JerseyTest {
+
+	public static final String URL_CRED_INF_CONTEXT_DATA = CredentialInformationResource.RESOURCE_PATH;
+	private static final String VERSION = "1v";
+	private static final String ELECTION_EVENT_ID = "1e";
+	private static final String TRACK_ID = "trackId";
+	private static final String TENANT_ID = "100t";
+	private static final String CREDENTIAL_ID = "1c";
+	private static final String X_FORWARDER_VALUE = "localhost,";
+	@ClassRule
+	public static EnvironmentVariables environmentVariables = new EnvironmentVariables();
+	@Rule
+	public TestRule restoreSystemProperties = new RestoreSystemProperties();
+
+	@Mock
+	Logger logger;
+
+	@Mock
+	TrackIdGenerator trackIdGenerator;
+
+	@Mock
+	HttpServletRequest servletRequest;
+
+	@Mock
+	VotingWorkflowVotingClient votingWorkflowVotingClient;
+
+	CredentialInformationResource sut;
+
+	@Test
+	public void getStatusOfVotingCards() throws IOException {
+
+		int mockedInvocationStatus = 200;
+		commonPreparation();
+		JsonObject reply = new JsonObject();
+		reply.addProperty("credential infomation", "is here");
+
+		@SuppressWarnings("unchecked")
+		Call<JsonObject> callMock = (Call<JsonObject>) Mockito.mock(Call.class);
+		when(callMock.execute()).thenReturn(retrofit2.Response.success(reply));
+
+		when(votingWorkflowVotingClient
+				.findInformationsByTenantElectionEventCredential(eq(CredentialInformationResource.CREDENTIAL_INFORMATION_PATH), eq(TENANT_ID),
+						eq(ELECTION_EVENT_ID), eq(CREDENTIAL_ID), eq(X_FORWARDER_VALUE), eq(TRACK_ID))).thenReturn(callMock);
+
+		Response response = target(URL_CRED_INF_CONTEXT_DATA).resolveTemplate("tenantId", TENANT_ID)
+				.resolveTemplate("electionEventId", ELECTION_EVENT_ID).resolveTemplate("version", VERSION)
+				.resolveTemplate("credentialId", CREDENTIAL_ID).request().get();
+		int status = response.getStatus();
+
+		Assert.assertEquals(mockedInvocationStatus, status);
+		Assert.assertEquals(reply.toString(), response.readEntity(String.class));
+	}
+
+	private void commonPreparation() {
+
+		when(servletRequest.getHeader(eq(XForwardedForFactoryImpl.HEADER))).thenReturn("localhost");
+
+		when(servletRequest.getRemoteAddr()).thenReturn("");
+		when(servletRequest.getLocalAddr()).thenReturn("");
+		when(trackIdGenerator.generate()).thenReturn(TRACK_ID);
+	}
+
+	@Override
+	protected Application configure() {
+
+		environmentVariables.set("VOTING_WORKFLOW_CONTEXT_URL", "localhost");
+		MockitoAnnotations.initMocks(this);
+
+		AbstractBinder binder = new AbstractBinder() {
+			@Override
+			protected void configure() {
+				bind(logger).to(Logger.class);
+				bind(servletRequest).to(HttpServletRequest.class);
+			}
+		};
+		sut = new CredentialInformationResource(votingWorkflowVotingClient, trackIdGenerator);
+		forceSet(TestProperties.CONTAINER_PORT, "0");
+		return new ResourceConfig().register(sut).register(binder);
+	}
+}

@@ -1,0 +1,20 @@
+<beans xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+			 xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+		http://xmlns.jcp.org/xml/ns/javaee/beans_1_1.xsd"
+			 bean-discovery-mode="all">
+	<decorators>
+		<class>ch.post.it.evoting.votingserver.authentication.services.domain.service.validation.AuthenticationTokenValidationServiceDecorator</class>
+		<class>ch.post.it.evoting.votingserver.authentication.services.domain.service.validation.AuthenticationTokenVotingCardIdValidationDecorator
+		</class>
+		<class>ch.post.it.evoting.votingserver.authentication.services.domain.service.validation.AuthenticationTokenSignatureValidationDecorator</class>
+		<class>ch.post.it.evoting.votingserver.authentication.services.domain.service.validation.AuthenticationTokenExpirationTimeValidationDecorator
+		</class>
+		<class>ch.post.it.evoting.votingserver.authentication.services.domain.service.validation.AuthenticationTokenElectionEventIdValidationDecorator
+		</class>
+		<class>ch.post.it.evoting.votingserver.authentication.services.domain.model.authentication.AuthenticationTokenFactoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.authentication.services.domain.service.validation.AuthenticationTokenTenantIdValidationDecorator</class>
+		<class>ch.post.it.evoting.votingserver.authentication.services.infrastructure.persistence.AuthenticationContentRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.authentication.services.infrastructure.persistence.AuthenticationCertsRepositoryDecorator</class>
+		<class>ch.post.it.evoting.votingserver.authentication.services.infrastructure.persistence.AdminBoardRepositoryDecorator</class>
+	</decorators>
+</beans>

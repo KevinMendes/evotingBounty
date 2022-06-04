@@ -1,0 +1,69 @@
+.modal-backdrop {
+  z-index: @zindex-backdrop !important;
+}
+
+.modal {
+  z-index: @zindex-modal !important;
+
+  & .modal-sending {
+    padding: 1em 0;
+    background-color: #fcfcfc;
+
+    li {
+      margin: 0.5em 0;
+    }
+  }
+
+  .modal-title {
+    min-height: 1.42857143em;
+    //.word-wrap();
+  }
+
+  .ballot-modal-list-name {
+    margin: 0;
+    word-wrap: break-word;
+  }
+
+  .modal-header {
+    .close:focus {
+      background-color: rgba(0, 0, 0, 0.2);
+    }
+
+    .has-icon svg {
+      fill: @modal-header-txt-color;
+      display: block;
+    }
+
+    .coloured-text {
+      color: #FFF;
+    }
+  }
+}
+
+.review-modal {
+  z-index: 10010;
+  display: block;
+}
+
+.login-modal {
+  z-index: 10010;
+  display: block;
+}
+
+.login-modal-backdrop,
+.review-modal-backdrop {
+  z-index: 10000;
+}
+
+.list-finder,
+.candidate-finder {
+  .selector-box {
+    padding: 0;
+
+    .selector-box-details-btn {
+      .btn {
+        padding: 0;
+      }
+    }
+  }
+}

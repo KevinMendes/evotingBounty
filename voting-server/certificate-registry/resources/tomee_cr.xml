@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tomee>
+	<!-- see http://tomee.apache.org/containers-and-resources.html -->
+
+	<!-- activate next line to be able to deploy applications in apps -->
+	<Resource id="cr-ws-rest" type="DataSource">
+		UserName = ${DATABASE_USER}
+		Password = ${DATABASE_PASSWORD}
+		JdbcDriver = ${DATABASE_DRIVER}
+		JdbcUrl = ${DATABASE_URL}
+		ValidationQuery = select 1 from dual
+		maxWaitTime = 60000
+		maxActive = 1000
+		maxIdle = 1000
+		timeBetweenEvictionRunsMillis = 5000
+		minEvictableIdleTimeMillis = 30000
+		numTestsPerEvictionRun = 5
+		testOnBorrow = true
+		testOnReturn = true
+		testWhileIdle = true
+		initialSize = 20
+	</Resource>
+	<Container id="cr-ws-rest" type="STATELESS">
+		accessTimeout = 60 seconds
+		callbackThreads = 5
+		closeTimeout = 5 minutes
+		garbageCollection = false
+		idleTimeout = 5 minutes
+		maxAge = 1 hours
+		maxAgeOffset = -1
+		maxSize = 1000
+		minSize = 10
+		replaceAged = true
+		replaceFlushed = false
+		strictPooling = false
+		sweepInterval = 1 minutes
+	</Container>
+	<!-- <Deployments dir="apps" /> -->
+</tomee>

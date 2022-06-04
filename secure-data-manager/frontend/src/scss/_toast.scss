@@ -1,0 +1,48 @@
+// toast
+// ----------------------------------------
+
+md-toast {
+  &.toast-cutom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 89;
+    @include display-flex();
+    @include justify-content(center);
+    height: 0;
+    padding: 0;
+    overflow: visible;
+
+    .md-toast-content {
+      margin: 7.5em .5em .5em;
+      background-color: $toast-bg;
+      color: $toast-text;
+    }
+
+    .md-button.md-highlight {
+      &.toast-btn-close {
+        color: $toast-btn-info-text;
+      }
+    }
+  }
+
+  &.toast-error {
+    .md-button.md-highlight.toast-btn-close {
+      color: $toast-btn-error-text;
+    }
+  }
+
+  &.toast-success {
+    .md-button.md-highlight.toast-btn-close {
+      color: $toast-btn-ok-text;
+    }
+  }
+}
+
+// remove the width limitation for the toast in large resolutions
+@media (min-width: 1920px) {
+  md-toast .md-toast-content {
+    max-width: 100%;
+  }
+}

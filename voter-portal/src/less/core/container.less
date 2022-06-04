@@ -1,0 +1,105 @@
+//
+// Container
+// --------------------------------------------------
+
+
+// Not responsive case
+//
+.not-responsive {
+  min-width: @not-responsive-min-width;
+
+  .container,
+  .container-xs,
+  .container-sm,
+  .container-md,
+  .container-lg {
+    width: @not-responsive-min-width;
+  }
+}
+
+// Container widths
+//
+// Set the container width, and override it for fixed navbars in media queries.
+
+.container,
+.container-xs {
+  .container-base();
+
+  @media (max-width: @screen-xs-max) {
+    max-width: @container-sm;
+  }
+  @media (min-width: @screen-sm-min) {
+    width: @container-sm;
+  }
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+.container-sm {
+  .container-base();
+  width: @container-sm;
+
+  @media (min-width: @screen-md-min) {
+    width: @container-md;
+  }
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+.container-md {
+  .container-base();
+  width: @container-md;
+
+  @media (min-width: @screen-lg-min) {
+    width: @container-lg;
+  }
+}
+
+.container-lg {
+  .container-base();
+  width: @container-lg;
+}
+
+
+// Fluid container
+//
+// Utilizes the mixin meant for fixed width containers, but without any defined
+// width for fluid, full width layouts.
+
+.container-fluid {
+  .container-base();
+}
+
+
+// Fixed container
+//
+
+.container-fixed {
+  .container-base();
+  width: @container-fixed;
+}
+
+
+// Container extended
+//
+
+.container-ext {
+  .container-base();
+  width: auto;
+  display: inline-block;
+  margin-bottom: 50px;
+}
+
+
+// Styling the main container
+.container-main {
+  margin-bottom: 40px;
+  background-color: @main-container-bg;
+  border-left: @main-container-border-width solid @main-container-border-color;
+  border-right: @main-container-border-width solid @main-container-border-color;
+}

@@ -1,0 +1,68 @@
+<div class="datatable-controls">
+    <h2 class="sr-only" translate>Ballots</h2>
+    <div class="datatable-actions">
+        <div class="datatable-actions-main">
+            <md-button aria-label="{{'Sign' | translate}}"
+                       class="md-primary md-raised"
+                       id="sign"
+                       ng-attr-title="{{getTextIsBallotSelected()}}"
+                       ng-click="sign()"
+                       ng-disabled="isThereNoBallotSelected()">
+                <md-icon aria-label="{{'Sign' | translate}}" md-svg-src="assets/icons/ic_vpn_key_24px.svg"></md-icon>
+                <span class="hide-xs" translate>Sign</span>
+            </md-button>
+        </div>
+    </div>
+</div>
+
+<div class="datatable-data">
+    <table class="table">
+        <caption></caption>
+        <thead>
+        <tr>
+            <td class="table-batchselector">
+                <md-checkbox aria-label="{{'Checkbox' | translate}}" class="md-datatable-theme md-primary" data-ng-model="selectAll"
+                             ng-change="onSelectAll(selectAll)" ng-disabled="ballots.result.length === 0"></md-checkbox>
+            </td>
+            <th class="grow-2" scope="col">
+                <span class="no-wrap" title="{{'Title'|translate}}" translate>Title</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Alias'|translate}}" translate>Alias</span>
+            </th>
+            <th class="grow-3" scope="col">
+                <span class="no-wrap" title="{{'Ballot Boxes'|translate}}" translate>Ballot Boxes</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Status'|translate}}" translate>Status</span>
+            </th>
+            <th scope="col">
+                <span class="no-wrap" title="{{'Details'|translate}}" translate>Details</span>
+            </th>
+            <th class="table-action" scope="col">
+                <span class="no-wrap" title="{{'Ballot'|translate}}" translate>Ballot</span>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr data-ng-repeat="ballot in ballots.result track by $index">
+            <td class="table-batchselector">
+                <md-checkbox aria-label="{{'Ballot Checkbox' | translate}}" class="md-datatable-theme md-primary" ng-change="updateSelectAll(ballot.selected)"
+                             ng-model="ballot.selected"></md-checkbox>
+            </td>
+            <td class="grow-2">{{ballot.defaultTitle}}</td>
+            <td>{{ballot.alias}}</td>
+            <td class="grow-3">{{ballot.ballotBoxes | sparse}}</td>
+            <td><span class="no-wrap" title="{{capitalizeFirstLetter(ballot.status) | translate}}">{{capitalizeFirstLetter(ballot.status) | translate}}</span>
+            </td>
+            <td><span class="no-wrap" title="{{ballot.details | translate}}">{{ballot.details | translate}}</span></td>
+            <td class="table-action">
+                <md-button class="link" ng-click="viewBallot(ballot.id)">
+                    <md-icon alt="View" md-svg-src="assets/icons/ic_visibility_24px.svg"></md-icon>
+                    <span class="hide-xs" translate>View</span>
+                </md-button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>

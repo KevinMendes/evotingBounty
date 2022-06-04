@@ -1,0 +1,319 @@
+//
+// Alerts
+// --------------------------------------------------
+
+
+// Base styles
+// -------------------------
+
+.alerts {
+  min-height: 0;
+  max-width: 615px;
+  margin: 0 auto;
+}
+
+.alert {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  padding: @alert-padding-vertical 7px;
+  margin: (@line-height-computed / 2) 0;
+  border: 1px solid transparent;
+  border-radius: @alert-border-radius;
+
+  // icons
+  &.has-icon-left {
+    position: relative;
+    padding-left: 100px;
+
+    > .fa {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      width: 100px;
+      margin-top: -0.5em;
+      text-align: center;
+      .fsxxl();
+    }
+  }
+
+  // Headings for larger alerts
+  h4 {
+    margin-top: 0;
+    // Specified for the h4 to prevent conflicts of changing @headings-color
+    color: inherit;
+  }
+
+  // Provide class for links that match alerts
+  .alert-link {
+    font-weight: @alert-link-font-weight;
+  }
+
+  // Improve alignment and spacing of inner content
+  > p,
+  > ul {
+    margin-bottom: 0;
+  }
+
+  > p + p {
+    margin-top: 5px;
+  }
+
+  .ci {
+    font-size: 1.35em;
+    margin-right: 5px;
+    //top: 2px;
+    [dir="rtl"] & {
+      margin-right: 0;
+      margin-left: 5px;
+    }
+  }
+
+  button .ci {
+    font-size: 1em;
+  }
+
+  &:last-child {
+    margin-bottom: 10px;
+  }
+
+  ul {
+    display: inline-table
+  }
+
+  .alert-icon {
+    height: 1.5em;
+    opacity: .57;
+  }
+
+  .alert-text {
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: block;
+    padding: 0 1em;
+  }
+
+  .alert-close {
+    height: 1.5em;
+    padding: 0;
+    background: transparent;
+    opacity: .57;
+  }
+}
+
+// Dismissable alerts
+//
+// Expand the right padding and account for the close button`s positioning.
+
+.alert-dismissable {
+  /*padding-right: (@alert-padding-horizontal + 20);*/
+  position: relative;
+  padding-right: 40px;
+  // Adjust close link position
+  .close {
+    position: absolute;
+    top: 9px;
+    right: 5px;
+    height: 20px;
+    /*right: -21px;*/
+    color: inherit;
+    font-size: 1.35em;
+  }
+
+  [dir="rtl"] & {
+    padding-right: 7px;
+    padding-left: 40px;
+
+    .close {
+      left: 5px;
+      right: auto;
+    }
+  }
+}
+
+// Alternate styles
+//
+// Generate contextual modifier classes for colorizing the alert.
+
+.alert-success {
+  .alert-variant(@alert-success-bg; @alert-success-border; @alert-success-text);
+
+  .ci {
+    color: @alert-success-text;
+  }
+
+  a .ci {
+    color: @link-color
+  }
+}
+
+.alert-info {
+  .alert-variant(@alert-info-bg; @alert-info-border; @alert-info-text);
+
+  .ci {
+    color: @alert-info-text;
+  }
+}
+
+.alert-warning {
+  .alert-variant(@alert-warning-bg; @alert-warning-border; @alert-warning-text);
+
+  .ci {
+    color: @alert-warning-text;
+  }
+}
+
+.alert-danger {
+  .alert-variant(@alert-danger-bg; @alert-danger-border; @alert-danger-text);
+
+  .ci {
+    color: @alert-danger-text;
+  }
+}
+
+.alert-uploading {
+  .alert-variant(@alert-uploading-bg; @alert-uploading-border; @alert-uploading-text);
+
+  .ci-file-excel {
+    margin-right: 2px;
+    margin-left: -2px;
+  }
+
+  .close .ci {
+    color: @alert-uploading-close;
+  }
+
+  .cancel {
+    display: inline-table;
+    margin-left: -5px;
+
+    .ci {
+      margin-right: -2px;
+      font-size: 1.8em;
+      top: 2px;
+      display: inline-block;
+      overflow: hidden;
+      height: 18px;
+    }
+  }
+
+  .process {
+    display: block;
+    margin-left: 2px;
+    margin-top: 8px;
+    font-size: @font-xsmall;
+
+    .percentage {
+      display: inline-block;
+      width: 95px;
+      height: 8px;
+      margin: 0 5px;
+      background: #d7d4cf;
+      overflow: hidden;
+
+      .percentage-done {
+        display: block;
+        background: @alert-uploading-progress;
+        height: 8px;
+      }
+    }
+  }
+
+  &.alert-uploading-success, &.alert-uploading-danger {
+    > * {
+      display: block;
+      margin-bottom: 5px;
+    }
+  }
+
+  &.alert-uploading-success {
+    border-color: @alert-success-border;
+
+    &.highlight {
+      background: @alert-success-bg;
+    }
+  }
+
+  &.alert-uploading-danger {
+    border-color: @alert-danger-border;
+
+    &.highlight {
+      background: @alert-danger-bg;
+    }
+  }
+
+  a,
+  a:hover,
+  a:active,
+  a:focus,
+  a:visited {
+    color: @alert-uploading-text;
+  }
+
+}
+
+
+@media (min-width: @screen-sm) {
+
+  .alerts {
+    min-height: 45px;
+
+    &.no-min-height {
+      min-height: 0;
+    }
+  }
+
+  .alert {
+    padding: @alert-padding-vertical @alert-padding-horizontal;
+
+    &:last-child {
+      margin-bottom: 40px;
+    }
+  }
+
+  .alert.alert-uploading {
+    .process {
+      display: inline-block;
+      margin-left: 15px;
+      margin-top: 0;
+
+      .percentage {
+        width: 120px;
+      }
+    }
+
+    .cancel {
+      margin-left: 10px;
+    }
+
+    &.alert-uploading {
+      > * {
+        display: inline-block;
+        margin-bottom: 0px;
+      }
+    }
+  }
+
+  .alert-dismissable {
+    padding-right: 50px;
+
+    .close {
+      right: 10px;
+    }
+
+    [dir="rtl"] & {
+      padding-right: @alert-padding-horizontal;
+      padding-left: 50px;
+
+      .close {
+        left: 10px;
+        right: auto;
+      }
+    }
+  }
+}

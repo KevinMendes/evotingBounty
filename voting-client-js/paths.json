@@ -1,0 +1,23 @@
+{
+  "global": {
+	"node_modules": "./node_modules",
+	"src": "./src",
+	"dist": "./dist",
+	"test": "./test"
+  },
+  "js": {
+	"src": "./src",
+	"entryFile": "./src/api.js",
+	"dist": "./dist",
+	"bundleFile": "ov-api.js",
+	"bundleMinFile": "ov-api.min.js",
+	"crypto": "./crypto"
+  },
+  "unitTests": {
+	"baseDir": "test"
+  },
+  "reports": {
+	"unit": "./reports/unit",
+	"e2e": "./reports/e2e"
+  }
+}

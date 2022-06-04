@@ -1,0 +1,10 @@
+{
+  "result": [
+    {
+      "status": "GENERATED",
+      "numberOfVotingCardsToGenerate": 10,
+      "defaultTitle": "Voting Card Set Test",
+      "verificationCardSetId": "123"
+    }
+  ]
+}

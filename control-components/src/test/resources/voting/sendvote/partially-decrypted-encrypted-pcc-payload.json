@@ -1,0 +1,36 @@
+{
+	"encryptionGroup": {
+		"p": "0x3B",
+		"q": "0x1D",
+		"g": "0x3"
+	},
+	"partiallyDecryptedEncryptedPCC": {
+		"contextIds": {
+			"electionEventId": "e3e3c2fd8a16489291c5c24e7b74b26e",
+			"verificationCardSetId": "e77dbe3c70874ea584c490a0c6ac0ca4",
+			"verificationCardId": "dd4063884c144446a6dfb63c42eb9e86"
+		},
+		"nodeId": 1,
+		"exponentiatedGammas": [
+			"0x15",
+			"0xF"
+		],
+		"exponentiationProofs": [
+			{
+				"e": "0xF",
+				"z": "0xF"
+			},
+			{
+				"e": "0xC",
+				"z": "0x15"
+			}
+		]
+	},
+	"requestId": "4",
+	"signature": {
+		"signatureContents": "g43DYXYrv8cBSbdm06xEfXKoyg2EFzmEtmLuEU5Roec=",
+		"certificateChain": [
+			"-----BEGIN CERTIFICATE-----\r\nMIIDNDCCAhygAwIBAgICApwwDQYJKoZIhvcNAQELBQAwXTERMA8GA1UEAwwIdGVz\r\ndC5jb20xDTALBgNVBAsMBHRlc3QxDjAMBgNVBAoMBXRlc3QuMQ0wCwYDVQQHDAR0\r\nZXN0MQ0wCwYDVQQIDAR0ZXN0MQswCQYDVQQGEwJDQTAeFw0yMjAyMTQxMDEyMzRa\r\nFw0yMzAyMTQwMDAwMDBaMF0xETAPBgNVBAMMCHRlc3QuY29tMQ0wCwYDVQQLDAR0\r\nZXN0MQ4wDAYDVQQKDAV0ZXN0LjENMAsGA1UEBwwEdGVzdDENMAsGA1UECAwEdGVz\r\ndDELMAkGA1UEBhMCQ0EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQCF\r\nIGjJsCbrUiDJJoY7s7ivecTPwKuDZG41//NRMgD/txZQCYOObqGaoQRh1AGJ1rdK\r\nsOqlamNG8fHZCnNNxQomOm63rappHSocWNIxbO/FRZ4A5bhR6Clh3SQ7/DEeFUVy\r\ntaSL1kwzH+UO2VUWMazexZZ2GYozYxuQzZjxc88uHEwyDfD34lt2Pi25sBkPjd4j\r\nZDczCisOFiePl/xtZTOP9dQ5ZhDAXVu2ardogVSY1c2H/vE5jx4l9si1mSGmy5Z4\r\nekA7vqPYlylkgc9AdtFFdztTVIKyRMA29EbAk0M7qgE+mBTXkv2f2MesXqRFpMzQ\r\nA5P4P4TUErX505QFVjjRAgMBAAEwDQYJKoZIhvcNAQELBQADggEBAEcl+X9T/KZe\r\nY5S5HV0hlicq/KJrWP60TGIFlhKM+TyLIy+i3H73fIPdaIS7ASko45eNoyf0P21E\r\n+fPvOoo+mdQ0wbPVaxaCFxfh97fCdQ5Wg0+Fw1ymvU903D68+f4PW2bne9WNDpsI\r\nLBLdb4UXgb4jemKEdriMvfw/styRktywe09ZcXgOw0+jMC7Hzq85cHx/iSkS4lIV\r\nglkIfRKuAebWNe3SwloMDq4Gp6glqwJ7sE+OJHSMk2fLXXOhCmOc71v+UUBLngWl\r\nx3jphfhQhU1rKgeIbkvltL90fOTnuXi/+WEMcdJhOICcKirbSDPDvb9cLqe01oXf\r\nrJvtdhE/guk=\r\n-----END CERTIFICATE-----\r\n"
+		]
+	}
+}

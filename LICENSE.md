@@ -1,0 +1,1 @@
+Code of Conduct as in CONTRIBUTING.md, in particular “Permitted use”.

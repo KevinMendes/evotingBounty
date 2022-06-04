@@ -1,0 +1,43 @@
+.collapsible-contest {
+  display: block;
+  background-color: #dfdfeb;
+
+  > * {
+    padding: 0.938em;
+  }
+
+  .collapsibler {
+    cursor: pointer;
+
+    .btn {
+      color: #333;
+    }
+
+    .btn.has-icon.btn-link svg,
+    .btn.has-icon.btn-icon svg {
+      fill: #333;
+    }
+  }
+
+  .contest-wrapper {
+    //max-height: 1000px;
+    -webkit-transition: max-height @misc-collapse-transition-collapse-duration ease-in-out;
+    transition: max-height @misc-collapse-transition-collapse-duration ease-in-out;
+  }
+
+  &.is-closed {
+    .contest-wrapper {
+      max-height: 0 !important;
+      overflow: hidden;
+      display: none;
+    }
+  }
+}
+
+.contest--blank-vote {
+  .ballot-options,
+  .ballot-election-party,
+  .ballot-election-candidate {
+    background-color: #f5ebbf;
+  }
+}

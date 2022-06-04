@@ -1,0 +1,50 @@
+<fieldset>
+	<legend translate>Date of birth</legend>
+
+	<!-- error messages -->
+	<div aria-live="polite"
+		 data-ng-class="{'has-warning': authForm.$submitted && !authForm.$dirty && (authForm.dob.$invalid || authForm.day.$invalid || authForm.month.$invalid || authForm.year.$invalid) }"
+		 role="alert">
+		<p class="form-control-msg mbn"
+		   data-layout="row"
+		   data-layout-align="start center"
+		   data-ng-if="authForm.$submitted && !authForm.$dirty && (authForm.dob.$invalid || authForm.day.$invalid || authForm.month.$invalid || authForm.year.$invalid)">
+      <span class="icon" data-flex>
+        <svg aria-hidden="true" focusable="false" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/>
+        </svg>
+      </span>
+			<span class="phs" data-flex="95" data-ng-if="authForm.dob.$error.filled" translate>Please fill all the fields</span>
+			<span class="phs" data-flex="95" data-ng-if="authForm.dob.$error.format" translate>Please introduce a valid date</span>
+		</p>
+	</div>
+	<div class="day-of-birth">
+		<div>
+			<label class="control-label" for="fc_dob" translate>Day</label>
+			<div class="date-of-birth-day"
+				 data-ng-class="{ 'has-warning': authForm.$submitted && !authForm.$dirty && (authForm.$error.day || authForm.day.$invalid) }"
+				 ng-show="config.identification === 'dob'">
+				<input autocomplete="off" class="form-control" data-format="2" data-input-guided data-model-maxlength="2" data-model-minlength="1"
+					   data-ng-model="day" id="fc_dob" name="day" ng-trim="false" required type="text">
+			</div>
+		</div>
+		<div>
+			<label class="control-label" for="fc_mob" translate>Month</label>
+			<div class="date-of-birth-month"
+				 data-ng-class="{ 'has-warning': authForm.$submitted && !authForm.$dirty && (authForm.$error.month || authForm.month.$invalid) }"
+				 ng-show="config.identification === 'dob'">
+				<input autocomplete="off" class="form-control" data-format="2" data-input-guided data-model-maxlength="2" data-model-minlength="1"
+					   data-ng-model="month" id="fc_mob" name="month" ng-trim="false" required type="text">
+			</div>
+		</div>
+		<div>
+			<label class="control-label" for="fc_yob" translate>Year</label>
+			<div class="year-of-birth"
+				 data-ng-class="{ 'has-warning': authForm.$submitted && !authForm.$dirty && (authForm.dob.$error.year || authForm.year.$invalid) }">
+				<input autocomplete="off" class="form-control" data-format="4" data-input-guided data-model-maxlength="4" data-model-minlength="4"
+					   data-ng-model="year" id="fc_yob" name="year" ng-trim="false" required type="text">
+			</div>
+		</div>
+	</div>
+
+</fieldset>

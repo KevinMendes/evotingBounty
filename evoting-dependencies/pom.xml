@@ -72,7 +72,7 @@
 		<jersey.version>2.35</jersey.version>
 		<jjwt.version>0.9.1</jjwt.version>
 		<jsonpath.version>2.6.0</jsonpath.version>
-		<jsoup.version>1.14.3</jsoup.version>
+		<jsoup.version>1.15.3</jsoup.version>
 		<junit.version>4.13.2</junit.version>
 		<junit-jupiter.version>5.8.2</junit-jupiter.version>
 		<log4j.version>2.17.2</log4j.version>

@@ -18,7 +18,7 @@
 		<httpcore.version>4.4.15</httpcore.version>
 		<javax.xml.bind.version>2.2.11</javax.xml.bind.version>
 		<jaxb2-maven-plugin.version>2.5.0</jaxb2-maven-plugin.version>
-		<orientdb.version>3.1.16</orientdb.version>
+		<orientdb.version>3.2.12</orientdb.version>
 		<swagger-maven-plugin.version>3.1.8</swagger-maven-plugin.version>
 		<system-lambda.version>1.2.1</system-lambda.version>
 		<spring-integration-core.version>5.5.10</spring-integration-core.version>

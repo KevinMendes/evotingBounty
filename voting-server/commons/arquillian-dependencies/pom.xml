@@ -15,7 +15,7 @@
 	<properties>
 		<arquillian-tomee.version>1.7.5</arquillian-tomee.version>
 		<arquillian.version>1.5.0.Final</arquillian.version>
-		<arquillian-suite.version>1.1.4</arquillian-suite.version>
+		<arquillian-suite.version>1.2.2</arquillian-suite.version>
 		<arquillian-extension.version>1.0.0.Alpha1</arquillian-extension.version>
 		<arquillian-resteasy-jackson2-provider.version>3.0.19.Final</arquillian-resteasy-jackson2-provider.version>
 	</properties>

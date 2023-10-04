@@ -70,7 +70,7 @@
 		<javax.ws.rs.version>2.1.1</javax.ws.rs.version>
 		<jcommander.version>1.82</jcommander.version>
 		<jersey.version>2.35</jersey.version>
-		<jjwt.version>0.9.1</jjwt.version>
+		<jjwt.version>0.12.0</jjwt.version>
 		<jsonpath.version>2.6.0</jsonpath.version>
 		<jsoup.version>1.14.3</jsoup.version>
 		<junit.version>4.13.2</junit.version>

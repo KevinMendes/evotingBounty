@@ -15,7 +15,7 @@
 	<name>Message Broker Orchestrator</name>
 
 	<properties>
-		<amqp-client.version>5.9.0</amqp-client.version>
+		<amqp-client.version>5.14.3</amqp-client.version>
 		<caffeine.version>2.9.3</caffeine.version>
 	</properties>
 

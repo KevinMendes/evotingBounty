@@ -95,7 +95,7 @@
 		<okhttp.version>3.14.9</okhttp.version>
 		<opencsv.version>5.5.2</opencsv.version>
 		<reproducible-build-maven-plugin.version>0.14</reproducible-build-maven-plugin.version>
-		<retrofit.version>2.9.0</retrofit.version>
+		<retrofit.version>2.10.0</retrofit.version>
 		<slf4j.version>1.7.36</slf4j.version>
 		<sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
 		<spring-batch.version>4.3.4</spring-batch.version>

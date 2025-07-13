@@ -48,7 +48,7 @@
 		<commons-cli.version>1.5.0</commons-cli.version>
 		<commons-codec.version>1.15</commons-codec.version>
 		<commons-io.version>2.11.0</commons-io.version>
-		<commons-lang3.version>3.12.0</commons-lang3.version>
+		<commons-lang3.version>3.18.0</commons-lang3.version>
 		<commons-pool2.version>2.11.1</commons-pool2.version>
 		<download-maven-plugin.version>1.6.8</download-maven-plugin.version>
 		<esapi.version>2.2.3.1</esapi.version>

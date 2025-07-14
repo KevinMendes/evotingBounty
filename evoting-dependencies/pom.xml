@@ -48,7 +48,7 @@
 		<commons-cli.version>1.5.0</commons-cli.version>
 		<commons-codec.version>1.15</commons-codec.version>
 		<commons-io.version>2.11.0</commons-io.version>
-		<commons-lang3.version>3.12.0</commons-lang3.version>
+		<commons-lang3.version>3.18.0</commons-lang3.version>
 		<commons-pool2.version>2.11.1</commons-pool2.version>
 		<download-maven-plugin.version>1.6.8</download-maven-plugin.version>
 		<esapi.version>2.2.3.1</esapi.version>
@@ -99,7 +99,7 @@
 		<slf4j.version>1.7.36</slf4j.version>
 		<sonar-maven-plugin.version>3.9.1.2184</sonar-maven-plugin.version>
 		<spring-batch.version>4.3.4</spring-batch.version>
-		<spring-boot.version>2.6.6</spring-boot.version>
+		<spring-boot.version>3.3.7</spring-boot.version>
 		<spring-integration.version>5.4.11</spring-integration.version>
 		<spring.version>5.3.18</spring.version>
 		<system-stubs-jupiter.version>2.0.1</system-stubs-jupiter.version>

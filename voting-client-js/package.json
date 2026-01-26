@@ -26,7 +26,7 @@
 		"cryptolib-js": "../cryptolib-js",
 		"crypto-primitives-ts": "file:vendor/crypto-primitives-ts",
 		"jsrsasign": "10.5.16",
-		"lodash": "4.17.21",
+		"lodash": "4.17.23",
 		"q": "1.5.1",
 		"xhr2": "0.2.1"
 	},
